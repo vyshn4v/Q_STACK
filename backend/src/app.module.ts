@@ -20,6 +20,7 @@ import { FollowsModule } from './modules/follows/follows.module';
 import { BookmarksModule } from './modules/bookmarks/bookmarks.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { ReputationModule } from './modules/reputation/reputation.module';
+import { AiModule } from './modules/ai/ai.module';
 
 @Module({
   imports: [
@@ -43,6 +44,7 @@ import { ReputationModule } from './modules/reputation/reputation.module';
     BookmarksModule,
     NotificationsModule,
     ReputationModule,
+    AiModule,
   ],
   controllers: [AppController],
   providers: [AppService],
