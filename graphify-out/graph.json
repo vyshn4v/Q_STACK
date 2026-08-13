@@ -1143,7 +1143,7 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L56",
       "id": "src_app_module_appmodule",
-      "community": 61,
+      "community": 70,
       "norm_label": "appmodule"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L1",
       "id": "backend_src_common_decorators_roles_decorator_ts",
-      "community": 68,
+      "community": 17,
       "norm_label": "roles.decorator.ts"
     },
     {
@@ -1242,7 +1242,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L5",
       "id": "decorators_roles_decorator_roles",
-      "community": 68,
+      "community": 17,
       "norm_label": "roles()"
     },
     {
@@ -1260,7 +1260,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L1",
       "id": "backend_src_common_enums_index_ts",
-      "community": 68,
+      "community": 41,
       "norm_label": "index.ts"
     },
     {
@@ -1269,7 +1269,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L1",
       "id": "enums_index_userrole",
-      "community": 68,
+      "community": 41,
       "norm_label": "userrole"
     },
     {
@@ -1278,7 +1278,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L8",
       "id": "enums_index_reportstatus",
-      "community": 68,
+      "community": 41,
       "norm_label": "reportstatus"
     },
     {
@@ -1287,7 +1287,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L17",
       "id": "enums_index_escalationlevel",
-      "community": 68,
+      "community": 41,
       "norm_label": "escalationlevel"
     },
     {
@@ -1296,7 +1296,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L23",
       "id": "enums_index_tier",
-      "community": 68,
+      "community": 41,
       "norm_label": "tier"
     },
     {
@@ -1305,7 +1305,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L29",
       "id": "enums_index_targettype",
-      "community": 68,
+      "community": 41,
       "norm_label": "targettype"
     },
     {
@@ -1341,7 +1341,7 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L1",
       "id": "backend_src_common_guards_roles_guard_ts",
-      "community": 68,
+      "community": 41,
       "norm_label": "roles.guard.ts"
     },
     {
@@ -1350,7 +1350,7 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L11",
       "id": "guards_roles_guard_role_levels",
-      "community": 68,
+      "community": 41,
       "norm_label": "role_levels"
     },
     {
@@ -1422,7 +1422,7 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L1",
       "id": "backend_src_config_config_validation_ts",
-      "community": 61,
+      "community": 82,
       "norm_label": "config.validation.ts"
     },
     {
@@ -1431,7 +1431,7 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L4",
       "id": "config_config_validation_environment",
-      "community": 61,
+      "community": 82,
       "norm_label": "environment"
     },
     {
@@ -1440,7 +1440,7 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L10",
       "id": "config_config_validation_environmentvariables",
-      "community": 61,
+      "community": 82,
       "norm_label": "environmentvariables"
     },
     {
@@ -1449,7 +1449,7 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L174",
       "id": "config_config_validation_validate",
-      "community": 61,
+      "community": 82,
       "norm_label": "validate()"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_admin_admin_controller_ts",
-      "community": 68,
+      "community": 41,
       "norm_label": "admin.controller.ts"
     },
     {
@@ -1629,7 +1629,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L20",
       "id": "admin_admin_controller_admincontroller",
-      "community": 69,
+      "community": 41,
       "norm_label": "admincontroller"
     },
     {
@@ -1647,7 +1647,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L25",
       "id": "admin_admin_controller_admincontroller_getplatformstats",
-      "community": 69,
+      "community": 41,
       "norm_label": ".getplatformstats()"
     },
     {
@@ -1656,7 +1656,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L31",
       "id": "admin_admin_controller_admincontroller_findusers",
-      "community": 69,
+      "community": 41,
       "norm_label": ".findusers()"
     },
     {
@@ -1665,7 +1665,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L49",
       "id": "admin_admin_controller_admincontroller_setuserbanstatus",
-      "community": 69,
+      "community": 41,
       "norm_label": ".setuserbanstatus()"
     },
     {
@@ -1674,7 +1674,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L60",
       "id": "admin_admin_controller_admincontroller_setuserrole",
-      "community": 69,
+      "community": 41,
       "norm_label": ".setuserrole()"
     },
     {
@@ -1683,7 +1683,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L71",
       "id": "admin_admin_controller_admincontroller_findcontent",
-      "community": 69,
+      "community": 41,
       "norm_label": ".findcontent()"
     },
     {
@@ -1692,7 +1692,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L89",
       "id": "admin_admin_controller_admincontroller_softdeletecontent",
-      "community": 69,
+      "community": 41,
       "norm_label": ".softdeletecontent()"
     },
     {
@@ -1701,7 +1701,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L99",
       "id": "admin_admin_controller_admincontroller_restorecontent",
-      "community": 69,
+      "community": 41,
       "norm_label": ".restorecontent()"
     },
     {
@@ -1710,7 +1710,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L109",
       "id": "admin_admin_controller_admincontroller_getobservability",
-      "community": 69,
+      "community": 41,
       "norm_label": ".getobservability()"
     },
     {
@@ -1737,7 +1737,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_admin_admin_repository_ts",
-      "community": 41,
+      "community": 68,
       "norm_label": "admin.repository.ts"
     },
     {
@@ -1746,7 +1746,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L4",
       "id": "admin_admin_repository_adminuserlistitem",
-      "community": 41,
+      "community": 68,
       "norm_label": "adminuserlistitem"
     },
     {
@@ -1755,7 +1755,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L18",
       "id": "admin_admin_repository_admincontentitem",
-      "community": 41,
+      "community": 68,
       "norm_label": "admincontentitem"
     },
     {
@@ -1764,7 +1764,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L33",
       "id": "admin_admin_repository_adminrepository",
-      "community": 41,
+      "community": 68,
       "norm_label": "adminrepository"
     },
     {
@@ -1773,7 +1773,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L34",
       "id": "admin_admin_repository_adminrepository_constructor",
-      "community": 41,
+      "community": 68,
       "norm_label": ".constructor()"
     },
     {
@@ -1782,7 +1782,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L36",
       "id": "admin_admin_repository_adminrepository_getplatformstats",
-      "community": 41,
+      "community": 68,
       "norm_label": ".getplatformstats()"
     },
     {
@@ -1791,7 +1791,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L51",
       "id": "admin_admin_repository_adminrepository_findusers",
-      "community": 41,
+      "community": 68,
       "norm_label": ".findusers()"
     },
     {
@@ -1800,7 +1800,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L114",
       "id": "admin_admin_repository_adminrepository_setuserbanstatus",
-      "community": 41,
+      "community": 68,
       "norm_label": ".setuserbanstatus()"
     },
     {
@@ -1809,7 +1809,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L122",
       "id": "admin_admin_repository_adminrepository_setuserrole",
-      "community": 41,
+      "community": 68,
       "norm_label": ".setuserrole()"
     },
     {
@@ -1818,7 +1818,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L130",
       "id": "admin_admin_repository_adminrepository_findcontent",
-      "community": 41,
+      "community": 68,
       "norm_label": ".findcontent()"
     },
     {
@@ -1827,7 +1827,7 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L230",
       "id": "admin_admin_repository_adminrepository_setcontentstatus",
-      "community": 41,
+      "community": 68,
       "norm_label": ".setcontentstatus()"
     },
     {
@@ -1854,7 +1854,7 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L16",
       "id": "admin_admin_service_adminservice_constructor",
-      "community": 41,
+      "community": 68,
       "norm_label": ".constructor()"
     },
     {
@@ -1926,7 +1926,7 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L1",
       "id": "backend_src_modules_admin_dto_admin_dto_ts",
-      "community": 68,
+      "community": 41,
       "norm_label": "admin.dto.ts"
     },
     {
@@ -1935,7 +1935,7 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L4",
       "id": "dto_admin_dto_updateuserbandto",
-      "community": 68,
+      "community": 41,
       "norm_label": "updateuserbandto"
     },
     {
@@ -1944,7 +1944,7 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L10",
       "id": "dto_admin_dto_updateuserroledto",
-      "community": 68,
+      "community": 41,
       "norm_label": "updateuserroledto"
     },
     {
@@ -1953,7 +1953,7 @@
       "source_file": "backend/src/modules/ai/ai-consumer.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_ai_ai_consumer_service_ts",
-      "community": 59,
+      "community": 67,
       "norm_label": "ai-consumer.service.ts"
     },
     {
@@ -1962,7 +1962,7 @@
       "source_file": "backend/src/modules/ai/ai-consumer.service.ts",
       "source_location": "L6",
       "id": "ai_ai_consumer_service_aiconsumerservice",
-      "community": 59,
+      "community": 67,
       "norm_label": "aiconsumerservice"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "backend/src/modules/ai/ai-consumer.service.ts",
       "source_location": "L9",
       "id": "ai_ai_consumer_service_aiconsumerservice_constructor",
-      "community": 59,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "backend/src/modules/ai/ai-consumer.service.ts",
       "source_location": "L14",
       "id": "ai_ai_consumer_service_aiconsumerservice_onmoduleinit",
-      "community": 59,
+      "community": 67,
       "norm_label": ".onmoduleinit()"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L18",
       "id": "ai_ai_controller_aicontroller",
-      "community": 64,
+      "community": 67,
       "norm_label": "aicontroller"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L19",
       "id": "ai_ai_controller_aicontroller_constructor",
-      "community": 64,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L30",
       "id": "ai_ai_controller_aicontroller_getquestionaianswer",
-      "community": 64,
+      "community": 67,
       "norm_label": ".getquestionaianswer()"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L37",
       "id": "ai_ai_controller_aicontroller_regeneratequestionaianswer",
-      "community": 64,
+      "community": 67,
       "norm_label": ".regeneratequestionaianswer()"
     },
     {
@@ -2034,7 +2034,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L51",
       "id": "ai_ai_controller_aicontroller_getuserchatsessions",
-      "community": 64,
+      "community": 67,
       "norm_label": ".getuserchatsessions()"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L66",
       "id": "ai_ai_controller_aicontroller_getsessionmessages",
-      "community": 64,
+      "community": 67,
       "norm_label": ".getsessionmessages()"
     },
     {
@@ -2061,7 +2061,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L75",
       "id": "ai_ai_controller_aicontroller_deletechatsession",
-      "community": 64,
+      "community": 67,
       "norm_label": ".deletechatsession()"
     },
     {
@@ -2151,7 +2151,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L30",
       "id": "services_ai_chat_service_aichatservice",
-      "community": 64,
+      "community": 67,
       "norm_label": "aichatservice"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L40",
       "id": "services_ai_chat_service_aichatservice_createsession",
-      "community": 64,
+      "community": 67,
       "norm_label": ".createsession()"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L50",
       "id": "services_ai_chat_service_aichatservice_getusersessions",
-      "community": 64,
+      "community": 67,
       "norm_label": ".getusersessions()"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L61",
       "id": "services_ai_chat_service_aichatservice_getsessionmessages",
-      "community": 64,
+      "community": 67,
       "norm_label": ".getsessionmessages()"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L74",
       "id": "services_ai_chat_service_aichatservice_deletesession",
-      "community": 64,
+      "community": 67,
       "norm_label": ".deletesession()"
     },
     {
@@ -2205,7 +2205,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L87",
       "id": "services_ai_chat_service_aichatservice_processusermessage",
-      "community": 64,
+      "community": 67,
       "norm_label": ".processusermessage()"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L171",
       "id": "services_ai_chat_service_aichatservice_validatesessionownership",
-      "community": 64,
+      "community": 67,
       "norm_label": ".validatesessionownership()"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L17",
       "id": "services_pinecone_service_pineconeservice",
-      "community": 77,
+      "community": 67,
       "norm_label": "pineconeservice"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L23",
       "id": "services_pinecone_service_pineconeservice_constructor",
-      "community": 77,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2349,7 +2349,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L28",
       "id": "services_pinecone_service_pineconeservice_onmoduleinit",
-      "community": 77,
+      "community": 67,
       "norm_label": ".onmoduleinit()"
     },
     {
@@ -2358,7 +2358,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L34",
       "id": "services_pinecone_service_pineconeservice_resolveindexhost",
-      "community": 77,
+      "community": 67,
       "norm_label": ".resolveindexhost()"
     },
     {
@@ -2367,7 +2367,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L68",
       "id": "services_pinecone_service_pineconeservice_upsertvector",
-      "community": 77,
+      "community": 67,
       "norm_label": ".upsertvector()"
     },
     {
@@ -2376,7 +2376,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L110",
       "id": "services_pinecone_service_pineconeservice_querysimilar",
-      "community": 77,
+      "community": 67,
       "norm_label": ".querysimilar()"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L23",
       "id": "services_question_ai_service_questionaiservice",
-      "community": 80,
+      "community": 67,
       "norm_label": "questionaiservice"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L26",
       "id": "services_question_ai_service_questionaiservice_constructor",
-      "community": 80,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L36",
       "id": "services_question_ai_service_questionaiservice_getquestionanswer",
-      "community": 80,
+      "community": 67,
       "norm_label": ".getquestionanswer()"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L50",
       "id": "services_question_ai_service_questionaiservice_generateandcachequestionanswer",
-      "community": 80,
+      "community": 67,
       "norm_label": ".generateandcachequestionanswer()"
     },
     {
@@ -2439,7 +2439,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L131",
       "id": "services_question_ai_service_questionaiservice_regeneratequestionanswer",
-      "community": 80,
+      "community": 67,
       "norm_label": ".regeneratequestionanswer()"
     },
     {
@@ -2448,7 +2448,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L157",
       "id": "services_question_ai_service_questionaiservice_ingestquestionvector",
-      "community": 80,
+      "community": 67,
       "norm_label": ".ingestquestionvector()"
     },
     {
@@ -2565,7 +2565,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L21",
       "id": "answers_answers_repository_answersrepository",
-      "community": 71,
+      "community": 60,
       "norm_label": "answersrepository"
     },
     {
@@ -2574,7 +2574,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L22",
       "id": "answers_answers_repository_answersrepository_constructor",
-      "community": 71,
+      "community": 60,
       "norm_label": ".constructor()"
     },
     {
@@ -2583,7 +2583,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L24",
       "id": "answers_answers_repository_answersrepository_findbyquestionid",
-      "community": 71,
+      "community": 60,
       "norm_label": ".findbyquestionid()"
     },
     {
@@ -2592,7 +2592,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L61",
       "id": "answers_answers_repository_answersrepository_findbyid",
-      "community": 71,
+      "community": 60,
       "norm_label": ".findbyid()"
     },
     {
@@ -2601,7 +2601,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L84",
       "id": "answers_answers_repository_answersrepository_create",
-      "community": 71,
+      "community": 60,
       "norm_label": ".create()"
     },
     {
@@ -2610,7 +2610,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L119",
       "id": "answers_answers_repository_answersrepository_acceptanswer",
-      "community": 71,
+      "community": 60,
       "norm_label": ".acceptanswer()"
     },
     {
@@ -2619,7 +2619,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L138",
       "id": "answers_answers_repository_answersrepository_update",
-      "community": 71,
+      "community": 60,
       "norm_label": ".update()"
     },
     {
@@ -2628,7 +2628,7 @@
       "source_file": "backend/src/modules/answers/answers.repository.ts",
       "source_location": "L145",
       "id": "answers_answers_repository_answersrepository_softdelete",
-      "community": 71,
+      "community": 60,
       "norm_label": ".softdelete()"
     },
     {
@@ -2871,7 +2871,7 @@
       "source_file": "backend/src/modules/auth/auth.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_auth_module_ts",
-      "community": 72,
+      "community": 17,
       "norm_label": "auth.module.ts"
     },
     {
@@ -3492,7 +3492,7 @@
       "source_file": "backend/src/modules/bookmarks/bookmarks.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_bookmarks_bookmarks_service_ts",
-      "community": 55,
+      "community": 59,
       "norm_label": "bookmarks.service.ts"
     },
     {
@@ -3546,7 +3546,7 @@
       "source_file": "backend/src/modules/comments/comments.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_comments_comments_controller_ts",
-      "community": 17,
+      "community": 40,
       "norm_label": "comments.controller.ts"
     },
     {
@@ -3609,7 +3609,7 @@
       "source_file": "backend/src/modules/comments/comments.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_comments_comments_module_ts",
-      "community": 40,
+      "community": 61,
       "norm_label": "comments.module.ts"
     },
     {
@@ -3618,7 +3618,7 @@
       "source_file": "backend/src/modules/comments/comments.module.ts",
       "source_location": "L11",
       "id": "comments_comments_module_commentsmodule",
-      "community": 40,
+      "community": 61,
       "norm_label": "commentsmodule"
     },
     {
@@ -3627,7 +3627,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_comments_comments_repository_ts",
-      "community": 40,
+      "community": 76,
       "norm_label": "comments.repository.ts"
     },
     {
@@ -3645,7 +3645,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L19",
       "id": "comments_comments_repository_commentsrepository",
-      "community": 40,
+      "community": 77,
       "norm_label": "commentsrepository"
     },
     {
@@ -3654,7 +3654,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L20",
       "id": "comments_comments_repository_commentsrepository_constructor",
-      "community": 40,
+      "community": 77,
       "norm_label": ".constructor()"
     },
     {
@@ -3663,7 +3663,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L22",
       "id": "comments_comments_repository_commentsrepository_findbyparent",
-      "community": 40,
+      "community": 77,
       "norm_label": ".findbyparent()"
     },
     {
@@ -3672,7 +3672,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L48",
       "id": "comments_comments_repository_commentsrepository_findbyid",
-      "community": 40,
+      "community": 77,
       "norm_label": ".findbyid()"
     },
     {
@@ -3681,7 +3681,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L70",
       "id": "comments_comments_repository_commentsrepository_create",
-      "community": 40,
+      "community": 77,
       "norm_label": ".create()"
     },
     {
@@ -3690,7 +3690,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L97",
       "id": "comments_comments_repository_commentsrepository_update",
-      "community": 40,
+      "community": 77,
       "norm_label": ".update()"
     },
     {
@@ -3699,7 +3699,7 @@
       "source_file": "backend/src/modules/comments/comments.repository.ts",
       "source_location": "L104",
       "id": "comments_comments_repository_commentsrepository_softdelete",
-      "community": 40,
+      "community": 77,
       "norm_label": ".softdelete()"
     },
     {
@@ -3726,7 +3726,7 @@
       "source_file": "backend/src/modules/comments/comments.service.ts",
       "source_location": "L14",
       "id": "comments_comments_service_commentsservice_constructor",
-      "community": 40,
+      "community": 77,
       "norm_label": ".constructor()"
     },
     {
@@ -4284,7 +4284,7 @@
       "source_file": "backend/src/modules/notifications/notifications.controller.ts",
       "source_location": "L16",
       "id": "notifications_notifications_controller_notificationscontroller",
-      "community": 62,
+      "community": 81,
       "norm_label": "notificationscontroller"
     },
     {
@@ -4293,7 +4293,7 @@
       "source_file": "backend/src/modules/notifications/notifications.controller.ts",
       "source_location": "L17",
       "id": "notifications_notifications_controller_notificationscontroller_constructor",
-      "community": 62,
+      "community": 81,
       "norm_label": ".constructor()"
     },
     {
@@ -4302,7 +4302,7 @@
       "source_file": "backend/src/modules/notifications/notifications.controller.ts",
       "source_location": "L20",
       "id": "notifications_notifications_controller_notificationscontroller_getusernotifications",
-      "community": 62,
+      "community": 81,
       "norm_label": ".getusernotifications()"
     },
     {
@@ -4311,7 +4311,7 @@
       "source_file": "backend/src/modules/notifications/notifications.controller.ts",
       "source_location": "L29",
       "id": "notifications_notifications_controller_notificationscontroller_getunreadcount",
-      "community": 62,
+      "community": 81,
       "norm_label": ".getunreadcount()"
     },
     {
@@ -4320,7 +4320,7 @@
       "source_file": "backend/src/modules/notifications/notifications.controller.ts",
       "source_location": "L34",
       "id": "notifications_notifications_controller_notificationscontroller_markallasread",
-      "community": 62,
+      "community": 81,
       "norm_label": ".markallasread()"
     },
     {
@@ -4329,7 +4329,7 @@
       "source_file": "backend/src/modules/notifications/notifications.controller.ts",
       "source_location": "L39",
       "id": "notifications_notifications_controller_notificationscontroller_markasread",
-      "community": 62,
+      "community": 81,
       "norm_label": ".markasread()"
     },
     {
@@ -4338,7 +4338,7 @@
       "source_file": "backend/src/modules/notifications/notifications.gateway.ts",
       "source_location": "L1",
       "id": "backend_src_modules_notifications_notifications_gateway_ts",
-      "community": 62,
+      "community": 73,
       "norm_label": "notifications.gateway.ts"
     },
     {
@@ -4347,7 +4347,7 @@
       "source_file": "backend/src/modules/notifications/notifications.gateway.ts",
       "source_location": "L19",
       "id": "notifications_notifications_gateway_notificationsgateway",
-      "community": 62,
+      "community": 73,
       "norm_label": "notificationsgateway"
     },
     {
@@ -4356,7 +4356,7 @@
       "source_file": "backend/src/modules/notifications/notifications.gateway.ts",
       "source_location": "L25",
       "id": "notifications_notifications_gateway_notificationsgateway_constructor",
-      "community": 62,
+      "community": 73,
       "norm_label": ".constructor()"
     },
     {
@@ -4365,7 +4365,7 @@
       "source_file": "backend/src/modules/notifications/notifications.gateway.ts",
       "source_location": "L30",
       "id": "notifications_notifications_gateway_notificationsgateway_handleconnection",
-      "community": 62,
+      "community": 73,
       "norm_label": ".handleconnection()"
     },
     {
@@ -4374,7 +4374,7 @@
       "source_file": "backend/src/modules/notifications/notifications.gateway.ts",
       "source_location": "L57",
       "id": "notifications_notifications_gateway_notificationsgateway_handledisconnect",
-      "community": 62,
+      "community": 73,
       "norm_label": ".handledisconnect()"
     },
     {
@@ -4383,7 +4383,7 @@
       "source_file": "backend/src/modules/notifications/notifications.gateway.ts",
       "source_location": "L63",
       "id": "notifications_notifications_gateway_notificationsgateway_sendnotificationtouser",
-      "community": 62,
+      "community": 73,
       "norm_label": ".sendnotificationtouser()"
     },
     {
@@ -4392,7 +4392,7 @@
       "source_file": "backend/src/modules/notifications/notifications.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_notifications_notifications_module_ts",
-      "community": 62,
+      "community": 73,
       "norm_label": "notifications.module.ts"
     },
     {
@@ -4410,7 +4410,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_notifications_notifications_repository_ts",
-      "community": 62,
+      "community": 73,
       "norm_label": "notifications.repository.ts"
     },
     {
@@ -4419,7 +4419,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L4",
       "id": "notifications_notifications_repository_notificationrecord",
-      "community": 62,
+      "community": 73,
       "norm_label": "notificationrecord"
     },
     {
@@ -4428,7 +4428,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L14",
       "id": "notifications_notifications_repository_notificationsrepository",
-      "community": 62,
+      "community": 78,
       "norm_label": "notificationsrepository"
     },
     {
@@ -4437,7 +4437,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L15",
       "id": "notifications_notifications_repository_notificationsrepository_constructor",
-      "community": 62,
+      "community": 78,
       "norm_label": ".constructor()"
     },
     {
@@ -4446,7 +4446,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L17",
       "id": "notifications_notifications_repository_notificationsrepository_createnotification",
-      "community": 62,
+      "community": 78,
       "norm_label": ".createnotification()"
     },
     {
@@ -4455,7 +4455,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L35",
       "id": "notifications_notifications_repository_notificationsrepository_getusernotifications",
-      "community": 62,
+      "community": 78,
       "norm_label": ".getusernotifications()"
     },
     {
@@ -4464,7 +4464,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L62",
       "id": "notifications_notifications_repository_notificationsrepository_getunreadcount",
-      "community": 62,
+      "community": 78,
       "norm_label": ".getunreadcount()"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L72",
       "id": "notifications_notifications_repository_notificationsrepository_markasread",
-      "community": 62,
+      "community": 78,
       "norm_label": ".markasread()"
     },
     {
@@ -4482,7 +4482,7 @@
       "source_file": "backend/src/modules/notifications/notifications.repository.ts",
       "source_location": "L82",
       "id": "notifications_notifications_repository_notificationsrepository_markallasread",
-      "community": 62,
+      "community": 78,
       "norm_label": ".markallasread()"
     },
     {
@@ -4491,7 +4491,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_notifications_notifications_service_ts",
-      "community": 62,
+      "community": 73,
       "norm_label": "notifications.service.ts"
     },
     {
@@ -4500,7 +4500,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L6",
       "id": "notifications_notifications_service_notificationsservice",
-      "community": 62,
+      "community": 80,
       "norm_label": "notificationsservice"
     },
     {
@@ -4509,7 +4509,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L7",
       "id": "notifications_notifications_service_notificationsservice_constructor",
-      "community": 62,
+      "community": 78,
       "norm_label": ".constructor()"
     },
     {
@@ -4518,7 +4518,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L12",
       "id": "notifications_notifications_service_notificationsservice_createnotification",
-      "community": 62,
+      "community": 80,
       "norm_label": ".createnotification()"
     },
     {
@@ -4527,7 +4527,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L21",
       "id": "notifications_notifications_service_notificationsservice_getusernotifications",
-      "community": 62,
+      "community": 80,
       "norm_label": ".getusernotifications()"
     },
     {
@@ -4536,7 +4536,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L25",
       "id": "notifications_notifications_service_notificationsservice_getunreadcount",
-      "community": 62,
+      "community": 80,
       "norm_label": ".getunreadcount()"
     },
     {
@@ -4545,7 +4545,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L30",
       "id": "notifications_notifications_service_notificationsservice_markasread",
-      "community": 62,
+      "community": 80,
       "norm_label": ".markasread()"
     },
     {
@@ -4554,7 +4554,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L39",
       "id": "notifications_notifications_service_notificationsservice_markallasread",
-      "community": 62,
+      "community": 80,
       "norm_label": ".markallasread()"
     },
     {
@@ -4563,7 +4563,7 @@
       "source_file": "backend/src/modules/questions/questions.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_questions_questions_controller_ts",
-      "community": 63,
+      "community": 17,
       "norm_label": "questions.controller.ts"
     },
     {
@@ -4680,7 +4680,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L35",
       "id": "questions_questions_repository_questionsrepository",
-      "community": 78,
+      "community": 63,
       "norm_label": "questionsrepository"
     },
     {
@@ -4689,7 +4689,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L36",
       "id": "questions_questions_repository_questionsrepository_constructor",
-      "community": 73,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -4698,7 +4698,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L41",
       "id": "questions_questions_repository_questionsrepository_findall",
-      "community": 78,
+      "community": 63,
       "norm_label": ".findall()"
     },
     {
@@ -4707,7 +4707,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L154",
       "id": "questions_questions_repository_questionsrepository_findbyid",
-      "community": 78,
+      "community": 63,
       "norm_label": ".findbyid()"
     },
     {
@@ -4716,7 +4716,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L211",
       "id": "questions_questions_repository_questionsrepository_incrementviews",
-      "community": 78,
+      "community": 63,
       "norm_label": ".incrementviews()"
     },
     {
@@ -4725,7 +4725,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L218",
       "id": "questions_questions_repository_questionsrepository_create",
-      "community": 78,
+      "community": 63,
       "norm_label": ".create()"
     },
     {
@@ -4734,7 +4734,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L275",
       "id": "questions_questions_repository_questionsrepository_update",
-      "community": 78,
+      "community": 63,
       "norm_label": ".update()"
     },
     {
@@ -4743,7 +4743,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L331",
       "id": "questions_questions_repository_questionsrepository_softdelete",
-      "community": 78,
+      "community": 63,
       "norm_label": ".softdelete()"
     },
     {
@@ -4770,7 +4770,7 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L28",
       "id": "questions_questions_service_questionsservice_constructor",
-      "community": 78,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -4860,7 +4860,7 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reports_reports_controller_ts",
-      "community": 68,
+      "community": 17,
       "norm_label": "reports.controller.ts"
     },
     {
@@ -4941,7 +4941,7 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reports_reports_module_ts",
-      "community": 62,
+      "community": 61,
       "norm_label": "reports.module.ts"
     },
     {
@@ -4959,7 +4959,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reports_reports_repository_ts",
-      "community": 62,
+      "community": 76,
       "norm_label": "reports.repository.ts"
     },
     {
@@ -5202,7 +5202,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_config_ts",
-      "community": 56,
+      "community": 71,
       "norm_label": "reputation.config.ts"
     },
     {
@@ -5211,7 +5211,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L1",
       "id": "reputation_reputation_config_scoringconfig",
-      "community": 56,
+      "community": 71,
       "norm_label": "scoringconfig"
     },
     {
@@ -5220,7 +5220,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L14",
       "id": "reputation_reputation_config_reputation_scoring_config",
-      "community": 56,
+      "community": 71,
       "norm_label": "reputation_scoring_config"
     },
     {
@@ -5229,7 +5229,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L27",
       "id": "reputation_reputation_config_systembadgerule",
-      "community": 56,
+      "community": 71,
       "norm_label": "systembadgerule"
     },
     {
@@ -5238,7 +5238,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L35",
       "id": "reputation_reputation_config_default_system_badges",
-      "community": 56,
+      "community": 71,
       "norm_label": "default_system_badges"
     },
     {
@@ -5256,7 +5256,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L14",
       "id": "reputation_reputation_controller_reputationcontroller",
-      "community": 56,
+      "community": 69,
       "norm_label": "reputationcontroller"
     },
     {
@@ -5265,7 +5265,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L15",
       "id": "reputation_reputation_controller_reputationcontroller_constructor",
-      "community": 56,
+      "community": 69,
       "norm_label": ".constructor()"
     },
     {
@@ -5274,7 +5274,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L19",
       "id": "reputation_reputation_controller_reputationcontroller_getbadgecatalog",
-      "community": 56,
+      "community": 69,
       "norm_label": ".getbadgecatalog()"
     },
     {
@@ -5283,7 +5283,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L25",
       "id": "reputation_reputation_controller_reputationcontroller_getuserreputationhistory",
-      "community": 56,
+      "community": 69,
       "norm_label": ".getuserreputationhistory()"
     },
     {
@@ -5292,7 +5292,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L35",
       "id": "reputation_reputation_controller_reputationcontroller_getcronruns",
-      "community": 56,
+      "community": 69,
       "norm_label": ".getcronruns()"
     },
     {
@@ -5301,7 +5301,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L42",
       "id": "reputation_reputation_controller_reputationcontroller_triggercronjobmanually",
-      "community": 56,
+      "community": 69,
       "norm_label": ".triggercronjobmanually()"
     },
     {
@@ -5328,7 +5328,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_repository_ts",
-      "community": 56,
+      "community": 71,
       "norm_label": "reputation.repository.ts"
     },
     {
@@ -5337,7 +5337,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L5",
       "id": "reputation_reputation_repository_cronrunrow",
-      "community": 56,
+      "community": 71,
       "norm_label": "cronrunrow"
     },
     {
@@ -5346,7 +5346,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L15",
       "id": "reputation_reputation_repository_activityeventrow",
-      "community": 56,
+      "community": 71,
       "norm_label": "activityeventrow"
     },
     {
@@ -5355,7 +5355,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L23",
       "id": "reputation_reputation_repository_reputationledgerrow",
-      "community": 56,
+      "community": 71,
       "norm_label": "reputationledgerrow"
     },
     {
@@ -5364,7 +5364,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L32",
       "id": "reputation_reputation_repository_userstatsrow",
-      "community": 56,
+      "community": 71,
       "norm_label": "userstatsrow"
     },
     {
@@ -5553,7 +5553,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_service_ts",
-      "community": 56,
+      "community": 71,
       "norm_label": "reputation.service.ts"
     },
     {
@@ -5562,7 +5562,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L8",
       "id": "reputation_reputation_service_reputationservice",
-      "community": 56,
+      "community": 69,
       "norm_label": "reputationservice"
     },
     {
@@ -5571,7 +5571,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L11",
       "id": "reputation_reputation_service_reputationservice_constructor",
-      "community": 56,
+      "community": 80,
       "norm_label": ".constructor()"
     },
     {
@@ -5580,7 +5580,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L20",
       "id": "reputation_reputation_service_reputationservice_handlenightlycron",
-      "community": 56,
+      "community": 69,
       "norm_label": ".handlenightlycron()"
     },
     {
@@ -5589,7 +5589,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L28",
       "id": "reputation_reputation_service_reputationservice_runreputationcalculationjob",
-      "community": 56,
+      "community": 69,
       "norm_label": ".runreputationcalculationjob()"
     },
     {
@@ -5598,7 +5598,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L195",
       "id": "reputation_reputation_service_reputationservice_getuserreputationhistory",
-      "community": 56,
+      "community": 69,
       "norm_label": ".getuserreputationhistory()"
     },
     {
@@ -5607,7 +5607,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L199",
       "id": "reputation_reputation_service_reputationservice_getbadgecatalog",
-      "community": 56,
+      "community": 69,
       "norm_label": ".getbadgecatalog()"
     },
     {
@@ -5616,7 +5616,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L203",
       "id": "reputation_reputation_service_reputationservice_getcronruns",
-      "community": 56,
+      "community": 69,
       "norm_label": ".getcronruns()"
     },
     {
@@ -5625,7 +5625,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_controller_ts",
-      "community": 73,
+      "community": 63,
       "norm_label": "tags.controller.ts"
     },
     {
@@ -5634,7 +5634,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L6",
       "id": "tags_tags_controller_tagscontroller",
-      "community": 73,
+      "community": 63,
       "norm_label": "tagscontroller"
     },
     {
@@ -5643,7 +5643,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L7",
       "id": "tags_tags_controller_tagscontroller_constructor",
-      "community": 73,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -5652,7 +5652,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L11",
       "id": "tags_tags_controller_tagscontroller_gettags",
-      "community": 73,
+      "community": 63,
       "norm_label": ".gettags()"
     },
     {
@@ -5661,7 +5661,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L20",
       "id": "tags_tags_controller_tagscontroller_getpopulartags",
-      "community": 73,
+      "community": 63,
       "norm_label": ".getpopulartags()"
     },
     {
@@ -5670,7 +5670,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L26",
       "id": "tags_tags_controller_tagscontroller_gettagbyname",
-      "community": 73,
+      "community": 63,
       "norm_label": ".gettagbyname()"
     },
     {
@@ -5679,7 +5679,7 @@
       "source_file": "backend/src/modules/tags/tags.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_module_ts",
-      "community": 73,
+      "community": 63,
       "norm_label": "tags.module.ts"
     },
     {
@@ -5697,7 +5697,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_repository_ts",
-      "community": 73,
+      "community": 63,
       "norm_label": "tags.repository.ts"
     },
     {
@@ -5706,7 +5706,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L5",
       "id": "tags_tags_repository_tagrow",
-      "community": 73,
+      "community": 63,
       "norm_label": "tagrow"
     },
     {
@@ -5715,7 +5715,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L14",
       "id": "tags_tags_repository_tagsrepository",
-      "community": 73,
+      "community": 63,
       "norm_label": "tagsrepository"
     },
     {
@@ -5724,7 +5724,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L15",
       "id": "tags_tags_repository_tagsrepository_constructor",
-      "community": 73,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -5733,7 +5733,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L17",
       "id": "tags_tags_repository_tagsrepository_findall",
-      "community": 73,
+      "community": 63,
       "norm_label": ".findall()"
     },
     {
@@ -5742,7 +5742,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L40",
       "id": "tags_tags_repository_tagsrepository_findbyname",
-      "community": 73,
+      "community": 63,
       "norm_label": ".findbyname()"
     },
     {
@@ -5751,7 +5751,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L53",
       "id": "tags_tags_repository_tagsrepository_findorcreatetags",
-      "community": 73,
+      "community": 63,
       "norm_label": ".findorcreatetags()"
     },
     {
@@ -5760,7 +5760,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_service_ts",
-      "community": 73,
+      "community": 63,
       "norm_label": "tags.service.ts"
     },
     {
@@ -5769,7 +5769,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L5",
       "id": "tags_tags_service_tagsservice",
-      "community": 73,
+      "community": 63,
       "norm_label": "tagsservice"
     },
     {
@@ -5778,7 +5778,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L6",
       "id": "tags_tags_service_tagsservice_constructor",
-      "community": 73,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -5787,7 +5787,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L8",
       "id": "tags_tags_service_tagsservice_getalltags",
-      "community": 73,
+      "community": 63,
       "norm_label": ".getalltags()"
     },
     {
@@ -5796,7 +5796,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L12",
       "id": "tags_tags_service_tagsservice_gettagbyname",
-      "community": 73,
+      "community": 63,
       "norm_label": ".gettagbyname()"
     },
     {
@@ -5805,7 +5805,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L20",
       "id": "tags_tags_service_tagsservice_getpopulartags",
-      "community": 73,
+      "community": 63,
       "norm_label": ".getpopulartags()"
     },
     {
@@ -6367,10 +6367,19 @@
       "norm_label": ".constructor()"
     },
     {
+      "label": ".ensureConsumerGroup()",
+      "file_type": "code",
+      "source_file": "backend/src/redis/event-bus.service.ts",
+      "source_location": "L15",
+      "id": "redis_event_bus_service_rediseventbusservice_ensureconsumergroup",
+      "community": 0,
+      "norm_label": ".ensureconsumergroup()"
+    },
+    {
       "label": ".publish()",
       "file_type": "code",
       "source_file": "backend/src/redis/event-bus.service.ts",
-      "source_location": "L14",
+      "source_location": "L51",
       "id": "redis_event_bus_service_rediseventbusservice_publish",
       "community": 0,
       "norm_label": ".publish()"
@@ -6379,7 +6388,7 @@
       "label": ".subscribe()",
       "file_type": "code",
       "source_file": "backend/src/redis/event-bus.service.ts",
-      "source_location": "L40",
+      "source_location": "L79",
       "id": "redis_event_bus_service_rediseventbusservice_subscribe",
       "community": 0,
       "norm_label": ".subscribe()"
@@ -6388,7 +6397,7 @@
       "label": ".startConsumerLoop()",
       "file_type": "code",
       "source_file": "backend/src/redis/event-bus.service.ts",
-      "source_location": "L68",
+      "source_location": "L94",
       "id": "redis_event_bus_service_rediseventbusservice_startconsumerloop",
       "community": 0,
       "norm_label": ".startconsumerloop()"
@@ -6525,7 +6534,7 @@
       "source_file": "backend/test/app.e2e-spec.ts",
       "source_location": "L1",
       "id": "backend_test_app_e2e_spec_ts",
-      "community": 61,
+      "community": 70,
       "norm_label": "app.e2e-spec.ts"
     },
     {
@@ -25336,6 +25345,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/redis/event-bus.service.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "source": "redis_event_bus_service_rediseventbusservice",
+      "target": "redis_event_bus_service_rediseventbusservice_ensureconsumergroup",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/redis/event-bus.service.ts",
       "source_location": "L14",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -25383,6 +25402,17 @@
       "confidence_score": 1.0,
       "source": "redis_event_bus_service_rediseventbusservice_constructor",
       "target": "redis_redis_service_redisservice"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/redis/event-bus.service.ts",
+      "source_location": "L88",
+      "weight": 1.0,
+      "source": "redis_event_bus_service_rediseventbusservice_subscribe",
+      "target": "redis_event_bus_service_rediseventbusservice_ensureconsumergroup",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -25483,9 +25513,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L58",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice",
-      "target": "redis_redis_service_redisservice_getkeyprefix",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_getkeyprefix"
     },
     {
       "relation": "method",
@@ -34571,5 +34601,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "c6084ec26a775cd117efadd8851dc5cd4ecf2f82"
+  "built_at_commit": "b5f9099c3400897836b597d4aede44c3677dbeb6"
 }
