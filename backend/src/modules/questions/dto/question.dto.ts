@@ -55,7 +55,7 @@ export class QueryQuestionsDto {
 
   @IsOptional()
   @IsString()
-  sort?: 'newest' | 'votes' | 'unanswered' | 'trending';
+  sort?: 'newest' | 'votes' | 'unanswered' | 'trending' | 'interested';
 
   @IsOptional()
   @IsString()

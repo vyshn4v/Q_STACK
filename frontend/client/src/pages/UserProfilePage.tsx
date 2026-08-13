@@ -20,6 +20,10 @@ import {
   TrendingUp,
   Lock,
   Sparkles,
+  Tag as TagIcon,
+  Plus,
+  X,
+  Search,
 } from 'lucide-react';
 
 export const UserProfilePage: React.FC = () => {
@@ -31,11 +35,22 @@ export const UserProfilePage: React.FC = () => {
   const [activities, setActivities] = useState<UserActivity[]>([]);
   const [badgeCatalog, setBadgeCatalog] = useState<BadgeRule[]>([]);
   const [reputationLedger, setReputationLedger] = useState<ReputationLedgerEntry[]>([]);
-  const [activeTab, setActiveTab] = useState<'overview' | 'questions' | 'answers' | 'reputation' | 'badges' | 'activity' | 'resume'>('overview');
+  const [followedTags, setFollowedTags] = useState<any[]>([]);
+  const [popularTags, setPopularTags] = useState<any[]>([]);
+  const [tagSearch, setTagSearch] = useState('');
+  const [isTogglingTag, setIsTogglingTag] = useState<string | null>(null);
+  const [activeTab, setActiveTab] = useState<'overview' | 'questions' | 'answers' | 'topics' | 'reputation' | 'badges' | 'activity' | 'resume'>('overview');
   const [resumeSubTab, setResumeSubTab] = useState<'personal' | 'education' | 'experience'>('experience');
   const [isLoading, setIsLoading] = useState(true);
 
   const isSelf = authUser?.id === id;
+
+  const loadFollowedTags = () => {
+    if (!id) return;
+    api.getFollowingTags(id)
+      .then((tags) => setFollowedTags(tags || []))
+      .catch(() => {});
+  };
 
   useEffect(() => {
     if (!id) return;
@@ -47,6 +62,8 @@ export const UserProfilePage: React.FC = () => {
       api.getUserAnswers(id),
       api.getUserActivity(id).catch(() => []),
       api.getBadgeCatalog().catch(() => []),
+      api.getFollowingTags(id).catch(() => []),
+      api.getPopularTags().catch(() => []),
     ];
 
     if (isSelf) {
@@ -54,17 +71,36 @@ export const UserProfilePage: React.FC = () => {
     }
 
     Promise.all(promises)
-      .then(([userData, qData, aData, actData, catalogData, ledgerData]) => {
+      .then(([userData, qData, aData, actData, catalogData, tagsData, popData, ledgerData]) => {
         setProfile(userData);
         setQuestions(qData);
         setAnswers(aData);
         setActivities(actData);
         setBadgeCatalog(catalogData || []);
+        setFollowedTags(tagsData || []);
+        setPopularTags(popData || []);
         if (ledgerData) setReputationLedger(ledgerData);
       })
       .catch(() => {})
       .finally(() => setIsLoading(false));
   }, [id, isSelf]);
+
+  const handleToggleTag = async (tag: { id: string; name: string }) => {
+    if (!isSelf) return;
+    setIsTogglingTag(tag.id);
+    try {
+      const res = await api.toggleFollow('tag', tag.id);
+      if (res.isFollowing) {
+        setFollowedTags((prev) => [...prev, { id: tag.id, name: tag.name, questions_count: 0 }]);
+      } else {
+        setFollowedTags((prev) => prev.filter((t) => t.id !== tag.id));
+      }
+    } catch {
+      loadFollowedTags();
+    } finally {
+      setIsTogglingTag(null);
+    }
+  };
 
   if (isLoading) {
     return (
@@ -191,6 +227,15 @@ export const UserProfilePage: React.FC = () => {
           >
             Answers ({answers.length})
           </button>
+          <button
+            onClick={() => setActiveTab('topics')}
+            style={{
+              ...styles.tabBtn,
+              ...(activeTab === 'topics' ? styles.tabBtnActive : {}),
+            }}
+          >
+            Interested Topics ({followedTags.length})
+          </button>
           {isSelf && (
             <button
               onClick={() => setActiveTab('reputation')}
@@ -272,6 +317,30 @@ export const UserProfilePage: React.FC = () => {
                   </div>
                 )}
               </div>
+
+              <div style={styles.overviewSection}>
+                <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                  <h3 style={styles.sectionHeading}>Interested Topics</h3>
+                  <button onClick={() => setActiveTab('topics')} style={styles.viewAllBtn}>
+                    Manage &rarr;
+                  </button>
+                </div>
+                {followedTags.length === 0 ? (
+                  <p style={styles.emptyNote}>No interested topics followed yet.</p>
+                ) : (
+                  <div style={styles.overviewTagsRow}>
+                    {followedTags.map((t) => (
+                      <Link
+                        key={t.id}
+                        to={`/questions?tag=${encodeURIComponent(t.name)}`}
+                        style={styles.overviewTagChip}
+                      >
+                        #{t.name}
+                      </Link>
+                    ))}
+                  </div>
+                )}
+              </div>
             </div>
           )}
 
@@ -340,6 +409,111 @@ export const UserProfilePage: React.FC = () => {
                     )}
                   </div>
                 ))
+              )}
+            </div>
+          )}
+
+          {/* Interested Topics & Watched Tags */}
+          {activeTab === 'topics' && (
+            <div style={styles.listSection}>
+              <div style={styles.topicsHeaderCard}>
+                <div style={styles.topicsHeaderIcon}>
+                  <TagIcon size={22} color="#2563eb" />
+                </div>
+                <div>
+                  <strong style={{ fontSize: '1.0625rem', color: '#0f172a', display: 'block' }}>
+                    Interested Topics & Watched Tags
+                  </strong>
+                  <p style={{ fontSize: '0.8125rem', color: '#64748b', margin: '0.25rem 0 0 0', lineHeight: 1.4 }}>
+                    Tags you follow help customize your <strong>Home Feed</strong> under <em>"⭐ For You (My Topics)"</em>, and prioritize notifications for relevant questions in your stack.
+                  </p>
+                </div>
+              </div>
+
+              {/* Current Watched Tags Grid */}
+              <div style={styles.watchedTopicsContainer}>
+                <h4 style={styles.subHeading}>
+                  Currently Watched Topics ({followedTags.length})
+                </h4>
+
+                {followedTags.length === 0 ? (
+                  <div style={styles.emptyTopicBox}>
+                    <TagIcon size={32} color="#94a3b8" />
+                    <p style={{ margin: '0.5rem 0 0 0', color: '#64748b', fontSize: '0.875rem' }}>
+                      {isSelf
+                        ? 'You haven’t added any interested topics yet. Follow tags below to personalize your developer experience!'
+                        : 'This developer has not selected any public topics yet.'}
+                    </p>
+                  </div>
+                ) : (
+                  <div style={styles.tagsGrid}>
+                    {followedTags.map((tag) => (
+                      <div key={tag.id} style={styles.tagCard}>
+                        <div style={styles.tagCardHeader}>
+                          <Link to={`/questions?tag=${encodeURIComponent(tag.name)}`} style={styles.tagNameLink}>
+                            #{tag.name}
+                          </Link>
+                          {isSelf && (
+                            <button
+                              onClick={() => handleToggleTag(tag)}
+                              disabled={isTogglingTag === tag.id}
+                              style={styles.removeTagBtn}
+                              title="Remove from watched topics"
+                            >
+                              <X size={14} />
+                            </button>
+                          )}
+                        </div>
+                        {tag.description && (
+                          <p style={styles.tagCardDesc}>{tag.description}</p>
+                        )}
+                        <span style={styles.tagCardCount}>
+                          {tag.questions_count || 0} questions tagged
+                        </span>
+                      </div>
+                    ))}
+                  </div>
+                )}
+              </div>
+
+              {/* Add New Topics (isSelf only) */}
+              {isSelf && (
+                <div style={styles.addTopicsSection}>
+                  <h4 style={styles.subHeading}>Add More Topics of Interest</h4>
+                  
+                  <div style={styles.tagSearchWrapper}>
+                    <Search size={16} color="#94a3b8" />
+                    <input
+                      type="text"
+                      placeholder="Filter popular tags (e.g. react, typescript, python, docker)..."
+                      value={tagSearch}
+                      onChange={(e) => setTagSearch(e.target.value)}
+                      style={styles.tagSearchInput}
+                    />
+                  </div>
+
+                  <div style={styles.availableTagsRow}>
+                    {popularTags
+                      .filter((pt) => {
+                        const isAlreadyFollowed = followedTags.some((ft) => ft.id === pt.id || ft.name?.toLowerCase() === pt.name?.toLowerCase());
+                        const matchesSearch = !tagSearch || pt.name?.toLowerCase().includes(tagSearch.toLowerCase());
+                        return !isAlreadyFollowed && matchesSearch;
+                      })
+                      .slice(0, 16)
+                      .map((pt) => (
+                        <button
+                          key={pt.id}
+                          onClick={() => handleToggleTag(pt)}
+                          disabled={isTogglingTag === pt.id}
+                          style={styles.addTagChip}
+                        >
+                          <Plus size={13} color="#2563eb" />
+                          <span>#{pt.name}</span>
+                          <span style={styles.chipCount}>{pt.questions_count || 0}</span>
+                        </button>
+                      ))}
+                  </div>
+                </div>
               )}
             </div>
           )}
@@ -1090,6 +1264,169 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: '#2563eb',
     color: '#ffffff',
     borderRadius: '8px',
+    textDecoration: 'none',
+  },
+  topicsHeaderCard: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '1rem',
+    padding: '1.25rem',
+    backgroundColor: '#eff6ff',
+    border: '1px solid #bfdbfe',
+    borderRadius: '12px',
+    marginBottom: '1rem',
+  },
+  topicsHeaderIcon: {
+    width: '40px',
+    height: '40px',
+    borderRadius: '10px',
+    backgroundColor: '#ffffff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  watchedTopicsContainer: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.875rem',
+  },
+  subHeading: {
+    fontSize: '1rem',
+    fontWeight: 700,
+    color: '#0f172a',
+    margin: 0,
+  },
+  emptyTopicBox: {
+    padding: '2.5rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    textAlign: 'center',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '1px dashed #cbd5e1',
+  },
+  tagsGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fill, minmax(240px, 1fr))',
+    gap: '1rem',
+  },
+  tagCard: {
+    padding: '1rem',
+    backgroundColor: '#ffffff',
+    borderRadius: '10px',
+    border: '1px solid #e2e8f0',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.375rem',
+    boxShadow: '0 1px 2px rgba(0,0,0,0.02)',
+  },
+  tagCardHeader: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  tagNameLink: {
+    fontSize: '0.9375rem',
+    fontWeight: 700,
+    color: '#2563eb',
+    textDecoration: 'none',
+  },
+  removeTagBtn: {
+    background: 'none',
+    border: 'none',
+    color: '#94a3b8',
+    cursor: 'pointer',
+    padding: '2px',
+    borderRadius: '4px',
+    display: 'flex',
+    alignItems: 'center',
+  },
+  tagCardDesc: {
+    fontSize: '0.75rem',
+    color: '#64748b',
+    margin: 0,
+    lineHeight: 1.4,
+  },
+  tagCardCount: {
+    fontSize: '0.6875rem',
+    color: '#94a3b8',
+    fontWeight: 600,
+    marginTop: '0.25rem',
+  },
+  addTopicsSection: {
+    marginTop: '1.5rem',
+    paddingTop: '1.5rem',
+    borderTop: '1px solid #e2e8f0',
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1rem',
+  },
+  tagSearchWrapper: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    padding: '0.5rem 0.75rem',
+    backgroundColor: '#ffffff',
+    border: '1px solid #cbd5e1',
+    borderRadius: '8px',
+    maxWidth: '460px',
+  },
+  tagSearchInput: {
+    border: 'none',
+    outline: 'none',
+    fontSize: '0.875rem',
+    width: '100%',
+  },
+  availableTagsRow: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '0.5rem',
+  },
+  addTagChip: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.375rem',
+    padding: '0.375rem 0.75rem',
+    backgroundColor: '#ffffff',
+    border: '1px solid #cbd5e1',
+    borderRadius: '20px',
+    fontSize: '0.8125rem',
+    fontWeight: 600,
+    color: '#0f172a',
+    cursor: 'pointer',
+    transition: 'all 0.15s ease',
+  },
+  chipCount: {
+    fontSize: '0.6875rem',
+    color: '#64748b',
+    backgroundColor: '#f1f5f9',
+    padding: '0.1rem 0.35rem',
+    borderRadius: '10px',
+  },
+  viewAllBtn: {
+    background: 'none',
+    border: 'none',
+    color: '#2563eb',
+    fontSize: '0.8125rem',
+    fontWeight: 600,
+    cursor: 'pointer',
+  },
+  overviewTagsRow: {
+    display: 'flex',
+    flexWrap: 'wrap',
+    gap: '0.5rem',
+    marginTop: '0.5rem',
+  },
+  overviewTagChip: {
+    padding: '0.25rem 0.625rem',
+    backgroundColor: '#eff6ff',
+    color: '#2563eb',
+    borderRadius: '6px',
+    fontSize: '0.8125rem',
+    fontWeight: 600,
     textDecoration: 'none',
   },
 };

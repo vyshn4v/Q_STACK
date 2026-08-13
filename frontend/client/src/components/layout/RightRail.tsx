@@ -2,31 +2,61 @@ import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import type { Tag as TagType } from '../../types';
 import { api } from '../../api/client';
-import { TrendingUp, HelpCircle, Sparkles } from 'lucide-react';
+import { useAuth } from '../../context/AuthContext';
+import { TrendingUp, HelpCircle, Sparkles, Tag as TagIcon } from 'lucide-react';
 
 export const RightRail: React.FC = () => {
+  const { user, isAuthenticated } = useAuth();
   const [popularTags, setPopularTags] = useState<TagType[]>([]);
+  const [watchedTags, setWatchedTags] = useState<any[]>([]);
 
   useEffect(() => {
     api.getPopularTags()
-      .then((data) => setPopularTags(data.slice(0, 10)))
+      .then((data) => setPopularTags(data.slice(0, 8)))
       .catch(() => {});
-  }, []);
+
+    if (isAuthenticated) {
+      api.getFollowingTags()
+        .then((tags) => setWatchedTags(tags || []))
+        .catch(() => {});
+    }
+  }, [isAuthenticated]);
 
   return (
     <aside style={styles.rail}>
-      {/* Tips / Guidelines Card */}
-      <div style={styles.widgetCard}>
-        <div style={styles.widgetHeader}>
-          <HelpCircle size={16} color="#2563eb" />
-          <span style={styles.widgetTitle}>The Art of Asking</span>
+      {/* Watched Topics (Authenticated only) */}
+      {isAuthenticated && (
+        <div style={styles.widgetCard}>
+          <div style={styles.widgetHeader}>
+            <TagIcon size={16} color="#2563eb" />
+            <span style={styles.widgetTitle}>My Watched Topics</span>
+          </div>
+
+          {watchedTags.length > 0 ? (
+            <div style={styles.tagsGrid}>
+              {watchedTags.map((tag) => (
+                <Link
+                  key={tag.id || tag.name}
+                  to={`/questions?tag=${encodeURIComponent(tag.name)}`}
+                  style={styles.tagItem}
+                >
+                  <span style={styles.tagName}>#{tag.name}</span>
+                </Link>
+              ))}
+            </div>
+          ) : (
+            <p style={{ fontSize: '0.8125rem', color: '#64748b', margin: '0 0 0.5rem 0' }}>
+              No interested topics followed yet.
+            </p>
+          )}
+
+          {user?.id && (
+            <Link to={`/users/${user.id}?tab=topics`} style={styles.viewAllLink}>
+              {watchedTags.length > 0 ? 'Manage topics →' : '+ Pick your topics →'}
+            </Link>
+          )}
         </div>
-        <ul style={styles.tipsList}>
-          <li>Summarize the specific problem clearly in the title</li>
-          <li>Include relevant code snippets and error logs</li>
-          <li>Describe what you tried and what you expected</li>
-        </ul>
-      </div>
+      )}
 
       {/* Popular Tags */}
       <div style={styles.widgetCard}>
@@ -39,7 +69,7 @@ export const RightRail: React.FC = () => {
             popularTags.map((tag) => (
               <Link
                 key={tag.id || tag.name}
-                to={`/questions?tag=${tag.name}`}
+                to={`/questions?tag=${encodeURIComponent(tag.name)}`}
                 style={styles.tagItem}
               >
                 <span style={styles.tagName}>#{tag.name}</span>
@@ -55,6 +85,19 @@ export const RightRail: React.FC = () => {
         </Link>
       </div>
 
+      {/* Tips / Guidelines Card */}
+      <div style={styles.widgetCard}>
+        <div style={styles.widgetHeader}>
+          <HelpCircle size={16} color="#2563eb" />
+          <span style={styles.widgetTitle}>The Art of Asking</span>
+        </div>
+        <ul style={styles.tipsList}>
+          <li>Summarize the specific problem clearly in the title</li>
+          <li>Include relevant code snippets and error logs</li>
+          <li>Describe what you tried and what you expected</li>
+        </ul>
+      </div>
+
       {/* AI Features Notice */}
       <div style={styles.aiNoticeCard}>
         <div style={styles.aiNoticeHeader}>
@@ -62,7 +105,7 @@ export const RightRail: React.FC = () => {
           <span style={styles.aiNoticeTitle}>Dual AI Architecture</span>
         </div>
         <p style={styles.aiNoticeText}>
-          Every question receives an instant cached AI overview powered by Gemini, alongside conversational Pinecone vector RAG search.
+          Every question receives an instant cached AI overview alongside conversational Pinecone vector RAG search.
         </p>
       </div>
     </aside>
@@ -99,6 +142,7 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '0.8125rem',
     color: '#475569',
     lineHeight: 1.5,
+    margin: 0,
     display: 'flex',
     flexDirection: 'column',
     gap: '0.375rem',
@@ -106,7 +150,8 @@ const styles: Record<string, React.CSSProperties> = {
   tagsGrid: {
     display: 'flex',
     flexWrap: 'wrap',
-    gap: '0.375rem',
+    gap: '0.5rem',
+    marginBottom: '0.75rem',
   },
   tagItem: {
     display: 'inline-flex',
@@ -117,14 +162,15 @@ const styles: Record<string, React.CSSProperties> = {
     borderRadius: '6px',
     fontSize: '0.75rem',
     textDecoration: 'none',
+    color: '#334155',
+    transition: 'background-color 0.15s ease',
   },
   tagName: {
-    color: '#2563eb',
-    fontWeight: 600,
+    fontWeight: 500,
   },
   tagCount: {
-    color: '#94a3b8',
     fontSize: '0.6875rem',
+    color: '#94a3b8',
   },
   tagLoading: {
     fontSize: '0.75rem',
@@ -132,10 +178,9 @@ const styles: Record<string, React.CSSProperties> = {
   },
   viewAllLink: {
     display: 'inline-block',
-    marginTop: '0.75rem',
-    fontSize: '0.75rem',
-    fontWeight: 600,
+    fontSize: '0.8125rem',
     color: '#2563eb',
+    fontWeight: 600,
     textDecoration: 'none',
   },
   aiNoticeCard: {
@@ -151,13 +196,14 @@ const styles: Record<string, React.CSSProperties> = {
     marginBottom: '0.5rem',
   },
   aiNoticeTitle: {
-    fontSize: '0.8125rem',
+    fontSize: '0.875rem',
     fontWeight: 700,
-    color: '#1e40af',
+    color: '#1d4ed8',
   },
   aiNoticeText: {
-    fontSize: '0.75rem',
+    fontSize: '0.8125rem',
     color: '#3b82f6',
-    lineHeight: 1.45,
+    lineHeight: 1.4,
+    margin: 0,
   },
 };

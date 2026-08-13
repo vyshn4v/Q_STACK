@@ -9,6 +9,7 @@ import {
 import { FollowsService } from './follows.service';
 import { ToggleFollowDto } from './dto/follows.dto';
 import { JwtAuthGuard } from '../auth/guards/jwt-auth.guard';
+import { OptionalJwtAuthGuard } from '../auth/guards/optional-jwt-auth.guard';
 import { CurrentUser } from '../../common/decorators/current-user.decorator';
 
 @Controller('follows')
@@ -34,15 +35,25 @@ export class FollowsController {
     return this.followsService.getFollowStatus(userId, targetType, targetId);
   }
 
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(OptionalJwtAuthGuard)
   @Get('users')
-  async getFollowingUsers(@CurrentUser('userId') userId: string) {
-    return this.followsService.getFollowingUsers(userId);
+  async getFollowingUsers(
+    @CurrentUser('userId') currentUserId?: string,
+    @Query('userId') queryUserId?: string,
+  ) {
+    const targetUserId = queryUserId || currentUserId;
+    if (!targetUserId) return [];
+    return this.followsService.getFollowingUsers(targetUserId);
   }
 
-  @UseGuards(JwtAuthGuard)
+  @UseGuards(OptionalJwtAuthGuard)
   @Get('tags')
-  async getFollowingTags(@CurrentUser('userId') userId: string) {
-    return this.followsService.getFollowingTags(userId);
+  async getFollowingTags(
+    @CurrentUser('userId') currentUserId?: string,
+    @Query('userId') queryUserId?: string,
+  ) {
+    const targetUserId = queryUserId || currentUserId;
+    if (!targetUserId) return [];
+    return this.followsService.getFollowingTags(targetUserId);
   }
 }

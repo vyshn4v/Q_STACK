@@ -1,16 +1,16 @@
 # Graph Report - Q_STACK  (2026-08-13)
 
 ## Corpus Check
-- 184 files · ~66,340 words
+- 184 files · ~68,058 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 1227 nodes · 2144 edges · 79 communities (61 shown, 18 thin omitted)
+- 1227 nodes · 2149 edges · 79 communities (61 shown, 18 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
 
 ## Graph Freshness
-- Built from commit: `80c549a3`
+- Built from commit: `de37534c`
 - Run `git rev-parse HEAD` and compare to check if the graph is stale.
 - Run `graphify update .` after code changes (no API cost).
 
@@ -94,7 +94,7 @@
 ## God Nodes (most connected - your core abstractions)
 1. `ApiClient` - 53 edges
 2. `DatabaseService` - 50 edges
-3. `useAuth()` - 43 edges
+3. `useAuth()` - 45 edges
 4. `IEventBus` - 25 edges
 5. `ReputationRepository` - 23 edges
 6. `compilerOptions` - 22 edges
@@ -274,16 +274,16 @@ Cohesion: 0.16
 Nodes (3): NotificationsGateway, NotificationRecord, NotificationsRepository
 
 ### Community 50 - "Community 50"
-Cohesion: 0.11
+Cohesion: 0.10
 Nodes (6): ToggleFollowDto, FollowsController, FollowsModule, FollowRecord, FollowsRepository, FollowsService
 
 ### Community 51 - "Community 51"
-Cohesion: 0.17
-Nodes (17): RightRail(), styles, styles, MedalControl(), MedalControlProps, styles, AIResponse, AppNotification (+9 more)
+Cohesion: 0.15
+Nodes (19): FollowButton(), FollowButtonProps, styles, LeaderboardPage(), styles, styles, TagsPage(), styles (+11 more)
 
 ### Community 53 - "Community 53"
-Cohesion: 0.19
-Nodes (13): AuthModal(), styles, useAuth(), AppHeader(), styles, AppShellProps, styles, MobileNavigation() (+5 more)
+Cohesion: 0.16
+Nodes (15): AuthModal(), styles, useAuth(), AppHeader(), styles, AppShellProps, styles, MobileNavigation() (+7 more)
 
 ### Community 54 - "Community 54"
 Cohesion: 0.12
@@ -298,20 +298,16 @@ Cohesion: 0.05
 Nodes (11): DEFAULT_SYSTEM_BADGES, REPUTATION_SCORING_CONFIG, ScoringConfig, SystemBadgeRule, ReputationController, ActivityEventRow, CronRunRow, ReputationLedgerRow (+3 more)
 
 ### Community 57 - "Community 57"
-Cohesion: 0.13
-Nodes (11): AuthCallbackPage(), styles, BookmarksPage(), HomePage(), NotificationsPage(), styles, QuestionDetailPage(), QuestionsPage() (+3 more)
+Cohesion: 0.10
+Nodes (17): AuthContext, AuthContextType, AuthProvider(), AIChatPage(), ChatMessage, styles, AuthCallbackPage(), styles (+9 more)
 
 ### Community 58 - "Community 58"
 Cohesion: 0.25
 Nodes (7): formats, modules, RichMarkdownEditor(), RichMarkdownEditorProps, styles, AskQuestionPage(), styles
 
 ### Community 59 - "Community 59"
-Cohesion: 0.20
+Cohesion: 0.21
 Nodes (11): Roles(), UpdateUserBanDto, UpdateUserRoleDto, EscalationLevel, ReportStatus, TargetType, Tier, UserRole (+3 more)
-
-### Community 60 - "Community 60"
-Cohesion: 0.22
-Nodes (8): FollowButton(), FollowButtonProps, styles, AuthContext, AuthContextType, AuthProvider(), LeaderboardPage(), styles
 
 ### Community 61 - "Community 61"
 Cohesion: 0.17
@@ -322,12 +318,12 @@ Cohesion: 0.19
 Nodes (6): CreateReportDto, EscalateReportDto, ResolveReportDto, ReportsController, ReportRow, ReportsService
 
 ### Community 63 - "Community 63"
-Cohesion: 0.11
-Nodes (8): CreateQuestionDto, QueryQuestionsDto, UpdateQuestionDto, QuestionsController, QuestionDetail, QuestionListItem, QuestionsRepository, QuestionsService
+Cohesion: 0.17
+Nodes (7): CreateQuestionDto, QueryQuestionsDto, UpdateQuestionDto, QuestionsController, QuestionDetail, QuestionListItem, QuestionsService
 
 ### Community 66 - "Community 66"
-Cohesion: 0.27
-Nodes (5): AuthUserPayload, CurrentUser, Public(), JwtAuthGuard, OptionalJwtAuthGuard
+Cohesion: 0.26
+Nodes (4): AuthUserPayload, CurrentUser, JwtAuthGuard, OptionalJwtAuthGuard
 
 ### Community 67 - "Community 67"
 Cohesion: 0.18
@@ -337,9 +333,13 @@ Nodes (4): AdminModule, AdminContentItem, AdminRepository, AdminUserListItem
 Cohesion: 0.28
 Nodes (3): AllExceptionsFilter, ApiResponse, TransformInterceptor
 
+### Community 73 - "Community 73"
+Cohesion: 0.38
+Nodes (3): Public(), CreateSessionDto, SendChatMessageDto
+
 ### Community 74 - "Community 74"
-Cohesion: 0.33
-Nodes (5): AIChatPage(), ChatMessage, styles, ChatMessage, ChatSession
+Cohesion: 0.50
+Nodes (3): MedalControl(), MedalControlProps, styles
 
 ### Community 76 - "Community 76"
 Cohesion: 0.50

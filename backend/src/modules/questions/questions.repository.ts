@@ -74,6 +74,16 @@ export class QuestionsRepository {
       orderBy = 'q.created_at DESC';
     } else if (params.sort === 'trending') {
       orderBy = '(q.score * 3 + q.views_count + q.answers_count * 2) DESC, q.created_at DESC';
+    } else if (params.sort === 'interested' && params.currentUserId) {
+      values.push(params.currentUserId);
+      whereClauses.push(`
+        EXISTS (
+          SELECT 1 FROM question_tags qt
+          JOIN follows f ON f.target_type = 'tag' AND f.target_id = qt.tag_id AND f.follower_id = $${values.length}
+          WHERE qt.question_id = q.id
+        )
+      `);
+      orderBy = 'q.created_at DESC';
     }
 
     const whereSql = whereClauses.length > 0 ? `WHERE ${whereClauses.join(' AND ')}` : '';

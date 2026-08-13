@@ -217,8 +217,9 @@ class ApiClient {
     return this.request<any[]>('/follows/users');
   }
 
-  async getFollowingTags() {
-    return this.request<any[]>('/follows/tags');
+  async getFollowingTags(userId?: string) {
+    const qs = userId ? `?userId=${userId}` : '';
+    return this.request<any[]>(`/follows/tags${qs}`);
   }
 
   // Notifications (Phase 2)

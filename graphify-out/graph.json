@@ -1233,7 +1233,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L8",
       "id": "decorators_roles_decorator_public",
-      "community": 66,
+      "community": 73,
       "norm_label": "public()"
     },
     {
@@ -2826,7 +2826,7 @@
       "source_file": "backend/src/modules/auth/auth.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_auth_module_ts",
-      "community": 59,
+      "community": 66,
       "norm_label": "auth.module.ts"
     },
     {
@@ -3762,14 +3762,14 @@
       "source_file": "backend/src/modules/follows/follows.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_follows_follows_controller_ts",
-      "community": 50,
+      "community": 66,
       "norm_label": "follows.controller.ts"
     },
     {
       "label": "FollowsController",
       "file_type": "code",
       "source_file": "backend/src/modules/follows/follows.controller.ts",
-      "source_location": "L15",
+      "source_location": "L16",
       "id": "follows_follows_controller_followscontroller",
       "community": 50,
       "norm_label": "followscontroller"
@@ -3778,7 +3778,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "backend/src/modules/follows/follows.controller.ts",
-      "source_location": "L16",
+      "source_location": "L17",
       "id": "follows_follows_controller_followscontroller_constructor",
       "community": 50,
       "norm_label": ".constructor()"
@@ -3787,7 +3787,7 @@
       "label": ".toggleFollow()",
       "file_type": "code",
       "source_file": "backend/src/modules/follows/follows.controller.ts",
-      "source_location": "L20",
+      "source_location": "L21",
       "id": "follows_follows_controller_followscontroller_togglefollow",
       "community": 50,
       "norm_label": ".togglefollow()"
@@ -3796,7 +3796,7 @@
       "label": ".getFollowStatus()",
       "file_type": "code",
       "source_file": "backend/src/modules/follows/follows.controller.ts",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "follows_follows_controller_followscontroller_getfollowstatus",
       "community": 50,
       "norm_label": ".getfollowstatus()"
@@ -3805,7 +3805,7 @@
       "label": ".getFollowingUsers()",
       "file_type": "code",
       "source_file": "backend/src/modules/follows/follows.controller.ts",
-      "source_location": "L39",
+      "source_location": "L40",
       "id": "follows_follows_controller_followscontroller_getfollowingusers",
       "community": 50,
       "norm_label": ".getfollowingusers()"
@@ -3814,7 +3814,7 @@
       "label": ".getFollowingTags()",
       "file_type": "code",
       "source_file": "backend/src/modules/follows/follows.controller.ts",
-      "source_location": "L45",
+      "source_location": "L51",
       "id": "follows_follows_controller_followscontroller_getfollowingtags",
       "community": 50,
       "norm_label": ".getfollowingtags()"
@@ -4518,7 +4518,7 @@
       "source_file": "backend/src/modules/questions/questions.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_questions_questions_controller_ts",
-      "community": 66,
+      "community": 63,
       "norm_label": "questions.controller.ts"
     },
     {
@@ -4635,7 +4635,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L35",
       "id": "questions_questions_repository_questionsrepository",
-      "community": 63,
+      "community": 60,
       "norm_label": "questionsrepository"
     },
     {
@@ -4653,52 +4653,52 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L41",
       "id": "questions_questions_repository_questionsrepository_findall",
-      "community": 63,
+      "community": 60,
       "norm_label": ".findall()"
     },
     {
       "label": ".findById()",
       "file_type": "code",
       "source_file": "backend/src/modules/questions/questions.repository.ts",
-      "source_location": "L144",
+      "source_location": "L154",
       "id": "questions_questions_repository_questionsrepository_findbyid",
-      "community": 63,
+      "community": 60,
       "norm_label": ".findbyid()"
     },
     {
       "label": ".incrementViews()",
       "file_type": "code",
       "source_file": "backend/src/modules/questions/questions.repository.ts",
-      "source_location": "L201",
+      "source_location": "L211",
       "id": "questions_questions_repository_questionsrepository_incrementviews",
-      "community": 63,
+      "community": 60,
       "norm_label": ".incrementviews()"
     },
     {
       "label": ".create()",
       "file_type": "code",
       "source_file": "backend/src/modules/questions/questions.repository.ts",
-      "source_location": "L208",
+      "source_location": "L218",
       "id": "questions_questions_repository_questionsrepository_create",
-      "community": 63,
+      "community": 60,
       "norm_label": ".create()"
     },
     {
       "label": ".update()",
       "file_type": "code",
       "source_file": "backend/src/modules/questions/questions.repository.ts",
-      "source_location": "L265",
+      "source_location": "L275",
       "id": "questions_questions_repository_questionsrepository_update",
-      "community": 63,
+      "community": 60,
       "norm_label": ".update()"
     },
     {
       "label": ".softDelete()",
       "file_type": "code",
       "source_file": "backend/src/modules/questions/questions.repository.ts",
-      "source_location": "L321",
+      "source_location": "L331",
       "id": "questions_questions_repository_questionsrepository_softdelete",
-      "community": 63,
+      "community": 60,
       "norm_label": ".softdelete()"
     },
     {
@@ -8566,7 +8566,7 @@
       "label": ".getNotifications()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L225",
+      "source_location": "L226",
       "id": "api_client_apiclient_getnotifications",
       "community": 8,
       "norm_label": ".getnotifications()"
@@ -8575,7 +8575,7 @@
       "label": ".getUnreadNotificationsCount()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L229",
+      "source_location": "L230",
       "id": "api_client_apiclient_getunreadnotificationscount",
       "community": 8,
       "norm_label": ".getunreadnotificationscount()"
@@ -8584,7 +8584,7 @@
       "label": ".markNotificationAsRead()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L233",
+      "source_location": "L234",
       "id": "api_client_apiclient_marknotificationasread",
       "community": 8,
       "norm_label": ".marknotificationasread()"
@@ -8593,7 +8593,7 @@
       "label": ".markAllNotificationsAsRead()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L239",
+      "source_location": "L240",
       "id": "api_client_apiclient_markallnotificationsasread",
       "community": 8,
       "norm_label": ".markallnotificationsasread()"
@@ -8602,7 +8602,7 @@
       "label": ".getUserProfile()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L246",
+      "source_location": "L247",
       "id": "api_client_apiclient_getuserprofile",
       "community": 8,
       "norm_label": ".getuserprofile()"
@@ -8611,7 +8611,7 @@
       "label": ".getUserQuestions()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L250",
+      "source_location": "L251",
       "id": "api_client_apiclient_getuserquestions",
       "community": 8,
       "norm_label": ".getuserquestions()"
@@ -8620,7 +8620,7 @@
       "label": ".getUserAnswers()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L254",
+      "source_location": "L255",
       "id": "api_client_apiclient_getuseranswers",
       "community": 8,
       "norm_label": ".getuseranswers()"
@@ -8629,7 +8629,7 @@
       "label": ".getUserActivity()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L258",
+      "source_location": "L259",
       "id": "api_client_apiclient_getuseractivity",
       "community": 8,
       "norm_label": ".getuseractivity()"
@@ -8638,7 +8638,7 @@
       "label": ".updateUserProfile()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L262",
+      "source_location": "L263",
       "id": "api_client_apiclient_updateuserprofile",
       "community": 8,
       "norm_label": ".updateuserprofile()"
@@ -8647,7 +8647,7 @@
       "label": ".getLeaderboard()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L269",
+      "source_location": "L270",
       "id": "api_client_apiclient_getleaderboard",
       "community": 8,
       "norm_label": ".getleaderboard()"
@@ -8656,7 +8656,7 @@
       "label": ".getTags()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L274",
+      "source_location": "L275",
       "id": "api_client_apiclient_gettags",
       "community": 8,
       "norm_label": ".gettags()"
@@ -8665,7 +8665,7 @@
       "label": ".getPopularTags()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L278",
+      "source_location": "L279",
       "id": "api_client_apiclient_getpopulartags",
       "community": 8,
       "norm_label": ".getpopulartags()"
@@ -8674,7 +8674,7 @@
       "label": ".getBadgeCatalog()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L283",
+      "source_location": "L284",
       "id": "api_client_apiclient_getbadgecatalog",
       "community": 8,
       "norm_label": ".getbadgecatalog()"
@@ -8683,7 +8683,7 @@
       "label": ".getUserReputationHistory()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L287",
+      "source_location": "L288",
       "id": "api_client_apiclient_getuserreputationhistory",
       "community": 8,
       "norm_label": ".getuserreputationhistory()"
@@ -8692,7 +8692,7 @@
       "label": ".getCronRuns()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L291",
+      "source_location": "L292",
       "id": "api_client_apiclient_getcronruns",
       "community": 8,
       "norm_label": ".getcronruns()"
@@ -8701,7 +8701,7 @@
       "label": ".triggerCronJob()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L295",
+      "source_location": "L296",
       "id": "api_client_apiclient_triggercronjob",
       "community": 8,
       "norm_label": ".triggercronjob()"
@@ -8710,7 +8710,7 @@
       "label": ".getQuestionAiAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L309",
+      "source_location": "L310",
       "id": "api_client_apiclient_getquestionaianswer",
       "community": 8,
       "norm_label": ".getquestionaianswer()"
@@ -8719,7 +8719,7 @@
       "label": ".regenerateQuestionAiAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L319",
+      "source_location": "L320",
       "id": "api_client_apiclient_regeneratequestionaianswer",
       "community": 8,
       "norm_label": ".regeneratequestionaianswer()"
@@ -8728,7 +8728,7 @@
       "label": ".getChatSessions()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L330",
+      "source_location": "L331",
       "id": "api_client_apiclient_getchatsessions",
       "community": 8,
       "norm_label": ".getchatsessions()"
@@ -8737,7 +8737,7 @@
       "label": ".createChatSession()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L334",
+      "source_location": "L335",
       "id": "api_client_apiclient_createchatsession",
       "community": 8,
       "norm_label": ".createchatsession()"
@@ -8746,7 +8746,7 @@
       "label": ".getSessionMessages()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L341",
+      "source_location": "L342",
       "id": "api_client_apiclient_getsessionmessages",
       "community": 8,
       "norm_label": ".getsessionmessages()"
@@ -8755,7 +8755,7 @@
       "label": ".deleteChatSession()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L345",
+      "source_location": "L346",
       "id": "api_client_apiclient_deletechatsession",
       "community": 8,
       "norm_label": ".deletechatsession()"
@@ -8764,7 +8764,7 @@
       "label": ".sendChatMessage()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L351",
+      "source_location": "L352",
       "id": "api_client_apiclient_sendchatmessage",
       "community": 8,
       "norm_label": ".sendchatmessage()"
@@ -8773,7 +8773,7 @@
       "label": ".createReport()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L359",
+      "source_location": "L360",
       "id": "api_client_apiclient_createreport",
       "community": 8,
       "norm_label": ".createreport()"
@@ -8782,7 +8782,7 @@
       "label": "api",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L371",
+      "source_location": "L372",
       "id": "api_client_api",
       "community": 35,
       "norm_label": "api"
@@ -8856,7 +8856,7 @@
       "source_file": "frontend/client/src/components/common/FollowButton.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_components_common_followbutton_tsx",
-      "community": 60,
+      "community": 51,
       "norm_label": "followbutton.tsx"
     },
     {
@@ -8865,7 +8865,7 @@
       "source_file": "frontend/client/src/components/common/FollowButton.tsx",
       "source_location": "L6",
       "id": "common_followbutton_followbuttonprops",
-      "community": 60,
+      "community": 51,
       "norm_label": "followbuttonprops"
     },
     {
@@ -8874,7 +8874,7 @@
       "source_file": "frontend/client/src/components/common/FollowButton.tsx",
       "source_location": "L12",
       "id": "common_followbutton_followbutton",
-      "community": 60,
+      "community": 51,
       "norm_label": "followbutton()"
     },
     {
@@ -8883,7 +8883,7 @@
       "source_file": "frontend/client/src/components/common/FollowButton.tsx",
       "source_location": "L78",
       "id": "common_followbutton_styles",
-      "community": 60,
+      "community": 51,
       "norm_label": "styles"
     },
     {
@@ -9144,25 +9144,25 @@
       "source_file": "frontend/client/src/components/layout/RightRail.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_components_layout_rightrail_tsx",
-      "community": 51,
+      "community": 53,
       "norm_label": "rightrail.tsx"
     },
     {
       "label": "RightRail()",
       "file_type": "code",
       "source_file": "frontend/client/src/components/layout/RightRail.tsx",
-      "source_location": "L7",
+      "source_location": "L8",
       "id": "layout_rightrail_rightrail",
-      "community": 51,
+      "community": 53,
       "norm_label": "rightrail()"
     },
     {
       "label": "styles",
       "file_type": "code",
       "source_file": "frontend/client/src/components/layout/RightRail.tsx",
-      "source_location": "L72",
+      "source_location": "L115",
       "id": "layout_rightrail_styles",
-      "community": 51,
+      "community": 53,
       "norm_label": "styles"
     },
     {
@@ -9342,7 +9342,7 @@
       "source_file": "frontend/client/src/components/qa/MedalControl.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_components_qa_medalcontrol_tsx",
-      "community": 51,
+      "community": 74,
       "norm_label": "medalcontrol.tsx"
     },
     {
@@ -9351,7 +9351,7 @@
       "source_file": "frontend/client/src/components/qa/MedalControl.tsx",
       "source_location": "L7",
       "id": "qa_medalcontrol_medalcontrolprops",
-      "community": 51,
+      "community": 74,
       "norm_label": "medalcontrolprops"
     },
     {
@@ -9360,7 +9360,7 @@
       "source_file": "frontend/client/src/components/qa/MedalControl.tsx",
       "source_location": "L12",
       "id": "qa_medalcontrol_medalcontrol",
-      "community": 51,
+      "community": 74,
       "norm_label": "medalcontrol()"
     },
     {
@@ -9369,7 +9369,7 @@
       "source_file": "frontend/client/src/components/qa/MedalControl.tsx",
       "source_location": "L183",
       "id": "qa_medalcontrol_styles",
-      "community": 51,
+      "community": 74,
       "norm_label": "styles"
     },
     {
@@ -9450,7 +9450,7 @@
       "source_file": "frontend/client/src/context/AuthContext.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_context_authcontext_tsx",
-      "community": 60,
+      "community": 57,
       "norm_label": "authcontext.tsx"
     },
     {
@@ -9459,7 +9459,7 @@
       "source_file": "frontend/client/src/context/AuthContext.tsx",
       "source_location": "L6",
       "id": "context_authcontext_authcontexttype",
-      "community": 60,
+      "community": 57,
       "norm_label": "authcontexttype"
     },
     {
@@ -9468,7 +9468,7 @@
       "source_file": "frontend/client/src/context/AuthContext.tsx",
       "source_location": "L20",
       "id": "context_authcontext_authcontext",
-      "community": 60,
+      "community": 57,
       "norm_label": "authcontext"
     },
     {
@@ -9477,7 +9477,7 @@
       "source_file": "frontend/client/src/context/AuthContext.tsx",
       "source_location": "L22",
       "id": "context_authcontext_authprovider",
-      "community": 60,
+      "community": 57,
       "norm_label": "authprovider()"
     },
     {
@@ -9495,7 +9495,7 @@
       "source_file": "frontend/client/src/pages/AIChatPage.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_pages_aichatpage_tsx",
-      "community": 74,
+      "community": 57,
       "norm_label": "aichatpage.tsx"
     },
     {
@@ -9504,7 +9504,7 @@
       "source_file": "frontend/client/src/pages/AIChatPage.tsx",
       "source_location": "L10",
       "id": "pages_aichatpage_aichatpage",
-      "community": 74,
+      "community": 57,
       "norm_label": "aichatpage()"
     },
     {
@@ -9513,7 +9513,7 @@
       "source_file": "frontend/client/src/pages/AIChatPage.tsx",
       "source_location": "L370",
       "id": "pages_aichatpage_styles",
-      "community": 74,
+      "community": 57,
       "norm_label": "styles"
     },
     {
@@ -9610,7 +9610,7 @@
       "label": "HomePage()",
       "file_type": "code",
       "source_file": "frontend/client/src/pages/HomePage.tsx",
-      "source_location": "L10",
+      "source_location": "L26",
       "id": "pages_homepage_homepage",
       "community": 57,
       "norm_label": "homepage()"
@@ -9619,7 +9619,7 @@
       "label": "styles",
       "file_type": "code",
       "source_file": "frontend/client/src/pages/HomePage.tsx",
-      "source_location": "L200",
+      "source_location": "L348",
       "id": "pages_homepage_styles",
       "community": 35,
       "norm_label": "styles"
@@ -9630,7 +9630,7 @@
       "source_file": "frontend/client/src/pages/LeaderboardPage.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_pages_leaderboardpage_tsx",
-      "community": 60,
+      "community": 51,
       "norm_label": "leaderboardpage.tsx"
     },
     {
@@ -9639,7 +9639,7 @@
       "source_file": "frontend/client/src/pages/LeaderboardPage.tsx",
       "source_location": "L10",
       "id": "pages_leaderboardpage_leaderboardpage",
-      "community": 60,
+      "community": 51,
       "norm_label": "leaderboardpage()"
     },
     {
@@ -9648,7 +9648,7 @@
       "source_file": "frontend/client/src/pages/LeaderboardPage.tsx",
       "source_location": "L159",
       "id": "pages_leaderboardpage_styles",
-      "community": 60,
+      "community": 51,
       "norm_label": "styles"
     },
     {
@@ -9738,7 +9738,7 @@
       "source_file": "frontend/client/src/pages/TagsPage.tsx",
       "source_location": "L1",
       "id": "frontend_client_src_pages_tagspage_tsx",
-      "community": 57,
+      "community": 51,
       "norm_label": "tagspage.tsx"
     },
     {
@@ -9747,7 +9747,7 @@
       "source_file": "frontend/client/src/pages/TagsPage.tsx",
       "source_location": "L8",
       "id": "pages_tagspage_tagspage",
-      "community": 57,
+      "community": 51,
       "norm_label": "tagspage()"
     },
     {
@@ -9756,7 +9756,7 @@
       "source_file": "frontend/client/src/pages/TagsPage.tsx",
       "source_location": "L76",
       "id": "pages_tagspage_styles",
-      "community": 57,
+      "community": 51,
       "norm_label": "styles"
     },
     {
@@ -9772,7 +9772,7 @@
       "label": "UserProfilePage()",
       "file_type": "code",
       "source_file": "frontend/client/src/pages/UserProfilePage.tsx",
-      "source_location": "L25",
+      "source_location": "L29",
       "id": "pages_userprofilepage_userprofilepage",
       "community": 57,
       "norm_label": "userprofilepage()"
@@ -9781,7 +9781,7 @@
       "label": "styles",
       "file_type": "code",
       "source_file": "frontend/client/src/pages/UserProfilePage.tsx",
-      "source_location": "L593",
+      "source_location": "L767",
       "id": "pages_userprofilepage_styles",
       "community": 51,
       "norm_label": "styles"
@@ -9909,7 +9909,7 @@
       "source_file": "frontend/client/src/types/index.ts",
       "source_location": "L130",
       "id": "types_index_chatsession",
-      "community": 74,
+      "community": 57,
       "norm_label": "chatsession"
     },
     {
@@ -9927,7 +9927,7 @@
       "source_file": "frontend/client/src/types/index.ts",
       "source_location": "L144",
       "id": "types_index_chatmessage",
-      "community": 74,
+      "community": 57,
       "norm_label": "chatmessage"
     },
     {
@@ -10961,7 +10961,7 @@
       "file_type": "code",
       "source_file": "frontend/client/src/pages/AIChatPage.tsx",
       "source_location": "L6",
-      "community": 74,
+      "community": 57,
       "norm_label": "chatmessage",
       "id": "pages_aichatpage_chatmessage"
     },
@@ -12688,9 +12688,9 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_app_module_ts",
-      "target": "backend_src_modules_reports_reports_module_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_reports_module_ts"
     },
     {
       "relation": "imports",
@@ -12699,9 +12699,9 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_app_module_ts",
-      "target": "reports_reports_module_reportsmodule",
-      "confidence_score": 1.0
+      "target": "reports_reports_module_reportsmodule"
     },
     {
       "relation": "imports_from",
@@ -12710,9 +12710,9 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_app_module_ts",
-      "target": "backend_src_modules_admin_admin_module_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_admin_module_ts"
     },
     {
       "relation": "imports",
@@ -12721,9 +12721,9 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_app_module_ts",
-      "target": "admin_admin_module_adminmodule",
-      "confidence_score": 1.0
+      "target": "admin_admin_module_adminmodule"
     },
     {
       "relation": "contains",
@@ -12956,9 +12956,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_common_decorators_current_user_decorator_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_decorators_current_user_decorator_ts"
     },
     {
       "relation": "imports_from",
@@ -13066,9 +13066,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_common_decorators_current_user_decorator_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_decorators_current_user_decorator_ts"
     },
     {
       "relation": "imports_from",
@@ -13110,9 +13110,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "decorators_current_user_decorator_currentuser",
-      "confidence_score": 1.0
+      "target": "decorators_current_user_decorator_currentuser"
     },
     {
       "relation": "imports",
@@ -13220,9 +13220,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "decorators_current_user_decorator_currentuser",
-      "confidence_score": 1.0
+      "target": "decorators_current_user_decorator_currentuser"
     },
     {
       "relation": "imports",
@@ -13306,9 +13306,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts",
-      "target": "backend_src_common_decorators_roles_decorator_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_decorators_roles_decorator_ts"
     },
     {
       "relation": "imports_from",
@@ -13317,9 +13317,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_common_decorators_roles_decorator_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_decorators_roles_decorator_ts"
     },
     {
       "relation": "imports_from",
@@ -13405,9 +13405,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_common_decorators_roles_decorator_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_decorators_roles_decorator_ts"
     },
     {
       "relation": "imports_from",
@@ -13449,9 +13449,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "decorators_roles_decorator_roles",
-      "confidence_score": 1.0
+      "target": "decorators_roles_decorator_roles"
     },
     {
       "relation": "imports",
@@ -13460,9 +13460,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "decorators_roles_decorator_roles",
-      "confidence_score": 1.0
+      "target": "decorators_roles_decorator_roles"
     },
     {
       "relation": "imports",
@@ -13609,9 +13609,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts",
-      "target": "backend_src_common_enums_index_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_enums_index_ts"
     },
     {
       "relation": "imports_from",
@@ -13620,9 +13620,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_common_enums_index_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_enums_index_ts"
     },
     {
       "relation": "imports_from",
@@ -13631,9 +13631,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "backend_src_common_enums_index_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_enums_index_ts"
     },
     {
       "relation": "imports_from",
@@ -13642,9 +13642,9 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_dto_admin_dto_ts",
-      "target": "backend_src_common_enums_index_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_enums_index_ts"
     },
     {
       "relation": "imports_from",
@@ -13697,9 +13697,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_common_enums_index_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_enums_index_ts"
     },
     {
       "relation": "imports",
@@ -13708,9 +13708,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "imports",
@@ -13719,9 +13719,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "imports",
@@ -13730,9 +13730,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "imports",
@@ -13741,9 +13741,9 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_dto_admin_dto_ts",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "imports",
@@ -13796,9 +13796,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "references",
@@ -13807,9 +13807,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice_setuserrole",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "references",
@@ -13818,9 +13818,9 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "dto_admin_dto_updateuserroledto",
-      "target": "enums_index_userrole",
-      "confidence_score": 1.0
+      "target": "enums_index_userrole"
     },
     {
       "relation": "contains",
@@ -13848,9 +13848,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts",
-      "target": "guards_roles_guard_role_levels",
-      "confidence_score": 1.0
+      "target": "guards_roles_guard_role_levels"
     },
     {
       "relation": "contains",
@@ -13858,9 +13858,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts",
-      "target": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard",
-      "confidence_score": 1.0
+      "target": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard"
     },
     {
       "relation": "imports_from",
@@ -13869,9 +13869,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_common_guards_roles_guard_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_guards_roles_guard_ts"
     },
     {
       "relation": "imports_from",
@@ -13880,9 +13880,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_common_guards_roles_guard_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_common_guards_roles_guard_ts"
     },
     {
       "relation": "method",
@@ -13890,9 +13890,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard",
-      "target": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard_constructor",
-      "confidence_score": 1.0
+      "target": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard_constructor"
     },
     {
       "relation": "method",
@@ -13900,9 +13900,9 @@
       "source_file": "backend/src/common/guards/roles.guard.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard",
-      "target": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard_canactivate",
-      "confidence_score": 1.0
+      "target": "backend_src_common_guards_roles_guard_ts_guards_roles_guard_rolesguard_canactivate"
     },
     {
       "relation": "contains",
@@ -14046,9 +14046,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_repository_ts",
-      "target": "backend_src_database_database_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_database_database_service_ts"
     },
     {
       "relation": "imports_from",
@@ -14057,9 +14057,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "backend_src_database_database_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_database_database_service_ts"
     },
     {
       "relation": "imports_from",
@@ -14189,9 +14189,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_repository_ts",
-      "target": "backend_src_database_database_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_database_database_service_ts"
     },
     {
       "relation": "imports_from",
@@ -14326,9 +14326,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_repository_ts",
-      "target": "database_database_service_databaseservice",
-      "confidence_score": 1.0
+      "target": "database_database_service_databaseservice"
     },
     {
       "relation": "imports",
@@ -14337,9 +14337,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "database_database_service_databaseservice",
-      "confidence_score": 1.0
+      "target": "database_database_service_databaseservice"
     },
     {
       "relation": "imports",
@@ -14469,9 +14469,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_repository_ts",
-      "target": "database_database_service_databaseservice",
-      "confidence_score": 1.0
+      "target": "database_database_service_databaseservice"
     },
     {
       "relation": "imports",
@@ -14546,9 +14546,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository_constructor",
-      "target": "database_database_service_databaseservice",
-      "confidence_score": 1.0
+      "target": "database_database_service_databaseservice"
     },
     {
       "relation": "references",
@@ -14557,9 +14557,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice_constructor",
-      "target": "database_database_service_databaseservice",
-      "confidence_score": 1.0
+      "target": "database_database_service_databaseservice"
     },
     {
       "relation": "references",
@@ -14689,9 +14689,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository_constructor",
-      "target": "database_database_service_databaseservice",
-      "confidence_score": 1.0
+      "target": "database_database_service_databaseservice"
     },
     {
       "relation": "references",
@@ -14859,9 +14859,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_modules_admin_admin_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_admin_service_ts"
     },
     {
       "relation": "imports",
@@ -14870,9 +14870,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "admin_admin_service_adminservice",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice"
     },
     {
       "relation": "imports_from",
@@ -14881,9 +14881,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_modules_admin_dto_admin_dto_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_dto_admin_dto_ts"
     },
     {
       "relation": "imports",
@@ -14892,9 +14892,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "dto_admin_dto_updateuserbandto",
-      "confidence_score": 1.0
+      "target": "dto_admin_dto_updateuserbandto"
     },
     {
       "relation": "imports",
@@ -14903,9 +14903,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "dto_admin_dto_updateuserroledto",
-      "confidence_score": 1.0
+      "target": "dto_admin_dto_updateuserroledto"
     },
     {
       "relation": "imports_from",
@@ -14914,9 +14914,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "backend_src_modules_auth_guards_jwt_auth_guard_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_auth_guards_jwt_auth_guard_ts"
     },
     {
       "relation": "imports",
@@ -14925,9 +14925,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "guards_jwt_auth_guard_jwtauthguard",
-      "confidence_score": 1.0
+      "target": "guards_jwt_auth_guard_jwtauthguard"
     },
     {
       "relation": "imports",
@@ -14936,9 +14936,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "guards_roles_guard_rolesguard",
-      "confidence_score": 1.0
+      "target": "guards_roles_guard_rolesguard"
     },
     {
       "relation": "contains",
@@ -14946,9 +14946,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L20",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_controller_ts",
-      "target": "admin_admin_controller_admincontroller",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller"
     },
     {
       "relation": "imports_from",
@@ -14957,9 +14957,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "backend_src_modules_admin_admin_controller_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_admin_controller_ts"
     },
     {
       "relation": "method",
@@ -14967,9 +14967,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_constructor",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_constructor"
     },
     {
       "relation": "method",
@@ -14977,9 +14977,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_getplatformstats",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_getplatformstats"
     },
     {
       "relation": "method",
@@ -14987,9 +14987,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L31",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_findusers",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_findusers"
     },
     {
       "relation": "method",
@@ -14997,9 +14997,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_setuserbanstatus",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_setuserbanstatus"
     },
     {
       "relation": "method",
@@ -15007,9 +15007,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_setuserrole",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_setuserrole"
     },
     {
       "relation": "method",
@@ -15017,9 +15017,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L71",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_findcontent",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_findcontent"
     },
     {
       "relation": "method",
@@ -15027,9 +15027,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_softdeletecontent",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_softdeletecontent"
     },
     {
       "relation": "method",
@@ -15037,9 +15037,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L99",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_restorecontent",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_restorecontent"
     },
     {
       "relation": "method",
@@ -15047,9 +15047,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller",
-      "target": "admin_admin_controller_admincontroller_getobservability",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller_getobservability"
     },
     {
       "relation": "imports",
@@ -15058,9 +15058,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "admin_admin_controller_admincontroller",
-      "confidence_score": 1.0
+      "target": "admin_admin_controller_admincontroller"
     },
     {
       "relation": "references",
@@ -15069,9 +15069,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller_constructor",
-      "target": "admin_admin_service_adminservice",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice"
     },
     {
       "relation": "references",
@@ -15080,9 +15080,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L49",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller_setuserbanstatus",
-      "target": "dto_admin_dto_updateuserbandto",
-      "confidence_score": 1.0
+      "target": "dto_admin_dto_updateuserbandto"
     },
     {
       "relation": "references",
@@ -15091,9 +15091,9 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L60",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_controller_admincontroller_setuserrole",
-      "target": "dto_admin_dto_updateuserroledto",
-      "confidence_score": 1.0
+      "target": "dto_admin_dto_updateuserroledto"
     },
     {
       "relation": "imports_from",
@@ -15102,9 +15102,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "backend_src_modules_admin_admin_repository_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_admin_repository_ts"
     },
     {
       "relation": "imports",
@@ -15113,9 +15113,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "admin_admin_repository_adminrepository",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository"
     },
     {
       "relation": "imports_from",
@@ -15124,9 +15124,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "backend_src_modules_admin_admin_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_admin_service_ts"
     },
     {
       "relation": "imports",
@@ -15135,9 +15135,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "admin_admin_service_adminservice",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice"
     },
     {
       "relation": "contains",
@@ -15145,9 +15145,9 @@
       "source_file": "backend/src/modules/admin/admin.module.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_module_ts",
-      "target": "admin_admin_module_adminmodule",
-      "confidence_score": 1.0
+      "target": "admin_admin_module_adminmodule"
     },
     {
       "relation": "contains",
@@ -15155,9 +15155,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_repository_ts",
-      "target": "admin_admin_repository_adminuserlistitem",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminuserlistitem"
     },
     {
       "relation": "contains",
@@ -15165,9 +15165,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_repository_ts",
-      "target": "admin_admin_repository_admincontentitem",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_admincontentitem"
     },
     {
       "relation": "contains",
@@ -15175,9 +15175,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L33",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_repository_ts",
-      "target": "admin_admin_repository_adminrepository",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository"
     },
     {
       "relation": "imports_from",
@@ -15186,9 +15186,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "backend_src_modules_admin_admin_repository_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_admin_admin_repository_ts"
     },
     {
       "relation": "method",
@@ -15196,9 +15196,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_constructor",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_constructor"
     },
     {
       "relation": "method",
@@ -15206,9 +15206,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L36",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_getplatformstats",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_getplatformstats"
     },
     {
       "relation": "method",
@@ -15216,9 +15216,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_findusers",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_findusers"
     },
     {
       "relation": "method",
@@ -15226,9 +15226,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_setuserbanstatus",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_setuserbanstatus"
     },
     {
       "relation": "method",
@@ -15236,9 +15236,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_setuserrole",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_setuserrole"
     },
     {
       "relation": "method",
@@ -15246,9 +15246,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L130",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_findcontent",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_findcontent"
     },
     {
       "relation": "method",
@@ -15256,9 +15256,9 @@
       "source_file": "backend/src/modules/admin/admin.repository.ts",
       "source_location": "L230",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_repository_adminrepository",
-      "target": "admin_admin_repository_adminrepository_setcontentstatus",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository_setcontentstatus"
     },
     {
       "relation": "imports",
@@ -15267,9 +15267,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "admin_admin_repository_adminrepository",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository"
     },
     {
       "relation": "references",
@@ -15278,9 +15278,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice_constructor",
-      "target": "admin_admin_repository_adminrepository",
-      "confidence_score": 1.0
+      "target": "admin_admin_repository_adminrepository"
     },
     {
       "relation": "contains",
@@ -15288,9 +15288,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_admin_service_ts",
-      "target": "admin_admin_service_adminservice",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice"
     },
     {
       "relation": "method",
@@ -15298,9 +15298,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_constructor",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_constructor"
     },
     {
       "relation": "method",
@@ -15308,9 +15308,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_getplatformstats",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_getplatformstats"
     },
     {
       "relation": "method",
@@ -15318,9 +15318,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_findusers",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_findusers"
     },
     {
       "relation": "method",
@@ -15328,9 +15328,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L43",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_setuserbanstatus",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_setuserbanstatus"
     },
     {
       "relation": "method",
@@ -15338,9 +15338,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_setuserrole",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_setuserrole"
     },
     {
       "relation": "method",
@@ -15348,9 +15348,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L100",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_findcontent",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_findcontent"
     },
     {
       "relation": "method",
@@ -15358,9 +15358,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L118",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_setcontentstatus",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_setcontentstatus"
     },
     {
       "relation": "method",
@@ -15368,9 +15368,9 @@
       "source_file": "backend/src/modules/admin/admin.service.ts",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "admin_admin_service_adminservice",
-      "target": "admin_admin_service_adminservice_getobservability",
-      "confidence_score": 1.0
+      "target": "admin_admin_service_adminservice_getobservability"
     },
     {
       "relation": "contains",
@@ -15378,9 +15378,9 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_dto_admin_dto_ts",
-      "target": "dto_admin_dto_updateuserbandto",
-      "confidence_score": 1.0
+      "target": "dto_admin_dto_updateuserbandto"
     },
     {
       "relation": "contains",
@@ -15388,9 +15388,9 @@
       "source_file": "backend/src/modules/admin/dto/admin.dto.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_admin_dto_admin_dto_ts",
-      "target": "dto_admin_dto_updateuserroledto",
-      "confidence_score": 1.0
+      "target": "dto_admin_dto_updateuserroledto"
     },
     {
       "relation": "imports_from",
@@ -18378,9 +18378,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_modules_auth_guards_jwt_auth_guard_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_auth_guards_jwt_auth_guard_ts"
     },
     {
       "relation": "imports_from",
@@ -18518,9 +18518,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "guards_jwt_auth_guard_jwtauthguard",
-      "confidence_score": 1.0
+      "target": "guards_jwt_auth_guard_jwtauthguard"
     },
     {
       "relation": "imports",
@@ -18569,6 +18569,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/follows/follows.controller.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "backend_src_modules_follows_follows_controller_ts",
+      "target": "backend_src_modules_auth_guards_optional_jwt_auth_guard_ts",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/medals/medals.controller.ts",
       "source_location": "L14",
       "weight": 1.0,
@@ -18596,6 +18607,17 @@
       "confidence_score": 1.0,
       "source": "guards_optional_jwt_auth_guard_optionaljwtauthguard",
       "target": "guards_optional_jwt_auth_guard_optionaljwtauthguard_handlerequest"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/follows/follows.controller.ts",
+      "source_location": "L12",
+      "weight": 1.0,
+      "source": "backend_src_modules_follows_follows_controller_ts",
+      "target": "guards_optional_jwt_auth_guard_optionaljwtauthguard",
+      "confidence_score": 1.0
     },
     {
       "relation": "imports",
@@ -18635,9 +18657,9 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_auth_guards_roles_guard_ts",
-      "target": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard"
     },
     {
       "relation": "contains",
@@ -18655,9 +18677,9 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard",
-      "target": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard_constructor",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard_constructor"
     },
     {
       "relation": "method",
@@ -18665,9 +18687,9 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L17",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard",
-      "target": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard_canactivate",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_auth_guards_roles_guard_ts_guards_roles_guard_rolesguard_canactivate"
     },
     {
       "relation": "contains",
@@ -20807,9 +20829,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "backend_src_modules_notifications_notifications_module_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_notifications_notifications_module_ts"
     },
     {
       "relation": "imports_from",
@@ -20829,9 +20851,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "notifications_notifications_module_notificationsmodule",
-      "confidence_score": 1.0
+      "target": "notifications_notifications_module_notificationsmodule"
     },
     {
       "relation": "imports",
@@ -20974,9 +20996,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "backend_src_modules_notifications_notifications_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_notifications_notifications_service_ts"
     },
     {
       "relation": "imports_from",
@@ -21056,9 +21078,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "notifications_notifications_service_notificationsservice",
-      "confidence_score": 1.0
+      "target": "notifications_notifications_service_notificationsservice"
     },
     {
       "relation": "imports",
@@ -21078,9 +21100,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_constructor",
-      "target": "notifications_notifications_service_notificationsservice",
-      "confidence_score": 1.0
+      "target": "notifications_notifications_service_notificationsservice"
     },
     {
       "relation": "references",
@@ -21842,9 +21864,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_modules_reports_reports_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_reports_service_ts"
     },
     {
       "relation": "imports",
@@ -21853,9 +21875,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "reports_reports_service_reportsservice",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice"
     },
     {
       "relation": "imports_from",
@@ -21864,9 +21886,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "backend_src_modules_reports_dto_report_dto_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_dto_report_dto_ts"
     },
     {
       "relation": "imports",
@@ -21875,9 +21897,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "dto_report_dto_createreportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_createreportdto"
     },
     {
       "relation": "imports",
@@ -21886,9 +21908,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "dto_report_dto_escalatereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_escalatereportdto"
     },
     {
       "relation": "imports",
@@ -21897,9 +21919,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "dto_report_dto_resolvereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_resolvereportdto"
     },
     {
       "relation": "imports",
@@ -21908,9 +21930,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "guards_roles_guard_rolesguard",
-      "confidence_score": 1.0
+      "target": "guards_roles_guard_rolesguard"
     },
     {
       "relation": "contains",
@@ -21918,9 +21940,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_controller_ts",
-      "target": "reports_reports_controller_reportscontroller",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller"
     },
     {
       "relation": "imports_from",
@@ -21929,9 +21951,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "backend_src_modules_reports_reports_controller_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_reports_controller_ts"
     },
     {
       "relation": "method",
@@ -21939,9 +21961,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_constructor",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_constructor"
     },
     {
       "relation": "method",
@@ -21949,9 +21971,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_createreport",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_createreport"
     },
     {
       "relation": "method",
@@ -21959,9 +21981,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L34",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_findreports",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_findreports"
     },
     {
       "relation": "method",
@@ -21969,9 +21991,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L53",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_getreportbyid",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_getreportbyid"
     },
     {
       "relation": "method",
@@ -21979,9 +22001,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_escalatereport",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_escalatereport"
     },
     {
       "relation": "method",
@@ -21989,9 +22011,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_resolvereport",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_resolvereport"
     },
     {
       "relation": "method",
@@ -21999,9 +22021,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller",
-      "target": "reports_reports_controller_reportscontroller_dismissreport",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_dismissreport"
     },
     {
       "relation": "imports",
@@ -22010,9 +22032,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "reports_reports_controller_reportscontroller",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller"
     },
     {
       "relation": "references",
@@ -22021,9 +22043,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller_constructor",
-      "target": "reports_reports_service_reportsservice",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice"
     },
     {
       "relation": "references",
@@ -22032,9 +22054,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller_createreport",
-      "target": "dto_report_dto_createreportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_createreportdto"
     },
     {
       "relation": "references",
@@ -22043,9 +22065,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L59",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller_escalatereport",
-      "target": "dto_report_dto_escalatereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_escalatereportdto"
     },
     {
       "relation": "calls",
@@ -22054,9 +22076,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller_dismissreport",
-      "target": "reports_reports_controller_reportscontroller_resolvereport",
-      "confidence_score": 1.0
+      "target": "reports_reports_controller_reportscontroller_resolvereport"
     },
     {
       "relation": "references",
@@ -22065,9 +22087,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L70",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller_resolvereport",
-      "target": "dto_report_dto_resolvereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_resolvereportdto"
     },
     {
       "relation": "references",
@@ -22076,9 +22098,9 @@
       "source_file": "backend/src/modules/reports/reports.controller.ts",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_controller_reportscontroller_dismissreport",
-      "target": "dto_report_dto_resolvereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_resolvereportdto"
     },
     {
       "relation": "imports_from",
@@ -22087,9 +22109,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "backend_src_modules_reports_reports_repository_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_reports_repository_ts"
     },
     {
       "relation": "imports",
@@ -22098,9 +22120,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L2",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "reports_reports_repository_reportsrepository",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository"
     },
     {
       "relation": "imports_from",
@@ -22109,9 +22131,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "backend_src_modules_reports_reports_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_reports_service_ts"
     },
     {
       "relation": "imports",
@@ -22120,9 +22142,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "reports_reports_service_reportsservice",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice"
     },
     {
       "relation": "imports_from",
@@ -22131,9 +22153,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "backend_src_redis_redis_module_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_redis_redis_module_ts"
     },
     {
       "relation": "imports",
@@ -22142,9 +22164,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "redis_redis_module_redismodule",
-      "confidence_score": 1.0
+      "target": "redis_redis_module_redismodule"
     },
     {
       "relation": "contains",
@@ -22152,9 +22174,9 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_module_ts",
-      "target": "reports_reports_module_reportsmodule",
-      "confidence_score": 1.0
+      "target": "reports_reports_module_reportsmodule"
     },
     {
       "relation": "contains",
@@ -22162,9 +22184,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_repository_ts",
-      "target": "reports_reports_repository_reportrow",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportrow"
     },
     {
       "relation": "contains",
@@ -22172,9 +22194,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_repository_ts",
-      "target": "reports_reports_repository_reportsrepository",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository"
     },
     {
       "relation": "imports_from",
@@ -22183,9 +22205,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "backend_src_modules_reports_reports_repository_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_reports_repository_ts"
     },
     {
       "relation": "imports",
@@ -22194,9 +22216,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "reports_reports_repository_reportrow",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportrow"
     },
     {
       "relation": "references",
@@ -22205,9 +22227,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_createreport",
-      "target": "reports_reports_repository_reportrow",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportrow"
     },
     {
       "relation": "references",
@@ -22216,9 +22238,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_getreportbyid",
-      "target": "reports_reports_repository_reportrow",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportrow"
     },
     {
       "relation": "references",
@@ -22227,9 +22249,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_escalatereport",
-      "target": "reports_reports_repository_reportrow",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportrow"
     },
     {
       "relation": "references",
@@ -22238,9 +22260,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_resolvereport",
-      "target": "reports_reports_repository_reportrow",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportrow"
     },
     {
       "relation": "method",
@@ -22248,9 +22270,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L27",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository",
-      "target": "reports_reports_repository_reportsrepository_constructor",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository_constructor"
     },
     {
       "relation": "method",
@@ -22258,9 +22280,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L29",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository",
-      "target": "reports_reports_repository_reportsrepository_createreport",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository_createreport"
     },
     {
       "relation": "method",
@@ -22268,9 +22290,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L72",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository",
-      "target": "reports_reports_repository_reportsrepository_findreports",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository_findreports"
     },
     {
       "relation": "method",
@@ -22278,9 +22300,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L153",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository",
-      "target": "reports_reports_repository_reportsrepository_findreportbyid",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository_findreportbyid"
     },
     {
       "relation": "method",
@@ -22288,9 +22310,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository",
-      "target": "reports_reports_repository_reportsrepository_updatereportescalation",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository_updatereportescalation"
     },
     {
       "relation": "method",
@@ -22298,9 +22320,9 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L209",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_repository_reportsrepository",
-      "target": "reports_reports_repository_reportsrepository_resolvereport",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository_resolvereport"
     },
     {
       "relation": "imports",
@@ -22309,9 +22331,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "reports_reports_repository_reportsrepository",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository"
     },
     {
       "relation": "references",
@@ -22320,9 +22342,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_constructor",
-      "target": "reports_reports_repository_reportsrepository",
-      "confidence_score": 1.0
+      "target": "reports_reports_repository_reportsrepository"
     },
     {
       "relation": "imports_from",
@@ -22331,9 +22353,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "backend_src_modules_reports_dto_report_dto_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_modules_reports_dto_report_dto_ts"
     },
     {
       "relation": "imports",
@@ -22342,9 +22364,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "dto_report_dto_createreportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_createreportdto"
     },
     {
       "relation": "imports",
@@ -22353,9 +22375,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "dto_report_dto_escalatereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_escalatereportdto"
     },
     {
       "relation": "imports",
@@ -22364,9 +22386,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "dto_report_dto_resolvereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_resolvereportdto"
     },
     {
       "relation": "imports_from",
@@ -22375,9 +22397,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "backend_src_redis_event_bus_interface_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_redis_event_bus_interface_ts"
     },
     {
       "relation": "imports",
@@ -22386,9 +22408,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "redis_event_bus_interface_ieventbus",
-      "confidence_score": 1.0
+      "target": "redis_event_bus_interface_ieventbus"
     },
     {
       "relation": "contains",
@@ -22396,9 +22418,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_reports_service_ts",
-      "target": "reports_reports_service_reportsservice",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice"
     },
     {
       "relation": "method",
@@ -22406,9 +22428,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice",
-      "target": "reports_reports_service_reportsservice_constructor",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_constructor"
     },
     {
       "relation": "method",
@@ -22416,9 +22438,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice",
-      "target": "reports_reports_service_reportsservice_createreport",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_createreport"
     },
     {
       "relation": "method",
@@ -22426,9 +22448,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L51",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice",
-      "target": "reports_reports_service_reportsservice_findreports",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_findreports"
     },
     {
       "relation": "method",
@@ -22436,9 +22458,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L73",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice",
-      "target": "reports_reports_service_reportsservice_getreportbyid",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_getreportbyid"
     },
     {
       "relation": "method",
@@ -22446,9 +22468,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice",
-      "target": "reports_reports_service_reportsservice_escalatereport",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_escalatereport"
     },
     {
       "relation": "method",
@@ -22456,9 +22478,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice",
-      "target": "reports_reports_service_reportsservice_resolvereport",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_resolvereport"
     },
     {
       "relation": "references",
@@ -22467,9 +22489,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_constructor",
-      "target": "redis_event_bus_interface_ieventbus",
-      "confidence_score": 1.0
+      "target": "redis_event_bus_interface_ieventbus"
     },
     {
       "relation": "references",
@@ -22478,9 +22500,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L24",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_createreport",
-      "target": "dto_report_dto_createreportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_createreportdto"
     },
     {
       "relation": "calls",
@@ -22489,9 +22511,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L87",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_escalatereport",
-      "target": "reports_reports_service_reportsservice_getreportbyid",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_getreportbyid"
     },
     {
       "relation": "calls",
@@ -22500,9 +22522,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_resolvereport",
-      "target": "reports_reports_service_reportsservice_getreportbyid",
-      "confidence_score": 1.0
+      "target": "reports_reports_service_reportsservice_getreportbyid"
     },
     {
       "relation": "references",
@@ -22511,9 +22533,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_escalatereport",
-      "target": "dto_report_dto_escalatereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_escalatereportdto"
     },
     {
       "relation": "references",
@@ -22522,9 +22544,9 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "reports_reports_service_reportsservice_resolvereport",
-      "target": "dto_report_dto_resolvereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_resolvereportdto"
     },
     {
       "relation": "contains",
@@ -22532,9 +22554,9 @@
       "source_file": "backend/src/modules/reports/dto/report.dto.ts",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_dto_report_dto_ts",
-      "target": "dto_report_dto_createreportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_createreportdto"
     },
     {
       "relation": "contains",
@@ -22542,9 +22564,9 @@
       "source_file": "backend/src/modules/reports/dto/report.dto.ts",
       "source_location": "L21",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_dto_report_dto_ts",
-      "target": "dto_report_dto_escalatereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_escalatereportdto"
     },
     {
       "relation": "contains",
@@ -22552,9 +22574,9 @@
       "source_file": "backend/src/modules/reports/dto/report.dto.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_reports_dto_report_dto_ts",
-      "target": "dto_report_dto_resolvereportdto",
-      "confidence_score": 1.0
+      "target": "dto_report_dto_resolvereportdto"
     },
     {
       "relation": "imports_from",
@@ -25734,9 +25756,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_context_adminauthcontext_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_context_adminauthcontext_tsx"
     },
     {
       "relation": "imports",
@@ -25745,9 +25767,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "context_adminauthcontext_adminauthprovider",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_adminauthprovider"
     },
     {
       "relation": "imports",
@@ -25756,9 +25778,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "context_adminauthcontext_useadminauth",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_useadminauth"
     },
     {
       "relation": "imports_from",
@@ -25767,9 +25789,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_pages_adminloginpage_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_pages_adminloginpage_tsx"
     },
     {
       "relation": "imports",
@@ -25778,9 +25800,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "pages_adminloginpage_adminloginpage",
-      "confidence_score": 1.0
+      "target": "pages_adminloginpage_adminloginpage"
     },
     {
       "relation": "imports_from",
@@ -25789,9 +25811,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_pages_admindashboardpage_tsx"
     },
     {
       "relation": "imports",
@@ -25800,9 +25822,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L5",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "pages_admindashboardpage_admindashboardpage",
-      "confidence_score": 1.0
+      "target": "pages_admindashboardpage_admindashboardpage"
     },
     {
       "relation": "imports_from",
@@ -25811,9 +25833,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_pages_adminreportspage_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_pages_adminreportspage_tsx"
     },
     {
       "relation": "imports",
@@ -25822,9 +25844,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "pages_adminreportspage_adminreportspage",
-      "confidence_score": 1.0
+      "target": "pages_adminreportspage_adminreportspage"
     },
     {
       "relation": "imports_from",
@@ -25833,9 +25855,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_pages_adminuserspage_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_pages_adminuserspage_tsx"
     },
     {
       "relation": "imports",
@@ -25844,9 +25866,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "pages_adminuserspage_adminuserspage",
-      "confidence_score": 1.0
+      "target": "pages_adminuserspage_adminuserspage"
     },
     {
       "relation": "imports_from",
@@ -25855,9 +25877,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_pages_admincontentpage_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_pages_admincontentpage_tsx"
     },
     {
       "relation": "imports",
@@ -25866,9 +25888,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L8",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "pages_admincontentpage_admincontentpage",
-      "confidence_score": 1.0
+      "target": "pages_admincontentpage_admincontentpage"
     },
     {
       "relation": "imports_from",
@@ -25877,9 +25899,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_pages_adminobservabilitypage_tsx"
     },
     {
       "relation": "imports",
@@ -25888,9 +25910,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "pages_adminobservabilitypage_adminobservabilitypage",
-      "confidence_score": 1.0
+      "target": "pages_adminobservabilitypage_adminobservabilitypage"
     },
     {
       "relation": "contains",
@@ -25898,9 +25920,9 @@
       "source_file": "frontend/admin/src/App.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_app_tsx",
-      "target": "src_app_protectedroute",
-      "confidence_score": 1.0
+      "target": "src_app_protectedroute"
     },
     {
       "relation": "contains",
@@ -25940,9 +25962,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L1",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_adminstats",
-      "confidence_score": 1.0
+      "target": "api_client_adminstats"
     },
     {
       "relation": "contains",
@@ -25950,9 +25972,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_adminuser",
-      "confidence_score": 1.0
+      "target": "api_client_adminuser"
     },
     {
       "relation": "contains",
@@ -25960,9 +25982,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L25",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_adminreport",
-      "confidence_score": 1.0
+      "target": "api_client_adminreport"
     },
     {
       "relation": "contains",
@@ -25970,9 +25992,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L42",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_admincontentitem",
-      "confidence_score": 1.0
+      "target": "api_client_admincontentitem"
     },
     {
       "relation": "contains",
@@ -25980,9 +26002,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L56",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_observabilitydata",
-      "confidence_score": 1.0
+      "target": "api_client_observabilitydata"
     },
     {
       "relation": "contains",
@@ -25990,9 +26012,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L64",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_adminapiclient",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient"
     },
     {
       "relation": "contains",
@@ -26000,9 +26022,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L210",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_api_client_ts",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports_from",
@@ -26011,9 +26033,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "frontend_admin_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_api_client_ts"
     },
     {
       "relation": "imports_from",
@@ -26022,9 +26044,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "frontend_admin_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_api_client_ts"
     },
     {
       "relation": "imports_from",
@@ -26033,9 +26055,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "frontend_admin_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_api_client_ts"
     },
     {
       "relation": "imports_from",
@@ -26044,9 +26066,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "frontend_admin_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_api_client_ts"
     },
     {
       "relation": "imports_from",
@@ -26055,9 +26077,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "frontend_admin_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_api_client_ts"
     },
     {
       "relation": "imports_from",
@@ -26066,9 +26088,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "frontend_admin_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_api_client_ts"
     },
     {
       "relation": "imports",
@@ -26077,9 +26099,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "api_client_adminstats",
-      "confidence_score": 1.0
+      "target": "api_client_adminstats"
     },
     {
       "relation": "imports",
@@ -26088,9 +26110,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "api_client_adminuser",
-      "confidence_score": 1.0
+      "target": "api_client_adminuser"
     },
     {
       "relation": "imports",
@@ -26099,9 +26121,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "api_client_adminuser",
-      "confidence_score": 1.0
+      "target": "api_client_adminuser"
     },
     {
       "relation": "references",
@@ -26110,9 +26132,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "context_adminauthcontext_adminauthcontexttype",
-      "target": "api_client_adminuser",
-      "confidence_score": 1.0
+      "target": "api_client_adminuser"
     },
     {
       "relation": "imports",
@@ -26121,9 +26143,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "api_client_adminreport",
-      "confidence_score": 1.0
+      "target": "api_client_adminreport"
     },
     {
       "relation": "imports",
@@ -26132,9 +26154,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "api_client_admincontentitem",
-      "confidence_score": 1.0
+      "target": "api_client_admincontentitem"
     },
     {
       "relation": "imports",
@@ -26143,9 +26165,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "api_client_observabilitydata",
-      "confidence_score": 1.0
+      "target": "api_client_observabilitydata"
     },
     {
       "relation": "method",
@@ -26153,9 +26175,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L65",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getheaders",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getheaders"
     },
     {
       "relation": "method",
@@ -26163,9 +26185,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "method",
@@ -26173,9 +26195,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L97",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_login",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_login"
     },
     {
       "relation": "method",
@@ -26183,9 +26205,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L104",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getme",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getme"
     },
     {
       "relation": "method",
@@ -26193,9 +26215,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L109",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getstats",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getstats"
     },
     {
       "relation": "method",
@@ -26203,9 +26225,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L114",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getreports",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getreports"
     },
     {
       "relation": "method",
@@ -26213,9 +26235,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L125",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_escalatereport",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_escalatereport"
     },
     {
       "relation": "method",
@@ -26223,9 +26245,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L132",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_resolvereport",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_resolvereport"
     },
     {
       "relation": "method",
@@ -26233,9 +26255,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L139",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_dismissreport",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_dismissreport"
     },
     {
       "relation": "method",
@@ -26243,9 +26265,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L147",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getusers",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getusers"
     },
     {
       "relation": "method",
@@ -26253,9 +26275,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L159",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_setuserbanstatus",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_setuserbanstatus"
     },
     {
       "relation": "method",
@@ -26263,9 +26285,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L166",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_setuserrole",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_setuserrole"
     },
     {
       "relation": "method",
@@ -26273,9 +26295,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L174",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getcontent",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getcontent"
     },
     {
       "relation": "method",
@@ -26283,9 +26305,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_softdeletecontent",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_softdeletecontent"
     },
     {
       "relation": "method",
@@ -26293,9 +26315,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L192",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_restorecontent",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_restorecontent"
     },
     {
       "relation": "method",
@@ -26303,9 +26325,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L199",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_getobservability",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getobservability"
     },
     {
       "relation": "method",
@@ -26313,9 +26335,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L203",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient",
-      "target": "api_client_adminapiclient_triggernightlycron",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_triggernightlycron"
     },
     {
       "relation": "calls",
@@ -26324,9 +26346,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L81",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_request",
-      "target": "api_client_adminapiclient_getheaders",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_getheaders"
     },
     {
       "relation": "calls",
@@ -26335,9 +26357,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_login",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26346,9 +26368,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L105",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_getme",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26357,9 +26379,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_getstats",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26368,9 +26390,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L122",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_getreports",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26379,9 +26401,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L126",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_escalatereport",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26390,9 +26412,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L133",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_resolvereport",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26401,9 +26423,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_dismissreport",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26412,9 +26434,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L156",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_getusers",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26423,9 +26445,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L160",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_setuserbanstatus",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26434,9 +26456,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L167",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_setuserrole",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26445,9 +26467,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L183",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_getcontent",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26456,9 +26478,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L187",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_softdeletecontent",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26467,9 +26489,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L193",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_restorecontent",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26478,9 +26500,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L200",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_getobservability",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "calls",
@@ -26489,9 +26511,9 @@
       "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L204",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_adminapiclient_triggernightlycron",
-      "target": "api_client_adminapiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_adminapiclient_request"
     },
     {
       "relation": "imports",
@@ -26500,9 +26522,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports",
@@ -26511,9 +26533,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L10",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports",
@@ -26522,9 +26544,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports",
@@ -26533,9 +26555,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports",
@@ -26544,9 +26566,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports",
@@ -26555,9 +26577,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L9",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "api_client_adminapi",
-      "confidence_score": 1.0
+      "target": "api_client_adminapi"
     },
     {
       "relation": "imports_from",
@@ -26566,9 +26588,9 @@
       "source_file": "frontend/admin/src/components/layout/AdminShell.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_components_layout_adminshell_tsx",
-      "target": "frontend_admin_src_context_adminauthcontext_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_context_adminauthcontext_tsx"
     },
     {
       "relation": "imports",
@@ -26577,9 +26599,9 @@
       "source_file": "frontend/admin/src/components/layout/AdminShell.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_components_layout_adminshell_tsx",
-      "target": "context_adminauthcontext_useadminauth",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_useadminauth"
     },
     {
       "relation": "contains",
@@ -26587,9 +26609,9 @@
       "source_file": "frontend/admin/src/components/layout/AdminShell.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_components_layout_adminshell_tsx",
-      "target": "layout_adminshell_adminshellprops",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshellprops"
     },
     {
       "relation": "contains",
@@ -26597,9 +26619,9 @@
       "source_file": "frontend/admin/src/components/layout/AdminShell.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_components_layout_adminshell_tsx",
-      "target": "layout_adminshell_adminshell",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshell"
     },
     {
       "relation": "contains",
@@ -26607,9 +26629,9 @@
       "source_file": "frontend/admin/src/components/layout/AdminShell.tsx",
       "source_location": "L134",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_components_layout_adminshell_tsx",
-      "target": "layout_adminshell_styles",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_styles"
     },
     {
       "relation": "imports_from",
@@ -26618,9 +26640,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "frontend_admin_src_components_layout_adminshell_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_components_layout_adminshell_tsx"
     },
     {
       "relation": "imports_from",
@@ -26629,9 +26651,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "frontend_admin_src_components_layout_adminshell_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_components_layout_adminshell_tsx"
     },
     {
       "relation": "imports_from",
@@ -26640,9 +26662,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "frontend_admin_src_components_layout_adminshell_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_components_layout_adminshell_tsx"
     },
     {
       "relation": "imports_from",
@@ -26651,9 +26673,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "frontend_admin_src_components_layout_adminshell_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_components_layout_adminshell_tsx"
     },
     {
       "relation": "imports_from",
@@ -26662,9 +26684,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "frontend_admin_src_components_layout_adminshell_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_components_layout_adminshell_tsx"
     },
     {
       "relation": "imports",
@@ -26673,9 +26695,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "layout_adminshell_adminshell",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshell"
     },
     {
       "relation": "imports",
@@ -26684,9 +26706,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "layout_adminshell_adminshell",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshell"
     },
     {
       "relation": "imports",
@@ -26695,9 +26717,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "layout_adminshell_adminshell",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshell"
     },
     {
       "relation": "imports",
@@ -26706,9 +26728,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "layout_adminshell_adminshell",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshell"
     },
     {
       "relation": "imports",
@@ -26717,9 +26739,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L11",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "layout_adminshell_adminshell",
-      "confidence_score": 1.0
+      "target": "layout_adminshell_adminshell"
     },
     {
       "relation": "calls",
@@ -26738,9 +26760,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "context_adminauthcontext_adminauthcontexttype",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_adminauthcontexttype"
     },
     {
       "relation": "contains",
@@ -26748,9 +26770,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L16",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "context_adminauthcontext_adminauthcontext",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_adminauthcontext"
     },
     {
       "relation": "contains",
@@ -26758,9 +26780,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "context_adminauthcontext_adminauthprovider",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_adminauthprovider"
     },
     {
       "relation": "contains",
@@ -26768,9 +26790,9 @@
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
       "source_location": "L80",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_context_adminauthcontext_tsx",
-      "target": "context_adminauthcontext_useadminauth",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_useadminauth"
     },
     {
       "relation": "imports_from",
@@ -26779,9 +26801,9 @@
       "source_file": "frontend/admin/src/pages/AdminLoginPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminloginpage_tsx",
-      "target": "frontend_admin_src_context_adminauthcontext_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_context_adminauthcontext_tsx"
     },
     {
       "relation": "imports_from",
@@ -26790,9 +26812,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "frontend_admin_src_context_adminauthcontext_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_context_adminauthcontext_tsx"
     },
     {
       "relation": "imports_from",
@@ -26801,9 +26823,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "frontend_admin_src_context_adminauthcontext_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_admin_src_context_adminauthcontext_tsx"
     },
     {
       "relation": "imports",
@@ -26812,9 +26834,9 @@
       "source_file": "frontend/admin/src/pages/AdminLoginPage.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminloginpage_tsx",
-      "target": "context_adminauthcontext_useadminauth",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_useadminauth"
     },
     {
       "relation": "imports",
@@ -26823,9 +26845,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "context_adminauthcontext_useadminauth",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_useadminauth"
     },
     {
       "relation": "imports",
@@ -26834,9 +26856,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L12",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "context_adminauthcontext_useadminauth",
-      "confidence_score": 1.0
+      "target": "context_adminauthcontext_useadminauth"
     },
     {
       "relation": "calls",
@@ -26877,9 +26899,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "pages_admincontentpage_admincontentpage",
-      "confidence_score": 1.0
+      "target": "pages_admincontentpage_admincontentpage"
     },
     {
       "relation": "contains",
@@ -26887,9 +26909,9 @@
       "source_file": "frontend/admin/src/pages/AdminContentPage.tsx",
       "source_location": "L218",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admincontentpage_tsx",
-      "target": "pages_admincontentpage_styles",
-      "confidence_score": 1.0
+      "target": "pages_admincontentpage_styles"
     },
     {
       "relation": "contains",
@@ -26897,9 +26919,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L18",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "pages_admindashboardpage_admindashboardpage",
-      "confidence_score": 1.0
+      "target": "pages_admindashboardpage_admindashboardpage"
     },
     {
       "relation": "contains",
@@ -26907,9 +26929,9 @@
       "source_file": "frontend/admin/src/pages/AdminDashboardPage.tsx",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_admindashboardpage_tsx",
-      "target": "pages_admindashboardpage_styles",
-      "confidence_score": 1.0
+      "target": "pages_admindashboardpage_styles"
     },
     {
       "relation": "contains",
@@ -26917,9 +26939,9 @@
       "source_file": "frontend/admin/src/pages/AdminLoginPage.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminloginpage_tsx",
-      "target": "pages_adminloginpage_adminloginpage",
-      "confidence_score": 1.0
+      "target": "pages_adminloginpage_adminloginpage"
     },
     {
       "relation": "contains",
@@ -26927,9 +26949,9 @@
       "source_file": "frontend/admin/src/pages/AdminLoginPage.tsx",
       "source_location": "L101",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminloginpage_tsx",
-      "target": "pages_adminloginpage_styles",
-      "confidence_score": 1.0
+      "target": "pages_adminloginpage_styles"
     },
     {
       "relation": "contains",
@@ -26937,9 +26959,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "pages_adminobservabilitypage_adminobservabilitypage",
-      "confidence_score": 1.0
+      "target": "pages_adminobservabilitypage_adminobservabilitypage"
     },
     {
       "relation": "contains",
@@ -26947,9 +26969,9 @@
       "source_file": "frontend/admin/src/pages/AdminObservabilityPage.tsx",
       "source_location": "L186",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminobservabilitypage_tsx",
-      "target": "pages_adminobservabilitypage_styles",
-      "confidence_score": 1.0
+      "target": "pages_adminobservabilitypage_styles"
     },
     {
       "relation": "contains",
@@ -26957,9 +26979,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "pages_adminreportspage_adminreportspage",
-      "confidence_score": 1.0
+      "target": "pages_adminreportspage_adminreportspage"
     },
     {
       "relation": "contains",
@@ -26967,9 +26989,9 @@
       "source_file": "frontend/admin/src/pages/AdminReportsPage.tsx",
       "source_location": "L279",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminreportspage_tsx",
-      "target": "pages_adminreportspage_styles",
-      "confidence_score": 1.0
+      "target": "pages_adminreportspage_styles"
     },
     {
       "relation": "contains",
@@ -26977,9 +26999,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "pages_adminuserspage_adminuserspage",
-      "confidence_score": 1.0
+      "target": "pages_adminuserspage_adminuserspage"
     },
     {
       "relation": "contains",
@@ -26987,9 +27009,9 @@
       "source_file": "frontend/admin/src/pages/AdminUsersPage.tsx",
       "source_location": "L281",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_admin_src_pages_adminuserspage_tsx",
-      "target": "pages_adminuserspage_styles",
-      "confidence_score": 1.0
+      "target": "pages_adminuserspage_styles"
     },
     {
       "relation": "contains",
@@ -28106,9 +28128,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "frontend_client_src_api_client_ts",
-      "confidence_score": 1.0
+      "target": "frontend_client_src_api_client_ts"
     },
     {
       "relation": "imports_from",
@@ -28814,9 +28836,9 @@
       "source_file": "frontend/client/src/api/client.ts",
       "source_location": "L359",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_apiclient",
-      "target": "api_client_apiclient_createreport",
-      "confidence_score": 1.0
+      "target": "api_client_apiclient_createreport"
     },
     {
       "relation": "method",
@@ -29374,9 +29396,9 @@
       "source_file": "frontend/client/src/api/client.ts",
       "source_location": "L364",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "api_client_apiclient_createreport",
-      "target": "api_client_apiclient_request",
-      "confidence_score": 1.0
+      "target": "api_client_apiclient_request"
     },
     {
       "relation": "calls",
@@ -29407,9 +29429,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L3",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "api_client_api",
-      "confidence_score": 1.0
+      "target": "api_client_api"
     },
     {
       "relation": "imports",
@@ -29828,9 +29850,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "frontend_client_src_context_authcontext_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_client_src_context_authcontext_tsx"
     },
     {
       "relation": "imports",
@@ -29839,9 +29861,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L4",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "context_authcontext_useauth",
-      "confidence_score": 1.0
+      "target": "context_authcontext_useauth"
     },
     {
       "relation": "contains",
@@ -29849,9 +29871,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "common_reportmodal_reportmodalprops",
-      "confidence_score": 1.0
+      "target": "common_reportmodal_reportmodalprops"
     },
     {
       "relation": "contains",
@@ -29859,9 +29881,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L14",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "common_reportmodal_report_categories",
-      "confidence_score": 1.0
+      "target": "common_reportmodal_report_categories"
     },
     {
       "relation": "contains",
@@ -29869,9 +29891,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L22",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "common_reportmodal_reportmodal",
-      "confidence_score": 1.0
+      "target": "common_reportmodal_reportmodal"
     },
     {
       "relation": "contains",
@@ -29879,9 +29901,9 @@
       "source_file": "frontend/client/src/components/common/ReportModal.tsx",
       "source_location": "L185",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_common_reportmodal_tsx",
-      "target": "common_reportmodal_styles",
-      "confidence_score": 1.0
+      "target": "common_reportmodal_styles"
     },
     {
       "relation": "imports_from",
@@ -29890,9 +29912,9 @@
       "source_file": "frontend/client/src/components/qa/AnswerCard.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_qa_answercard_tsx",
-      "target": "frontend_client_src_components_common_reportmodal_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_client_src_components_common_reportmodal_tsx"
     },
     {
       "relation": "imports_from",
@@ -29901,9 +29923,9 @@
       "source_file": "frontend/client/src/pages/QuestionDetailPage.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_pages_questiondetailpage_tsx",
-      "target": "frontend_client_src_components_common_reportmodal_tsx",
-      "confidence_score": 1.0
+      "target": "frontend_client_src_components_common_reportmodal_tsx"
     },
     {
       "relation": "imports",
@@ -29912,9 +29934,9 @@
       "source_file": "frontend/client/src/components/qa/AnswerCard.tsx",
       "source_location": "L7",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_components_qa_answercard_tsx",
-      "target": "common_reportmodal_reportmodal",
-      "confidence_score": 1.0
+      "target": "common_reportmodal_reportmodal"
     },
     {
       "relation": "imports",
@@ -29923,9 +29945,9 @@
       "source_file": "frontend/client/src/pages/QuestionDetailPage.tsx",
       "source_location": "L15",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "frontend_client_src_pages_questiondetailpage_tsx",
-      "target": "common_reportmodal_reportmodal",
-      "confidence_score": 1.0
+      "target": "common_reportmodal_reportmodal"
     },
     {
       "relation": "calls",
@@ -30714,6 +30736,28 @@
       "target": "types_index_tag"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/components/layout/RightRail.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_client_src_components_layout_rightrail_tsx",
+      "target": "frontend_client_src_context_authcontext_tsx",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/components/layout/RightRail.tsx",
+      "source_location": "L5",
+      "weight": 1.0,
+      "source": "frontend_client_src_components_layout_rightrail_tsx",
+      "target": "context_authcontext_useauth",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/client/src/components/layout/RightRail.tsx",
@@ -30732,6 +30776,17 @@
       "confidence_score": 1.0,
       "source": "frontend_client_src_components_layout_rightrail_tsx",
       "target": "layout_rightrail_styles"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/client/src/components/layout/RightRail.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "layout_rightrail_rightrail",
+      "target": "context_authcontext_useauth"
     },
     {
       "relation": "imports_from",
@@ -33592,5 +33647,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "80c549a30295cbaed5945a085725b9793f54b86a"
+  "built_at_commit": "de37534c17837f752b724e35d7e20a9683646421"
 }
