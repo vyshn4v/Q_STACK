@@ -1,13 +1,18 @@
 # Graph Report - Q_STACK  (2026-08-13)
 
 ## Corpus Check
-- 55 files · ~16,675 words
+- 114 files · ~34,130 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 435 nodes · 442 edges · 40 communities (35 shown, 5 thin omitted)
+- 744 nodes · 1131 edges · 45 communities (38 shown, 7 thin omitted)
 - Extraction: 100% EXTRACTED · 0% INFERRED · 0% AMBIGUOUS
 - Token cost: 0 input · 0 output
+
+## Graph Freshness
+- Built from commit: `d739ff6b`
+- Run `git rev-parse HEAD` and compare to check if the graph is stale.
+- Run `graphify update .` after code changes (no API cost).
 
 ## Community Hubs (Navigation)
 - [[_COMMUNITY_Community 0|Community 0]]
@@ -44,37 +49,51 @@
 - [[_COMMUNITY_Community 31|Community 31]]
 - [[_COMMUNITY_Community 32|Community 32]]
 - [[_COMMUNITY_Community 34|Community 34]]
+- [[_COMMUNITY_Community 35|Community 35]]
 - [[_COMMUNITY_Community 36|Community 36]]
+- [[_COMMUNITY_Community 40|Community 40]]
+- [[_COMMUNITY_Community 41|Community 41]]
+- [[_COMMUNITY_Community 42|Community 42]]
+- [[_COMMUNITY_Community 43|Community 43]]
+- [[_COMMUNITY_Community 44|Community 44]]
 
 ## God Nodes (most connected - your core abstractions)
-1. `compilerOptions` - 22 edges
-2. `compilerOptions` - 18 edges
-3. `compilerOptions` - 18 edges
-4. `compilerOptions` - 15 edges
-5. `compilerOptions` - 15 edges
-6. `scripts` - 13 edges
-7. `DatabaseService` - 12 edges
-8. `RedisService` - 11 edges
-9. `06 — Design System` - 9 edges
-10. `07 — Phase Roadmap` - 9 edges
+1. `DatabaseService` - 28 edges
+2. `compilerOptions` - 22 edges
+3. `ApiClient` - 21 edges
+4. `compilerOptions` - 18 edges
+5. `compilerOptions` - 18 edges
+6. `compilerOptions` - 15 edges
+7. `compilerOptions` - 15 edges
+8. `useAuth()` - 15 edges
+9. `scripts` - 13 edges
+10. `QuestionsRepository` - 13 edges
 
 ## Surprising Connections (you probably didn't know these)
+- `AnswerCardProps` --references--> `Answer`  [EXTRACTED]
+  frontend/client/src/components/qa/AnswerCard.tsx → frontend/client/src/types/index.ts
+- `QuestionCardProps` --references--> `Question`  [EXTRACTED]
+  frontend/client/src/components/qa/QuestionCard.tsx → frontend/client/src/types/index.ts
 - `RedisEventBusService` --implements--> `IEventBus`  [EXTRACTED]
   backend/src/redis/event-bus.service.ts → backend/src/redis/event-bus.interface.ts
+- `AuthModal()` --calls--> `useAuth()`  [EXTRACTED]
+  frontend/client/src/components/auth/AuthModal.tsx → frontend/client/src/context/AuthContext.tsx
+- `AppHeader()` --calls--> `useAuth()`  [EXTRACTED]
+  frontend/client/src/components/layout/AppHeader.tsx → frontend/client/src/context/AuthContext.tsx
 
-## Communities (40 total, 5 thin omitted)
+## Communities (45 total, 7 thin omitted)
 
 ### Community 0 - "Community 0"
-Cohesion: 0.10
-Nodes (10): Environment, EnvironmentVariables, validate(), DatabaseModule, DatabaseService, MigratorService, AppController, mockAppService (+2 more)
+Cohesion: 0.09
+Nodes (7): DatabaseModule, DatabaseService, MigratorService, TagsController, TagRow, TagsRepository, TagsService
 
 ### Community 1 - "Community 1"
-Cohesion: 0.07
-Nodes (28): author, dependencies, bcrypt, class-transformer, class-validator, ioredis, @nestjs/common, @nestjs/config (+20 more)
+Cohesion: 0.04
+Nodes (46): author, dependencies, bcrypt, class-transformer, class-validator, ioredis, @nestjs/common, @nestjs/config (+38 more)
 
 ### Community 2 - "Community 2"
 Cohesion: 0.07
-Nodes (27): devDependencies, eslint, eslint-config-prettier, @eslint/eslintrc, @eslint/js, eslint-plugin-prettier, globals, jest (+19 more)
+Nodes (29): devDependencies, eslint, eslint-config-prettier, @eslint/eslintrc, @eslint/js, eslint-plugin-prettier, globals, jest (+21 more)
 
 ### Community 3 - "Community 3"
 Cohesion: 0.09
@@ -96,10 +115,6 @@ Nodes (19): compilerOptions, allowArbitraryExtensions, allowImportingTsExtension
 Cohesion: 0.10
 Nodes (19): compilerOptions, allowArbitraryExtensions, allowImportingTsExtensions, erasableSyntaxOnly, jsx, lib, module, moduleDetection (+11 more)
 
-### Community 8 - "Community 8"
-Cohesion: 0.19
-Nodes (5): AppEvent, IEventBus, RedisEventBusService, RedisModule, RedisService
-
 ### Community 9 - "Community 9"
 Cohesion: 0.12
 Nodes (16): compilerOptions, allowImportingTsExtensions, erasableSyntaxOnly, lib, module, moduleDetection, noEmit, noFallthroughCasesInSwitch (+8 more)
@@ -116,10 +131,6 @@ Nodes (15): 1. Start Infrastructure (PostgreSQL & Redis), 2. Configure Environme
 Cohesion: 0.14
 Nodes (13): code:bash ($ npm install), code:bash (# development), code:bash (# unit tests), code:bash ($ npm install -g @nestjs/mau), Compile and run the project, Deployment, Description, License (+5 more)
 
-### Community 13 - "Community 13"
-Cohesion: 0.15
-Nodes (13): scripts, build, format, lint, start, start:debug, start:dev, start:prod (+5 more)
-
 ### Community 14 - "Community 14"
 Cohesion: 0.18
 Nodes (10): 06 — Design System, Admin UI — same tokens, different density, App shell — condensed, code:block1 (AppHeader · GlobalSearch · SidebarNavigation · MobileNavigat), Component inventory (build once, share across app + admin where sensible), Design priority (maps to phases — see [07](./07-phase-roadmap.md)), Landing page — condensed, Two surfaces, two design systems (+2 more)
@@ -133,12 +144,12 @@ Cohesion: 0.20
 Nodes (9): 07 — Phase Roadmap, Phase 0 — Foundation, Phase 1 — Core auth + Q&A loop (MVP), Phase 2 — Community signals, Phase 3 — Event-driven activity + reputation/badges, Phase 4 — AI systems, Phase 5 — RBAC + admin panel, Phase 6 — Landing page (+1 more)
 
 ### Community 17 - "Community 17"
-Cohesion: 0.28
-Nodes (3): AllExceptionsFilter, ApiResponse, TransformInterceptor
+Cohesion: 0.11
+Nodes (8): AppEvent, IEventBus, RedisEventBusService, RedisModule, RedisService, AppController, mockAppService, AppService
 
 ### Community 18 - "Community 18"
-Cohesion: 0.25
-Nodes (5): EscalationLevel, ReportStatus, TargetType, Tier, UserRole
+Cohesion: 0.06
+Nodes (17): AnswersController, AnswersModule, AnswerItem, AnswersRepository, AnswersService, Environment, EnvironmentVariables, validate() (+9 more)
 
 ### Community 19 - "Community 19"
 Cohesion: 0.25
@@ -184,25 +195,49 @@ Nodes (4): 03 — AI Systems, A) Cached per-question AI answer ("view-answer AI"
 Cohesion: 0.40
 Nodes (4): code:json ({), Expanding the Oxlint configuration, React Compiler, React + TypeScript + Vite
 
+### Community 32 - "Community 32"
+Cohesion: 0.09
+Nodes (14): AuthController, AuthModule, AuthIdentityRow, AuthRepository, UserRow, AuthService, AuthTokens, JwtPayload (+6 more)
+
+### Community 35 - "Community 35"
+Cohesion: 0.07
+Nodes (49): api, AuthModal(), styles, AuthContext, AuthContextType, AuthProvider(), useAuth(), AppHeader() (+41 more)
+
+### Community 40 - "Community 40"
+Cohesion: 0.09
+Nodes (16): Public(), CreateQuestionDto, QueryQuestionsDto, UpdateQuestionDto, EscalationLevel, ReportStatus, TargetType, Tier (+8 more)
+
+### Community 41 - "Community 41"
+Cohesion: 0.11
+Nodes (10): CommentsController, CommentsModule, CommentItem, CommentsRepository, CommentsService, AuthUserPayload, CurrentUser, CommentParentType (+2 more)
+
+### Community 42 - "Community 42"
+Cohesion: 0.16
+Nodes (6): UpdateProfileDto, UsersController, UsersModule, UserProfile, UsersRepository, UsersService
+
+### Community 43 - "Community 43"
+Cohesion: 0.20
+Nodes (7): CastVoteDto, VoteTargetType, VotesController, VotesModule, VoteResult, VotesRepository, VotesService
+
 ## Knowledge Gaps
-- **286 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+281 more)
+- **322 isolated node(s):** `$schema`, `collection`, `sourceRoot`, `deleteOutDir`, `name` (+317 more)
   These have ≤1 connection - possible missing edges or undocumented components.
-- **5 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
+- **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `devDependencies` connect `Community 2` to `Community 1`?**
-  _High betweenness centrality (0.015) - this node is a cross-community bridge._
-- **Why does `scripts` connect `Community 13` to `Community 1`?**
-  _High betweenness centrality (0.008) - this node is a cross-community bridge._
+- **Why does `DatabaseService` connect `Community 0` to `Community 32`, `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 17`, `Community 18`?**
+  _High betweenness centrality (0.023) - this node is a cross-community bridge._
+- **Why does `IEventBus` connect `Community 17` to `Community 32`, `Community 40`, `Community 41`, `Community 43`, `Community 18`?**
+  _High betweenness centrality (0.011) - this node is a cross-community bridge._
+- **Why does `JwtAuthGuard` connect `Community 32` to `Community 40`, `Community 41`, `Community 42`, `Community 43`, `Community 18`?**
+  _High betweenness centrality (0.007) - this node is a cross-community bridge._
 - **What connects `$schema`, `collection`, `sourceRoot` to the rest of the system?**
-  _286 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _322 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `Community 0` be split into smaller, more focused modules?**
-  _Cohesion score 0.10416666666666667 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0915915915915916 - nodes in this community are weakly interconnected._
 - **Should `Community 1` be split into smaller, more focused modules?**
-  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.0425531914893617 - nodes in this community are weakly interconnected._
 - **Should `Community 2` be split into smaller, more focused modules?**
-  _Cohesion score 0.07407407407407407 - nodes in this community are weakly interconnected._
-- **Should `Community 3` be split into smaller, more focused modules?**
-  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.06896551724137931 - nodes in this community are weakly interconnected._

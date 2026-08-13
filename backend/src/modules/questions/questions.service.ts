@@ -15,7 +15,7 @@ import {
   QuestionListItem,
   QuestionsRepository,
 } from './questions.repository';
-import { IEventBus } from '../../redis/event-bus.interface';
+import type { IEventBus } from '../../redis/event-bus.interface';
 import { UserRole } from '../../common/enums';
 
 @Injectable()

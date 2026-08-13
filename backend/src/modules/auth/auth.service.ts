@@ -10,7 +10,7 @@ import { ConfigService } from '@nestjs/config';
 import * as bcrypt from 'bcrypt';
 import { AuthRepository, UserRow } from './auth.repository';
 import { LoginDto, OAuthLoginDto, RegisterDto } from './dto/auth.dto';
-import { IEventBus } from '../../redis/event-bus.interface';
+import type { IEventBus } from '../../redis/event-bus.interface';
 import { DatabaseService } from '../../database/database.service';
 
 export interface AuthTokens {

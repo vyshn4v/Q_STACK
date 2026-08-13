@@ -6,7 +6,7 @@ import {
 } from '@nestjs/common';
 import { CreateCommentDto, UpdateCommentDto } from './dto/comment.dto';
 import { CommentItem, CommentsRepository } from './comments.repository';
-import { IEventBus } from '../../redis/event-bus.interface';
+import type { IEventBus } from '../../redis/event-bus.interface';
 import { UserRole } from '../../common/enums';
 
 @Injectable()

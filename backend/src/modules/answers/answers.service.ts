@@ -7,7 +7,7 @@ import {
 import { CreateAnswerDto, UpdateAnswerDto } from './dto/answer.dto';
 import { AnswerItem, AnswersRepository } from './answers.repository';
 import { QuestionsRepository } from '../questions/questions.repository';
-import { IEventBus } from '../../redis/event-bus.interface';
+import type { IEventBus } from '../../redis/event-bus.interface';
 import { UserRole } from '../../common/enums';
 
 @Injectable()

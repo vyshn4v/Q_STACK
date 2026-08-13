@@ -1,6 +1,6 @@
 import { Injectable } from '@nestjs/common';
 import { DatabaseService } from '../../database/database.service';
-import { PoolClient } from 'pg';
+import { PoolClient, QueryResult } from 'pg';
 
 export interface TagRow {
   id: string;
@@ -51,7 +51,6 @@ export class TagsRepository {
    * Find or create tags in bulk, within a transaction client if provided.
    */
   async findOrCreateTags(tagNames: string[], client?: PoolClient): Promise<TagRow[]> {
-    const runner = client || this.db;
     const sanitizedNames = Array.from(
       new Set(
         tagNames
@@ -64,13 +63,16 @@ export class TagsRepository {
 
     const tags: TagRow[] = [];
     for (const name of sanitizedNames) {
-      const result = await runner.query<TagRow>(
-        `INSERT INTO tags (name)
-         VALUES ($1)
-         ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name
-         RETURNING id, name, description, questions_count, created_at`,
-        [name],
-      );
+      const querySql = `
+        INSERT INTO tags (name)
+        VALUES ($1)
+        ON CONFLICT (name) DO UPDATE SET name = EXCLUDED.name
+        RETURNING id, name, description, questions_count, created_at
+      `;
+      const result: QueryResult<TagRow> = client
+        ? await client.query(querySql, [name])
+        : await this.db.query<TagRow>(querySql, [name]);
+
       tags.push(result.rows[0]);
     }
 

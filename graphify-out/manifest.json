@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\package.json": {
-    "mtime": 1786596475.249178,
-    "ast_hash": "f92cbb0534fddf614f65594a9f75444d",
+    "mtime": 1786596886.7244482,
+    "ast_hash": "0f9d11abf0a264d9a8537bd9378a52e1",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\tsconfig.build.json": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.module.ts": {
-    "mtime": 1786596624.390586,
-    "ast_hash": "855b5cb9d19b02694a9a4e251319c053",
+    "mtime": 1786597057.904275,
+    "ast_hash": "1fb6c24d6d03aeb69849f0d5b0c8564c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.service.ts": {
@@ -200,8 +200,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\App.tsx": {
-    "mtime": 1786090813.1592498,
-    "ast_hash": "c5e44a49ac2a44373fba5d1a7fe35be4",
+    "mtime": 1786597456.3291528,
+    "ast_hash": "e67593d3ad621bb0b098dfa488c636d7",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\main.tsx": {
@@ -342,6 +342,301 @@
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\assets\\vite.svg": {
     "mtime": 1786090813.1128058,
     "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\answers\\answers.controller.ts": {
+    "mtime": 1786596986.030444,
+    "ast_hash": "17fc6874d6b6540d9faf8df9024b34a9",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\answers\\answers.module.ts": {
+    "mtime": 1786596989.7815278,
+    "ast_hash": "4fa738a1cebb618332ba9f79b8af22c8",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\answers\\answers.repository.ts": {
+    "mtime": 1786596977.5404718,
+    "ast_hash": "38466d134516d2531bc52f30ddbd40ba",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\answers\\answers.service.ts": {
+    "mtime": 1786597173.5572937,
+    "ast_hash": "97fc03c4bca998cee9558e81c8ea7b80",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\answers\\dto\\answer.dto.ts": {
+    "mtime": 1786596972.716922,
+    "ast_hash": "0168e1cb18c58b635b510e134dc48843",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.controller.ts": {
+    "mtime": 1786596918.7439523,
+    "ast_hash": "c03c15b9294f45349f8eac77d1c51ff3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.module.ts": {
+    "mtime": 1786596922.7771616,
+    "ast_hash": "749259651fbed1e636a504b179eb04dd",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.repository.ts": {
+    "mtime": 1786596894.6023786,
+    "ast_hash": "d1fcd5c4eca0b41387304863caed90fc",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.service.ts": {
+    "mtime": 1786597165.498116,
+    "ast_hash": "18122dd734e1e9272ad97d628341511f",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\jwt.strategy.ts": {
+    "mtime": 1786596901.2980103,
+    "ast_hash": "af8471ce587c6c664d14fd37c3667d50",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\dto\\auth.dto.ts": {
+    "mtime": 1786596898.3929002,
+    "ast_hash": "83844181d19586219b5e24e98026b129",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\guards\\jwt-auth.guard.ts": {
+    "mtime": 1786596904.9466338,
+    "ast_hash": "6ff26a3aadbf0d461bd4ba8000682658",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\guards\\optional-jwt-auth.guard.ts": {
+    "mtime": 1786596960.7783382,
+    "ast_hash": "3cefc1472e65c6ba60c504757e00900d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\guards\\roles.guard.ts": {
+    "mtime": 1786596908.7973018,
+    "ast_hash": "c14708562b49773dd41a051ed3a2e2ee",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\comments\\comments.controller.ts": {
+    "mtime": 1786597007.0552392,
+    "ast_hash": "7ec292446c4c31552f363e878c41be18",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\comments\\comments.module.ts": {
+    "mtime": 1786597010.6761224,
+    "ast_hash": "087aa61b3b8ce2a61045983039e89a0a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\comments\\comments.repository.ts": {
+    "mtime": 1786596998.1596127,
+    "ast_hash": "73a3453185444e0fb5b741a15424e85d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\comments\\comments.service.ts": {
+    "mtime": 1786597177.890159,
+    "ast_hash": "312ce1f914cc7e48b0773736f39ea498",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\comments\\dto\\comment.dto.ts": {
+    "mtime": 1786596993.7686317,
+    "ast_hash": "e07007746d0dd8305fc585746c774ab3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\questions.controller.ts": {
+    "mtime": 1786596964.725778,
+    "ast_hash": "e65f422fa1fd1d3bd478e557aef7ce99",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\questions.module.ts": {
+    "mtime": 1786596968.8115544,
+    "ast_hash": "f034070636983ab11dbb0839643cdf61",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\questions.repository.ts": {
+    "mtime": 1786596951.8518574,
+    "ast_hash": "d1eca0fb5ecd752c327719a4b0c4a912",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\questions.service.ts": {
+    "mtime": 1786597169.6042101,
+    "ast_hash": "d2f6f0e9015fc2f5a33d6f5d8a47940d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\dto\\question.dto.ts": {
+    "mtime": 1786596944.1295257,
+    "ast_hash": "58b0de5a895ae8eb7fb0311d1541eb31",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\tags\\tags.controller.ts": {
+    "mtime": 1786596935.9828513,
+    "ast_hash": "2f8a8c276d20f61c5ab61938cec0f249",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\tags\\tags.module.ts": {
+    "mtime": 1786596939.620197,
+    "ast_hash": "e88037bc162e9e8a1f4411d8e99cae0a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\tags\\tags.repository.ts": {
+    "mtime": 1786597161.0296555,
+    "ast_hash": "06ffc8f9f967cd088bd1f582f3fdfd95",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\tags\\tags.service.ts": {
+    "mtime": 1786596931.3468647,
+    "ast_hash": "7c21a7068f32daba75de925452811181",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.controller.ts": {
+    "mtime": 1786597049.061357,
+    "ast_hash": "fbb1c1071ec51328fea98a7a87adcede",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.module.ts": {
+    "mtime": 1786597053.0512793,
+    "ast_hash": "104fb8fbf7d278f6a7d1de2cac043b9d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.repository.ts": {
+    "mtime": 1786597040.8391933,
+    "ast_hash": "e3a706ca25fa2c2639a5c30d64cf209b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.service.ts": {
+    "mtime": 1786597044.6308382,
+    "ast_hash": "14df8aa02ab787eb03b5abeb17ade402",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\dto\\user.dto.ts": {
+    "mtime": 1786597036.9114125,
+    "ast_hash": "b0b300df1bb21e21c702b41a93adee40",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\votes\\votes.controller.ts": {
+    "mtime": 1786597028.602659,
+    "ast_hash": "b6e853eb4e14fbd80a38cdfd956994ee",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\votes\\votes.module.ts": {
+    "mtime": 1786597032.669186,
+    "ast_hash": "aeccb56c4dc695c45aa262ed98d9b7dd",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\votes\\votes.repository.ts": {
+    "mtime": 1786597019.7929661,
+    "ast_hash": "273c86f14756f9138d010b3253f6071e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\votes\\votes.service.ts": {
+    "mtime": 1786597183.1175487,
+    "ast_hash": "851b27487c22b91adba346b58c7c5f4b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\votes\\dto\\vote.dto.ts": {
+    "mtime": 1786597014.9645898,
+    "ast_hash": "4b8c96eed607eba4af8e734298f91194",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\api\\client.ts": {
+    "mtime": 1786597451.6898243,
+    "ast_hash": "0ffafc21a3cefb2e1daa570bb9363960",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\auth\\AuthModal.tsx": {
+    "mtime": 1786597311.8449886,
+    "ast_hash": "e8f77a90683ec72b7311ad3dbcceffa4",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\AppHeader.tsx": {
+    "mtime": 1786597351.3171954,
+    "ast_hash": "046bfe788922d844a45f504eefab5946",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\AppShell.tsx": {
+    "mtime": 1786597461.3992834,
+    "ast_hash": "d9cf2e3a261094bffe94df7bf071c830",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\RightRail.tsx": {
+    "mtime": 1786597466.648757,
+    "ast_hash": "23adf0ff357e9b37bd84ab9da02e5263",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\SidebarNavigation.tsx": {
+    "mtime": 1786597471.7516794,
+    "ast_hash": "ee9e55cfc52dad775cbcf27514e6cf79",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\AIAnswerBlock.tsx": {
+    "mtime": 1786597330.7840044,
+    "ast_hash": "1f1db1e572d30fcf86313cbfd33cff13",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\AnswerCard.tsx": {
+    "mtime": 1786597477.2041752,
+    "ast_hash": "eadc4693f33d2929f787abede332e639",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\CommentThread.tsx": {
+    "mtime": 1786597483.450668,
+    "ast_hash": "806eba73f6d00ebd06e9472b0bdf4d09",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\QuestionCard.tsx": {
+    "mtime": 1786597490.4088638,
+    "ast_hash": "7bedd460c3fe7205da8970049bf1933d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\VoteControl.tsx": {
+    "mtime": 1786597317.6372073,
+    "ast_hash": "cbbe5c7b61adb67983ec9bdcbdccbee2",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\context\\AuthContext.tsx": {
+    "mtime": 1786597495.5275517,
+    "ast_hash": "3fd270ac41d6705ecfa343659f6b7bd4",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AIChatPage.tsx": {
+    "mtime": 1786597502.4216707,
+    "ast_hash": "f699b45c5d454e623c41480a7169d566",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AskQuestionPage.tsx": {
+    "mtime": 1786597400.1566763,
+    "ast_hash": "cec70cb056cf49b0fbc4834a0ce78d08",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\HomePage.tsx": {
+    "mtime": 1786597509.1190326,
+    "ast_hash": "a703e1bd6083d71c847c838d6f8a4056",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\QuestionDetailPage.tsx": {
+    "mtime": 1786597517.5585597,
+    "ast_hash": "b1e188c254e0de88cd1b4b1b76c364a7",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\QuestionsPage.tsx": {
+    "mtime": 1786597523.802925,
+    "ast_hash": "6dbeeacd11538e0b6c5b4e3d3df94192",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\TagsPage.tsx": {
+    "mtime": 1786597529.06901,
+    "ast_hash": "2d0b4341dd4044b81fdcf8711749d40f",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\types\\index.ts": {
+    "mtime": 1786597294.1591797,
+    "ast_hash": "5db34e5f4833538b49866487662062b7",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\rules\\graphify.md": {
+    "mtime": 1786597716.6327124,
+    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\workflows\\graphify.md": {
+    "mtime": 1786597716.6338012,
+    "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
     "semantic_hash": ""
   }
 }
