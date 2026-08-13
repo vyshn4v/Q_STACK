@@ -3,6 +3,40 @@
 
 CREATE EXTENSION IF NOT EXISTS "pgcrypto";
 
+-- Drop legacy / conflicting old table structures if any
+DROP TABLE IF EXISTS
+    activities,
+    oauth_accounts,
+    profiles,
+    question_embeddings,
+    user_badges,
+    reputation_events,
+    users_backup,
+    notifications,
+    chat_messages,
+    chat_sessions,
+    question_ai_responses,
+    cron_runs,
+    daily_active,
+    activity_events,
+    reports,
+    bookmarks,
+    follows,
+    reputation_ledger,
+    badges,
+    badge_rules,
+    medals,
+    votes,
+    question_tags,
+    tags,
+    comments,
+    answers,
+    questions,
+    auth_identities,
+    users,
+    schema_migrations
+CASCADE;
+
 -- Schema Migrations Tracking Table
 CREATE TABLE IF NOT EXISTS schema_migrations (
     version VARCHAR(50) PRIMARY KEY,

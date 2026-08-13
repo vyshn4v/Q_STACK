@@ -5,9 +5,14 @@ import {
   HttpCode,
   HttpStatus,
   Post,
+  Req,
+  Res,
   UseGuards,
 } from '@nestjs/common';
-import { AuthService } from './auth.service';
+import { AuthGuard } from '@nestjs/passport';
+import { ConfigService } from '@nestjs/config';
+import type { Request, Response } from 'express';
+import { AuthService, AuthTokens } from './auth.service';
 import { LoginDto, OAuthLoginDto, RefreshTokenDto, RegisterDto } from './dto/auth.dto';
 import { CurrentUser } from '../../common/decorators/current-user.decorator';
 import { Public } from '../../common/decorators/roles.decorator';
@@ -15,7 +20,10 @@ import { JwtAuthGuard } from './guards/jwt-auth.guard';
 
 @Controller('auth')
 export class AuthController {
-  constructor(private readonly authService: AuthService) {}
+  constructor(
+    private readonly authService: AuthService,
+    private readonly configService: ConfigService,
+  ) {}
 
   @Public()
   @Post('register')
@@ -35,6 +43,44 @@ export class AuthController {
   @Post('oauth')
   async oauthLogin(@Body() dto: OAuthLoginDto) {
     return this.authService.oauthLogin(dto);
+  }
+
+  // Google OAuth Routes
+  @Public()
+  @Get('google')
+  @UseGuards(AuthGuard('google'))
+  async googleAuth() {
+    // Initiates Google OAuth2 login flow
+  }
+
+  @Public()
+  @Get('google/callback')
+  @UseGuards(AuthGuard('google'))
+  async googleAuthCallback(@Req() req: Request, @Res() res: Response) {
+    const authTokens = req.user as AuthTokens;
+    const clientUrl = this.configService.get<string>('CLIENT_URL', 'http://localhost:5173');
+    return res.redirect(
+      `${clientUrl}/auth/callback?token=${authTokens.accessToken}&refreshToken=${authTokens.refreshToken}`,
+    );
+  }
+
+  // GitHub OAuth Routes
+  @Public()
+  @Get('github')
+  @UseGuards(AuthGuard('github'))
+  async githubAuth() {
+    // Initiates GitHub OAuth2 login flow
+  }
+
+  @Public()
+  @Get('github/callback')
+  @UseGuards(AuthGuard('github'))
+  async githubAuthCallback(@Req() req: Request, @Res() res: Response) {
+    const authTokens = req.user as AuthTokens;
+    const clientUrl = this.configService.get<string>('CLIENT_URL', 'http://localhost:5173');
+    return res.redirect(
+      `${clientUrl}/auth/callback?token=${authTokens.accessToken}&refreshToken=${authTokens.refreshToken}`,
+    );
   }
 
   @Public()

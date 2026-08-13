@@ -72,7 +72,7 @@
       "source_file": "backend/package.json",
       "source_location": "L1",
       "id": "backend_package_json",
-      "community": 1,
+      "community": 47,
       "norm_label": "package.json"
     },
     {
@@ -81,7 +81,7 @@
       "source_file": "backend/package.json",
       "source_location": "L2",
       "id": "backend_package_name",
-      "community": 1,
+      "community": 47,
       "norm_label": "name"
     },
     {
@@ -90,7 +90,7 @@
       "source_file": "backend/package.json",
       "source_location": "L3",
       "id": "backend_package_version",
-      "community": 1,
+      "community": 47,
       "norm_label": "version"
     },
     {
@@ -99,7 +99,7 @@
       "source_file": "backend/package.json",
       "source_location": "L4",
       "id": "backend_package_description",
-      "community": 1,
+      "community": 47,
       "norm_label": "description"
     },
     {
@@ -108,7 +108,7 @@
       "source_file": "backend/package.json",
       "source_location": "L5",
       "id": "backend_package_author",
-      "community": 1,
+      "community": 47,
       "norm_label": "author"
     },
     {
@@ -117,7 +117,7 @@
       "source_file": "backend/package.json",
       "source_location": "L6",
       "id": "backend_package_private",
-      "community": 1,
+      "community": 47,
       "norm_label": "private"
     },
     {
@@ -126,7 +126,7 @@
       "source_file": "backend/package.json",
       "source_location": "L7",
       "id": "backend_package_license",
-      "community": 1,
+      "community": 47,
       "norm_label": "license"
     },
     {
@@ -135,7 +135,7 @@
       "source_file": "backend/package.json",
       "source_location": "L8",
       "id": "backend_package_scripts",
-      "community": 1,
+      "community": 45,
       "norm_label": "scripts"
     },
     {
@@ -144,7 +144,7 @@
       "source_file": "backend/package.json",
       "source_location": "L9",
       "id": "backend_package_scripts_build",
-      "community": 1,
+      "community": 45,
       "norm_label": "build"
     },
     {
@@ -153,7 +153,7 @@
       "source_file": "backend/package.json",
       "source_location": "L10",
       "id": "backend_package_scripts_format",
-      "community": 1,
+      "community": 45,
       "norm_label": "format"
     },
     {
@@ -162,7 +162,7 @@
       "source_file": "backend/package.json",
       "source_location": "L11",
       "id": "backend_package_scripts_start",
-      "community": 1,
+      "community": 45,
       "norm_label": "start"
     },
     {
@@ -171,7 +171,7 @@
       "source_file": "backend/package.json",
       "source_location": "L12",
       "id": "backend_package_scripts_start_dev",
-      "community": 1,
+      "community": 45,
       "norm_label": "start:dev"
     },
     {
@@ -180,7 +180,7 @@
       "source_file": "backend/package.json",
       "source_location": "L13",
       "id": "backend_package_scripts_start_debug",
-      "community": 1,
+      "community": 45,
       "norm_label": "start:debug"
     },
     {
@@ -189,7 +189,7 @@
       "source_file": "backend/package.json",
       "source_location": "L14",
       "id": "backend_package_scripts_start_prod",
-      "community": 1,
+      "community": 45,
       "norm_label": "start:prod"
     },
     {
@@ -198,7 +198,7 @@
       "source_file": "backend/package.json",
       "source_location": "L15",
       "id": "backend_package_scripts_lint",
-      "community": 1,
+      "community": 45,
       "norm_label": "lint"
     },
     {
@@ -207,7 +207,7 @@
       "source_file": "backend/package.json",
       "source_location": "L16",
       "id": "backend_package_scripts_test",
-      "community": 1,
+      "community": 45,
       "norm_label": "test"
     },
     {
@@ -216,7 +216,7 @@
       "source_file": "backend/package.json",
       "source_location": "L17",
       "id": "backend_package_scripts_test_watch",
-      "community": 1,
+      "community": 45,
       "norm_label": "test:watch"
     },
     {
@@ -225,7 +225,7 @@
       "source_file": "backend/package.json",
       "source_location": "L18",
       "id": "backend_package_scripts_test_cov",
-      "community": 1,
+      "community": 45,
       "norm_label": "test:cov"
     },
     {
@@ -234,7 +234,7 @@
       "source_file": "backend/package.json",
       "source_location": "L19",
       "id": "backend_package_scripts_test_debug",
-      "community": 1,
+      "community": 45,
       "norm_label": "test:debug"
     },
     {
@@ -243,14 +243,23 @@
       "source_file": "backend/package.json",
       "source_location": "L20",
       "id": "backend_package_scripts_test_e2e",
-      "community": 1,
+      "community": 45,
       "norm_label": "test:e2e"
+    },
+    {
+      "label": "migrate",
+      "file_type": "code",
+      "source_file": "backend/package.json",
+      "source_location": "L21",
+      "id": "backend_package_scripts_migrate",
+      "community": 45,
+      "norm_label": "migrate"
     },
     {
       "label": "dependencies",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L22",
+      "source_location": "L23",
       "id": "backend_package_dependencies",
       "community": 1,
       "norm_label": "dependencies"
@@ -259,7 +268,7 @@
       "label": "@nestjs/common",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L23",
+      "source_location": "L24",
       "id": "backend_package_dependencies_nestjs_common",
       "community": 1,
       "norm_label": "@nestjs/common"
@@ -268,7 +277,7 @@
       "label": "@nestjs/config",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L24",
+      "source_location": "L25",
       "id": "backend_package_dependencies_nestjs_config",
       "community": 1,
       "norm_label": "@nestjs/config"
@@ -277,7 +286,7 @@
       "label": "@nestjs/core",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L25",
+      "source_location": "L26",
       "id": "backend_package_dependencies_nestjs_core",
       "community": 1,
       "norm_label": "@nestjs/core"
@@ -286,7 +295,7 @@
       "label": "@nestjs/jwt",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L26",
+      "source_location": "L27",
       "id": "backend_package_dependencies_nestjs_jwt",
       "community": 1,
       "norm_label": "@nestjs/jwt"
@@ -295,7 +304,7 @@
       "label": "@nestjs/passport",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L27",
+      "source_location": "L28",
       "id": "backend_package_dependencies_nestjs_passport",
       "community": 1,
       "norm_label": "@nestjs/passport"
@@ -304,7 +313,7 @@
       "label": "@nestjs/platform-express",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L28",
+      "source_location": "L29",
       "id": "backend_package_dependencies_nestjs_platform_express",
       "community": 1,
       "norm_label": "@nestjs/platform-express"
@@ -313,7 +322,7 @@
       "label": "@nestjs/schedule",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L29",
+      "source_location": "L30",
       "id": "backend_package_dependencies_nestjs_schedule",
       "community": 1,
       "norm_label": "@nestjs/schedule"
@@ -322,7 +331,7 @@
       "label": "bcrypt",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L30",
+      "source_location": "L31",
       "id": "backend_package_dependencies_bcrypt",
       "community": 1,
       "norm_label": "bcrypt"
@@ -331,7 +340,7 @@
       "label": "class-transformer",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L31",
+      "source_location": "L32",
       "id": "backend_package_dependencies_class_transformer",
       "community": 1,
       "norm_label": "class-transformer"
@@ -340,7 +349,7 @@
       "label": "class-validator",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L32",
+      "source_location": "L33",
       "id": "backend_package_dependencies_class_validator",
       "community": 1,
       "norm_label": "class-validator"
@@ -349,7 +358,7 @@
       "label": "ioredis",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L33",
+      "source_location": "L34",
       "id": "backend_package_dependencies_ioredis",
       "community": 1,
       "norm_label": "ioredis"
@@ -358,16 +367,34 @@
       "label": "passport",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L34",
+      "source_location": "L35",
       "id": "backend_package_dependencies_passport",
       "community": 1,
       "norm_label": "passport"
     },
     {
+      "label": "passport-github2",
+      "file_type": "code",
+      "source_file": "backend/package.json",
+      "source_location": "L36",
+      "id": "backend_package_dependencies_passport_github2",
+      "community": 1,
+      "norm_label": "passport-github2"
+    },
+    {
+      "label": "passport-google-oauth20",
+      "file_type": "code",
+      "source_file": "backend/package.json",
+      "source_location": "L37",
+      "id": "backend_package_dependencies_passport_google_oauth20",
+      "community": 1,
+      "norm_label": "passport-google-oauth20"
+    },
+    {
       "label": "passport-jwt",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L35",
+      "source_location": "L38",
       "id": "backend_package_dependencies_passport_jwt",
       "community": 1,
       "norm_label": "passport-jwt"
@@ -376,7 +403,7 @@
       "label": "passport-local",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L36",
+      "source_location": "L39",
       "id": "backend_package_dependencies_passport_local",
       "community": 1,
       "norm_label": "passport-local"
@@ -385,7 +412,7 @@
       "label": "pg",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L37",
+      "source_location": "L40",
       "id": "backend_package_dependencies_pg",
       "community": 1,
       "norm_label": "pg"
@@ -394,7 +421,7 @@
       "label": "reflect-metadata",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L38",
+      "source_location": "L41",
       "id": "backend_package_dependencies_reflect_metadata",
       "community": 1,
       "norm_label": "reflect-metadata"
@@ -403,7 +430,7 @@
       "label": "rxjs",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L39",
+      "source_location": "L42",
       "id": "backend_package_dependencies_rxjs",
       "community": 1,
       "norm_label": "rxjs"
@@ -412,7 +439,7 @@
       "label": "devDependencies",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L41",
+      "source_location": "L44",
       "id": "backend_package_devdependencies",
       "community": 2,
       "norm_label": "devdependencies"
@@ -421,7 +448,7 @@
       "label": "@eslint/eslintrc",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L42",
+      "source_location": "L45",
       "id": "backend_package_devdependencies_eslint_eslintrc",
       "community": 2,
       "norm_label": "@eslint/eslintrc"
@@ -430,7 +457,7 @@
       "label": "@eslint/js",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L43",
+      "source_location": "L46",
       "id": "backend_package_devdependencies_eslint_js",
       "community": 2,
       "norm_label": "@eslint/js"
@@ -439,7 +466,7 @@
       "label": "@nestjs/cli",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L44",
+      "source_location": "L47",
       "id": "backend_package_devdependencies_nestjs_cli",
       "community": 2,
       "norm_label": "@nestjs/cli"
@@ -448,7 +475,7 @@
       "label": "@nestjs/schematics",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L45",
+      "source_location": "L48",
       "id": "backend_package_devdependencies_nestjs_schematics",
       "community": 2,
       "norm_label": "@nestjs/schematics"
@@ -457,7 +484,7 @@
       "label": "@nestjs/testing",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L46",
+      "source_location": "L49",
       "id": "backend_package_devdependencies_nestjs_testing",
       "community": 2,
       "norm_label": "@nestjs/testing"
@@ -466,7 +493,7 @@
       "label": "@types/bcrypt",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L47",
+      "source_location": "L50",
       "id": "backend_package_devdependencies_types_bcrypt",
       "community": 2,
       "norm_label": "@types/bcrypt"
@@ -475,7 +502,7 @@
       "label": "@types/express",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L48",
+      "source_location": "L51",
       "id": "backend_package_devdependencies_types_express",
       "community": 2,
       "norm_label": "@types/express"
@@ -484,7 +511,7 @@
       "label": "@types/ioredis",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L49",
+      "source_location": "L52",
       "id": "backend_package_devdependencies_types_ioredis",
       "community": 2,
       "norm_label": "@types/ioredis"
@@ -493,7 +520,7 @@
       "label": "@types/jest",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L50",
+      "source_location": "L53",
       "id": "backend_package_devdependencies_types_jest",
       "community": 2,
       "norm_label": "@types/jest"
@@ -502,16 +529,34 @@
       "label": "@types/node",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L51",
+      "source_location": "L54",
       "id": "backend_package_devdependencies_types_node",
       "community": 2,
       "norm_label": "@types/node"
     },
     {
+      "label": "@types/passport-github2",
+      "file_type": "code",
+      "source_file": "backend/package.json",
+      "source_location": "L55",
+      "id": "backend_package_devdependencies_types_passport_github2",
+      "community": 2,
+      "norm_label": "@types/passport-github2"
+    },
+    {
+      "label": "@types/passport-google-oauth20",
+      "file_type": "code",
+      "source_file": "backend/package.json",
+      "source_location": "L56",
+      "id": "backend_package_devdependencies_types_passport_google_oauth20",
+      "community": 2,
+      "norm_label": "@types/passport-google-oauth20"
+    },
+    {
       "label": "@types/passport-jwt",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L52",
+      "source_location": "L57",
       "id": "backend_package_devdependencies_types_passport_jwt",
       "community": 2,
       "norm_label": "@types/passport-jwt"
@@ -520,7 +565,7 @@
       "label": "@types/passport-local",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L53",
+      "source_location": "L58",
       "id": "backend_package_devdependencies_types_passport_local",
       "community": 2,
       "norm_label": "@types/passport-local"
@@ -529,7 +574,7 @@
       "label": "@types/pg",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L54",
+      "source_location": "L59",
       "id": "backend_package_devdependencies_types_pg",
       "community": 2,
       "norm_label": "@types/pg"
@@ -538,7 +583,7 @@
       "label": "@types/supertest",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L55",
+      "source_location": "L60",
       "id": "backend_package_devdependencies_types_supertest",
       "community": 2,
       "norm_label": "@types/supertest"
@@ -547,7 +592,7 @@
       "label": "eslint",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L56",
+      "source_location": "L61",
       "id": "backend_package_devdependencies_eslint",
       "community": 2,
       "norm_label": "eslint"
@@ -556,7 +601,7 @@
       "label": "eslint-config-prettier",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L57",
+      "source_location": "L62",
       "id": "backend_package_devdependencies_eslint_config_prettier",
       "community": 2,
       "norm_label": "eslint-config-prettier"
@@ -565,7 +610,7 @@
       "label": "eslint-plugin-prettier",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L58",
+      "source_location": "L63",
       "id": "backend_package_devdependencies_eslint_plugin_prettier",
       "community": 2,
       "norm_label": "eslint-plugin-prettier"
@@ -574,7 +619,7 @@
       "label": "globals",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L59",
+      "source_location": "L64",
       "id": "backend_package_devdependencies_globals",
       "community": 2,
       "norm_label": "globals"
@@ -583,7 +628,7 @@
       "label": "jest",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L60",
+      "source_location": "L65",
       "id": "backend_package_devdependencies_jest",
       "community": 2,
       "norm_label": "jest"
@@ -592,7 +637,7 @@
       "label": "prettier",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L61",
+      "source_location": "L66",
       "id": "backend_package_devdependencies_prettier",
       "community": 2,
       "norm_label": "prettier"
@@ -601,7 +646,7 @@
       "label": "source-map-support",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L62",
+      "source_location": "L67",
       "id": "backend_package_devdependencies_source_map_support",
       "community": 2,
       "norm_label": "source-map-support"
@@ -610,7 +655,7 @@
       "label": "supertest",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L63",
+      "source_location": "L68",
       "id": "backend_package_devdependencies_supertest",
       "community": 2,
       "norm_label": "supertest"
@@ -619,7 +664,7 @@
       "label": "ts-jest",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L64",
+      "source_location": "L69",
       "id": "backend_package_devdependencies_ts_jest",
       "community": 2,
       "norm_label": "ts-jest"
@@ -628,7 +673,7 @@
       "label": "ts-loader",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L65",
+      "source_location": "L70",
       "id": "backend_package_devdependencies_ts_loader",
       "community": 2,
       "norm_label": "ts-loader"
@@ -637,7 +682,7 @@
       "label": "ts-node",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L66",
+      "source_location": "L71",
       "id": "backend_package_devdependencies_ts_node",
       "community": 2,
       "norm_label": "ts-node"
@@ -646,7 +691,7 @@
       "label": "tsconfig-paths",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L67",
+      "source_location": "L72",
       "id": "backend_package_devdependencies_tsconfig_paths",
       "community": 2,
       "norm_label": "tsconfig-paths"
@@ -655,7 +700,7 @@
       "label": "typescript",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L68",
+      "source_location": "L73",
       "id": "backend_package_devdependencies_typescript",
       "community": 2,
       "norm_label": "typescript"
@@ -664,7 +709,7 @@
       "label": "typescript-eslint",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L69",
+      "source_location": "L74",
       "id": "backend_package_devdependencies_typescript_eslint",
       "community": 2,
       "norm_label": "typescript-eslint"
@@ -673,81 +718,81 @@
       "label": "jest",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L71",
+      "source_location": "L76",
       "id": "backend_package_jest",
-      "community": 1,
+      "community": 46,
       "norm_label": "jest"
     },
     {
       "label": "moduleFileExtensions",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L72",
+      "source_location": "L77",
       "id": "backend_package_jest_modulefileextensions",
-      "community": 1,
+      "community": 46,
       "norm_label": "modulefileextensions"
     },
     {
       "label": "rootDir",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L77",
+      "source_location": "L82",
       "id": "backend_package_jest_rootdir",
-      "community": 1,
+      "community": 46,
       "norm_label": "rootdir"
     },
     {
       "label": "testRegex",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L78",
+      "source_location": "L83",
       "id": "backend_package_jest_testregex",
-      "community": 1,
+      "community": 46,
       "norm_label": "testregex"
     },
     {
       "label": "transform",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L79",
+      "source_location": "L84",
       "id": "backend_package_jest_transform",
-      "community": 1,
+      "community": 46,
       "norm_label": "transform"
     },
     {
       "label": "^.+\\\\.(t|j)s$",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L80",
+      "source_location": "L85",
       "id": "backend_package_transform_t_j_s",
-      "community": 1,
+      "community": 46,
       "norm_label": "^.+\\\\.(t|j)s$"
     },
     {
       "label": "collectCoverageFrom",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L82",
+      "source_location": "L87",
       "id": "backend_package_jest_collectcoveragefrom",
-      "community": 1,
+      "community": 46,
       "norm_label": "collectcoveragefrom"
     },
     {
       "label": "coverageDirectory",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L85",
+      "source_location": "L90",
       "id": "backend_package_jest_coveragedirectory",
-      "community": 1,
+      "community": 46,
       "norm_label": "coveragedirectory"
     },
     {
       "label": "testEnvironment",
       "file_type": "code",
       "source_file": "backend/package.json",
-      "source_location": "L86",
+      "source_location": "L91",
       "id": "backend_package_jest_testenvironment",
-      "community": 1,
+      "community": 46,
       "norm_label": "testenvironment"
     },
     {
@@ -1044,7 +1089,7 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L1",
       "id": "backend_src_app_module_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "app.module.ts"
     },
     {
@@ -1053,7 +1098,7 @@
       "source_file": "backend/src/app.module.ts",
       "source_location": "L40",
       "id": "src_app_module_appmodule",
-      "community": 18,
+      "community": 17,
       "norm_label": "appmodule"
     },
     {
@@ -1098,7 +1143,7 @@
       "source_file": "backend/src/main.ts",
       "source_location": "L1",
       "id": "backend_src_main_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "main.ts"
     },
     {
@@ -1107,7 +1152,7 @@
       "source_file": "backend/src/main.ts",
       "source_location": "L8",
       "id": "src_main_bootstrap",
-      "community": 18,
+      "community": 17,
       "norm_label": "bootstrap()"
     },
     {
@@ -1116,7 +1161,7 @@
       "source_file": "backend/src/common/decorators/current-user.decorator.ts",
       "source_location": "L1",
       "id": "backend_src_common_decorators_current_user_decorator_ts",
-      "community": 41,
+      "community": 42,
       "norm_label": "current-user.decorator.ts"
     },
     {
@@ -1125,7 +1170,7 @@
       "source_file": "backend/src/common/decorators/current-user.decorator.ts",
       "source_location": "L3",
       "id": "decorators_current_user_decorator_authuserpayload",
-      "community": 41,
+      "community": 42,
       "norm_label": "authuserpayload"
     },
     {
@@ -1134,7 +1179,7 @@
       "source_file": "backend/src/common/decorators/current-user.decorator.ts",
       "source_location": "L10",
       "id": "decorators_current_user_decorator_currentuser",
-      "community": 41,
+      "community": 42,
       "norm_label": "currentuser"
     },
     {
@@ -1143,7 +1188,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L1",
       "id": "backend_src_common_decorators_roles_decorator_ts",
-      "community": 40,
+      "community": 41,
       "norm_label": "roles.decorator.ts"
     },
     {
@@ -1152,7 +1197,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L5",
       "id": "decorators_roles_decorator_roles",
-      "community": 40,
+      "community": 41,
       "norm_label": "roles()"
     },
     {
@@ -1161,7 +1206,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L8",
       "id": "decorators_roles_decorator_public",
-      "community": 40,
+      "community": 41,
       "norm_label": "public()"
     },
     {
@@ -1170,7 +1215,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L1",
       "id": "backend_src_common_enums_index_ts",
-      "community": 40,
+      "community": 41,
       "norm_label": "index.ts"
     },
     {
@@ -1179,7 +1224,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L1",
       "id": "enums_index_userrole",
-      "community": 40,
+      "community": 41,
       "norm_label": "userrole"
     },
     {
@@ -1188,7 +1233,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L8",
       "id": "enums_index_reportstatus",
-      "community": 40,
+      "community": 41,
       "norm_label": "reportstatus"
     },
     {
@@ -1197,7 +1242,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L17",
       "id": "enums_index_escalationlevel",
-      "community": 40,
+      "community": 41,
       "norm_label": "escalationlevel"
     },
     {
@@ -1206,7 +1251,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L23",
       "id": "enums_index_tier",
-      "community": 40,
+      "community": 41,
       "norm_label": "tier"
     },
     {
@@ -1215,7 +1260,7 @@
       "source_file": "backend/src/common/enums/index.ts",
       "source_location": "L29",
       "id": "enums_index_targettype",
-      "community": 40,
+      "community": 41,
       "norm_label": "targettype"
     },
     {
@@ -1224,7 +1269,7 @@
       "source_file": "backend/src/common/filters/all-exceptions.filter.ts",
       "source_location": "L1",
       "id": "backend_src_common_filters_all_exceptions_filter_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "all-exceptions.filter.ts"
     },
     {
@@ -1233,7 +1278,7 @@
       "source_file": "backend/src/common/filters/all-exceptions.filter.ts",
       "source_location": "L12",
       "id": "filters_all_exceptions_filter_allexceptionsfilter",
-      "community": 18,
+      "community": 17,
       "norm_label": "allexceptionsfilter"
     },
     {
@@ -1242,7 +1287,7 @@
       "source_file": "backend/src/common/filters/all-exceptions.filter.ts",
       "source_location": "L15",
       "id": "filters_all_exceptions_filter_allexceptionsfilter_catch",
-      "community": 18,
+      "community": 17,
       "norm_label": ".catch()"
     },
     {
@@ -1251,7 +1296,7 @@
       "source_file": "backend/src/common/interceptors/transform.interceptor.ts",
       "source_location": "L1",
       "id": "backend_src_common_interceptors_transform_interceptor_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "transform.interceptor.ts"
     },
     {
@@ -1260,7 +1305,7 @@
       "source_file": "backend/src/common/interceptors/transform.interceptor.ts",
       "source_location": "L10",
       "id": "interceptors_transform_interceptor_apiresponse",
-      "community": 18,
+      "community": 17,
       "norm_label": "apiresponse"
     },
     {
@@ -1269,7 +1314,7 @@
       "source_file": "backend/src/common/interceptors/transform.interceptor.ts",
       "source_location": "L18",
       "id": "interceptors_transform_interceptor_transforminterceptor",
-      "community": 18,
+      "community": 17,
       "norm_label": "transforminterceptor"
     },
     {
@@ -1278,7 +1323,7 @@
       "source_file": "backend/src/common/interceptors/transform.interceptor.ts",
       "source_location": "L19",
       "id": "interceptors_transform_interceptor_transforminterceptor_intercept",
-      "community": 18,
+      "community": 17,
       "norm_label": ".intercept()"
     },
     {
@@ -1287,7 +1332,7 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L1",
       "id": "backend_src_config_config_validation_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "config.validation.ts"
     },
     {
@@ -1296,7 +1341,7 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L4",
       "id": "config_config_validation_environment",
-      "community": 18,
+      "community": 17,
       "norm_label": "environment"
     },
     {
@@ -1305,16 +1350,16 @@
       "source_file": "backend/src/config/config.validation.ts",
       "source_location": "L10",
       "id": "config_config_validation_environmentvariables",
-      "community": 18,
+      "community": 17,
       "norm_label": "environmentvariables"
     },
     {
       "label": "validate()",
       "file_type": "code",
       "source_file": "backend/src/config/config.validation.ts",
-      "source_location": "L117",
+      "source_location": "L142",
       "id": "config_config_validation_validate",
-      "community": 18,
+      "community": 17,
       "norm_label": "validate()"
     },
     {
@@ -1462,6 +1507,24 @@
       "norm_label": ".seedsuperadmin()"
     },
     {
+      "label": "run-migrations.ts",
+      "file_type": "code",
+      "source_file": "backend/src/database/run-migrations.ts",
+      "source_location": "L1",
+      "id": "backend_src_database_run_migrations_ts",
+      "community": 48,
+      "norm_label": "run-migrations.ts"
+    },
+    {
+      "label": "runStandaloneMigrations()",
+      "file_type": "code",
+      "source_file": "backend/src/database/run-migrations.ts",
+      "source_location": "L11",
+      "id": "database_run_migrations_runstandalonemigrations",
+      "community": 48,
+      "norm_label": "runstandalonemigrations()"
+    },
+    {
       "label": "answers.controller.ts",
       "file_type": "code",
       "source_file": "backend/src/modules/answers/answers.controller.ts",
@@ -1539,7 +1602,7 @@
       "source_file": "backend/src/modules/answers/answers.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_answers_answers_module_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "answers.module.ts"
     },
     {
@@ -1548,7 +1611,7 @@
       "source_file": "backend/src/modules/answers/answers.module.ts",
       "source_location": "L13",
       "id": "answers_answers_module_answersmodule",
-      "community": 18,
+      "community": 17,
       "norm_label": "answersmodule"
     },
     {
@@ -1753,7 +1816,7 @@
       "label": "AuthController",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L17",
+      "source_location": "L22",
       "id": "auth_auth_controller_authcontroller",
       "community": 32,
       "norm_label": "authcontroller"
@@ -1762,7 +1825,7 @@
       "label": ".constructor()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L18",
+      "source_location": "L23",
       "id": "auth_auth_controller_authcontroller_constructor",
       "community": 32,
       "norm_label": ".constructor()"
@@ -1771,7 +1834,7 @@
       "label": ".register()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L22",
+      "source_location": "L30",
       "id": "auth_auth_controller_authcontroller_register",
       "community": 32,
       "norm_label": ".register()"
@@ -1780,7 +1843,7 @@
       "label": ".login()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L29",
+      "source_location": "L37",
       "id": "auth_auth_controller_authcontroller_login",
       "community": 32,
       "norm_label": ".login()"
@@ -1789,16 +1852,52 @@
       "label": ".oauthLogin()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L36",
+      "source_location": "L44",
       "id": "auth_auth_controller_authcontroller_oauthlogin",
       "community": 32,
       "norm_label": ".oauthlogin()"
     },
     {
+      "label": ".googleAuth()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L52",
+      "id": "auth_auth_controller_authcontroller_googleauth",
+      "community": 32,
+      "norm_label": ".googleauth()"
+    },
+    {
+      "label": ".googleAuthCallback()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L59",
+      "id": "auth_auth_controller_authcontroller_googleauthcallback",
+      "community": 32,
+      "norm_label": ".googleauthcallback()"
+    },
+    {
+      "label": ".githubAuth()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L71",
+      "id": "auth_auth_controller_authcontroller_githubauth",
+      "community": 32,
+      "norm_label": ".githubauth()"
+    },
+    {
+      "label": ".githubAuthCallback()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L78",
+      "id": "auth_auth_controller_authcontroller_githubauthcallback",
+      "community": 32,
+      "norm_label": ".githubauthcallback()"
+    },
+    {
       "label": ".refreshToken()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L43",
+      "source_location": "L89",
       "id": "auth_auth_controller_authcontroller_refreshtoken",
       "community": 32,
       "norm_label": ".refreshtoken()"
@@ -1807,7 +1906,7 @@
       "label": ".getMe()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.controller.ts",
-      "source_location": "L49",
+      "source_location": "L95",
       "id": "auth_auth_controller_authcontroller_getme",
       "community": 32,
       "norm_label": ".getme()"
@@ -1825,7 +1924,7 @@
       "label": "AuthModule",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.module.ts",
-      "source_location": "L26",
+      "source_location": "L36",
       "id": "auth_auth_module_authmodule",
       "community": 32,
       "norm_label": "authmodule"
@@ -1944,7 +2043,7 @@
       "source_file": "backend/src/modules/auth/auth.service.ts",
       "source_location": "L33",
       "id": "auth_auth_service_authservice_constructor",
-      "community": 17,
+      "community": 32,
       "norm_label": ".constructor()"
     },
     {
@@ -2151,7 +2250,7 @@
       "source_file": "backend/src/modules/auth/guards/optional-jwt-auth.guard.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_guards_optional_jwt_auth_guard_ts",
-      "community": 40,
+      "community": 18,
       "norm_label": "optional-jwt-auth.guard.ts"
     },
     {
@@ -2160,7 +2259,7 @@
       "source_file": "backend/src/modules/auth/guards/optional-jwt-auth.guard.ts",
       "source_location": "L5",
       "id": "guards_optional_jwt_auth_guard_optionaljwtauthguard",
-      "community": 40,
+      "community": 18,
       "norm_label": "optionaljwtauthguard"
     },
     {
@@ -2169,7 +2268,7 @@
       "source_file": "backend/src/modules/auth/guards/optional-jwt-auth.guard.ts",
       "source_location": "L6",
       "id": "guards_optional_jwt_auth_guard_optionaljwtauthguard_handlerequest",
-      "community": 40,
+      "community": 18,
       "norm_label": ".handlerequest()"
     },
     {
@@ -2178,7 +2277,7 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L1",
       "id": "backend_src_modules_auth_guards_roles_guard_ts",
-      "community": 40,
+      "community": 41,
       "norm_label": "roles.guard.ts"
     },
     {
@@ -2187,7 +2286,7 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L6",
       "id": "guards_roles_guard_role_ranks",
-      "community": 40,
+      "community": 41,
       "norm_label": "role_ranks"
     },
     {
@@ -2196,7 +2295,7 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L14",
       "id": "guards_roles_guard_rolesguard",
-      "community": 40,
+      "community": 41,
       "norm_label": "rolesguard"
     },
     {
@@ -2205,7 +2304,7 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L15",
       "id": "guards_roles_guard_rolesguard_constructor",
-      "community": 40,
+      "community": 41,
       "norm_label": ".constructor()"
     },
     {
@@ -2214,8 +2313,80 @@
       "source_file": "backend/src/modules/auth/guards/roles.guard.ts",
       "source_location": "L17",
       "id": "guards_roles_guard_rolesguard_canactivate",
-      "community": 40,
+      "community": 41,
       "norm_label": ".canactivate()"
+    },
+    {
+      "label": "github.strategy.ts",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L1",
+      "id": "backend_src_modules_auth_strategies_github_strategy_ts",
+      "community": 32,
+      "norm_label": "github.strategy.ts"
+    },
+    {
+      "label": "GithubStrategy",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L8",
+      "id": "strategies_github_strategy_githubstrategy",
+      "community": 32,
+      "norm_label": "githubstrategy"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L9",
+      "id": "strategies_github_strategy_githubstrategy_constructor",
+      "community": 32,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".validate()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L28",
+      "id": "strategies_github_strategy_githubstrategy_validate",
+      "community": 32,
+      "norm_label": ".validate()"
+    },
+    {
+      "label": "google.strategy.ts",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L1",
+      "id": "backend_src_modules_auth_strategies_google_strategy_ts",
+      "community": 32,
+      "norm_label": "google.strategy.ts"
+    },
+    {
+      "label": "GoogleStrategy",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L8",
+      "id": "strategies_google_strategy_googlestrategy",
+      "community": 32,
+      "norm_label": "googlestrategy"
+    },
+    {
+      "label": ".constructor()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L9",
+      "id": "strategies_google_strategy_googlestrategy_constructor",
+      "community": 32,
+      "norm_label": ".constructor()"
+    },
+    {
+      "label": ".validate()",
+      "file_type": "code",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L28",
+      "id": "strategies_google_strategy_googlestrategy_validate",
+      "community": 32,
+      "norm_label": ".validate()"
     },
     {
       "label": "comments.controller.ts",
@@ -2556,7 +2727,7 @@
       "source_file": "backend/src/modules/questions/questions.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_questions_questions_module_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "questions.module.ts"
     },
     {
@@ -2565,7 +2736,7 @@
       "source_file": "backend/src/modules/questions/questions.module.ts",
       "source_location": "L13",
       "id": "questions_questions_module_questionsmodule",
-      "community": 18,
+      "community": 17,
       "norm_label": "questionsmodule"
     },
     {
@@ -2601,7 +2772,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L35",
       "id": "questions_questions_repository_questionsrepository",
-      "community": 18,
+      "community": 40,
       "norm_label": "questionsrepository"
     },
     {
@@ -2619,7 +2790,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L41",
       "id": "questions_questions_repository_questionsrepository_findall",
-      "community": 18,
+      "community": 40,
       "norm_label": ".findall()"
     },
     {
@@ -2628,7 +2799,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L144",
       "id": "questions_questions_repository_questionsrepository_findbyid",
-      "community": 18,
+      "community": 40,
       "norm_label": ".findbyid()"
     },
     {
@@ -2637,7 +2808,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L201",
       "id": "questions_questions_repository_questionsrepository_incrementviews",
-      "community": 18,
+      "community": 40,
       "norm_label": ".incrementviews()"
     },
     {
@@ -2646,7 +2817,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L208",
       "id": "questions_questions_repository_questionsrepository_create",
-      "community": 18,
+      "community": 40,
       "norm_label": ".create()"
     },
     {
@@ -2655,7 +2826,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L265",
       "id": "questions_questions_repository_questionsrepository_update",
-      "community": 18,
+      "community": 40,
       "norm_label": ".update()"
     },
     {
@@ -2664,7 +2835,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L321",
       "id": "questions_questions_repository_questionsrepository_softdelete",
-      "community": 18,
+      "community": 40,
       "norm_label": ".softdelete()"
     },
     {
@@ -2691,7 +2862,7 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L25",
       "id": "questions_questions_service_questionsservice_constructor",
-      "community": 17,
+      "community": 40,
       "norm_label": ".constructor()"
     },
     {
@@ -2844,7 +3015,7 @@
       "source_file": "backend/src/modules/tags/tags.module.ts",
       "source_location": "L11",
       "id": "tags_tags_module_tagsmodule",
-      "community": 18,
+      "community": 17,
       "norm_label": "tagsmodule"
     },
     {
@@ -3033,7 +3204,7 @@
       "source_file": "backend/src/modules/users/users.module.ts",
       "source_location": "L11",
       "id": "users_users_module_usersmodule",
-      "community": 42,
+      "community": 17,
       "norm_label": "usersmodule"
     },
     {
@@ -3222,7 +3393,7 @@
       "source_file": "backend/src/modules/votes/votes.module.ts",
       "source_location": "L11",
       "id": "votes_votes_module_votesmodule",
-      "community": 43,
+      "community": 17,
       "norm_label": "votesmodule"
     },
     {
@@ -3258,7 +3429,7 @@
       "source_file": "backend/src/modules/votes/votes.repository.ts",
       "source_location": "L15",
       "id": "votes_votes_repository_votesrepository_constructor",
-      "community": 43,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -3348,7 +3519,7 @@
       "source_file": "backend/src/redis/event-bus.interface.ts",
       "source_location": "L1",
       "id": "backend_src_redis_event_bus_interface_ts",
-      "community": 17,
+      "community": 43,
       "norm_label": "event-bus.interface.ts"
     },
     {
@@ -3366,7 +3537,7 @@
       "source_file": "backend/src/redis/event-bus.interface.ts",
       "source_location": "L9",
       "id": "redis_event_bus_interface_ieventbus",
-      "community": 17,
+      "community": 43,
       "norm_label": "ieventbus"
     },
     {
@@ -3510,7 +3681,7 @@
       "source_file": "backend/test/app.e2e-spec.ts",
       "source_location": "L1",
       "id": "backend_test_app_e2e_spec_ts",
-      "community": 18,
+      "community": 17,
       "norm_label": "app.e2e-spec.ts"
     },
     {
@@ -4876,7 +5047,7 @@
       "label": "App()",
       "file_type": "code",
       "source_file": "frontend/client/src/App.tsx",
-      "source_location": "L10",
+      "source_location": "L11",
       "id": "frontend_client_src_app_tsx_src_app_app",
       "community": 35,
       "norm_label": "app()"
@@ -5119,7 +5290,7 @@
       "label": "styles",
       "file_type": "code",
       "source_file": "frontend/client/src/components/auth/AuthModal.tsx",
-      "source_location": "L167",
+      "source_location": "L218",
       "id": "auth_authmodal_styles",
       "community": 35,
       "norm_label": "styles"
@@ -5526,6 +5697,33 @@
       "source_file": "frontend/client/src/pages/AskQuestionPage.tsx",
       "source_location": "L246",
       "id": "pages_askquestionpage_styles",
+      "community": 35,
+      "norm_label": "styles"
+    },
+    {
+      "label": "AuthCallbackPage.tsx",
+      "file_type": "code",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L1",
+      "id": "frontend_client_src_pages_authcallbackpage_tsx",
+      "community": 35,
+      "norm_label": "authcallbackpage.tsx"
+    },
+    {
+      "label": "AuthCallbackPage()",
+      "file_type": "code",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L6",
+      "id": "pages_authcallbackpage_authcallbackpage",
+      "community": 35,
+      "norm_label": "authcallbackpage()"
+    },
+    {
+      "label": "styles",
+      "file_type": "code",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L61",
+      "id": "pages_authcallbackpage_styles",
       "community": 35,
       "norm_label": "styles"
     },
@@ -6698,6 +6896,15 @@
       "id": "client_readme_codeblock_1",
       "community": 29,
       "norm_label": "code:json ({)"
+    },
+    {
+      "label": "App()",
+      "file_type": "code",
+      "source_file": "frontend/client/src/App.tsx",
+      "source_location": "L10",
+      "community": 35,
+      "norm_label": "app()",
+      "id": "src_app_app"
     }
   ],
   "links": [
@@ -6975,6 +7182,16 @@
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "backend/package.json",
+      "source_location": "L21",
+      "weight": 1.0,
+      "source": "backend_package_scripts",
+      "target": "backend_package_scripts_migrate",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/package.json",
       "source_location": "L23",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -7090,6 +7307,26 @@
       "confidence_score": 1.0,
       "source": "backend_package_dependencies",
       "target": "backend_package_dependencies_passport"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/package.json",
+      "source_location": "L35",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_package_dependencies",
+      "target": "backend_package_dependencies_passport_github2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/package.json",
+      "source_location": "L36",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_package_dependencies",
+      "target": "backend_package_dependencies_passport_google_oauth20"
     },
     {
       "relation": "contains",
@@ -7240,6 +7477,26 @@
       "confidence_score": 1.0,
       "source": "backend_package_devdependencies",
       "target": "backend_package_devdependencies_types_node"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/package.json",
+      "source_location": "L54",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_package_devdependencies",
+      "target": "backend_package_devdependencies_types_passport_github2"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/package.json",
+      "source_location": "L55",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_package_devdependencies",
+      "target": "backend_package_devdependencies_types_passport_google_oauth20"
     },
     {
       "relation": "contains",
@@ -9408,6 +9665,16 @@
       "target": "database_migrator_service_migratorservice_seedsuperadmin"
     },
     {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/database/run-migrations.ts",
+      "source_location": "L11",
+      "weight": 1.0,
+      "source": "backend_src_database_run_migrations_ts",
+      "target": "database_run_migrations_runstandalonemigrations",
+      "confidence_score": 1.0
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10108,6 +10375,17 @@
       "target": "auth_auth_service_authservice"
     },
     {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L15",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_auth_controller_ts",
+      "target": "auth_auth_service_authtokens"
+    },
+    {
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
@@ -10244,6 +10522,46 @@
       "confidence_score": 1.0,
       "source": "auth_auth_controller_authcontroller",
       "target": "auth_auth_controller_authcontroller_oauthlogin"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L52",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "auth_auth_controller_authcontroller",
+      "target": "auth_auth_controller_authcontroller_googleauth"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L59",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "auth_auth_controller_authcontroller",
+      "target": "auth_auth_controller_authcontroller_googleauthcallback"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L71",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "auth_auth_controller_authcontroller",
+      "target": "auth_auth_controller_authcontroller_githubauth"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.controller.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "auth_auth_controller_authcontroller",
+      "target": "auth_auth_controller_authcontroller_githubauthcallback"
     },
     {
       "relation": "method",
@@ -10396,6 +10714,50 @@
       "confidence_score": 1.0,
       "source": "backend_src_modules_auth_auth_module_ts",
       "target": "auth_jwt_strategy_jwtstrategy"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.module.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_auth_module_ts",
+      "target": "backend_src_modules_auth_strategies_google_strategy_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.module.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_auth_module_ts",
+      "target": "strategies_google_strategy_googlestrategy"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.module.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_auth_module_ts",
+      "target": "backend_src_modules_auth_strategies_github_strategy_ts"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.module.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_auth_module_ts",
+      "target": "strategies_github_strategy_githubstrategy"
     },
     {
       "relation": "imports_from",
@@ -10706,6 +11068,28 @@
       "target": "auth_auth_service_authservice"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_strategies_github_strategy_ts",
+      "target": "backend_src_modules_auth_auth_service_ts"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_strategies_google_strategy_ts",
+      "target": "backend_src_modules_auth_auth_service_ts"
+    },
+    {
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/auth/auth.service.ts",
@@ -10784,6 +11168,50 @@
       "confidence_score": 1.0,
       "source": "auth_auth_service_authservice",
       "target": "auth_auth_service_authservice_generatetokens"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_strategies_github_strategy_ts",
+      "target": "auth_auth_service_authservice"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L5",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_strategies_google_strategy_ts",
+      "target": "auth_auth_service_authservice"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "strategies_github_strategy_githubstrategy_constructor",
+      "target": "auth_auth_service_authservice"
+    },
+    {
+      "relation": "references",
+      "context": "parameter_type",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "strategies_google_strategy_googlestrategy_constructor",
+      "target": "auth_auth_service_authservice"
     },
     {
       "relation": "references",
@@ -11195,6 +11623,66 @@
       "confidence_score": 1.0,
       "source": "guards_roles_guard_rolesguard",
       "target": "guards_roles_guard_rolesguard_canactivate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_strategies_github_strategy_ts",
+      "target": "strategies_github_strategy_githubstrategy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "strategies_github_strategy_githubstrategy",
+      "target": "strategies_github_strategy_githubstrategy_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/github.strategy.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "strategies_github_strategy_githubstrategy",
+      "target": "strategies_github_strategy_githubstrategy_validate"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L8",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "backend_src_modules_auth_strategies_google_strategy_ts",
+      "target": "strategies_google_strategy_googlestrategy"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "strategies_google_strategy_googlestrategy",
+      "target": "strategies_google_strategy_googlestrategy_constructor"
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/strategies/google.strategy.ts",
+      "source_location": "L28",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "strategies_google_strategy_googlestrategy",
+      "target": "strategies_google_strategy_googlestrategy_validate"
     },
     {
       "relation": "imports_from",
@@ -15479,6 +15967,28 @@
       "target": "pages_aichatpage_aichatpage"
     },
     {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/App.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_app_tsx",
+      "target": "frontend_client_src_pages_authcallbackpage_tsx"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/App.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_app_tsx",
+      "target": "pages_authcallbackpage_authcallbackpage"
+    },
+    {
       "relation": "contains",
       "confidence": "EXTRACTED",
       "source_file": "frontend/client/src/App.tsx",
@@ -15498,6 +16008,16 @@
       "confidence_score": 1.0,
       "source": "frontend_client_src_main_tsx",
       "target": "frontend_client_src_app_tsx"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/App.tsx",
+      "source_location": "L10",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_app_tsx",
+      "target": "src_app_app"
     },
     {
       "relation": "imports_from",
@@ -17178,6 +17698,17 @@
       "relation": "imports_from",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_pages_authcallbackpage_tsx",
+      "target": "frontend_client_src_context_authcontext_tsx"
+    },
+    {
+      "relation": "imports_from",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/client/src/pages/QuestionDetailPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
@@ -17222,6 +17753,17 @@
       "relation": "imports",
       "context": "import",
       "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L3",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_pages_authcallbackpage_tsx",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "imports",
+      "context": "import",
+      "confidence": "EXTRACTED",
       "source_file": "frontend/client/src/pages/QuestionDetailPage.tsx",
       "source_location": "L5",
       "weight": 1.0,
@@ -17249,6 +17791,17 @@
       "source_location": "L9",
       "weight": 1.0,
       "source": "pages_askquestionpage_askquestionpage",
+      "target": "context_authcontext_useauth"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "confidence_score": 1.0,
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L9",
+      "weight": 1.0,
+      "source": "pages_authcallbackpage_authcallbackpage",
       "target": "context_authcontext_useauth"
     },
     {
@@ -17311,6 +17864,26 @@
       "confidence_score": 1.0,
       "source": "frontend_client_src_pages_askquestionpage_tsx",
       "target": "pages_askquestionpage_styles"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L6",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_pages_authcallbackpage_tsx",
+      "target": "pages_authcallbackpage_authcallbackpage"
+    },
+    {
+      "relation": "contains",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/pages/AuthCallbackPage.tsx",
+      "source_location": "L61",
+      "weight": 1.0,
+      "confidence_score": 1.0,
+      "source": "frontend_client_src_pages_authcallbackpage_tsx",
+      "target": "pages_authcallbackpage_styles"
     },
     {
       "relation": "imports_from",
@@ -17697,9 +18270,9 @@
       "source_file": ".agents/rules/graphify.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_rules_graphify_md",
-      "target": "rules_graphify_graphify",
-      "confidence_score": 1.0
+      "target": "rules_graphify_graphify"
     },
     {
       "relation": "contains",
@@ -18277,9 +18850,9 @@
       "source_file": ".agents/workflows/graphify.md",
       "source_location": "L6",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "agents_workflows_graphify_md",
-      "target": "workflows_graphify_workflow_graphify",
-      "confidence_score": 1.0
+      "target": "workflows_graphify_workflow_graphify"
     },
     {
       "relation": "contains",
@@ -18513,5 +19086,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "d739ff6b428ec802a3bbe9288a6f8fcae9601a9d"
+  "built_at_commit": "2cb1d8999e20acc4a98d1c715beee5459fd364b1"
 }

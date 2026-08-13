@@ -6,6 +6,7 @@ import { QuestionDetailPage } from './pages/QuestionDetailPage';
 import { AskQuestionPage } from './pages/AskQuestionPage';
 import { TagsPage } from './pages/TagsPage';
 import { AIChatPage } from './pages/AIChatPage';
+import { AuthCallbackPage } from './pages/AuthCallbackPage';
 
 export function App() {
   return (
@@ -18,6 +19,7 @@ export function App() {
           <Route path="/ask" element={<AskQuestionPage />} />
           <Route path="/tags" element={<TagsPage />} />
           <Route path="/ai-chat" element={<AIChatPage />} />
+          <Route path="/auth/callback" element={<AuthCallbackPage />} />
           <Route path="/leaderboard" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>

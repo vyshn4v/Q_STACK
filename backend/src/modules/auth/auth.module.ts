@@ -5,6 +5,8 @@ import { AuthService } from './auth.service';
 import { AuthController } from './auth.controller';
 import { AuthRepository } from './auth.repository';
 import { JwtStrategy } from './jwt.strategy';
+import { GoogleStrategy } from './strategies/google.strategy';
+import { GithubStrategy } from './strategies/github.strategy';
 import { JwtAuthGuard } from './guards/jwt-auth.guard';
 import { RolesGuard } from './guards/roles.guard';
 
@@ -18,9 +20,17 @@ import { RolesGuard } from './guards/roles.guard';
     AuthService,
     AuthRepository,
     JwtStrategy,
+    GoogleStrategy,
+    GithubStrategy,
     JwtAuthGuard,
     RolesGuard,
   ],
-  exports: [AuthService, AuthRepository, JwtAuthGuard, RolesGuard, JwtModule],
+  exports: [
+    AuthService,
+    AuthRepository,
+    JwtAuthGuard,
+    RolesGuard,
+    JwtModule,
+  ],
 })
 export class AuthModule {}

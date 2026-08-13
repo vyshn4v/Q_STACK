@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\package.json": {
-    "mtime": 1786596886.7244482,
-    "ast_hash": "0f9d11abf0a264d9a8537bd9378a52e1",
+    "mtime": 1786598302.5059962,
+    "ast_hash": "cc05dc98acab98336fe359f25e6cca5c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\tsconfig.build.json": {
@@ -25,8 +25,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\migrations\\001_initial_schema.sql": {
-    "mtime": 1786596555.8555043,
-    "ast_hash": "a0aa11282e561a822c94e6c86248666c",
+    "mtime": 1786598371.274896,
+    "ast_hash": "3b7cf741af31ac716bde99ff3ee7de74",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.controller.spec.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\config\\config.validation.ts": {
-    "mtime": 1786596565.3548086,
-    "ast_hash": "10e807a6355ef5a52382dc6bcfb6acf2",
+    "mtime": 1786597930.9081278,
+    "ast_hash": "64a50ec2465026db00daa2142e1e8638",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\database.module.ts": {
@@ -200,8 +200,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\App.tsx": {
-    "mtime": 1786597456.3291528,
-    "ast_hash": "e67593d3ad621bb0b098dfa488c636d7",
+    "mtime": 1786597987.8156383,
+    "ast_hash": "6634d7a2787586ec248218192859d340",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\main.tsx": {
@@ -370,13 +370,13 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.controller.ts": {
-    "mtime": 1786596918.7439523,
-    "ast_hash": "c03c15b9294f45349f8eac77d1c51ff3",
+    "mtime": 1786597919.2213013,
+    "ast_hash": "8452834ea5fd34af751b07dd8a111b21",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.module.ts": {
-    "mtime": 1786596922.7771616,
-    "ast_hash": "749259651fbed1e636a504b179eb04dd",
+    "mtime": 1786597923.1546793,
+    "ast_hash": "07ef1cee183f7361d29b3451b9f911b0",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.repository.ts": {
@@ -540,8 +540,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\auth\\AuthModal.tsx": {
-    "mtime": 1786597311.8449886,
-    "ast_hash": "e8f77a90683ec72b7311ad3dbcceffa4",
+    "mtime": 1786597977.9216783,
+    "ast_hash": "0c954ead5f836939b9a468874c343f6f",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\AppHeader.tsx": {
@@ -637,6 +637,26 @@
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\workflows\\graphify.md": {
     "mtime": 1786597716.6338012,
     "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\strategies\\github.strategy.ts": {
+    "mtime": 1786597915.2454374,
+    "ast_hash": "abab412adb8480495f99d58d49f3a537",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\strategies\\google.strategy.ts": {
+    "mtime": 1786597911.7811396,
+    "ast_hash": "6ebb3ebafbf75a69d69286965a1b9f3c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AuthCallbackPage.tsx": {
+    "mtime": 1786597983.5726266,
+    "ast_hash": "3e8706e22d8bad6164727bd0212068b5",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\run-migrations.ts": {
+    "mtime": 1786598297.114479,
+    "ast_hash": "f0bb4951537949ae97186a1f3dc13c5d",
     "semantic_hash": ""
   }
 }

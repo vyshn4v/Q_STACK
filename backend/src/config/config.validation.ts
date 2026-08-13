@@ -112,6 +112,31 @@ class EnvironmentVariables {
   @IsString()
   @IsOptional()
   PINECONE_ENVIRONMENT?: string;
+
+  // OAuth Settings
+  @IsString()
+  @IsOptional()
+  GOOGLE_CLIENT_ID?: string;
+
+  @IsString()
+  @IsOptional()
+  GOOGLE_CLIENT_SECRET?: string;
+
+  @IsString()
+  @IsOptional()
+  GOOGLE_CALLBACK_URL?: string = 'http://localhost:4000/api/v1/auth/google/callback';
+
+  @IsString()
+  @IsOptional()
+  GITHUB_CLIENT_ID?: string;
+
+  @IsString()
+  @IsOptional()
+  GITHUB_CLIENT_SECRET?: string;
+
+  @IsString()
+  @IsOptional()
+  GITHUB_CALLBACK_URL?: string = 'http://localhost:4000/api/v1/auth/github/callback';
 }
 
 export function validate(config: Record<string, unknown>) {
