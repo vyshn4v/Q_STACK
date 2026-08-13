@@ -4,6 +4,7 @@ import type { User, Question, Answer, UserActivity, BadgeRule, ReputationLedgerE
 import { api } from '../api/client';
 import { AppShell } from '../components/layout/AppShell';
 import { FollowButton } from '../components/common/FollowButton';
+import { TagAutocompleteInput } from '../components/common/TagAutocompleteInput';
 import { useAuth } from '../context/AuthContext';
 import {
   Calendar,
@@ -23,7 +24,6 @@ import {
   Tag as TagIcon,
   Plus,
   X,
-  Search,
 } from 'lucide-react';
 
 export const UserProfilePage: React.FC = () => {
@@ -37,7 +37,6 @@ export const UserProfilePage: React.FC = () => {
   const [reputationLedger, setReputationLedger] = useState<ReputationLedgerEntry[]>([]);
   const [followedTags, setFollowedTags] = useState<any[]>([]);
   const [popularTags, setPopularTags] = useState<any[]>([]);
-  const [tagSearch, setTagSearch] = useState('');
   const [isTogglingTag, setIsTogglingTag] = useState<string | null>(null);
   const [activeTab, setActiveTab] = useState<'overview' | 'questions' | 'answers' | 'topics' | 'reputation' | 'badges' | 'activity' | 'resume'>('overview');
   const [resumeSubTab, setResumeSubTab] = useState<'personal' | 'education' | 'experience'>('experience');
@@ -479,39 +478,59 @@ export const UserProfilePage: React.FC = () => {
               {/* Add New Topics (isSelf only) */}
               {isSelf && (
                 <div style={styles.addTopicsSection}>
-                  <h4 style={styles.subHeading}>Add More Topics of Interest</h4>
-                  
-                  <div style={styles.tagSearchWrapper}>
-                    <Search size={16} color="#94a3b8" />
-                    <input
-                      type="text"
-                      placeholder="Filter popular tags (e.g. react, typescript, python, docker)..."
-                      value={tagSearch}
-                      onChange={(e) => setTagSearch(e.target.value)}
-                      style={styles.tagSearchInput}
-                    />
-                  </div>
+                  <h4 style={styles.subHeading}>Search & Follow Topics in Database</h4>
+                  <p style={{ fontSize: '0.8125rem', color: '#64748b', margin: '0 0 0.5rem 0' }}>
+                    Type to search any technology tag present in QStack database to add to your interests:
+                  </p>
 
-                  <div style={styles.availableTagsRow}>
-                    {popularTags
-                      .filter((pt) => {
-                        const isAlreadyFollowed = followedTags.some((ft) => ft.id === pt.id || ft.name?.toLowerCase() === pt.name?.toLowerCase());
-                        const matchesSearch = !tagSearch || pt.name?.toLowerCase().includes(tagSearch.toLowerCase());
-                        return !isAlreadyFollowed && matchesSearch;
-                      })
-                      .slice(0, 16)
-                      .map((pt) => (
-                        <button
-                          key={pt.id}
-                          onClick={() => handleToggleTag(pt)}
-                          disabled={isTogglingTag === pt.id}
-                          style={styles.addTagChip}
-                        >
-                          <Plus size={13} color="#2563eb" />
-                          <span>#{pt.name}</span>
-                          <span style={styles.chipCount}>{pt.questions_count || 0}</span>
-                        </button>
-                      ))}
+                  <TagAutocompleteInput
+                    selectedTags={followedTags.map((t) => t.name)}
+                    onAddTag={async (tagName) => {
+                      const found = popularTags.find((pt) => pt.name.toLowerCase() === tagName.toLowerCase());
+                      if (found) {
+                        handleToggleTag(found);
+                      } else {
+                        // Look up tag or toggle by name
+                        try {
+                          const res = await api.getTags(tagName);
+                          const exact = res.find((r) => r.name.toLowerCase() === tagName.toLowerCase());
+                          if (exact) {
+                            handleToggleTag(exact);
+                          }
+                        } catch {
+                          // Ignore
+                        }
+                      }
+                    }}
+                    onRemoveTag={(tagName) => {
+                      const found = followedTags.find((ft) => ft.name.toLowerCase() === tagName.toLowerCase());
+                      if (found) handleToggleTag(found);
+                    }}
+                    maxTags={30}
+                    placeholder="Search database tags (e.g. react, postgresql, docker, go, rust)..."
+                  />
+
+                  <div style={{ marginTop: '1rem' }}>
+                    <span style={{ fontSize: '0.75rem', fontWeight: 700, color: '#94a3b8', textTransform: 'uppercase', display: 'block', marginBottom: '0.5rem' }}>
+                      Suggested Popular Topics:
+                    </span>
+                    <div style={styles.availableTagsRow}>
+                      {popularTags
+                        .filter((pt) => !followedTags.some((ft) => ft.id === pt.id || ft.name?.toLowerCase() === pt.name?.toLowerCase()))
+                        .slice(0, 14)
+                        .map((pt) => (
+                          <button
+                            key={pt.id}
+                            onClick={() => handleToggleTag(pt)}
+                            disabled={isTogglingTag === pt.id}
+                            style={styles.addTagChip}
+                          >
+                            <Plus size={13} color="#2563eb" />
+                            <span>#{pt.name}</span>
+                            <span style={styles.chipCount}>{pt.questions_count || 0}</span>
+                          </button>
+                        ))}
+                    </div>
                   </div>
                 </div>
               )}

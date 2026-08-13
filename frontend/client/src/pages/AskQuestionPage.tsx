@@ -4,7 +4,8 @@ import { useAuth } from '../context/AuthContext';
 import { api } from '../api/client';
 import { AppShell } from '../components/layout/AppShell';
 import { RichMarkdownEditor } from '../components/common/RichMarkdownEditor';
-import { HelpCircle, Send, X, AlertCircle, Lock, LogIn } from 'lucide-react';
+import { TagAutocompleteInput } from '../components/common/TagAutocompleteInput';
+import { HelpCircle, Send, AlertCircle, Lock, LogIn } from 'lucide-react';
 
 export const AskQuestionPage: React.FC = () => {
   const { isAuthenticated, openAuthModal } = useAuth();
@@ -12,7 +13,6 @@ export const AskQuestionPage: React.FC = () => {
 
   const [title, setTitle] = useState('');
   const [body, setBody] = useState('');
-  const [tagInput, setTagInput] = useState('');
   const [tags, setTags] = useState<string[]>([]);
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
@@ -47,21 +47,6 @@ export const AskQuestionPage: React.FC = () => {
       </AppShell>
     );
   }
-
-  const handleAddTag = (e: React.KeyboardEvent | React.FocusEvent) => {
-    if ('key' in e && e.key !== 'Enter' && e.key !== ',') return;
-    e.preventDefault();
-
-    const sanitized = tagInput.toLowerCase().trim().replace(/[^a-z0-9-+#.]/g, '');
-    if (sanitized && !tags.includes(sanitized) && tags.length < 5) {
-      setTags([...tags, sanitized]);
-      setTagInput('');
-    }
-  };
-
-  const removeTag = (tagToRemove: string) => {
-    setTags(tags.filter((t) => t !== tagToRemove));
-  };
 
   const handleSubmit = async (e: React.FormEvent) => {
     e.preventDefault();
@@ -156,37 +141,16 @@ export const AskQuestionPage: React.FC = () => {
             <div className="ask-field-card" style={styles.fieldCard}>
               <label style={styles.fieldLabel}>Tags</label>
               <p style={styles.fieldDesc}>
-                Add up to 5 tags to describe what your question is about. Press Enter or comma to add.
+                Add up to 5 tags to describe what your question is about. Start typing to select from existing database tags or add a new one.
               </p>
 
-              <div style={styles.tagInputWrapper}>
-                <div style={styles.tagsRow}>
-                  {tags.map((t) => (
-                    <span key={t} style={styles.tagChip}>
-                      #{t}
-                      <button
-                        type="button"
-                        onClick={() => removeTag(t)}
-                        style={styles.tagRemoveBtn}
-                        aria-label={`Remove ${t}`}
-                      >
-                        <X size={12} />
-                      </button>
-                    </span>
-                  ))}
-                  {tags.length < 5 && (
-                    <input
-                      type="text"
-                      placeholder={tags.length === 0 ? "e.g. nestjs, typescript, redis" : "add tag..."}
-                      value={tagInput}
-                      onChange={(e) => setTagInput(e.target.value)}
-                      onKeyDown={handleAddTag}
-                      onBlur={handleAddTag}
-                      style={styles.tagInputField}
-                    />
-                  )}
-                </div>
-              </div>
+              <TagAutocompleteInput
+                selectedTags={tags}
+                onAddTag={(tagName) => setTags((prev) => [...prev, tagName])}
+                onRemoveTag={(tagName) => setTags((prev) => prev.filter((t) => t !== tagName))}
+                maxTags={5}
+                placeholder="Type tag name (e.g. nestjs, typescript, redis)..."
+              />
             </div>
 
             {/* Submit Button */}

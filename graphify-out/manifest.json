@@ -600,8 +600,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AskQuestionPage.tsx": {
-    "mtime": 1786603363.798664,
-    "ast_hash": "4a12b9b949eab3bcf359ec7f3e238d26",
+    "mtime": 1786626948.596789,
+    "ast_hash": "ba75b1319a3ade47e5d24075ce3e5ef9",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\HomePage.tsx": {
@@ -790,8 +790,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\UserProfilePage.tsx": {
-    "mtime": 1786626582.7674634,
-    "ast_hash": "ed8fd0f1b9a589ae5448afdeba0150e9",
+    "mtime": 1786626955.9443085,
+    "ast_hash": "67091566c763f7b77ecf87090c6d85d3",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\RichMarkdownEditor.tsx": {
@@ -987,6 +987,11 @@
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\ReportModal.tsx": {
     "mtime": 1786611790.9440262,
     "ast_hash": "1def6059317959ff513c1ea3b08096de",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\TagAutocompleteInput.tsx": {
+    "mtime": 1786626848.7724333,
+    "ast_hash": "4b97c2f263ff44c10080652abbf040b5",
     "semantic_hash": ""
   }
 }
