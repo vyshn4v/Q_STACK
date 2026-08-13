@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\package.json": {
-    "mtime": 1786600653.588314,
-    "ast_hash": "b9c00c2bc6d1ce6cb14a3cfd4f73975b",
+    "mtime": 1786628513.3921213,
+    "ast_hash": "fd5eaec279ad48652fc725d853b0d7e6",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\tsconfig.build.json": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\main.ts": {
-    "mtime": 1786603445.306033,
-    "ast_hash": "afd9078afc7a7dc1a9d136077b9b14bf",
+    "mtime": 1786628551.138986,
+    "ast_hash": "c80dbd96842ea4dbc17a2cf895b521cd",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\decorators\\current-user.decorator.ts": {
@@ -370,8 +370,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.controller.ts": {
-    "mtime": 1786597919.2213013,
-    "ast_hash": "8452834ea5fd34af751b07dd8a111b21",
+    "mtime": 1786628565.4669363,
+    "ast_hash": "9a150bf75c38c3fbee5063ca226f1a80",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\auth.module.ts": {
@@ -390,8 +390,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\jwt.strategy.ts": {
-    "mtime": 1786596901.2980103,
-    "ast_hash": "af8471ce587c6c664d14fd37c3667d50",
+    "mtime": 1786628557.7016237,
+    "ast_hash": "86995fd1c3fd0da82a041d071b43efe2",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\dto\\auth.dto.ts": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\api\\client.ts": {
-    "mtime": 1786628267.0961647,
-    "ast_hash": "d223abc4f303f2f772e4bf350a87f6e8",
+    "mtime": 1786628573.1995556,
+    "ast_hash": "73408c6c4aee4e366a652c18e4428b62",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\auth\\AuthModal.tsx": {
@@ -590,8 +590,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\context\\AuthContext.tsx": {
-    "mtime": 1786628275.2583826,
-    "ast_hash": "99987451500f1c3227c3a3e6b2f407f1",
+    "mtime": 1786628581.1433015,
+    "ast_hash": "9c0aa8f9adc3fb0f0706774162406edd",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AIChatPage.tsx": {
@@ -940,8 +940,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\api\\client.ts": {
-    "mtime": 1786628282.9142072,
-    "ast_hash": "64232a2f5bcfaa82fe4c0310090b18d2",
+    "mtime": 1786628588.6138566,
+    "ast_hash": "adbbc9ed8ebaaea6d3490aa77cf35f0b",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\components\\layout\\AdminShell.tsx": {
@@ -950,8 +950,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\context\\AdminAuthContext.tsx": {
-    "mtime": 1786628290.7036943,
-    "ast_hash": "3796c20b3467afae30bf875f1a549ce1",
+    "mtime": 1786628594.0791473,
+    "ast_hash": "aac6150a70c9a56521ebdb0e56fb0a71",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\pages\\AdminContentPage.tsx": {

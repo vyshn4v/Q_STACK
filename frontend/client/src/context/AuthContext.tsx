@@ -89,24 +89,26 @@ export const AuthProvider: React.FC<{ children: ReactNode }> = ({ children }) =>
 
   const login = async (email: string, password: string) => {
     const res = await api.login({ email, password });
-    localStorage.setItem('qstack_token', res.accessToken);
-    localStorage.setItem('qstack_refresh_token', res.refreshToken);
     setUser(res.user);
     closeAuthModal();
   };
 
   const register = async (email: string, password: string, displayName: string) => {
     const res = await api.register({ email, password, displayName });
-    localStorage.setItem('qstack_token', res.accessToken);
-    localStorage.setItem('qstack_refresh_token', res.refreshToken);
     setUser(res.user);
     closeAuthModal();
   };
 
-  const logout = () => {
-    localStorage.removeItem('qstack_token');
-    localStorage.removeItem('qstack_refresh_token');
-    setUser(null);
+  const logout = async () => {
+    try {
+      await api.logout();
+    } catch {
+      // Ignore
+    } finally {
+      localStorage.removeItem('qstack_token');
+      localStorage.removeItem('qstack_refresh_token');
+      setUser(null);
+    }
   };
 
   return (

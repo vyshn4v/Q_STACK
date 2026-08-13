@@ -73,15 +73,19 @@ export const AdminAuthProvider: React.FC<{ children: ReactNode }> = ({ children 
     if (!['moderator', 'admin', 'super_admin'].includes(res.user.role)) {
       throw new Error('Access denied: Account does not have administrative privileges.');
     }
-    localStorage.setItem('qstack_admin_token', res.accessToken);
-    localStorage.setItem('qstack_admin_refresh_token', res.refreshToken);
     setAdminUser(res.user);
   };
 
-  const logout = () => {
-    localStorage.removeItem('qstack_admin_token');
-    localStorage.removeItem('qstack_admin_refresh_token');
-    setAdminUser(null);
+  const logout = async () => {
+    try {
+      await adminApi.logout();
+    } catch {
+      // Ignore
+    } finally {
+      localStorage.removeItem('qstack_admin_token');
+      localStorage.removeItem('qstack_admin_refresh_token');
+      setAdminUser(null);
+    }
   };
 
   const isSuperAdmin = adminUser?.role === 'super_admin';

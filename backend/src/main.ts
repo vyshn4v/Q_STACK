@@ -1,6 +1,7 @@
 import { NestFactory } from '@nestjs/core';
 import { Logger, ValidationPipe } from '@nestjs/common';
 import { ConfigService } from '@nestjs/config';
+import cookieParser from 'cookie-parser';
 import { AppModule } from './app.module';
 import { AllExceptionsFilter } from './common/filters/all-exceptions.filter';
 import { TransformInterceptor } from './common/interceptors/transform.interceptor';
@@ -14,6 +15,9 @@ async function bootstrap() {
   const apiPrefix = configService.get<string>('API_PREFIX', 'api/v1');
   const clientUrl = configService.get<string>('CLIENT_URL', 'http://localhost:5173');
   const adminUrl = configService.get<string>('ADMIN_URL', 'http://localhost:5174');
+
+  // Parse HTTP-only cookies
+  app.use(cookieParser());
 
   // CORS configuration for client and admin frontends across localhost & LAN
   app.enableCors({

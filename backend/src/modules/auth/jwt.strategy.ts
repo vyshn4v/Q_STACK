@@ -17,7 +17,12 @@ export class JwtStrategy extends PassportStrategy(Strategy) {
     private readonly authRepo: AuthRepository,
   ) {
     super({
-      jwtFromRequest: ExtractJwt.fromAuthHeaderAsBearerToken(),
+      jwtFromRequest: ExtractJwt.fromExtractors([
+        (req: any) => {
+          return req?.cookies?.['qstack_access_token'] || null;
+        },
+        ExtractJwt.fromAuthHeaderAsBearerToken(),
+      ]),
       ignoreExpiration: false,
       secretOrKey: configService.get<string>('JWT_ACCESS_SECRET', 'dev-jwt-access-secret-qstack-2026-key'),
     });

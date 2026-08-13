@@ -15,7 +15,7 @@ import type {
 const API_BASE = '/api/v1';
 
 class ApiClient {
-  private refreshPromise: Promise<string | null> | null = null;
+  private refreshPromise: Promise<boolean> | null = null;
 
   private getHeaders(): HeadersInit {
     const headers: HeadersInit = {
@@ -29,46 +29,39 @@ class ApiClient {
   }
 
   /**
-   * Refreshes tokens with sliding 7-day expiration window.
-   * Single flight promise avoids duplicate parallel refresh calls.
+   * Refreshes tokens using HTTP-only cookies with sliding 7-day expiration window.
    */
-  async refreshSession(): Promise<string | null> {
+  async refreshSession(): Promise<boolean> {
     if (this.refreshPromise) {
       return this.refreshPromise;
-    }
-
-    const refreshToken = localStorage.getItem('qstack_refresh_token');
-    if (!refreshToken) {
-      return null;
     }
 
     this.refreshPromise = (async () => {
       try {
         const response = await fetch(`${API_BASE}/auth/refresh`, {
           method: 'POST',
+          credentials: 'include',
           headers: { 'Content-Type': 'application/json' },
-          body: JSON.stringify({ refreshToken }),
+          body: JSON.stringify({}),
         });
 
         if (!response.ok) {
-          throw new Error('Refresh token invalid or expired (inactive > 7 days)');
+          throw new Error('Session expired (inactive > 7 days)');
         }
 
         const json = await response.json().catch(() => ({}));
         const tokens = json.data || json;
 
-        if (tokens.accessToken && tokens.refreshToken) {
+        if (tokens.accessToken) {
           localStorage.setItem('qstack_token', tokens.accessToken);
-          localStorage.setItem('qstack_refresh_token', tokens.refreshToken);
-          return tokens.accessToken as string;
         }
-        return null;
+
+        return true;
       } catch {
-        // Expired after 7 days of inactivity
         localStorage.removeItem('qstack_token');
         localStorage.removeItem('qstack_refresh_token');
         window.dispatchEvent(new CustomEvent('qstack:session_expired'));
-        return null;
+        return false;
       } finally {
         this.refreshPromise = null;
       }
@@ -81,6 +74,7 @@ class ApiClient {
     const url = `${API_BASE}${endpoint}`;
     const response = await fetch(url, {
       ...options,
+      credentials: 'include', // Send & receive HTTP-only cookies automatically
       headers: {
         ...this.getHeaders(),
         ...options.headers,
@@ -95,8 +89,8 @@ class ApiClient {
       !endpoint.startsWith('/auth/register') &&
       !endpoint.startsWith('/auth/refresh')
     ) {
-      const newAccessToken = await this.refreshSession();
-      if (newAccessToken) {
+      const refreshed = await this.refreshSession();
+      if (refreshed) {
         return this.request<T>(endpoint, options, true);
       }
     }
@@ -123,6 +117,12 @@ class ApiClient {
     return this.request<{ accessToken: string; refreshToken: string; user: User }>('/auth/login', {
       method: 'POST',
       body: JSON.stringify(data),
+    });
+  }
+
+  async logout() {
+    return this.request<{ success: boolean }>('/auth/logout', {
+      method: 'POST',
     });
   }
 

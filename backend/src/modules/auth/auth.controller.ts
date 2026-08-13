@@ -7,6 +7,7 @@ import {
   Post,
   Req,
   Res,
+  UnauthorizedException,
   UseGuards,
 } from '@nestjs/common';
 import { AuthGuard } from '@nestjs/passport';
@@ -25,24 +26,77 @@ export class AuthController {
     private readonly configService: ConfigService,
   ) {}
 
+  private setAuthCookies(res: Response, tokens: AuthTokens) {
+    const isProd = this.configService.get<string>('NODE_ENV') === 'production';
+
+    // Access Token Cookie (1 hour)
+    res.cookie('qstack_access_token', tokens.accessToken, {
+      httpOnly: true,
+      secure: isProd,
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 60 * 60 * 1000, // 1 hour
+    });
+
+    // Refresh Token Cookie (7-day sliding window)
+    res.cookie('qstack_refresh_token', tokens.refreshToken, {
+      httpOnly: true,
+      secure: isProd,
+      sameSite: 'lax',
+      path: '/',
+      maxAge: 7 * 24 * 60 * 60 * 1000, // 7 days
+    });
+  }
+
+  private clearAuthCookies(res: Response) {
+    const isProd = this.configService.get<string>('NODE_ENV') === 'production';
+    res.clearCookie('qstack_access_token', {
+      httpOnly: true,
+      secure: isProd,
+      sameSite: 'lax',
+      path: '/',
+    });
+    res.clearCookie('qstack_refresh_token', {
+      httpOnly: true,
+      secure: isProd,
+      sameSite: 'lax',
+      path: '/',
+    });
+  }
+
   @Public()
   @Post('register')
-  async register(@Body() dto: RegisterDto) {
-    return this.authService.register(dto);
+  async register(
+    @Body() dto: RegisterDto,
+    @Res({ passthrough: true }) res: Response,
+  ) {
+    const tokens = await this.authService.register(dto);
+    this.setAuthCookies(res, tokens);
+    return tokens;
   }
 
   @Public()
   @HttpCode(HttpStatus.OK)
   @Post('login')
-  async login(@Body() dto: LoginDto) {
-    return this.authService.login(dto);
+  async login(
+    @Body() dto: LoginDto,
+    @Res({ passthrough: true }) res: Response,
+  ) {
+    const tokens = await this.authService.login(dto);
+    this.setAuthCookies(res, tokens);
+    return tokens;
   }
 
   @Public()
   @HttpCode(HttpStatus.OK)
   @Post('oauth')
-  async oauthLogin(@Body() dto: OAuthLoginDto) {
-    return this.authService.oauthLogin(dto);
+  async oauthLogin(
+    @Body() dto: OAuthLoginDto,
+    @Res({ passthrough: true }) res: Response,
+  ) {
+    const tokens = await this.authService.oauthLogin(dto);
+    this.setAuthCookies(res, tokens);
+    return tokens;
   }
 
   // Google OAuth Routes
@@ -58,6 +112,7 @@ export class AuthController {
   @UseGuards(AuthGuard('google'))
   async googleAuthCallback(@Req() req: Request, @Res() res: Response) {
     const authTokens = req.user as AuthTokens;
+    this.setAuthCookies(res, authTokens);
     const clientUrl = this.configService.get<string>('CLIENT_URL', 'http://localhost:5173');
     return res.redirect(
       `${clientUrl}/auth/callback?token=${authTokens.accessToken}&refreshToken=${authTokens.refreshToken}`,
@@ -77,6 +132,7 @@ export class AuthController {
   @UseGuards(AuthGuard('github'))
   async githubAuthCallback(@Req() req: Request, @Res() res: Response) {
     const authTokens = req.user as AuthTokens;
+    this.setAuthCookies(res, authTokens);
     const clientUrl = this.configService.get<string>('CLIENT_URL', 'http://localhost:5173');
     return res.redirect(
       `${clientUrl}/auth/callback?token=${authTokens.accessToken}&refreshToken=${authTokens.refreshToken}`,
@@ -86,8 +142,26 @@ export class AuthController {
   @Public()
   @HttpCode(HttpStatus.OK)
   @Post('refresh')
-  async refreshToken(@Body() dto: RefreshTokenDto) {
-    return this.authService.refreshToken(dto.refreshToken);
+  async refreshToken(
+    @Req() req: Request,
+    @Body() dto: RefreshTokenDto,
+    @Res({ passthrough: true }) res: Response,
+  ) {
+    const token = req.cookies?.['qstack_refresh_token'] || dto.refreshToken;
+    if (!token) {
+      throw new UnauthorizedException('Refresh token is required.');
+    }
+    const tokens = await this.authService.refreshToken(token);
+    this.setAuthCookies(res, tokens);
+    return tokens;
+  }
+
+  @Public()
+  @HttpCode(HttpStatus.OK)
+  @Post('logout')
+  async logout(@Res({ passthrough: true }) res: Response) {
+    this.clearAuthCookies(res);
+    return { success: true, message: 'Logged out successfully.' };
   }
 
   @UseGuards(JwtAuthGuard)
