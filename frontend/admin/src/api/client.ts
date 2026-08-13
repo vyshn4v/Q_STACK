@@ -61,6 +61,14 @@ export interface ObservabilityData {
 
 const API_BASE = '/api/v1';
 
+export const isAbortError = (err: any): boolean => {
+  return (
+    err?.name === 'AbortError' ||
+    err?.code === 20 ||
+    (typeof err?.message === 'string' && err.message.toLowerCase().includes('aborted'))
+  );
+};
+
 class AdminApiClient {
   private refreshPromise: Promise<boolean> | null = null;
 
@@ -116,23 +124,33 @@ class AdminApiClient {
 
   private async request<T>(endpoint: string, options: RequestInit = {}, isRetry = false): Promise<T> {
     const url = `${API_BASE}${endpoint}`;
-    const response = await fetch(url, {
-      ...options,
-      credentials: 'include',
-      headers: {
-        ...this.getHeaders(),
-        ...options.headers,
-      },
-    });
+    let response: Response;
+
+    try {
+      response = await fetch(url, {
+        ...options,
+        credentials: 'include',
+        headers: {
+          ...this.getHeaders(),
+          ...options.headers,
+        },
+      });
+    } catch (err: any) {
+      if (isAbortError(err)) {
+        throw err;
+      }
+      throw new Error(err.message || 'Admin network request failed');
+    }
 
     if (
       response.status === 401 &&
       !isRetry &&
+      !options.signal?.aborted &&
       !endpoint.startsWith('/auth/login') &&
       !endpoint.startsWith('/auth/refresh')
     ) {
       const refreshed = await this.refreshSession();
-      if (refreshed) {
+      if (refreshed && !options.signal?.aborted) {
         return this.request<T>(endpoint, options, true);
       }
     }
@@ -148,122 +166,198 @@ class AdminApiClient {
   }
 
   // Auth
-  async login(email: string, password: string) {
+  async login(email: string, password: string, signal?: AbortSignal) {
     return this.request<{ accessToken: string; refreshToken: string; user: AdminUser }>('/auth/login', {
       method: 'POST',
       body: JSON.stringify({ email, password }),
+      signal,
     });
   }
 
-  async logout() {
+  async logout(signal?: AbortSignal) {
     return this.request<{ success: boolean }>('/auth/logout', {
       method: 'POST',
+      signal,
     });
   }
 
-  async getMe() {
-    return this.request<AdminUser>('/auth/me');
+  async getMe(signal?: AbortSignal) {
+    return this.request<AdminUser>('/auth/me', { signal });
   }
 
   // Dashboard & Stats
-  async getStats() {
-    return this.request<AdminStats>('/admin/stats');
+  async getStats(signal?: AbortSignal) {
+    return this.request<AdminStats>('/admin/stats', { signal });
   }
 
-  // Reports
-  async getReports(params?: { status?: string; escalationLevel?: string; page?: number; limit?: number }) {
-    const query = new URLSearchParams();
-    if (params?.status) query.set('status', params.status);
-    if (params?.escalationLevel) query.set('escalationLevel', params.escalationLevel);
-    if (params?.page) query.set('page', String(params.page));
-    if (params?.limit) query.set('limit', String(params.limit));
-
-    const qs = query.toString();
-    return this.request<{ reports: AdminReport[]; total: number }>(`/reports${qs ? `?${qs}` : ''}`);
-  }
-
-  async escalateReport(id: string, escalationReason?: string) {
-    return this.request<AdminReport>(`/reports/${id}/escalate`, {
-      method: 'PATCH',
-      body: JSON.stringify({ escalationReason }),
+  async triggerNightlyCron(signal?: AbortSignal) {
+    return this.request<{
+      runId: string;
+      status: string;
+      eventsProcessed: number;
+      usersUpdated: number;
+      badgesAwarded: number;
+      moderatorPromotions: number;
+    }>('/reputation/run-cron', {
+      method: 'POST',
+      signal,
     });
   }
 
-  async resolveReport(id: string, actionTaken: string) {
-    return this.request<AdminReport>(`/reports/${id}/resolve`, {
-      method: 'PATCH',
-      body: JSON.stringify({ actionTaken }),
+  async triggerCron(jobType?: string, signal?: AbortSignal) {
+    return this.request<{ runId: string; status: string; processed: number }>('/admin/crons/trigger', {
+      method: 'POST',
+      body: JSON.stringify({ jobType }),
+      signal,
     });
   }
 
-  async dismissReport(id: string, actionTaken: string) {
-    return this.request<AdminReport>(`/reports/${id}/dismiss`, {
+  // Reports Queue
+  async getReports(
+    params?: {
+      status?: string;
+      escalationLevel?: string;
+      page?: number;
+      limit?: number;
+    },
+    signal?: AbortSignal,
+  ) {
+    const qs = new URLSearchParams();
+    if (params?.status) qs.set('status', params.status);
+    if (params?.escalationLevel) qs.set('escalationLevel', params.escalationLevel);
+    if (params?.page) qs.set('page', String(params.page));
+    if (params?.limit) qs.set('limit', String(params.limit));
+
+    const q = qs.toString();
+    return this.request<{
+      reports: AdminReport[];
+      total: number;
+      page: number;
+      limit: number;
+    }>(`/reports${q ? `?${q}` : ''}`, { signal });
+  }
+
+  async escalateReport(reportId: string, notes?: string, signal?: AbortSignal) {
+    return this.request<AdminReport>(`/reports/${reportId}/escalate`, {
       method: 'PATCH',
-      body: JSON.stringify({ actionTaken }),
+      body: JSON.stringify({ notes }),
+      signal,
     });
   }
 
-  // Users
-  async getUsers(params?: { search?: string; role?: string; isBanned?: boolean; page?: number; limit?: number }) {
-    const query = new URLSearchParams();
-    if (params?.search) query.set('search', params.search);
-    if (params?.role) query.set('role', params.role);
-    if (params?.isBanned !== undefined) query.set('isBanned', String(params.isBanned));
-    if (params?.page) query.set('page', String(params.page));
-    if (params?.limit) query.set('limit', String(params.limit));
-
-    const qs = query.toString();
-    return this.request<{ users: AdminUser[]; total: number }>(`/admin/users${qs ? `?${qs}` : ''}`);
+  async resolveReport(reportId: string, actionTaken?: string, notes?: string, signal?: AbortSignal) {
+    return this.request<AdminReport>(`/reports/${reportId}/resolve`, {
+      method: 'PATCH',
+      body: JSON.stringify({ resolution: 'action_taken', actionTaken, notes }),
+      signal,
+    });
   }
 
-  async setUserBanStatus(userId: string, isBanned: boolean) {
+  async dismissReport(reportId: string, notes?: string, signal?: AbortSignal) {
+    return this.request<AdminReport>(`/reports/${reportId}/resolve`, {
+      method: 'PATCH',
+      body: JSON.stringify({ resolution: 'dismissed', notes }),
+      signal,
+    });
+  }
+
+  // User Moderation
+  async getUsers(
+    params?: {
+      search?: string;
+      role?: string;
+      isBanned?: boolean;
+      page?: number;
+      limit?: number;
+    },
+    signal?: AbortSignal,
+  ) {
+    const qs = new URLSearchParams();
+    if (params?.search) qs.set('search', params.search);
+    if (params?.role) qs.set('role', params.role);
+    if (params?.isBanned !== undefined) qs.set('isBanned', String(params.isBanned));
+    if (params?.page) qs.set('page', String(params.page));
+    if (params?.limit) qs.set('limit', String(params.limit));
+
+    const q = qs.toString();
+    return this.request<{
+      users: AdminUser[];
+      total: number;
+      page: number;
+      limit: number;
+    }>(`/admin/users${q ? `?${q}` : ''}`, { signal });
+  }
+
+  async updateUserBan(userId: string, isBanned: boolean, banReason?: string, signal?: AbortSignal) {
     return this.request<{ success: boolean; userId: string; isBanned: boolean }>(`/admin/users/${userId}/ban`, {
       method: 'PATCH',
-      body: JSON.stringify({ isBanned }),
+      body: JSON.stringify({ isBanned, banReason }),
+      signal,
     });
   }
 
-  async setUserRole(userId: string, role: string) {
+  async setUserBanStatus(userId: string, isBanned: boolean, banReason?: string, signal?: AbortSignal) {
+    return this.updateUserBan(userId, isBanned, banReason, signal);
+  }
+
+  async updateUserRole(userId: string, role: string, signal?: AbortSignal) {
     return this.request<{ success: boolean; userId: string; role: string }>(`/admin/users/${userId}/role`, {
       method: 'PATCH',
       body: JSON.stringify({ role }),
+      signal,
     });
   }
 
-  // Content
-  async getContent(params?: { targetType?: 'question' | 'answer'; status?: 'active' | 'soft_deleted'; search?: string; page?: number; limit?: number }) {
-    const query = new URLSearchParams();
-    if (params?.targetType) query.set('targetType', params.targetType);
-    if (params?.status) query.set('status', params.status);
-    if (params?.search) query.set('search', params.search);
-    if (params?.page) query.set('page', String(params.page));
-    if (params?.limit) query.set('limit', String(params.limit));
-
-    const qs = query.toString();
-    return this.request<{ items: AdminContentItem[]; total: number }>(`/admin/content${qs ? `?${qs}` : ''}`);
+  async setUserRole(userId: string, role: string, signal?: AbortSignal) {
+    return this.updateUserRole(userId, role, signal);
   }
 
-  async softDeleteContent(targetType: 'question' | 'answer', targetId: string) {
-    return this.request<{ success: boolean }>(`/admin/content/${targetType}/${targetId}/soft-delete`, {
+  // Content Control
+  async getContent(
+    params?: {
+      type?: 'question' | 'answer';
+      status?: 'active' | 'soft_deleted';
+      search?: string;
+      page?: number;
+      limit?: number;
+    },
+    signal?: AbortSignal,
+  ) {
+    const qs = new URLSearchParams();
+    if (params?.type) qs.set('type', params.type);
+    if (params?.status) qs.set('status', params.status);
+    if (params?.search) qs.set('search', params.search);
+    if (params?.page) qs.set('page', String(params.page));
+    if (params?.limit) qs.set('limit', String(params.limit));
+
+    const q = qs.toString();
+    return this.request<{
+      items: AdminContentItem[];
+      total: number;
+      page: number;
+      limit: number;
+    }>(`/admin/content${q ? `?${q}` : ''}`, { signal });
+  }
+
+  async setContentStatus(type: 'question' | 'answer', id: string, status: 'active' | 'soft_deleted', signal?: AbortSignal) {
+    return this.request<{ success: boolean; id: string; status: string }>(`/admin/content/${type}/${id}/status`, {
       method: 'PATCH',
+      body: JSON.stringify({ status }),
+      signal,
     });
   }
 
-  async restoreContent(targetType: 'question' | 'answer', targetId: string) {
-    return this.request<{ success: boolean }>(`/admin/content/${targetType}/${targetId}/restore`, {
-      method: 'PATCH',
-    });
+  async softDeleteContent(type: 'question' | 'answer', id: string, signal?: AbortSignal) {
+    return this.setContentStatus(type, id, 'soft_deleted', signal);
   }
 
-  // Observability & System
-  async getObservability() {
-    return this.request<ObservabilityData>('/admin/observability');
+  async restoreContent(type: 'question' | 'answer', id: string, signal?: AbortSignal) {
+    return this.setContentStatus(type, id, 'active', signal);
   }
 
-  async triggerNightlyCron() {
-    return this.request<any>('/reputation/run-cron', {
-      method: 'POST',
-    });
+  // Observability & Logs
+  async getObservability(signal?: AbortSignal) {
+    return this.request<ObservabilityData>('/admin/observability', { signal });
   }
 }
 

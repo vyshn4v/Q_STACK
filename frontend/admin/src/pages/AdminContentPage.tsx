@@ -7,7 +7,7 @@ import {
   HelpCircle,
   MessageSquare,
 } from 'lucide-react';
-import { adminApi } from '../api/client';
+import { adminApi, isAbortError } from '../api/client';
 import type { AdminContentItem } from '../api/client';
 import { AdminShell } from '../components/layout/AdminShell';
 
@@ -19,22 +19,35 @@ export const AdminContentPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [actionLoadingId, setActionLoadingId] = useState<string | null>(null);
 
-  useEffect(() => {
-    loadContent();
-  }, [targetType, statusFilter]);
-
-  const loadContent = () => {
+  const loadContent = (signal?: AbortSignal) => {
     setIsLoading(true);
     adminApi.getContent({
-      targetType,
+      type: targetType,
       status: statusFilter,
       search: search || undefined,
       limit: 50,
-    })
-      .then((data) => setItems(data.items || []))
-      .catch(() => {})
-      .finally(() => setIsLoading(false));
+    }, signal)
+      .then((data) => {
+        if (!signal?.aborted) setItems(data.items || []);
+      })
+      .catch((err) => {
+        if (!isAbortError(err)) {
+          // Handled
+        }
+      })
+      .finally(() => {
+        if (!signal?.aborted) setIsLoading(false);
+      });
   };
+
+  useEffect(() => {
+    const controller = new AbortController();
+    loadContent(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
+  }, [targetType, statusFilter]);
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();

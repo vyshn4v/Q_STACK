@@ -18,7 +18,7 @@ import {
   Settings,
 } from 'lucide-react';
 import type { Question } from '../types';
-import { api } from '../api/client';
+import { api, isAbortError } from '../api/client';
 import { AppShell } from '../components/layout/AppShell';
 import { QuestionCard } from '../components/qa/QuestionCard';
 import { useAuth } from '../context/AuthContext';
@@ -33,41 +33,64 @@ export const HomePage: React.FC = () => {
   const [total, setTotal] = useState(0);
   const [isAddingTag, setIsAddingTag] = useState<string | null>(null);
 
-  // Load user followed tags & popular tags
+  // Load user followed tags & popular tags with AbortController
   useEffect(() => {
-    if (isAuthenticated) {
-      Promise.all([
-        api.getFollowingTags().catch(() => []),
-        api.getPopularTags().catch(() => []),
-      ]).then(([fTags, pTags]) => {
-        setFollowedTags(fTags || []);
-        setPopularTags(pTags || []);
-        if (fTags && fTags.length > 0) {
-          setActiveTab('interested');
-        }
-      });
-    }
+    if (!isAuthenticated) return;
+    const controller = new AbortController();
+
+    Promise.all([
+      api.getFollowingTags(undefined, controller.signal).catch((err) => {
+        if (isAbortError(err)) return [];
+        return [];
+      }),
+      api.getPopularTags(controller.signal).catch((err) => {
+        if (isAbortError(err)) return [];
+        return [];
+      }),
+    ]).then(([fTags, pTags]) => {
+      if (controller.signal.aborted) return;
+      setFollowedTags(fTags || []);
+      setPopularTags(pTags || []);
+      if (fTags && fTags.length > 0) {
+        setActiveTab('interested');
+      }
+    });
+
+    return () => {
+      controller.abort();
+    };
   }, [isAuthenticated]);
 
-  const fetchQuestions = async () => {
+  const fetchQuestions = async (signal?: AbortSignal) => {
     if (!isAuthenticated) {
       setIsLoading(false);
       return;
     }
     setIsLoading(true);
     try {
-      const data = await api.getQuestions({ sort: activeTab, limit: 15 });
-      setQuestions(data.questions);
-      setTotal(data.total);
-    } catch {
-      // Offline fallback
+      const data = await api.getQuestions({ sort: activeTab, limit: 15 }, signal);
+      if (!signal?.aborted) {
+        setQuestions(data.questions);
+        setTotal(data.total);
+      }
+    } catch (err: any) {
+      if (!isAbortError(err)) {
+        // Offline fallback
+      }
     } finally {
-      setIsLoading(false);
+      if (!signal?.aborted) {
+        setIsLoading(false);
+      }
     }
   };
 
   useEffect(() => {
-    fetchQuestions();
+    const controller = new AbortController();
+    fetchQuestions(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
   }, [activeTab, isAuthenticated]);
 
   const handleQuickFollowTag = async (tag: { id: string; name: string }) => {

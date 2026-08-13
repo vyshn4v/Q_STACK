@@ -6,7 +6,7 @@ import {
   Loader2,
   AlertCircle,
 } from 'lucide-react';
-import { adminApi } from '../api/client';
+import { adminApi, isAbortError } from '../api/client';
 import type { AdminUser } from '../api/client';
 import { AdminShell } from '../components/layout/AdminShell';
 import { useAdminAuth } from '../context/AdminAuthContext';
@@ -21,11 +21,7 @@ export const AdminUsersPage: React.FC = () => {
   const [actionLoadingId, setActionLoadingId] = useState<string | null>(null);
   const [error, setError] = useState<string | null>(null);
 
-  useEffect(() => {
-    loadUsers();
-  }, [roleFilter, banFilter]);
-
-  const loadUsers = () => {
+  const loadUsers = (signal?: AbortSignal) => {
     setIsLoading(true);
     setError(null);
     adminApi.getUsers({
@@ -33,11 +29,28 @@ export const AdminUsersPage: React.FC = () => {
       role: roleFilter || undefined,
       isBanned: banFilter ? banFilter === 'true' : undefined,
       limit: 50,
-    })
-      .then((data) => setUsers(data.users || []))
-      .catch((err) => setError(err.message || 'Failed to load users'))
-      .finally(() => setIsLoading(false));
+    }, signal)
+      .then((data) => {
+        if (!signal?.aborted) setUsers(data.users || []);
+      })
+      .catch((err) => {
+        if (!isAbortError(err)) {
+          setError(err.message || 'Failed to load users');
+        }
+      })
+      .finally(() => {
+        if (!signal?.aborted) setIsLoading(false);
+      });
   };
+
+  useEffect(() => {
+    const controller = new AbortController();
+    loadUsers(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
+  }, [roleFilter, banFilter]);
 
   const handleSearchSubmit = (e: React.FormEvent) => {
     e.preventDefault();

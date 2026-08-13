@@ -11,7 +11,7 @@ import {
   CheckCircle,
   Loader2,
 } from 'lucide-react';
-import { adminApi } from '../api/client';
+import { adminApi, isAbortError } from '../api/client';
 import type { AdminStats } from '../api/client';
 import { AdminShell } from '../components/layout/AdminShell';
 
@@ -21,17 +21,30 @@ export const AdminDashboardPage: React.FC = () => {
   const [isRunningCron, setIsRunningCron] = useState(false);
   const [cronMessage, setCronMessage] = useState<string | null>(null);
 
-  useEffect(() => {
-    loadStats();
-  }, []);
-
-  const loadStats = () => {
+  const loadStats = (signal?: AbortSignal) => {
     setIsLoading(true);
-    adminApi.getStats()
-      .then((data) => setStats(data))
-      .catch(() => {})
-      .finally(() => setIsLoading(false));
+    adminApi.getStats(signal)
+      .then((data) => {
+        if (!signal?.aborted) setStats(data);
+      })
+      .catch((err) => {
+        if (!isAbortError(err)) {
+          // Handled
+        }
+      })
+      .finally(() => {
+        if (!signal?.aborted) setIsLoading(false);
+      });
   };
+
+  useEffect(() => {
+    const controller = new AbortController();
+    loadStats(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
+  }, []);
 
   const handleTriggerCron = async () => {
     if (isRunningCron) return;

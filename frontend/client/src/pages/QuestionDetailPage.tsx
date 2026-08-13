@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link, useNavigate } from 'react-router-dom';
 import type { Question, Answer } from '../types';
-import { api } from '../api/client';
+import { api, isAbortError } from '../api/client';
 import { useAuth } from '../context/AuthContext';
 import { AppShell } from '../components/layout/AppShell';
 import { VoteControl } from '../components/qa/VoteControl';
@@ -40,25 +40,36 @@ export const QuestionDetailPage: React.FC = () => {
   const [copiedLink, setCopiedLink] = useState(false);
   const [isReportOpen, setIsReportOpen] = useState(false);
 
-  const loadData = async () => {
+  const loadData = async (signal?: AbortSignal) => {
     if (!id) return;
     setIsLoading(true);
     try {
       const [qData, aData] = await Promise.all([
-        api.getQuestion(id),
-        api.getAnswers(id),
+        api.getQuestion(id, signal),
+        api.getAnswers(id, signal),
       ]);
-      setQuestion(qData);
-      setAnswers(aData);
-    } catch {
-      // Handled
+      if (!signal?.aborted) {
+        setQuestion(qData);
+        setAnswers(aData);
+      }
+    } catch (err: any) {
+      if (!isAbortError(err)) {
+        // Handled
+      }
     } finally {
-      setIsLoading(false);
+      if (!signal?.aborted) {
+        setIsLoading(false);
+      }
     }
   };
 
   useEffect(() => {
-    loadData();
+    const controller = new AbortController();
+    loadData(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
   }, [id]);
 
   const handlePostAnswer = async (e: React.FormEvent) => {

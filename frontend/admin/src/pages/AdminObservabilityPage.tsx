@@ -6,7 +6,7 @@ import {
   Loader2,
   RefreshCw,
 } from 'lucide-react';
-import { adminApi } from '../api/client';
+import { adminApi, isAbortError } from '../api/client';
 import type { ObservabilityData } from '../api/client';
 import { AdminShell } from '../components/layout/AdminShell';
 
@@ -14,17 +14,30 @@ export const AdminObservabilityPage: React.FC = () => {
   const [data, setData] = useState<ObservabilityData | null>(null);
   const [isLoading, setIsLoading] = useState(true);
 
-  useEffect(() => {
-    loadObservability();
-  }, []);
-
-  const loadObservability = () => {
+  const loadObservability = (signal?: AbortSignal) => {
     setIsLoading(true);
-    adminApi.getObservability()
-      .then((res) => setData(res))
-      .catch(() => {})
-      .finally(() => setIsLoading(false));
+    adminApi.getObservability(signal)
+      .then((res) => {
+        if (!signal?.aborted) setData(res);
+      })
+      .catch((err) => {
+        if (!isAbortError(err)) {
+          // Handled
+        }
+      })
+      .finally(() => {
+        if (!signal?.aborted) setIsLoading(false);
+      });
   };
+
+  useEffect(() => {
+    const controller = new AbortController();
+    loadObservability(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
+  }, []);
 
   return (
     <AdminShell>
@@ -38,7 +51,7 @@ export const AdminObservabilityPage: React.FC = () => {
             </p>
           </div>
 
-          <button onClick={loadObservability} style={styles.refreshBtn}>
+          <button onClick={() => loadObservability()} style={styles.refreshBtn}>
             <RefreshCw size={15} />
             <span>Refresh Telemetry</span>
           </button>

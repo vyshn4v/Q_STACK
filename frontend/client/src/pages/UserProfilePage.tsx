@@ -1,7 +1,7 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
 import type { User, Question, Answer, UserActivity, BadgeRule, ReputationLedgerEntry } from '../types';
-import { api } from '../api/client';
+import { api, isAbortError } from '../api/client';
 import { AppShell } from '../components/layout/AppShell';
 import { FollowButton } from '../components/common/FollowButton';
 import { TagAutocompleteInput } from '../components/common/TagAutocompleteInput';
@@ -53,24 +53,26 @@ export const UserProfilePage: React.FC = () => {
 
   useEffect(() => {
     if (!id) return;
+    const controller = new AbortController();
     setIsLoading(true);
 
     const promises: Promise<any>[] = [
-      api.getUserProfile(id),
-      api.getUserQuestions(id),
-      api.getUserAnswers(id),
-      api.getUserActivity(id).catch(() => []),
-      api.getBadgeCatalog().catch(() => []),
-      api.getFollowingTags(id).catch(() => []),
-      api.getPopularTags().catch(() => []),
+      api.getUserProfile(id, controller.signal),
+      api.getUserQuestions(id, 20, controller.signal),
+      api.getUserAnswers(id, 20, controller.signal),
+      api.getUserActivity(id, 30, controller.signal).catch(() => []),
+      api.getBadgeCatalog(controller.signal).catch(() => []),
+      api.getFollowingTags(id, controller.signal).catch(() => []),
+      api.getPopularTags(controller.signal).catch(() => []),
     ];
 
     if (isSelf) {
-      promises.push(api.getUserReputationHistory(50).catch(() => []));
+      promises.push(api.getUserReputationHistory(50, controller.signal).catch(() => []));
     }
 
     Promise.all(promises)
       .then(([userData, qData, aData, actData, catalogData, tagsData, popData, ledgerData]) => {
+        if (controller.signal.aborted) return;
         setProfile(userData);
         setQuestions(qData);
         setAnswers(aData);
@@ -80,8 +82,20 @@ export const UserProfilePage: React.FC = () => {
         setPopularTags(popData || []);
         if (ledgerData) setReputationLedger(ledgerData);
       })
-      .catch(() => {})
-      .finally(() => setIsLoading(false));
+      .catch((err) => {
+        if (!isAbortError(err)) {
+          // Ignore
+        }
+      })
+      .finally(() => {
+        if (!controller.signal.aborted) {
+          setIsLoading(false);
+        }
+      });
+
+    return () => {
+      controller.abort();
+    };
   }, [id, isSelf]);
 
   const handleToggleTag = async (tag: { id: string; name: string }) => {

@@ -6,7 +6,7 @@ import {
   AlertTriangle,
   Loader2,
 } from 'lucide-react';
-import { adminApi } from '../api/client';
+import { adminApi, isAbortError } from '../api/client';
 import type { AdminReport } from '../api/client';
 import { AdminShell } from '../components/layout/AdminShell';
 import { useAdminAuth } from '../context/AdminAuthContext';
@@ -18,11 +18,7 @@ export const AdminReportsPage: React.FC = () => {
   const [isLoading, setIsLoading] = useState(true);
   const [actionLoadingId, setActionLoadingId] = useState<string | null>(null);
 
-  useEffect(() => {
-    loadReports();
-  }, [activeTab]);
-
-  const loadReports = () => {
+  const loadReports = (signal?: AbortSignal) => {
     setIsLoading(true);
     let statusFilter: string | undefined = undefined;
     if (activeTab === 'pending') {
@@ -37,11 +33,28 @@ export const AdminReportsPage: React.FC = () => {
       statusFilter = 'resolved';
     }
 
-    adminApi.getReports({ status: statusFilter, limit: 50 })
-      .then((data) => setReports(data.reports || []))
-      .catch(() => {})
-      .finally(() => setIsLoading(false));
+    adminApi.getReports({ status: statusFilter, limit: 50 }, signal)
+      .then((data) => {
+        if (!signal?.aborted) setReports(data.reports || []);
+      })
+      .catch((err) => {
+        if (!isAbortError(err)) {
+          // Handled
+        }
+      })
+      .finally(() => {
+        if (!signal?.aborted) setIsLoading(false);
+      });
   };
+
+  useEffect(() => {
+    const controller = new AbortController();
+    loadReports(controller.signal);
+
+    return () => {
+      controller.abort();
+    };
+  }, [activeTab]);
 
   const handleEscalate = async (reportId: string) => {
     const reason = window.prompt('Enter escalation reason or context for higher-tier review:');
