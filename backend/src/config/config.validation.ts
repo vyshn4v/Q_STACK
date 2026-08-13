@@ -66,6 +66,10 @@ class EnvironmentVariables {
   @IsOptional()
   REDIS_PASSWORD?: string;
 
+  @IsNumber()
+  @IsOptional()
+  FEED_CACHE_TTL_SECONDS: number = 60;
+
   // JWT
   @IsString()
   @IsOptional()

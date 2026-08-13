@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\config\\config.validation.ts": {
-    "mtime": 1786601805.4093041,
-    "ast_hash": "7591078da9c2c411c8dd1044a0252eba",
+    "mtime": 1786627326.5148888,
+    "ast_hash": "35eb67f60b35a1bb7d43c9eb0e569330",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\database.module.ts": {
@@ -115,8 +115,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\redis\\redis.service.ts": {
-    "mtime": 1786596584.3608425,
-    "ast_hash": "c6ed6171b9287c7ba38eacbf4f23baeb",
+    "mtime": 1786627318.0236337,
+    "ast_hash": "239d9e3f8d4e7007f775b7bd33e30aab",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\test\\app.e2e-spec.ts": {
@@ -455,8 +455,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\questions.service.ts": {
-    "mtime": 1786597169.6042101,
-    "ast_hash": "d2f6f0e9015fc2f5a33d6f5d8a47940d",
+    "mtime": 1786627379.9208624,
+    "ast_hash": "8508cbd68506a924bdf6dcb234e6e67a",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\questions\\dto\\question.dto.ts": {

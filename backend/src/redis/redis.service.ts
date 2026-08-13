@@ -61,4 +61,49 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
       return false;
     }
   }
+
+  // Key-Value Cache Operations
+  async get(key: string): Promise<string | null> {
+    if (!this.client) return null;
+    try {
+      return await this.client.get(key);
+    } catch (err: any) {
+      this.logger.warn(`Redis get error for key [${key}]: ${err.message}`);
+      return null;
+    }
+  }
+
+  async set(key: string, value: string, ttlSeconds?: number): Promise<void> {
+    if (!this.client) return;
+    try {
+      if (ttlSeconds && ttlSeconds > 0) {
+        await this.client.set(key, value, 'EX', ttlSeconds);
+      } else {
+        await this.client.set(key, value);
+      }
+    } catch (err: any) {
+      this.logger.warn(`Redis set error for key [${key}]: ${err.message}`);
+    }
+  }
+
+  async del(key: string): Promise<void> {
+    if (!this.client) return;
+    try {
+      await this.client.del(key);
+    } catch (err: any) {
+      this.logger.warn(`Redis del error for key [${key}]: ${err.message}`);
+    }
+  }
+
+  async delPattern(pattern: string): Promise<void> {
+    if (!this.client) return;
+    try {
+      const keys = await this.client.keys(pattern);
+      if (keys.length > 0) {
+        await this.client.del(...keys);
+      }
+    } catch (err: any) {
+      this.logger.warn(`Redis delPattern error for pattern [${pattern}]: ${err.message}`);
+    }
+  }
 }
