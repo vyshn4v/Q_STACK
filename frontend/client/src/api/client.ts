@@ -304,6 +304,56 @@ class ApiClient {
       method: 'POST',
     });
   }
+
+  // AI Systems (Phase 4)
+  async getQuestionAiAnswer(questionId: string) {
+    return this.request<{
+      question_id: string;
+      response_text: string | null;
+      model: string | null;
+      status: 'pending' | 'ready' | 'failed';
+      generated_at: string | null;
+    }>(`/ai/questions/${questionId}`);
+  }
+
+  async regenerateQuestionAiAnswer(questionId: string) {
+    return this.request<{
+      question_id: string;
+      response_text: string;
+      model: string;
+      status: 'ready';
+    }>(`/ai/questions/${questionId}/regenerate`, {
+      method: 'POST',
+    });
+  }
+
+  async getChatSessions() {
+    return this.request<any[]>('/ai/chat/sessions');
+  }
+
+  async createChatSession(title?: string) {
+    return this.request<any>('/ai/chat/sessions', {
+      method: 'POST',
+      body: JSON.stringify({ title }),
+    });
+  }
+
+  async getSessionMessages(sessionId: string) {
+    return this.request<any[]>(`/ai/chat/sessions/${sessionId}`);
+  }
+
+  async deleteChatSession(sessionId: string) {
+    return this.request<boolean>(`/ai/chat/sessions/${sessionId}`, {
+      method: 'DELETE',
+    });
+  }
+
+  async sendChatMessage(sessionId: string, message: string) {
+    return this.request<{ userMessage: any; assistantMessage: any }>(`/ai/chat/sessions/${sessionId}/messages`, {
+      method: 'POST',
+      body: JSON.stringify({ message }),
+    });
+  }
 }
 
 export const api = new ApiClient();

@@ -126,3 +126,30 @@ export interface CronRun {
   events_processed: number;
   metadata: Record<string, any>;
 }
+
+export interface ChatSession {
+  id: string;
+  user_id: string;
+  title: string;
+  created_at: string;
+  updated_at: string;
+}
+
+export interface ChatCitation {
+  id: string;
+  title: string;
+  score: number;
+}
+
+export interface ChatMessage {
+  id: string;
+  session_id: string;
+  role: 'user' | 'assistant' | 'system';
+  content: string;
+  metadata?: {
+    model?: string;
+    citations?: ChatCitation[];
+  };
+  created_at: string;
+}
+

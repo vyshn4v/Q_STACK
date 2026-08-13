@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.module.ts": {
-    "mtime": 1786604008.0748537,
-    "ast_hash": "60f9f2d2da4f0145b54f1242a424b17d",
+    "mtime": 1786605221.923319,
+    "ast_hash": "aa2852364215207ceabb3dfe1a5fdfd8",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.service.ts": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\api\\client.ts": {
-    "mtime": 1786604085.827456,
-    "ast_hash": "c98537c343260ab42ddf1106f020fd68",
+    "mtime": 1786605318.108088,
+    "ast_hash": "8dec3e80154e01da5b5602f004e0a41d",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\auth\\AuthModal.tsx": {
@@ -565,8 +565,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\AIAnswerBlock.tsx": {
-    "mtime": 1786597330.7840044,
-    "ast_hash": "1f1db1e572d30fcf86313cbfd33cff13",
+    "mtime": 1786605325.5667198,
+    "ast_hash": "2565adac36d2afaa1c9f1654ece8328c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\AnswerCard.tsx": {
@@ -595,8 +595,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AIChatPage.tsx": {
-    "mtime": 1786602334.507043,
-    "ast_hash": "6829156b9858f53afbd515a3522a9d7b",
+    "mtime": 1786605363.7323525,
+    "ast_hash": "fc660fdb894553b574eb5e71864fdad2",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AskQuestionPage.tsx": {
@@ -610,8 +610,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\QuestionDetailPage.tsx": {
-    "mtime": 1786603109.8334432,
-    "ast_hash": "69289a1753c892041888c93f5e6f7642",
+    "mtime": 1786605345.979118,
+    "ast_hash": "264991f41eea2a3c14852fbeaaab8f43",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\QuestionsPage.tsx": {
@@ -625,8 +625,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\types\\index.ts": {
-    "mtime": 1786604073.8102849,
-    "ast_hash": "ed460d27dbba759c317912947286a6f4",
+    "mtime": 1786605304.191415,
+    "ast_hash": "e1cabdb048fca42f10a0041f207e77d6",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\strategies\\github.strategy.ts": {
@@ -837,6 +837,51 @@
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\reputation.service.ts": {
     "mtime": 1786603987.7298536,
     "ast_hash": "c137f78d007ef4c0edaae1d19aa2957b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\ai-consumer.service.ts": {
+    "mtime": 1786605199.6666188,
+    "ast_hash": "225b7074712e929f2b08719eb6f5688b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\ai.controller.ts": {
+    "mtime": 1786605210.2635572,
+    "ast_hash": "f175e22b927c39ca8b386da600c37292",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\ai.module.ts": {
+    "mtime": 1786605213.6520574,
+    "ast_hash": "27aac808dea5df1d0e67132e55657810",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\dto\\ai-chat.dto.ts": {
+    "mtime": 1786605202.8508365,
+    "ast_hash": "95674bc9101273c2ad3c0bfe7a13856f",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\services\\ai-chat.service.ts": {
+    "mtime": 1786605196.205789,
+    "ast_hash": "b6d86f3c3969bfb6e29d92f3f50a6dad",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\services\\embeddings.service.ts": {
+    "mtime": 1786605177.4361906,
+    "ast_hash": "fa709df9d216c8babf3eaf06e2feeb10",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\services\\llm.service.ts": {
+    "mtime": 1786605172.7376933,
+    "ast_hash": "50521f9373f153d00b08a420a5e81ab8",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\services\\pinecone.service.ts": {
+    "mtime": 1786605183.5014591,
+    "ast_hash": "535e48284ae6da558cd731ea37f6ef09",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\ai\\services\\question-ai.service.ts": {
+    "mtime": 1786605189.380403,
+    "ast_hash": "3dcd558fd5d643db2cf2121e2b0b2ac2",
     "semantic_hash": ""
   }
 }

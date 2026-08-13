@@ -236,9 +236,9 @@ export const QuestionDetailPage: React.FC = () => {
 
             {/* Cached AI Overview Block (Read-only for all, no extra LLM calls on view) */}
             <AIAnswerBlock
-              status={question.ai_response?.status}
-              responseText={question.ai_response?.response_text}
-              model={question.ai_response?.model}
+              questionId={question.id}
+              authorId={question.author_id}
+              initialAiResponse={question.ai_response}
             />
 
             {/* Question Comments */}
