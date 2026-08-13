@@ -21,6 +21,8 @@ import { BookmarksModule } from './modules/bookmarks/bookmarks.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
 import { ReputationModule } from './modules/reputation/reputation.module';
 import { AiModule } from './modules/ai/ai.module';
+import { ReportsModule } from './modules/reports/reports.module';
+import { AdminModule } from './modules/admin/admin.module';
 
 @Module({
   imports: [
@@ -45,6 +47,8 @@ import { AiModule } from './modules/ai/ai.module';
     NotificationsModule,
     ReputationModule,
     AiModule,
+    ReportsModule,
+    AdminModule,
   ],
   controllers: [AppController],
   providers: [AppService],

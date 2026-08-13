@@ -354,6 +354,18 @@ class ApiClient {
       body: JSON.stringify({ message }),
     });
   }
+
+  // Reports & Moderation (Phase 5)
+  async createReport(data: {
+    targetType: 'question' | 'answer' | 'comment' | 'user';
+    targetId: string;
+    reason: string;
+  }) {
+    return this.request<any>('/reports', {
+      method: 'POST',
+      body: JSON.stringify(data),
+    });
+  }
 }
 
 export const api = new ApiClient();

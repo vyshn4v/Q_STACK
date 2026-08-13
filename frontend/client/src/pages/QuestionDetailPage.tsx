@@ -12,6 +12,7 @@ import { BookmarkButton } from '../components/qa/BookmarkButton';
 import { MedalControl } from '../components/qa/MedalControl';
 import { RichMarkdownEditor } from '../components/common/RichMarkdownEditor';
 import { RichTextRenderer } from '../components/common/RichTextRenderer';
+import { ReportModal } from '../components/common/ReportModal';
 import {
   Calendar,
   Eye,
@@ -23,6 +24,7 @@ import {
   CheckCircle,
   LogIn,
   Lock,
+  Flag,
 } from 'lucide-react';
 
 export const QuestionDetailPage: React.FC = () => {
@@ -36,6 +38,7 @@ export const QuestionDetailPage: React.FC = () => {
   const [answerBody, setAnswerBody] = useState('');
   const [isSubmittingAnswer, setIsSubmittingAnswer] = useState(false);
   const [copiedLink, setCopiedLink] = useState(false);
+  const [isReportOpen, setIsReportOpen] = useState(false);
 
   const loadData = async () => {
     if (!id) return;
@@ -208,6 +211,10 @@ export const QuestionDetailPage: React.FC = () => {
                     {copiedLink ? <CheckCircle size={14} color="#059669" /> : <Share2 size={14} />}
                     <span>{copiedLink ? 'Link Copied!' : 'Share'}</span>
                   </button>
+                  <button onClick={() => setIsReportOpen(true)} style={styles.actionBtn} title="Report question">
+                    <Flag size={14} color="#64748b" />
+                    <span>Report</span>
+                  </button>
                   {isAuthenticated && (isQuestionAuthor || isPrivileged) && (
                     <button onClick={handleDeleteQuestion} style={styles.deleteBtn}>
                       <Trash2 size={14} />
@@ -318,6 +325,14 @@ export const QuestionDetailPage: React.FC = () => {
             </button>
           </div>
         )}
+
+        <ReportModal
+          isOpen={isReportOpen}
+          onClose={() => setIsReportOpen(false)}
+          targetType="question"
+          targetId={question.id}
+          targetTitle={question.title}
+        />
       </div>
     </AppShell>
   );
