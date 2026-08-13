@@ -62,6 +62,8 @@ export interface ObservabilityData {
 const API_BASE = '/api/v1';
 
 class AdminApiClient {
+  private refreshPromise: Promise<string | null> | null = null;
+
   private getHeaders(): HeadersInit {
     const headers: HeadersInit = {
       'Content-Type': 'application/json',
@@ -73,7 +75,51 @@ class AdminApiClient {
     return headers;
   }
 
-  private async request<T>(endpoint: string, options: RequestInit = {}): Promise<T> {
+  async refreshSession(): Promise<string | null> {
+    if (this.refreshPromise) {
+      return this.refreshPromise;
+    }
+
+    const refreshToken = localStorage.getItem('qstack_admin_refresh_token');
+    if (!refreshToken) {
+      return null;
+    }
+
+    this.refreshPromise = (async () => {
+      try {
+        const response = await fetch(`${API_BASE}/auth/refresh`, {
+          method: 'POST',
+          headers: { 'Content-Type': 'application/json' },
+          body: JSON.stringify({ refreshToken }),
+        });
+
+        if (!response.ok) {
+          throw new Error('Admin session expired');
+        }
+
+        const json = await response.json().catch(() => ({}));
+        const tokens = json.data || json;
+
+        if (tokens.accessToken && tokens.refreshToken) {
+          localStorage.setItem('qstack_admin_token', tokens.accessToken);
+          localStorage.setItem('qstack_admin_refresh_token', tokens.refreshToken);
+          return tokens.accessToken as string;
+        }
+        return null;
+      } catch {
+        localStorage.removeItem('qstack_admin_token');
+        localStorage.removeItem('qstack_admin_refresh_token');
+        window.dispatchEvent(new CustomEvent('qstack:admin_session_expired'));
+        return null;
+      } finally {
+        this.refreshPromise = null;
+      }
+    })();
+
+    return this.refreshPromise;
+  }
+
+  private async request<T>(endpoint: string, options: RequestInit = {}, isRetry = false): Promise<T> {
     const url = `${API_BASE}${endpoint}`;
     const response = await fetch(url, {
       ...options,
@@ -82,6 +128,18 @@ class AdminApiClient {
         ...options.headers,
       },
     });
+
+    if (
+      response.status === 401 &&
+      !isRetry &&
+      !endpoint.startsWith('/auth/login') &&
+      !endpoint.startsWith('/auth/refresh')
+    ) {
+      const newAccessToken = await this.refreshSession();
+      if (newAccessToken) {
+        return this.request<T>(endpoint, options, true);
+      }
+    }
 
     const json = await response.json().catch(() => ({}));
 

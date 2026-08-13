@@ -21,7 +21,8 @@ export const AdminAuthProvider: React.FC<{ children: ReactNode }> = ({ children 
 
   useEffect(() => {
     const token = localStorage.getItem('qstack_admin_token');
-    if (!token) {
+    const refreshToken = localStorage.getItem('qstack_admin_refresh_token');
+    if (!token && !refreshToken) {
       setIsLoading(false);
       return;
     }
@@ -32,14 +33,39 @@ export const AdminAuthProvider: React.FC<{ children: ReactNode }> = ({ children 
           setAdminUser(user);
         } else {
           localStorage.removeItem('qstack_admin_token');
+          localStorage.removeItem('qstack_admin_refresh_token');
           setAdminUser(null);
         }
       })
       .catch(() => {
         localStorage.removeItem('qstack_admin_token');
+        localStorage.removeItem('qstack_admin_refresh_token');
         setAdminUser(null);
       })
       .finally(() => setIsLoading(false));
+
+    const handleSessionExpired = () => {
+      setAdminUser(null);
+    };
+    window.addEventListener('qstack:admin_session_expired', handleSessionExpired);
+
+    let lastRefreshTime = Date.now();
+    const handleUserActivity = () => {
+      const now = Date.now();
+      if (localStorage.getItem('qstack_admin_refresh_token') && now - lastRefreshTime > 30 * 60 * 1000) {
+        lastRefreshTime = now;
+        adminApi.refreshSession().catch(() => {});
+      }
+    };
+
+    window.addEventListener('click', handleUserActivity);
+    window.addEventListener('keydown', handleUserActivity);
+
+    return () => {
+      window.removeEventListener('qstack:admin_session_expired', handleSessionExpired);
+      window.removeEventListener('click', handleUserActivity);
+      window.removeEventListener('keydown', handleUserActivity);
+    };
   }, []);
 
   const login = async (email: string, pass: string) => {
@@ -48,11 +74,13 @@ export const AdminAuthProvider: React.FC<{ children: ReactNode }> = ({ children 
       throw new Error('Access denied: Account does not have administrative privileges.');
     }
     localStorage.setItem('qstack_admin_token', res.accessToken);
+    localStorage.setItem('qstack_admin_refresh_token', res.refreshToken);
     setAdminUser(res.user);
   };
 
   const logout = () => {
     localStorage.removeItem('qstack_admin_token');
+    localStorage.removeItem('qstack_admin_refresh_token');
     setAdminUser(null);
   };
 

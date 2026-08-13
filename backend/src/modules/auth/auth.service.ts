@@ -120,6 +120,9 @@ export class AuthService {
         throw new UnauthorizedException('Session invalid or account suspended.');
       }
 
+      // Record activity and update daily active tracking
+      await this.recordLogin(user.id);
+
       return this.generateTokens(user);
     } catch {
       throw new UnauthorizedException('Invalid or expired refresh token.');

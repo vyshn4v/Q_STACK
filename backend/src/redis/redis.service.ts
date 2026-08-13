@@ -19,6 +19,7 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
         host,
         port,
         password: password || undefined,
+        keyPrefix: `Q_STACK`,
         maxRetriesPerRequest: 3,
         retryStrategy: (times) => {
           if (times > 5) {

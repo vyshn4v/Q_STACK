@@ -1062,7 +1062,7 @@
       "source_file": "backend/src/app.controller.spec.ts",
       "source_location": "L1",
       "id": "backend_src_app_controller_spec_ts",
-      "community": 66,
+      "community": 74,
       "norm_label": "app.controller.spec.ts"
     },
     {
@@ -1071,7 +1071,7 @@
       "source_file": "backend/src/app.controller.spec.ts",
       "source_location": "L10",
       "id": "src_app_controller_spec_mockappservice",
-      "community": 66,
+      "community": 74,
       "norm_label": "mockappservice"
     },
     {
@@ -1080,7 +1080,7 @@
       "source_file": "backend/src/app.controller.ts",
       "source_location": "L1",
       "id": "backend_src_app_controller_ts",
-      "community": 66,
+      "community": 74,
       "norm_label": "app.controller.ts"
     },
     {
@@ -1089,7 +1089,7 @@
       "source_file": "backend/src/app.controller.ts",
       "source_location": "L5",
       "id": "src_app_controller_appcontroller",
-      "community": 66,
+      "community": 74,
       "norm_label": "appcontroller"
     },
     {
@@ -1098,7 +1098,7 @@
       "source_file": "backend/src/app.controller.ts",
       "source_location": "L6",
       "id": "src_app_controller_appcontroller_constructor",
-      "community": 66,
+      "community": 74,
       "norm_label": ".constructor()"
     },
     {
@@ -1107,7 +1107,7 @@
       "source_file": "backend/src/app.controller.ts",
       "source_location": "L9",
       "id": "src_app_controller_appcontroller_checkhealth",
-      "community": 66,
+      "community": 74,
       "norm_label": ".checkhealth()"
     },
     {
@@ -1134,7 +1134,7 @@
       "source_file": "backend/src/app.service.ts",
       "source_location": "L1",
       "id": "backend_src_app_service_ts",
-      "community": 66,
+      "community": 74,
       "norm_label": "app.service.ts"
     },
     {
@@ -1143,7 +1143,7 @@
       "source_file": "backend/src/app.service.ts",
       "source_location": "L6",
       "id": "src_app_service_appservice",
-      "community": 66,
+      "community": 74,
       "norm_label": "appservice"
     },
     {
@@ -1152,7 +1152,7 @@
       "source_file": "backend/src/app.service.ts",
       "source_location": "L7",
       "id": "src_app_service_appservice_constructor",
-      "community": 66,
+      "community": 74,
       "norm_label": ".constructor()"
     },
     {
@@ -1161,7 +1161,7 @@
       "source_file": "backend/src/app.service.ts",
       "source_location": "L12",
       "id": "src_app_service_appservice_gethealthstatus",
-      "community": 66,
+      "community": 74,
       "norm_label": ".gethealthstatus()"
     },
     {
@@ -1233,7 +1233,7 @@
       "source_file": "backend/src/common/decorators/roles.decorator.ts",
       "source_location": "L8",
       "id": "decorators_roles_decorator_public",
-      "community": 0,
+      "community": 73,
       "norm_label": "public()"
     },
     {
@@ -1620,7 +1620,7 @@
       "source_file": "backend/src/modules/admin/admin.controller.ts",
       "source_location": "L21",
       "id": "admin_admin_controller_admincontroller_constructor",
-      "community": 71,
+      "community": 41,
       "norm_label": ".constructor()"
     },
     {
@@ -1971,7 +1971,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_ai_ai_controller_ts",
-      "community": 0,
+      "community": 73,
       "norm_label": "ai.controller.ts"
     },
     {
@@ -1980,7 +1980,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L18",
       "id": "ai_ai_controller_aicontroller",
-      "community": 0,
+      "community": 67,
       "norm_label": "aicontroller"
     },
     {
@@ -1989,7 +1989,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L19",
       "id": "ai_ai_controller_aicontroller_constructor",
-      "community": 0,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -1998,7 +1998,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L30",
       "id": "ai_ai_controller_aicontroller_getquestionaianswer",
-      "community": 0,
+      "community": 67,
       "norm_label": ".getquestionaianswer()"
     },
     {
@@ -2007,7 +2007,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L37",
       "id": "ai_ai_controller_aicontroller_regeneratequestionaianswer",
-      "community": 0,
+      "community": 67,
       "norm_label": ".regeneratequestionaianswer()"
     },
     {
@@ -2016,7 +2016,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L51",
       "id": "ai_ai_controller_aicontroller_getuserchatsessions",
-      "community": 0,
+      "community": 67,
       "norm_label": ".getuserchatsessions()"
     },
     {
@@ -2025,7 +2025,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L57",
       "id": "ai_ai_controller_aicontroller_createchatsession",
-      "community": 0,
+      "community": 73,
       "norm_label": ".createchatsession()"
     },
     {
@@ -2034,7 +2034,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L66",
       "id": "ai_ai_controller_aicontroller_getsessionmessages",
-      "community": 0,
+      "community": 67,
       "norm_label": ".getsessionmessages()"
     },
     {
@@ -2043,7 +2043,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L75",
       "id": "ai_ai_controller_aicontroller_deletechatsession",
-      "community": 0,
+      "community": 67,
       "norm_label": ".deletechatsession()"
     },
     {
@@ -2052,7 +2052,7 @@
       "source_file": "backend/src/modules/ai/ai.controller.ts",
       "source_location": "L84",
       "id": "ai_ai_controller_aicontroller_sendchatmessage",
-      "community": 0,
+      "community": 73,
       "norm_label": ".sendchatmessage()"
     },
     {
@@ -2079,7 +2079,7 @@
       "source_file": "backend/src/modules/ai/dto/ai-chat.dto.ts",
       "source_location": "L1",
       "id": "backend_src_modules_ai_dto_ai_chat_dto_ts",
-      "community": 0,
+      "community": 73,
       "norm_label": "ai-chat.dto.ts"
     },
     {
@@ -2088,7 +2088,7 @@
       "source_file": "backend/src/modules/ai/dto/ai-chat.dto.ts",
       "source_location": "L3",
       "id": "dto_ai_chat_dto_createsessiondto",
-      "community": 0,
+      "community": 73,
       "norm_label": "createsessiondto"
     },
     {
@@ -2097,7 +2097,7 @@
       "source_file": "backend/src/modules/ai/dto/ai-chat.dto.ts",
       "source_location": "L10",
       "id": "dto_ai_chat_dto_sendchatmessagedto",
-      "community": 0,
+      "community": 73,
       "norm_label": "sendchatmessagedto"
     },
     {
@@ -2133,7 +2133,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L30",
       "id": "services_ai_chat_service_aichatservice",
-      "community": 76,
+      "community": 67,
       "norm_label": "aichatservice"
     },
     {
@@ -2142,7 +2142,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L33",
       "id": "services_ai_chat_service_aichatservice_constructor",
-      "community": 74,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2151,7 +2151,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L40",
       "id": "services_ai_chat_service_aichatservice_createsession",
-      "community": 76,
+      "community": 67,
       "norm_label": ".createsession()"
     },
     {
@@ -2160,7 +2160,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L50",
       "id": "services_ai_chat_service_aichatservice_getusersessions",
-      "community": 76,
+      "community": 67,
       "norm_label": ".getusersessions()"
     },
     {
@@ -2169,7 +2169,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L61",
       "id": "services_ai_chat_service_aichatservice_getsessionmessages",
-      "community": 76,
+      "community": 67,
       "norm_label": ".getsessionmessages()"
     },
     {
@@ -2178,7 +2178,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L74",
       "id": "services_ai_chat_service_aichatservice_deletesession",
-      "community": 76,
+      "community": 67,
       "norm_label": ".deletesession()"
     },
     {
@@ -2187,7 +2187,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L87",
       "id": "services_ai_chat_service_aichatservice_processusermessage",
-      "community": 76,
+      "community": 67,
       "norm_label": ".processusermessage()"
     },
     {
@@ -2196,7 +2196,7 @@
       "source_file": "backend/src/modules/ai/services/ai-chat.service.ts",
       "source_location": "L171",
       "id": "services_ai_chat_service_aichatservice_validatesessionownership",
-      "community": 76,
+      "community": 67,
       "norm_label": ".validatesessionownership()"
     },
     {
@@ -2214,7 +2214,7 @@
       "source_file": "backend/src/modules/ai/services/embeddings.service.ts",
       "source_location": "L5",
       "id": "services_embeddings_service_embeddingsservice",
-      "community": 74,
+      "community": 67,
       "norm_label": "embeddingsservice"
     },
     {
@@ -2223,7 +2223,7 @@
       "source_file": "backend/src/modules/ai/services/embeddings.service.ts",
       "source_location": "L11",
       "id": "services_embeddings_service_embeddingsservice_constructor",
-      "community": 74,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2232,7 +2232,7 @@
       "source_file": "backend/src/modules/ai/services/embeddings.service.ts",
       "source_location": "L20",
       "id": "services_embeddings_service_embeddingsservice_generateembedding",
-      "community": 74,
+      "community": 67,
       "norm_label": ".generateembedding()"
     },
     {
@@ -2250,7 +2250,7 @@
       "source_file": "backend/src/modules/ai/services/llm.service.ts",
       "source_location": "L5",
       "id": "services_llm_service_llmservice",
-      "community": 74,
+      "community": 67,
       "norm_label": "llmservice"
     },
     {
@@ -2259,7 +2259,7 @@
       "source_file": "backend/src/modules/ai/services/llm.service.ts",
       "source_location": "L14",
       "id": "services_llm_service_llmservice_constructor",
-      "community": 74,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2268,7 +2268,7 @@
       "source_file": "backend/src/modules/ai/services/llm.service.ts",
       "source_location": "L27",
       "id": "services_llm_service_llmservice_generatequestionanswer",
-      "community": 74,
+      "community": 67,
       "norm_label": ".generatequestionanswer()"
     },
     {
@@ -2277,7 +2277,7 @@
       "source_file": "backend/src/modules/ai/services/llm.service.ts",
       "source_location": "L60",
       "id": "services_llm_service_llmservice_generateragchatresponse",
-      "community": 74,
+      "community": 67,
       "norm_label": ".generateragchatresponse()"
     },
     {
@@ -2286,7 +2286,7 @@
       "source_file": "backend/src/modules/ai/services/llm.service.ts",
       "source_location": "L87",
       "id": "services_llm_service_llmservice_completechat",
-      "community": 74,
+      "community": 67,
       "norm_label": ".completechat()"
     },
     {
@@ -2313,7 +2313,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L17",
       "id": "services_pinecone_service_pineconeservice",
-      "community": 77,
+      "community": 67,
       "norm_label": "pineconeservice"
     },
     {
@@ -2322,7 +2322,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L23",
       "id": "services_pinecone_service_pineconeservice_constructor",
-      "community": 77,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2331,7 +2331,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L28",
       "id": "services_pinecone_service_pineconeservice_onmoduleinit",
-      "community": 77,
+      "community": 67,
       "norm_label": ".onmoduleinit()"
     },
     {
@@ -2340,7 +2340,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L34",
       "id": "services_pinecone_service_pineconeservice_resolveindexhost",
-      "community": 77,
+      "community": 67,
       "norm_label": ".resolveindexhost()"
     },
     {
@@ -2349,7 +2349,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L68",
       "id": "services_pinecone_service_pineconeservice_upsertvector",
-      "community": 77,
+      "community": 67,
       "norm_label": ".upsertvector()"
     },
     {
@@ -2358,7 +2358,7 @@
       "source_file": "backend/src/modules/ai/services/pinecone.service.ts",
       "source_location": "L110",
       "id": "services_pinecone_service_pineconeservice_querysimilar",
-      "community": 77,
+      "community": 67,
       "norm_label": ".querysimilar()"
     },
     {
@@ -2385,7 +2385,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L23",
       "id": "services_question_ai_service_questionaiservice",
-      "community": 78,
+      "community": 67,
       "norm_label": "questionaiservice"
     },
     {
@@ -2394,7 +2394,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L26",
       "id": "services_question_ai_service_questionaiservice_constructor",
-      "community": 74,
+      "community": 67,
       "norm_label": ".constructor()"
     },
     {
@@ -2403,7 +2403,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L36",
       "id": "services_question_ai_service_questionaiservice_getquestionanswer",
-      "community": 78,
+      "community": 67,
       "norm_label": ".getquestionanswer()"
     },
     {
@@ -2412,7 +2412,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L50",
       "id": "services_question_ai_service_questionaiservice_generateandcachequestionanswer",
-      "community": 78,
+      "community": 67,
       "norm_label": ".generateandcachequestionanswer()"
     },
     {
@@ -2421,7 +2421,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L131",
       "id": "services_question_ai_service_questionaiservice_regeneratequestionanswer",
-      "community": 78,
+      "community": 67,
       "norm_label": ".regeneratequestionanswer()"
     },
     {
@@ -2430,7 +2430,7 @@
       "source_file": "backend/src/modules/ai/services/question-ai.service.ts",
       "source_location": "L157",
       "id": "services_question_ai_service_questionaiservice_ingestquestionvector",
-      "community": 78,
+      "community": 67,
       "norm_label": ".ingestquestionvector()"
     },
     {
@@ -2520,7 +2520,7 @@
       "source_file": "backend/src/modules/answers/answers.module.ts",
       "source_location": "L13",
       "id": "answers_answers_module_answersmodule",
-      "community": 61,
+      "community": 17,
       "norm_label": "answersmodule"
     },
     {
@@ -2995,7 +2995,7 @@
       "label": ".getMe()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.service.ts",
-      "source_location": "L132",
+      "source_location": "L135",
       "id": "auth_auth_service_authservice_getme",
       "community": 32,
       "norm_label": ".getme()"
@@ -3004,7 +3004,7 @@
       "label": ".recordLogin()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.service.ts",
-      "source_location": "L159",
+      "source_location": "L162",
       "id": "auth_auth_service_authservice_recordlogin",
       "community": 32,
       "norm_label": ".recordlogin()"
@@ -3013,7 +3013,7 @@
       "label": ".generateTokens()",
       "file_type": "code",
       "source_file": "backend/src/modules/auth/auth.service.ts",
-      "source_location": "L184",
+      "source_location": "L187",
       "id": "auth_auth_service_authservice_generatetokens",
       "community": 32,
       "norm_label": ".generatetokens()"
@@ -3303,7 +3303,7 @@
       "source_file": "backend/src/modules/bookmarks/bookmarks.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_bookmarks_bookmarks_controller_ts",
-      "community": 55,
+      "community": 73,
       "norm_label": "bookmarks.controller.ts"
     },
     {
@@ -3447,7 +3447,7 @@
       "source_file": "backend/src/modules/bookmarks/bookmarks.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_bookmarks_bookmarks_service_ts",
-      "community": 55,
+      "community": 59,
       "norm_label": "bookmarks.service.ts"
     },
     {
@@ -3501,7 +3501,7 @@
       "source_file": "backend/src/modules/comments/comments.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_comments_comments_controller_ts",
-      "community": 40,
+      "community": 73,
       "norm_label": "comments.controller.ts"
     },
     {
@@ -3573,7 +3573,7 @@
       "source_file": "backend/src/modules/comments/comments.module.ts",
       "source_location": "L11",
       "id": "comments_comments_module_commentsmodule",
-      "community": 61,
+      "community": 40,
       "norm_label": "commentsmodule"
     },
     {
@@ -4356,7 +4356,7 @@
       "source_file": "backend/src/modules/notifications/notifications.module.ts",
       "source_location": "L22",
       "id": "notifications_notifications_module_notificationsmodule",
-      "community": 64,
+      "community": 61,
       "norm_label": "notificationsmodule"
     },
     {
@@ -4455,7 +4455,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L6",
       "id": "notifications_notifications_service_notificationsservice",
-      "community": 69,
+      "community": 75,
       "norm_label": "notificationsservice"
     },
     {
@@ -4473,7 +4473,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L12",
       "id": "notifications_notifications_service_notificationsservice_createnotification",
-      "community": 69,
+      "community": 75,
       "norm_label": ".createnotification()"
     },
     {
@@ -4482,7 +4482,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L21",
       "id": "notifications_notifications_service_notificationsservice_getusernotifications",
-      "community": 69,
+      "community": 75,
       "norm_label": ".getusernotifications()"
     },
     {
@@ -4491,7 +4491,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L25",
       "id": "notifications_notifications_service_notificationsservice_getunreadcount",
-      "community": 69,
+      "community": 75,
       "norm_label": ".getunreadcount()"
     },
     {
@@ -4500,7 +4500,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L30",
       "id": "notifications_notifications_service_notificationsservice_markasread",
-      "community": 69,
+      "community": 75,
       "norm_label": ".markasread()"
     },
     {
@@ -4509,7 +4509,7 @@
       "source_file": "backend/src/modules/notifications/notifications.service.ts",
       "source_location": "L39",
       "id": "notifications_notifications_service_notificationsservice_markallasread",
-      "community": 69,
+      "community": 75,
       "norm_label": ".markallasread()"
     },
     {
@@ -4590,7 +4590,7 @@
       "source_file": "backend/src/modules/questions/questions.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_questions_questions_module_ts",
-      "community": 61,
+      "community": 63,
       "norm_label": "questions.module.ts"
     },
     {
@@ -4599,7 +4599,7 @@
       "source_file": "backend/src/modules/questions/questions.module.ts",
       "source_location": "L13",
       "id": "questions_questions_module_questionsmodule",
-      "community": 61,
+      "community": 63,
       "norm_label": "questionsmodule"
     },
     {
@@ -4635,7 +4635,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L35",
       "id": "questions_questions_repository_questionsrepository",
-      "community": 60,
+      "community": 63,
       "norm_label": "questionsrepository"
     },
     {
@@ -4644,7 +4644,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L36",
       "id": "questions_questions_repository_questionsrepository_constructor",
-      "community": 41,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -4653,7 +4653,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L41",
       "id": "questions_questions_repository_questionsrepository_findall",
-      "community": 60,
+      "community": 63,
       "norm_label": ".findall()"
     },
     {
@@ -4662,7 +4662,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L154",
       "id": "questions_questions_repository_questionsrepository_findbyid",
-      "community": 60,
+      "community": 63,
       "norm_label": ".findbyid()"
     },
     {
@@ -4671,7 +4671,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L211",
       "id": "questions_questions_repository_questionsrepository_incrementviews",
-      "community": 60,
+      "community": 63,
       "norm_label": ".incrementviews()"
     },
     {
@@ -4680,7 +4680,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L218",
       "id": "questions_questions_repository_questionsrepository_create",
-      "community": 60,
+      "community": 63,
       "norm_label": ".create()"
     },
     {
@@ -4689,7 +4689,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L275",
       "id": "questions_questions_repository_questionsrepository_update",
-      "community": 60,
+      "community": 63,
       "norm_label": ".update()"
     },
     {
@@ -4698,7 +4698,7 @@
       "source_file": "backend/src/modules/questions/questions.repository.ts",
       "source_location": "L331",
       "id": "questions_questions_repository_questionsrepository_softdelete",
-      "community": 60,
+      "community": 63,
       "norm_label": ".softdelete()"
     },
     {
@@ -4725,7 +4725,7 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L28",
       "id": "questions_questions_service_questionsservice_constructor",
-      "community": 60,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -4896,7 +4896,7 @@
       "source_file": "backend/src/modules/reports/reports.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reports_reports_module_ts",
-      "community": 64,
+      "community": 61,
       "norm_label": "reports.module.ts"
     },
     {
@@ -4914,7 +4914,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reports_reports_repository_ts",
-      "community": 75,
+      "community": 62,
       "norm_label": "reports.repository.ts"
     },
     {
@@ -4932,7 +4932,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L24",
       "id": "reports_reports_repository_reportsrepository",
-      "community": 75,
+      "community": 62,
       "norm_label": "reportsrepository"
     },
     {
@@ -4941,7 +4941,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L27",
       "id": "reports_reports_repository_reportsrepository_constructor",
-      "community": 75,
+      "community": 62,
       "norm_label": ".constructor()"
     },
     {
@@ -4950,7 +4950,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L29",
       "id": "reports_reports_repository_reportsrepository_createreport",
-      "community": 75,
+      "community": 62,
       "norm_label": ".createreport()"
     },
     {
@@ -4959,7 +4959,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L72",
       "id": "reports_reports_repository_reportsrepository_findreports",
-      "community": 75,
+      "community": 62,
       "norm_label": ".findreports()"
     },
     {
@@ -4968,7 +4968,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L153",
       "id": "reports_reports_repository_reportsrepository_findreportbyid",
-      "community": 75,
+      "community": 62,
       "norm_label": ".findreportbyid()"
     },
     {
@@ -4977,7 +4977,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L192",
       "id": "reports_reports_repository_reportsrepository_updatereportescalation",
-      "community": 75,
+      "community": 62,
       "norm_label": ".updatereportescalation()"
     },
     {
@@ -4986,7 +4986,7 @@
       "source_file": "backend/src/modules/reports/reports.repository.ts",
       "source_location": "L209",
       "id": "reports_reports_repository_reportsrepository_resolvereport",
-      "community": 75,
+      "community": 62,
       "norm_label": ".resolvereport()"
     },
     {
@@ -5013,7 +5013,7 @@
       "source_file": "backend/src/modules/reports/reports.service.ts",
       "source_location": "L18",
       "id": "reports_reports_service_reportsservice_constructor",
-      "community": 69,
+      "community": 62,
       "norm_label": ".constructor()"
     },
     {
@@ -5157,7 +5157,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_config_ts",
-      "community": 56,
+      "community": 60,
       "norm_label": "reputation.config.ts"
     },
     {
@@ -5166,7 +5166,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L1",
       "id": "reputation_reputation_config_scoringconfig",
-      "community": 56,
+      "community": 60,
       "norm_label": "scoringconfig"
     },
     {
@@ -5175,7 +5175,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L14",
       "id": "reputation_reputation_config_reputation_scoring_config",
-      "community": 56,
+      "community": 60,
       "norm_label": "reputation_scoring_config"
     },
     {
@@ -5184,7 +5184,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L27",
       "id": "reputation_reputation_config_systembadgerule",
-      "community": 56,
+      "community": 60,
       "norm_label": "systembadgerule"
     },
     {
@@ -5193,7 +5193,7 @@
       "source_file": "backend/src/modules/reputation/reputation.config.ts",
       "source_location": "L35",
       "id": "reputation_reputation_config_default_system_badges",
-      "community": 56,
+      "community": 60,
       "norm_label": "default_system_badges"
     },
     {
@@ -5211,7 +5211,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L14",
       "id": "reputation_reputation_controller_reputationcontroller",
-      "community": 56,
+      "community": 0,
       "norm_label": "reputationcontroller"
     },
     {
@@ -5220,7 +5220,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L15",
       "id": "reputation_reputation_controller_reputationcontroller_constructor",
-      "community": 56,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -5229,7 +5229,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L19",
       "id": "reputation_reputation_controller_reputationcontroller_getbadgecatalog",
-      "community": 56,
+      "community": 0,
       "norm_label": ".getbadgecatalog()"
     },
     {
@@ -5238,7 +5238,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L25",
       "id": "reputation_reputation_controller_reputationcontroller_getuserreputationhistory",
-      "community": 56,
+      "community": 0,
       "norm_label": ".getuserreputationhistory()"
     },
     {
@@ -5247,7 +5247,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L35",
       "id": "reputation_reputation_controller_reputationcontroller_getcronruns",
-      "community": 56,
+      "community": 0,
       "norm_label": ".getcronruns()"
     },
     {
@@ -5256,7 +5256,7 @@
       "source_file": "backend/src/modules/reputation/reputation.controller.ts",
       "source_location": "L42",
       "id": "reputation_reputation_controller_reputationcontroller_triggercronjobmanually",
-      "community": 56,
+      "community": 0,
       "norm_label": ".triggercronjobmanually()"
     },
     {
@@ -5265,7 +5265,7 @@
       "source_file": "backend/src/modules/reputation/reputation.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_module_ts",
-      "community": 67,
+      "community": 61,
       "norm_label": "reputation.module.ts"
     },
     {
@@ -5274,7 +5274,7 @@
       "source_file": "backend/src/modules/reputation/reputation.module.ts",
       "source_location": "L22",
       "id": "reputation_reputation_module_reputationmodule",
-      "community": 67,
+      "community": 61,
       "norm_label": "reputationmodule"
     },
     {
@@ -5283,7 +5283,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_repository_ts",
-      "community": 56,
+      "community": 60,
       "norm_label": "reputation.repository.ts"
     },
     {
@@ -5292,7 +5292,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L5",
       "id": "reputation_reputation_repository_cronrunrow",
-      "community": 56,
+      "community": 60,
       "norm_label": "cronrunrow"
     },
     {
@@ -5301,7 +5301,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L15",
       "id": "reputation_reputation_repository_activityeventrow",
-      "community": 56,
+      "community": 60,
       "norm_label": "activityeventrow"
     },
     {
@@ -5310,7 +5310,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L23",
       "id": "reputation_reputation_repository_reputationledgerrow",
-      "community": 56,
+      "community": 60,
       "norm_label": "reputationledgerrow"
     },
     {
@@ -5319,7 +5319,7 @@
       "source_file": "backend/src/modules/reputation/reputation.repository.ts",
       "source_location": "L32",
       "id": "reputation_reputation_repository_userstatsrow",
-      "community": 56,
+      "community": 60,
       "norm_label": "userstatsrow"
     },
     {
@@ -5508,7 +5508,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_reputation_reputation_service_ts",
-      "community": 56,
+      "community": 60,
       "norm_label": "reputation.service.ts"
     },
     {
@@ -5517,7 +5517,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L8",
       "id": "reputation_reputation_service_reputationservice",
-      "community": 56,
+      "community": 0,
       "norm_label": "reputationservice"
     },
     {
@@ -5526,7 +5526,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L11",
       "id": "reputation_reputation_service_reputationservice_constructor",
-      "community": 56,
+      "community": 0,
       "norm_label": ".constructor()"
     },
     {
@@ -5535,7 +5535,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L20",
       "id": "reputation_reputation_service_reputationservice_handlenightlycron",
-      "community": 56,
+      "community": 0,
       "norm_label": ".handlenightlycron()"
     },
     {
@@ -5544,7 +5544,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L28",
       "id": "reputation_reputation_service_reputationservice_runreputationcalculationjob",
-      "community": 56,
+      "community": 0,
       "norm_label": ".runreputationcalculationjob()"
     },
     {
@@ -5553,7 +5553,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L195",
       "id": "reputation_reputation_service_reputationservice_getuserreputationhistory",
-      "community": 56,
+      "community": 0,
       "norm_label": ".getuserreputationhistory()"
     },
     {
@@ -5562,7 +5562,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L199",
       "id": "reputation_reputation_service_reputationservice_getbadgecatalog",
-      "community": 56,
+      "community": 0,
       "norm_label": ".getbadgecatalog()"
     },
     {
@@ -5571,7 +5571,7 @@
       "source_file": "backend/src/modules/reputation/reputation.service.ts",
       "source_location": "L203",
       "id": "reputation_reputation_service_reputationservice_getcronruns",
-      "community": 56,
+      "community": 0,
       "norm_label": ".getcronruns()"
     },
     {
@@ -5580,7 +5580,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_controller_ts",
-      "community": 41,
+      "community": 63,
       "norm_label": "tags.controller.ts"
     },
     {
@@ -5589,7 +5589,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L6",
       "id": "tags_tags_controller_tagscontroller",
-      "community": 41,
+      "community": 63,
       "norm_label": "tagscontroller"
     },
     {
@@ -5598,7 +5598,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L7",
       "id": "tags_tags_controller_tagscontroller_constructor",
-      "community": 41,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -5607,7 +5607,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L11",
       "id": "tags_tags_controller_tagscontroller_gettags",
-      "community": 41,
+      "community": 63,
       "norm_label": ".gettags()"
     },
     {
@@ -5616,7 +5616,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L20",
       "id": "tags_tags_controller_tagscontroller_getpopulartags",
-      "community": 41,
+      "community": 63,
       "norm_label": ".getpopulartags()"
     },
     {
@@ -5625,7 +5625,7 @@
       "source_file": "backend/src/modules/tags/tags.controller.ts",
       "source_location": "L26",
       "id": "tags_tags_controller_tagscontroller_gettagbyname",
-      "community": 41,
+      "community": 63,
       "norm_label": ".gettagbyname()"
     },
     {
@@ -5634,7 +5634,7 @@
       "source_file": "backend/src/modules/tags/tags.module.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_module_ts",
-      "community": 41,
+      "community": 63,
       "norm_label": "tags.module.ts"
     },
     {
@@ -5643,7 +5643,7 @@
       "source_file": "backend/src/modules/tags/tags.module.ts",
       "source_location": "L11",
       "id": "tags_tags_module_tagsmodule",
-      "community": 61,
+      "community": 63,
       "norm_label": "tagsmodule"
     },
     {
@@ -5652,7 +5652,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_repository_ts",
-      "community": 41,
+      "community": 63,
       "norm_label": "tags.repository.ts"
     },
     {
@@ -5661,7 +5661,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L5",
       "id": "tags_tags_repository_tagrow",
-      "community": 41,
+      "community": 63,
       "norm_label": "tagrow"
     },
     {
@@ -5670,7 +5670,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L14",
       "id": "tags_tags_repository_tagsrepository",
-      "community": 41,
+      "community": 63,
       "norm_label": "tagsrepository"
     },
     {
@@ -5679,7 +5679,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L15",
       "id": "tags_tags_repository_tagsrepository_constructor",
-      "community": 41,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -5688,7 +5688,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L17",
       "id": "tags_tags_repository_tagsrepository_findall",
-      "community": 41,
+      "community": 63,
       "norm_label": ".findall()"
     },
     {
@@ -5697,7 +5697,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L40",
       "id": "tags_tags_repository_tagsrepository_findbyname",
-      "community": 41,
+      "community": 63,
       "norm_label": ".findbyname()"
     },
     {
@@ -5706,7 +5706,7 @@
       "source_file": "backend/src/modules/tags/tags.repository.ts",
       "source_location": "L53",
       "id": "tags_tags_repository_tagsrepository_findorcreatetags",
-      "community": 41,
+      "community": 63,
       "norm_label": ".findorcreatetags()"
     },
     {
@@ -5715,7 +5715,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L1",
       "id": "backend_src_modules_tags_tags_service_ts",
-      "community": 41,
+      "community": 63,
       "norm_label": "tags.service.ts"
     },
     {
@@ -5724,7 +5724,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L5",
       "id": "tags_tags_service_tagsservice",
-      "community": 41,
+      "community": 63,
       "norm_label": "tagsservice"
     },
     {
@@ -5733,7 +5733,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L6",
       "id": "tags_tags_service_tagsservice_constructor",
-      "community": 41,
+      "community": 63,
       "norm_label": ".constructor()"
     },
     {
@@ -5742,7 +5742,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L8",
       "id": "tags_tags_service_tagsservice_getalltags",
-      "community": 41,
+      "community": 63,
       "norm_label": ".getalltags()"
     },
     {
@@ -5751,7 +5751,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L12",
       "id": "tags_tags_service_tagsservice_gettagbyname",
-      "community": 41,
+      "community": 63,
       "norm_label": ".gettagbyname()"
     },
     {
@@ -5760,7 +5760,7 @@
       "source_file": "backend/src/modules/tags/tags.service.ts",
       "source_location": "L20",
       "id": "tags_tags_service_tagsservice_getpopulartags",
-      "community": 41,
+      "community": 63,
       "norm_label": ".getpopulartags()"
     },
     {
@@ -6318,7 +6318,7 @@
       "source_file": "backend/src/redis/event-bus.service.ts",
       "source_location": "L9",
       "id": "redis_event_bus_service_rediseventbusservice_constructor",
-      "community": 59,
+      "community": 66,
       "norm_label": ".constructor()"
     },
     {
@@ -6354,7 +6354,7 @@
       "source_file": "backend/src/redis/redis.module.ts",
       "source_location": "L1",
       "id": "backend_src_redis_redis_module_ts",
-      "community": 67,
+      "community": 61,
       "norm_label": "redis.module.ts"
     },
     {
@@ -6363,7 +6363,7 @@
       "source_file": "backend/src/redis/redis.module.ts",
       "source_location": "L17",
       "id": "redis_redis_module_redismodule",
-      "community": 67,
+      "community": 61,
       "norm_label": "redismodule"
     },
     {
@@ -6406,7 +6406,7 @@
       "label": ".onModuleDestroy()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L44",
+      "source_location": "L45",
       "id": "redis_redis_service_redisservice_onmoduledestroy",
       "community": 66,
       "norm_label": ".onmoduledestroy()"
@@ -6415,7 +6415,7 @@
       "label": ".getClient()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L51",
+      "source_location": "L52",
       "id": "redis_redis_service_redisservice_getclient",
       "community": 66,
       "norm_label": ".getclient()"
@@ -6424,7 +6424,7 @@
       "label": ".isHealthy()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L55",
+      "source_location": "L56",
       "id": "redis_redis_service_redisservice_ishealthy",
       "community": 66,
       "norm_label": ".ishealthy()"
@@ -6433,7 +6433,7 @@
       "label": ".get()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L66",
+      "source_location": "L67",
       "id": "redis_redis_service_redisservice_get",
       "community": 66,
       "norm_label": ".get()"
@@ -6442,7 +6442,7 @@
       "label": ".set()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L76",
+      "source_location": "L77",
       "id": "redis_redis_service_redisservice_set",
       "community": 66,
       "norm_label": ".set()"
@@ -6451,7 +6451,7 @@
       "label": ".del()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L89",
+      "source_location": "L90",
       "id": "redis_redis_service_redisservice_del",
       "community": 66,
       "norm_label": ".del()"
@@ -6460,7 +6460,7 @@
       "label": ".delPattern()",
       "file_type": "code",
       "source_file": "backend/src/redis/redis.service.ts",
-      "source_location": "L98",
+      "source_location": "L99",
       "id": "redis_redis_service_redisservice_delpattern",
       "community": 66,
       "norm_label": ".delpattern()"
@@ -7270,16 +7270,25 @@
       "label": ".getHeaders()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L65",
+      "source_location": "L67",
       "id": "api_client_adminapiclient_getheaders",
       "community": 65,
       "norm_label": ".getheaders()"
     },
     {
+      "label": ".refreshSession()",
+      "file_type": "code",
+      "source_file": "frontend/admin/src/api/client.ts",
+      "source_location": "L78",
+      "id": "api_client_adminapiclient_refreshsession",
+      "community": 65,
+      "norm_label": ".refreshsession()"
+    },
+    {
       "label": ".request()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L76",
+      "source_location": "L122",
       "id": "api_client_adminapiclient_request",
       "community": 65,
       "norm_label": ".request()"
@@ -7288,7 +7297,7 @@
       "label": ".login()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L97",
+      "source_location": "L155",
       "id": "api_client_adminapiclient_login",
       "community": 65,
       "norm_label": ".login()"
@@ -7297,7 +7306,7 @@
       "label": ".getMe()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L104",
+      "source_location": "L162",
       "id": "api_client_adminapiclient_getme",
       "community": 65,
       "norm_label": ".getme()"
@@ -7306,7 +7315,7 @@
       "label": ".getStats()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L109",
+      "source_location": "L167",
       "id": "api_client_adminapiclient_getstats",
       "community": 65,
       "norm_label": ".getstats()"
@@ -7315,7 +7324,7 @@
       "label": ".getReports()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L114",
+      "source_location": "L172",
       "id": "api_client_adminapiclient_getreports",
       "community": 65,
       "norm_label": ".getreports()"
@@ -7324,7 +7333,7 @@
       "label": ".escalateReport()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L125",
+      "source_location": "L183",
       "id": "api_client_adminapiclient_escalatereport",
       "community": 65,
       "norm_label": ".escalatereport()"
@@ -7333,7 +7342,7 @@
       "label": ".resolveReport()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L132",
+      "source_location": "L190",
       "id": "api_client_adminapiclient_resolvereport",
       "community": 65,
       "norm_label": ".resolvereport()"
@@ -7342,7 +7351,7 @@
       "label": ".dismissReport()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L139",
+      "source_location": "L197",
       "id": "api_client_adminapiclient_dismissreport",
       "community": 65,
       "norm_label": ".dismissreport()"
@@ -7351,7 +7360,7 @@
       "label": ".getUsers()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L147",
+      "source_location": "L205",
       "id": "api_client_adminapiclient_getusers",
       "community": 65,
       "norm_label": ".getusers()"
@@ -7360,7 +7369,7 @@
       "label": ".setUserBanStatus()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L159",
+      "source_location": "L217",
       "id": "api_client_adminapiclient_setuserbanstatus",
       "community": 65,
       "norm_label": ".setuserbanstatus()"
@@ -7369,7 +7378,7 @@
       "label": ".setUserRole()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L166",
+      "source_location": "L224",
       "id": "api_client_adminapiclient_setuserrole",
       "community": 65,
       "norm_label": ".setuserrole()"
@@ -7378,7 +7387,7 @@
       "label": ".getContent()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L174",
+      "source_location": "L232",
       "id": "api_client_adminapiclient_getcontent",
       "community": 65,
       "norm_label": ".getcontent()"
@@ -7387,7 +7396,7 @@
       "label": ".softDeleteContent()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L186",
+      "source_location": "L244",
       "id": "api_client_adminapiclient_softdeletecontent",
       "community": 65,
       "norm_label": ".softdeletecontent()"
@@ -7396,7 +7405,7 @@
       "label": ".restoreContent()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L192",
+      "source_location": "L250",
       "id": "api_client_adminapiclient_restorecontent",
       "community": 65,
       "norm_label": ".restorecontent()"
@@ -7405,7 +7414,7 @@
       "label": ".getObservability()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L199",
+      "source_location": "L257",
       "id": "api_client_adminapiclient_getobservability",
       "community": 65,
       "norm_label": ".getobservability()"
@@ -7414,7 +7423,7 @@
       "label": ".triggerNightlyCron()",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L203",
+      "source_location": "L261",
       "id": "api_client_adminapiclient_triggernightlycron",
       "community": 65,
       "norm_label": ".triggernightlycron()"
@@ -7423,7 +7432,7 @@
       "label": "adminApi",
       "file_type": "code",
       "source_file": "frontend/admin/src/api/client.ts",
-      "source_location": "L210",
+      "source_location": "L268",
       "id": "api_client_adminapi",
       "community": 33,
       "norm_label": "adminapi"
@@ -7504,7 +7513,7 @@
       "label": "useAdminAuth()",
       "file_type": "code",
       "source_file": "frontend/admin/src/context/AdminAuthContext.tsx",
-      "source_location": "L80",
+      "source_location": "L108",
       "id": "context_adminauthcontext_useadminauth",
       "community": 33,
       "norm_label": "useadminauth()"
@@ -8359,16 +8368,25 @@
       "label": ".getHeaders()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L18",
+      "source_location": "L20",
       "id": "api_client_apiclient_getheaders",
       "community": 8,
       "norm_label": ".getheaders()"
     },
     {
+      "label": ".refreshSession()",
+      "file_type": "code",
+      "source_file": "frontend/client/src/api/client.ts",
+      "source_location": "L35",
+      "id": "api_client_apiclient_refreshsession",
+      "community": 8,
+      "norm_label": ".refreshsession()"
+    },
+    {
       "label": ".request()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L29",
+      "source_location": "L80",
       "id": "api_client_apiclient_request",
       "community": 8,
       "norm_label": ".request()"
@@ -8377,7 +8395,7 @@
       "label": ".register()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L50",
+      "source_location": "L115",
       "id": "api_client_apiclient_register",
       "community": 8,
       "norm_label": ".register()"
@@ -8386,7 +8404,7 @@
       "label": ".login()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L57",
+      "source_location": "L122",
       "id": "api_client_apiclient_login",
       "community": 8,
       "norm_label": ".login()"
@@ -8395,7 +8413,7 @@
       "label": ".getMe()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L64",
+      "source_location": "L129",
       "id": "api_client_apiclient_getme",
       "community": 8,
       "norm_label": ".getme()"
@@ -8404,7 +8422,7 @@
       "label": ".getQuestions()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L69",
+      "source_location": "L134",
       "id": "api_client_apiclient_getquestions",
       "community": 8,
       "norm_label": ".getquestions()"
@@ -8413,7 +8431,7 @@
       "label": ".getQuestion()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L92",
+      "source_location": "L157",
       "id": "api_client_apiclient_getquestion",
       "community": 8,
       "norm_label": ".getquestion()"
@@ -8422,7 +8440,7 @@
       "label": ".createQuestion()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L96",
+      "source_location": "L161",
       "id": "api_client_apiclient_createquestion",
       "community": 8,
       "norm_label": ".createquestion()"
@@ -8431,7 +8449,7 @@
       "label": ".updateQuestion()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L103",
+      "source_location": "L168",
       "id": "api_client_apiclient_updatequestion",
       "community": 8,
       "norm_label": ".updatequestion()"
@@ -8440,7 +8458,7 @@
       "label": ".deleteQuestion()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L110",
+      "source_location": "L175",
       "id": "api_client_apiclient_deletequestion",
       "community": 8,
       "norm_label": ".deletequestion()"
@@ -8449,7 +8467,7 @@
       "label": ".getAnswers()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L117",
+      "source_location": "L182",
       "id": "api_client_apiclient_getanswers",
       "community": 8,
       "norm_label": ".getanswers()"
@@ -8458,7 +8476,7 @@
       "label": ".createAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L121",
+      "source_location": "L186",
       "id": "api_client_apiclient_createanswer",
       "community": 8,
       "norm_label": ".createanswer()"
@@ -8467,7 +8485,7 @@
       "label": ".acceptAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L128",
+      "source_location": "L193",
       "id": "api_client_apiclient_acceptanswer",
       "community": 8,
       "norm_label": ".acceptanswer()"
@@ -8476,7 +8494,7 @@
       "label": ".deleteAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L134",
+      "source_location": "L199",
       "id": "api_client_apiclient_deleteanswer",
       "community": 8,
       "norm_label": ".deleteanswer()"
@@ -8485,7 +8503,7 @@
       "label": ".getComments()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L141",
+      "source_location": "L206",
       "id": "api_client_apiclient_getcomments",
       "community": 8,
       "norm_label": ".getcomments()"
@@ -8494,7 +8512,7 @@
       "label": ".createComment()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L145",
+      "source_location": "L210",
       "id": "api_client_apiclient_createcomment",
       "community": 8,
       "norm_label": ".createcomment()"
@@ -8503,7 +8521,7 @@
       "label": ".castVote()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L157",
+      "source_location": "L222",
       "id": "api_client_apiclient_castvote",
       "community": 8,
       "norm_label": ".castvote()"
@@ -8512,7 +8530,7 @@
       "label": ".giveMedal()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L170",
+      "source_location": "L235",
       "id": "api_client_apiclient_givemedal",
       "community": 8,
       "norm_label": ".givemedal()"
@@ -8521,7 +8539,7 @@
       "label": ".removeMedal()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L177",
+      "source_location": "L242",
       "id": "api_client_apiclient_removemedal",
       "community": 8,
       "norm_label": ".removemedal()"
@@ -8530,7 +8548,7 @@
       "label": ".getQuestionMedals()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L183",
+      "source_location": "L248",
       "id": "api_client_apiclient_getquestionmedals",
       "community": 8,
       "norm_label": ".getquestionmedals()"
@@ -8539,7 +8557,7 @@
       "label": ".toggleBookmark()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L188",
+      "source_location": "L253",
       "id": "api_client_apiclient_togglebookmark",
       "community": 8,
       "norm_label": ".togglebookmark()"
@@ -8548,7 +8566,7 @@
       "label": ".getBookmarkStatus()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L194",
+      "source_location": "L259",
       "id": "api_client_apiclient_getbookmarkstatus",
       "community": 8,
       "norm_label": ".getbookmarkstatus()"
@@ -8557,7 +8575,7 @@
       "label": ".getUserBookmarks()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L198",
+      "source_location": "L263",
       "id": "api_client_apiclient_getuserbookmarks",
       "community": 8,
       "norm_label": ".getuserbookmarks()"
@@ -8566,7 +8584,7 @@
       "label": ".toggleFollow()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L203",
+      "source_location": "L268",
       "id": "api_client_apiclient_togglefollow",
       "community": 8,
       "norm_label": ".togglefollow()"
@@ -8575,7 +8593,7 @@
       "label": ".getFollowStatus()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L210",
+      "source_location": "L275",
       "id": "api_client_apiclient_getfollowstatus",
       "community": 8,
       "norm_label": ".getfollowstatus()"
@@ -8584,7 +8602,7 @@
       "label": ".getFollowingUsers()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L216",
+      "source_location": "L281",
       "id": "api_client_apiclient_getfollowingusers",
       "community": 8,
       "norm_label": ".getfollowingusers()"
@@ -8593,7 +8611,7 @@
       "label": ".getFollowingTags()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L220",
+      "source_location": "L285",
       "id": "api_client_apiclient_getfollowingtags",
       "community": 8,
       "norm_label": ".getfollowingtags()"
@@ -8602,7 +8620,7 @@
       "label": ".getNotifications()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L226",
+      "source_location": "L291",
       "id": "api_client_apiclient_getnotifications",
       "community": 8,
       "norm_label": ".getnotifications()"
@@ -8611,7 +8629,7 @@
       "label": ".getUnreadNotificationsCount()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L230",
+      "source_location": "L295",
       "id": "api_client_apiclient_getunreadnotificationscount",
       "community": 8,
       "norm_label": ".getunreadnotificationscount()"
@@ -8620,7 +8638,7 @@
       "label": ".markNotificationAsRead()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L234",
+      "source_location": "L299",
       "id": "api_client_apiclient_marknotificationasread",
       "community": 8,
       "norm_label": ".marknotificationasread()"
@@ -8629,7 +8647,7 @@
       "label": ".markAllNotificationsAsRead()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L240",
+      "source_location": "L305",
       "id": "api_client_apiclient_markallnotificationsasread",
       "community": 8,
       "norm_label": ".markallnotificationsasread()"
@@ -8638,7 +8656,7 @@
       "label": ".getUserProfile()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L247",
+      "source_location": "L312",
       "id": "api_client_apiclient_getuserprofile",
       "community": 8,
       "norm_label": ".getuserprofile()"
@@ -8647,7 +8665,7 @@
       "label": ".getUserQuestions()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L251",
+      "source_location": "L316",
       "id": "api_client_apiclient_getuserquestions",
       "community": 8,
       "norm_label": ".getuserquestions()"
@@ -8656,7 +8674,7 @@
       "label": ".getUserAnswers()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L255",
+      "source_location": "L320",
       "id": "api_client_apiclient_getuseranswers",
       "community": 8,
       "norm_label": ".getuseranswers()"
@@ -8665,7 +8683,7 @@
       "label": ".getUserActivity()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L259",
+      "source_location": "L324",
       "id": "api_client_apiclient_getuseractivity",
       "community": 8,
       "norm_label": ".getuseractivity()"
@@ -8674,7 +8692,7 @@
       "label": ".updateUserProfile()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L263",
+      "source_location": "L328",
       "id": "api_client_apiclient_updateuserprofile",
       "community": 8,
       "norm_label": ".updateuserprofile()"
@@ -8683,7 +8701,7 @@
       "label": ".getLeaderboard()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L270",
+      "source_location": "L335",
       "id": "api_client_apiclient_getleaderboard",
       "community": 8,
       "norm_label": ".getleaderboard()"
@@ -8692,7 +8710,7 @@
       "label": ".getTags()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L275",
+      "source_location": "L340",
       "id": "api_client_apiclient_gettags",
       "community": 8,
       "norm_label": ".gettags()"
@@ -8701,7 +8719,7 @@
       "label": ".getPopularTags()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L279",
+      "source_location": "L344",
       "id": "api_client_apiclient_getpopulartags",
       "community": 8,
       "norm_label": ".getpopulartags()"
@@ -8710,7 +8728,7 @@
       "label": ".getBadgeCatalog()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L284",
+      "source_location": "L349",
       "id": "api_client_apiclient_getbadgecatalog",
       "community": 8,
       "norm_label": ".getbadgecatalog()"
@@ -8719,7 +8737,7 @@
       "label": ".getUserReputationHistory()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L288",
+      "source_location": "L353",
       "id": "api_client_apiclient_getuserreputationhistory",
       "community": 8,
       "norm_label": ".getuserreputationhistory()"
@@ -8728,7 +8746,7 @@
       "label": ".getCronRuns()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L292",
+      "source_location": "L357",
       "id": "api_client_apiclient_getcronruns",
       "community": 8,
       "norm_label": ".getcronruns()"
@@ -8737,7 +8755,7 @@
       "label": ".triggerCronJob()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L296",
+      "source_location": "L361",
       "id": "api_client_apiclient_triggercronjob",
       "community": 8,
       "norm_label": ".triggercronjob()"
@@ -8746,7 +8764,7 @@
       "label": ".getQuestionAiAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L310",
+      "source_location": "L375",
       "id": "api_client_apiclient_getquestionaianswer",
       "community": 8,
       "norm_label": ".getquestionaianswer()"
@@ -8755,7 +8773,7 @@
       "label": ".regenerateQuestionAiAnswer()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L320",
+      "source_location": "L385",
       "id": "api_client_apiclient_regeneratequestionaianswer",
       "community": 8,
       "norm_label": ".regeneratequestionaianswer()"
@@ -8764,7 +8782,7 @@
       "label": ".getChatSessions()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L331",
+      "source_location": "L396",
       "id": "api_client_apiclient_getchatsessions",
       "community": 8,
       "norm_label": ".getchatsessions()"
@@ -8773,7 +8791,7 @@
       "label": ".createChatSession()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L335",
+      "source_location": "L400",
       "id": "api_client_apiclient_createchatsession",
       "community": 8,
       "norm_label": ".createchatsession()"
@@ -8782,7 +8800,7 @@
       "label": ".getSessionMessages()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L342",
+      "source_location": "L407",
       "id": "api_client_apiclient_getsessionmessages",
       "community": 8,
       "norm_label": ".getsessionmessages()"
@@ -8791,7 +8809,7 @@
       "label": ".deleteChatSession()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L346",
+      "source_location": "L411",
       "id": "api_client_apiclient_deletechatsession",
       "community": 8,
       "norm_label": ".deletechatsession()"
@@ -8800,7 +8818,7 @@
       "label": ".sendChatMessage()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L352",
+      "source_location": "L417",
       "id": "api_client_apiclient_sendchatmessage",
       "community": 8,
       "norm_label": ".sendchatmessage()"
@@ -8809,7 +8827,7 @@
       "label": ".createReport()",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L360",
+      "source_location": "L425",
       "id": "api_client_apiclient_createreport",
       "community": 8,
       "norm_label": ".createreport()"
@@ -8818,7 +8836,7 @@
       "label": "api",
       "file_type": "code",
       "source_file": "frontend/client/src/api/client.ts",
-      "source_location": "L372",
+      "source_location": "L437",
       "id": "api_client_api",
       "community": 35,
       "norm_label": "api"
@@ -9556,7 +9574,7 @@
       "label": "useAuth()",
       "file_type": "code",
       "source_file": "frontend/client/src/context/AuthContext.tsx",
-      "source_location": "L104",
+      "source_location": "L133",
       "id": "context_authcontext_useauth",
       "community": 53,
       "norm_label": "useauth()"
@@ -18281,6 +18299,17 @@
       "context": "call",
       "confidence": "EXTRACTED",
       "source_file": "backend/src/modules/auth/auth.service.ts",
+      "source_location": "L124",
+      "weight": 1.0,
+      "source": "auth_auth_service_authservice_refreshtoken",
+      "target": "auth_auth_service_authservice_recordlogin",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "backend/src/modules/auth/auth.service.ts",
       "source_location": "L123",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -21568,9 +21597,9 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L110",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "questions_questions_service_questionsservice_createquestion",
-      "target": "questions_questions_repository_questionlistitem",
-      "confidence_score": 1.0
+      "target": "questions_questions_repository_questionlistitem"
     },
     {
       "relation": "references",
@@ -21579,9 +21608,9 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L140",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "questions_questions_service_questionsservice_updatequestion",
-      "target": "questions_questions_repository_questionlistitem",
-      "confidence_score": 1.0
+      "target": "questions_questions_repository_questionlistitem"
     },
     {
       "relation": "imports",
@@ -21781,9 +21810,9 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_questions_questions_service_ts",
-      "target": "backend_src_redis_redis_service_ts",
-      "confidence_score": 1.0
+      "target": "backend_src_redis_redis_service_ts"
     },
     {
       "relation": "imports",
@@ -21792,9 +21821,9 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L19",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "backend_src_modules_questions_questions_service_ts",
-      "target": "redis_redis_service_redisservice",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice"
     },
     {
       "relation": "imports_from",
@@ -21895,9 +21924,9 @@
       "source_file": "backend/src/modules/questions/questions.service.ts",
       "source_location": "L28",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "questions_questions_service_questionsservice_constructor",
-      "target": "redis_redis_service_redisservice",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice"
     },
     {
       "relation": "references",
@@ -25182,9 +25211,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L66",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice",
-      "target": "redis_redis_service_redisservice_get",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_get"
     },
     {
       "relation": "method",
@@ -25192,9 +25221,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L76",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice",
-      "target": "redis_redis_service_redisservice_set",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_set"
     },
     {
       "relation": "method",
@@ -25202,9 +25231,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L89",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice",
-      "target": "redis_redis_service_redisservice_del",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_del"
     },
     {
       "relation": "method",
@@ -25212,9 +25241,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L98",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice",
-      "target": "redis_redis_service_redisservice_delpattern",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_delpattern"
     },
     {
       "relation": "calls",
@@ -25223,9 +25252,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L13",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice_onmoduleinit",
-      "target": "redis_redis_service_redisservice_get",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_get"
     },
     {
       "relation": "calls",
@@ -25234,9 +25263,9 @@
       "source_file": "backend/src/redis/redis.service.ts",
       "source_location": "L103",
       "weight": 1.0,
+      "confidence_score": 1.0,
       "source": "redis_redis_service_redisservice_delpattern",
-      "target": "redis_redis_service_redisservice_del",
-      "confidence_score": 1.0
+      "target": "redis_redis_service_redisservice_del"
     },
     {
       "relation": "contains",
@@ -26372,6 +26401,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/admin/src/api/client.ts",
+      "source_location": "L78",
+      "weight": 1.0,
+      "source": "api_client_adminapiclient",
+      "target": "api_client_adminapiclient_refreshsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/admin/src/api/client.ts",
       "source_location": "L76",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -26538,6 +26577,17 @@
       "confidence_score": 1.0,
       "source": "api_client_adminapiclient_request",
       "target": "api_client_adminapiclient_getheaders"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/admin/src/api/client.ts",
+      "source_location": "L138",
+      "weight": 1.0,
+      "source": "api_client_adminapiclient_request",
+      "target": "api_client_adminapiclient_refreshsession",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -28544,6 +28594,16 @@
       "relation": "method",
       "confidence": "EXTRACTED",
       "source_file": "frontend/client/src/api/client.ts",
+      "source_location": "L35",
+      "weight": 1.0,
+      "source": "api_client_apiclient",
+      "target": "api_client_apiclient_refreshsession",
+      "confidence_score": 1.0
+    },
+    {
+      "relation": "method",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/api/client.ts",
       "source_location": "L17",
       "weight": 1.0,
       "confidence_score": 1.0,
@@ -29060,6 +29120,17 @@
       "confidence_score": 1.0,
       "source": "api_client_apiclient_request",
       "target": "api_client_apiclient_getheaders"
+    },
+    {
+      "relation": "calls",
+      "context": "call",
+      "confidence": "EXTRACTED",
+      "source_file": "frontend/client/src/api/client.ts",
+      "source_location": "L98",
+      "weight": 1.0,
+      "source": "api_client_apiclient_request",
+      "target": "api_client_apiclient_refreshsession",
+      "confidence_score": 1.0
     },
     {
       "relation": "calls",
@@ -33954,5 +34025,5 @@
     }
   ],
   "hyperedges": [],
-  "built_at_commit": "80ac73eb5cc9a072f83b3cc59fb4061d45fa169f"
+  "built_at_commit": "01a344a3ce4631d3b94f8f666ab9e0b035e5dd71"
 }

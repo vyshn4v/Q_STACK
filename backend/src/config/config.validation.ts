@@ -81,7 +81,7 @@ class EnvironmentVariables {
 
   @IsString()
   @IsOptional()
-  JWT_ACCESS_EXPIRES_IN: string = '15m';
+  JWT_ACCESS_EXPIRES_IN: string = '1h';
 
   @IsString()
   @IsOptional()
