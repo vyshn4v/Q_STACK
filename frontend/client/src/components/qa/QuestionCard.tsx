@@ -2,6 +2,7 @@ import React from 'react';
 import { Link } from 'react-router-dom';
 import { Check, Award } from 'lucide-react';
 import type { Question } from '../../types';
+import { VoteControl } from './VoteControl';
 
 interface QuestionCardProps {
   question: Question;
@@ -17,10 +18,13 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
     <div className="question-card-inner" style={styles.card}>
       {/* Left Metrics Column */}
       <div className="question-card-stats" style={styles.metricsColumn}>
-        <div style={styles.metricItem}>
-          <span style={styles.metricValue}>{question.score}</span>
-          <span style={styles.metricLabel}>votes</span>
-        </div>
+        <VoteControl
+          targetType="question"
+          targetId={question.id}
+          initialScore={question.score}
+          initialUserVote={question.user_vote}
+          size="normal"
+        />
 
         <div
           style={{

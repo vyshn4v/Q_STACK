@@ -8,19 +8,35 @@ import { AuthModal } from '../auth/AuthModal';
 
 interface AppShellProps {
   children: ReactNode;
+  showSidebar?: boolean;
   showRightRail?: boolean;
+  maxWidth?: string;
 }
 
-export const AppShell: React.FC<AppShellProps> = ({ children, showRightRail = true }) => {
+export const AppShell: React.FC<AppShellProps> = ({
+  children,
+  showSidebar = true,
+  showRightRail = true,
+  maxWidth = '1360px',
+}) => {
   return (
     <div className="app-shell-page" style={styles.page}>
       <AppHeader />
-      <div className="app-shell-main" style={styles.mainContainer}>
-        <div className="app-shell-sidebar">
-          <SidebarNavigation />
-        </div>
+      <div
+        className="app-shell-main"
+        style={{
+          ...styles.mainContainer,
+          maxWidth,
+          justifyContent: showSidebar ? 'flex-start' : 'center',
+        }}
+      >
+        {showSidebar && (
+          <div className="app-shell-sidebar">
+            <SidebarNavigation />
+          </div>
+        )}
         <main style={styles.contentArea}>{children}</main>
-        {showRightRail && (
+        {showSidebar && showRightRail && (
           <div className="app-shell-right-rail">
             <RightRail />
           </div>
@@ -41,7 +57,6 @@ const styles: Record<string, React.CSSProperties> = {
     position: 'relative',
   },
   mainContainer: {
-    maxWidth: '1360px',
     width: '100%',
     margin: '0 auto',
     padding: '1.5rem',

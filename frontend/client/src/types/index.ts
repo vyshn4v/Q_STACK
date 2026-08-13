@@ -98,3 +98,31 @@ export interface UserActivity {
   payload: Record<string, any>;
   created_at: string;
 }
+
+export interface BadgeRule {
+  id: string;
+  name: string;
+  tier: 'gold' | 'silver' | 'bronze';
+  criteria_type: string;
+  threshold: number;
+  description: string;
+}
+
+export interface ReputationLedgerEntry {
+  id: string;
+  user_id: string;
+  delta: number;
+  reason: string;
+  source_event_id: string | null;
+  created_at: string;
+}
+
+export interface CronRun {
+  id: string;
+  job_name: string;
+  started_at: string;
+  completed_at: string | null;
+  status: 'running' | 'completed' | 'failed';
+  events_processed: number;
+  metadata: Record<string, any>;
+}

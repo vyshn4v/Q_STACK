@@ -7,6 +7,9 @@ import type {
   MedalSummary,
   AppNotification,
   UserActivity,
+  BadgeRule,
+  ReputationLedgerEntry,
+  CronRun,
 } from '../types';
 
 const API_BASE = '/api/v1';
@@ -274,6 +277,32 @@ class ApiClient {
 
   async getPopularTags() {
     return this.request<Tag[]>('/tags/popular');
+  }
+
+  // Reputation & Badges (Phase 3)
+  async getBadgeCatalog() {
+    return this.request<BadgeRule[]>('/reputation/badges');
+  }
+
+  async getUserReputationHistory(limit = 50) {
+    return this.request<ReputationLedgerEntry[]>(`/reputation/history?limit=${limit}`);
+  }
+
+  async getCronRuns(limit = 20) {
+    return this.request<CronRun[]>(`/reputation/cron-runs?limit=${limit}`);
+  }
+
+  async triggerCronJob() {
+    return this.request<{
+      runId: string;
+      status: string;
+      eventsProcessed: number;
+      usersUpdated: number;
+      badgesAwarded: number;
+      moderatorPromotions: number;
+    }>('/reputation/run-cron', {
+      method: 'POST',
+    });
   }
 }
 

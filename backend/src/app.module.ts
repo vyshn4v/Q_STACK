@@ -19,6 +19,7 @@ import { MedalsModule } from './modules/medals/medals.module';
 import { FollowsModule } from './modules/follows/follows.module';
 import { BookmarksModule } from './modules/bookmarks/bookmarks.module';
 import { NotificationsModule } from './modules/notifications/notifications.module';
+import { ReputationModule } from './modules/reputation/reputation.module';
 
 @Module({
   imports: [
@@ -41,6 +42,7 @@ import { NotificationsModule } from './modules/notifications/notifications.modul
     FollowsModule,
     BookmarksModule,
     NotificationsModule,
+    ReputationModule,
   ],
   controllers: [AppController],
   providers: [AppService],

@@ -1,9 +1,10 @@
 import React, { useState, useEffect } from 'react';
 import { useParams, Link } from 'react-router-dom';
-import type { User, Question, Answer, UserActivity } from '../types';
+import type { User, Question, Answer, UserActivity, BadgeRule, ReputationLedgerEntry } from '../types';
 import { api } from '../api/client';
 import { AppShell } from '../components/layout/AppShell';
 import { FollowButton } from '../components/common/FollowButton';
+import { useAuth } from '../context/AuthContext';
 import {
   Calendar,
   Award,
@@ -16,41 +17,58 @@ import {
   Loader2,
   Check,
   User as UserIcon,
+  TrendingUp,
+  Lock,
+  Sparkles,
 } from 'lucide-react';
 
 export const UserProfilePage: React.FC = () => {
   const { id } = useParams<{ id: string }>();
+  const { user: authUser } = useAuth();
   const [profile, setProfile] = useState<User | null>(null);
   const [questions, setQuestions] = useState<Question[]>([]);
   const [answers, setAnswers] = useState<Answer[]>([]);
   const [activities, setActivities] = useState<UserActivity[]>([]);
-  const [activeTab, setActiveTab] = useState<'overview' | 'questions' | 'answers' | 'badges' | 'activity' | 'resume'>('overview');
+  const [badgeCatalog, setBadgeCatalog] = useState<BadgeRule[]>([]);
+  const [reputationLedger, setReputationLedger] = useState<ReputationLedgerEntry[]>([]);
+  const [activeTab, setActiveTab] = useState<'overview' | 'questions' | 'answers' | 'reputation' | 'badges' | 'activity' | 'resume'>('overview');
   const [resumeSubTab, setResumeSubTab] = useState<'personal' | 'education' | 'experience'>('experience');
   const [isLoading, setIsLoading] = useState(true);
+
+  const isSelf = authUser?.id === id;
 
   useEffect(() => {
     if (!id) return;
     setIsLoading(true);
 
-    Promise.all([
+    const promises: Promise<any>[] = [
       api.getUserProfile(id),
       api.getUserQuestions(id),
       api.getUserAnswers(id),
       api.getUserActivity(id).catch(() => []),
-    ])
-      .then(([userData, qData, aData, actData]) => {
+      api.getBadgeCatalog().catch(() => []),
+    ];
+
+    if (isSelf) {
+      promises.push(api.getUserReputationHistory(50).catch(() => []));
+    }
+
+    Promise.all(promises)
+      .then(([userData, qData, aData, actData, catalogData, ledgerData]) => {
         setProfile(userData);
         setQuestions(qData);
         setAnswers(aData);
         setActivities(actData);
+        setBadgeCatalog(catalogData || []);
+        if (ledgerData) setReputationLedger(ledgerData);
       })
       .catch(() => {})
       .finally(() => setIsLoading(false));
-  }, [id]);
+  }, [id, isSelf]);
 
   if (isLoading) {
     return (
-      <AppShell>
+      <AppShell showSidebar={false} showRightRail={false} maxWidth="1180px">
         <div style={styles.loadingContainer}>
           <Loader2 size={32} style={styles.spinner} />
           <span>Loading developer profile...</span>
@@ -61,7 +79,7 @@ export const UserProfilePage: React.FC = () => {
 
   if (!profile) {
     return (
-      <AppShell>
+      <AppShell showSidebar={false} showRightRail={false} maxWidth="1180px">
         <div style={styles.notFound}>
           <h2>User profile not found</h2>
           <p>The requested user does not exist or has been deactivated.</p>
@@ -76,11 +94,13 @@ export const UserProfilePage: React.FC = () => {
     year: 'numeric',
   });
 
+  const earnedBadgeNames = (profile.badges || []).map((b) => b.name);
+
   return (
-    <AppShell>
+    <AppShell showSidebar={false} showRightRail={false} maxWidth="1180px">
       <div style={styles.container}>
         {/* Profile Card Header */}
-        <div style={styles.profileHeaderCard}>
+        <div className="profile-header-wrap" style={styles.profileHeaderCard}>
           <div style={styles.headerLeft}>
             <div style={styles.avatar}>
               {profile.avatar_url ? (
@@ -171,6 +191,17 @@ export const UserProfilePage: React.FC = () => {
           >
             Answers ({answers.length})
           </button>
+          {isSelf && (
+            <button
+              onClick={() => setActiveTab('reputation')}
+              style={{
+                ...styles.tabBtn,
+                ...(activeTab === 'reputation' ? styles.tabBtnActive : {}),
+              }}
+            >
+              Reputation Ledger
+            </button>
+          )}
           <button
             onClick={() => setActiveTab('badges')}
             style={{
@@ -187,7 +218,7 @@ export const UserProfilePage: React.FC = () => {
               ...(activeTab === 'activity' ? styles.tabBtnActive : {}),
             }}
           >
-            Activity
+            Activity Feed
           </button>
           <button
             onClick={() => setActiveTab('resume')}
@@ -196,7 +227,7 @@ export const UserProfilePage: React.FC = () => {
               ...(activeTab === 'resume' ? styles.tabBtnActive : {}),
             }}
           >
-            Resume & Experience
+            Resume & Credentials
           </button>
         </div>
 
@@ -300,7 +331,7 @@ export const UserProfilePage: React.FC = () => {
                       <Link to={`/questions/${a.question_id}`} style={styles.questionTitleLink}>
                         {a.question_title || 'View Answer Thread'}
                       </Link>
-                      <p style={styles.answerSnippet}>{a.body.slice(0, 160)}...</p>
+                      <p style={styles.answerSnippet}>{a.body.replace(/<[^>]*>/g, '').slice(0, 160)}...</p>
                     </div>
                     {a.is_accepted && (
                       <span style={styles.acceptedTag}>
@@ -313,38 +344,140 @@ export const UserProfilePage: React.FC = () => {
             </div>
           )}
 
-          {/* Badges */}
-          {activeTab === 'badges' && (
-            <div style={styles.badgesGrid}>
-              {profile.badges && profile.badges.length > 0 ? (
-                profile.badges.map((b, i) => (
-                  <div key={i} style={styles.badgeCard}>
-                    <Award
-                      size={24}
-                      color={
-                        b.tier === 'gold'
-                          ? '#eab308'
-                          : b.tier === 'silver'
-                          ? '#94a3b8'
-                          : '#d97706'
-                      }
-                    />
-                    <div>
-                      <strong style={styles.badgeName}>{b.name}</strong>
-                      <span style={styles.badgeTier}>{b.tier.toUpperCase()} TIER</span>
+          {/* Reputation Ledger (Phase 3) */}
+          {activeTab === 'reputation' && (
+            <div style={styles.listSection}>
+              <div style={styles.ledgerHeaderCard}>
+                <TrendingUp size={20} color="#2563eb" />
+                <div>
+                  <strong>Reputation History & Audit Trail</strong>
+                  <p style={{ fontSize: '0.8125rem', color: '#64748b', margin: 0 }}>
+                    Reputation points are calculated nightly at 1:00 AM UTC based on votes, accepted solutions, medals, and streaks.
+                  </p>
+                </div>
+              </div>
+
+              {reputationLedger.length === 0 ? (
+                <div style={styles.emptyState}>
+                  <Star size={32} color="#94a3b8" />
+                  <p>No reputation changes recorded yet. Points will accumulate as other developers vote and endorse your posts.</p>
+                </div>
+              ) : (
+                reputationLedger.map((entry) => (
+                  <div key={entry.id} style={styles.ledgerRow}>
+                    <div
+                      style={{
+                        ...styles.deltaBadge,
+                        backgroundColor: entry.delta >= 0 ? '#ecfdf5' : '#fef2f2',
+                        color: entry.delta >= 0 ? '#059669' : '#dc2626',
+                        borderColor: entry.delta >= 0 ? '#a7f3d0' : '#fecaca',
+                      }}
+                    >
+                      {entry.delta >= 0 ? `+${entry.delta}` : entry.delta}
+                    </div>
+                    <div style={styles.ledgerInfo}>
+                      <strong style={styles.ledgerReason}>{entry.reason}</strong>
+                      <span style={styles.ledgerDate}>
+                        {new Date(entry.created_at).toLocaleString()}
+                      </span>
                     </div>
                   </div>
                 ))
-              ) : (
-                <div style={styles.emptyState}>
-                  <Award size={32} color="#94a3b8" />
-                  <p>No system badges awarded yet. Badges are calculated nightly at 1:00 AM.</p>
-                </div>
               )}
             </div>
           )}
 
-          {/* Activity */}
+          {/* Badges (Phase 3) */}
+          {activeTab === 'badges' && (
+            <div style={styles.badgesSection}>
+              <div style={styles.badgesIntro}>
+                <Sparkles size={18} color="#f59e0b" />
+                <span>
+                  Badges recognize active participation, peer-reviewed solutions, and quality problem formulation.
+                </span>
+              </div>
+
+              <div style={styles.badgesGrid}>
+                {badgeCatalog.map((rule) => {
+                  const isEarned = earnedBadgeNames.includes(rule.name);
+                  const earnedInfo = profile.badges?.find((b) => b.name === rule.name);
+
+                  return (
+                    <div
+                      key={rule.id || rule.name}
+                      style={{
+                        ...styles.badgeCard,
+                        backgroundColor: isEarned ? '#ffffff' : '#f8fafc',
+                        borderColor: isEarned
+                          ? rule.tier === 'gold'
+                            ? '#fef08a'
+                            : rule.tier === 'silver'
+                            ? '#cbd5e1'
+                            : '#fed7aa'
+                          : '#e2e8f0',
+                        opacity: isEarned ? 1 : 0.75,
+                      }}
+                    >
+                      <div
+                        style={{
+                          ...styles.badgeIconWrapper,
+                          backgroundColor: isEarned
+                            ? rule.tier === 'gold'
+                              ? '#fefce8'
+                              : rule.tier === 'silver'
+                              ? '#f1f5f9'
+                              : '#fffbeb'
+                            : '#f1f5f9',
+                        }}
+                      >
+                        {isEarned ? (
+                          <Award
+                            size={24}
+                            color={
+                              rule.tier === 'gold'
+                                ? '#eab308'
+                                : rule.tier === 'silver'
+                                ? '#64748b'
+                                : '#d97706'
+                            }
+                          />
+                        ) : (
+                          <Lock size={20} color="#94a3b8" />
+                        )}
+                      </div>
+
+                      <div style={styles.badgeInfo}>
+                        <div style={styles.badgeNameRow}>
+                          <strong style={styles.badgeName}>{rule.name}</strong>
+                          <span
+                            style={{
+                              ...styles.badgeTier,
+                              color:
+                                rule.tier === 'gold'
+                                  ? '#854d0e'
+                                  : rule.tier === 'silver'
+                                  ? '#475569'
+                                  : '#9a3412',
+                            }}
+                          >
+                            {rule.tier.toUpperCase()}
+                          </span>
+                        </div>
+                        <p style={styles.badgeDesc}>{rule.description}</p>
+                        {isEarned && earnedInfo && (
+                          <span style={styles.awardedDate}>
+                            Earned on {new Date(earnedInfo.awarded_at).toLocaleDateString()}
+                          </span>
+                        )}
+                      </div>
+                    </div>
+                  );
+                })}
+              </div>
+            </div>
+          )}
+
+          {/* Activity Feed */}
           {activeTab === 'activity' && (
             <div style={styles.listSection}>
               {activities.length === 0 ? (
@@ -711,29 +844,118 @@ const styles: Record<string, React.CSSProperties> = {
     fontSize: '0.75rem',
     fontWeight: 600,
   },
-  badgesGrid: {
-    display: 'grid',
-    gridTemplateColumns: 'repeat(auto-fit, minmax(220px, 1fr))',
-    gap: '1rem',
-  },
-  badgeCard: {
+  ledgerHeaderCard: {
     display: 'flex',
     alignItems: 'center',
     gap: '0.75rem',
-    padding: '1rem',
+    padding: '1rem 1.25rem',
+    backgroundColor: '#eff6ff',
+    border: '1px solid #bfdbfe',
+    borderRadius: '10px',
+  },
+  ledgerRow: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '1rem',
+    padding: '0.875rem 1.25rem',
     backgroundColor: '#ffffff',
     borderRadius: '10px',
     border: '1px solid #e2e8f0',
   },
-  badgeName: {
-    display: 'block',
+  deltaBadge: {
     fontSize: '0.875rem',
+    fontWeight: 800,
+    padding: '0.25rem 0.625rem',
+    borderRadius: '6px',
+    border: '1px solid transparent',
+    minWidth: '45px',
+    textAlign: 'center',
+  },
+  ledgerInfo: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.125rem',
+  },
+  ledgerReason: {
+    fontSize: '0.875rem',
+    color: '#1e293b',
+  },
+  ledgerDate: {
+    fontSize: '0.75rem',
+    color: '#94a3b8',
+  },
+  badgesSection: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '1.25rem',
+  },
+  badgesIntro: {
+    display: 'flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    fontSize: '0.875rem',
+    color: '#475569',
+    backgroundColor: '#fffbeb',
+    border: '1px solid #fef08a',
+    padding: '0.75rem 1rem',
+    borderRadius: '8px',
+  },
+  badgesGrid: {
+    display: 'grid',
+    gridTemplateColumns: 'repeat(auto-fit, minmax(280px, 1fr))',
+    gap: '1rem',
+  },
+  badgeCard: {
+    display: 'flex',
+    alignItems: 'flex-start',
+    gap: '0.875rem',
+    padding: '1.125rem',
+    borderRadius: '12px',
+    border: '1px solid #e2e8f0',
+    transition: 'all 0.15s ease',
+  },
+  badgeIconWrapper: {
+    width: '42px',
+    height: '42px',
+    borderRadius: '10px',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  badgeInfo: {
+    flexGrow: 1,
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.25rem',
+  },
+  badgeNameRow: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+  },
+  badgeName: {
+    fontSize: '0.9375rem',
+    fontWeight: 700,
     color: '#0f172a',
   },
   badgeTier: {
-    fontSize: '0.6875rem',
+    fontSize: '0.625rem',
+    fontWeight: 800,
+    padding: '0.125rem 0.375rem',
+    borderRadius: '4px',
+    backgroundColor: '#f1f5f9',
+  },
+  badgeDesc: {
+    fontSize: '0.75rem',
     color: '#64748b',
+    lineHeight: 1.4,
+  },
+  awardedDate: {
+    fontSize: '0.6875rem',
+    color: '#059669',
     fontWeight: 600,
+    marginTop: '0.25rem',
   },
   activityItem: {
     display: 'flex',

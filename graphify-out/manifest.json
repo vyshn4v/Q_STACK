@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.module.ts": {
-    "mtime": 1786602535.4641743,
-    "ast_hash": "a7f0fc2f01ccc7406b29ec3c7073438c",
+    "mtime": 1786604008.0748537,
+    "ast_hash": "60f9f2d2da4f0145b54f1242a424b17d",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.service.ts": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\api\\client.ts": {
-    "mtime": 1786602604.0476189,
-    "ast_hash": "fc250957517cd376909a3ae14ab2926d",
+    "mtime": 1786604085.827456,
+    "ast_hash": "c98537c343260ab42ddf1106f020fd68",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\auth\\AuthModal.tsx": {
@@ -550,8 +550,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\AppShell.tsx": {
-    "mtime": 1786603215.9783037,
-    "ast_hash": "4bcbbd5f3905169d42ebc8b8b19f8836",
+    "mtime": 1786604222.6921308,
+    "ast_hash": "d7e8d6c21b6063fe94a21b58982c42be",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\RightRail.tsx": {
@@ -625,8 +625,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\types\\index.ts": {
-    "mtime": 1786602717.5906756,
-    "ast_hash": "aa2ecf6550c63f2f2d362bf8a6578ea3",
+    "mtime": 1786604073.8102849,
+    "ast_hash": "ed460d27dbba759c317912947286a6f4",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\strategies\\github.strategy.ts": {
@@ -790,8 +790,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\UserProfilePage.tsx": {
-    "mtime": 1786602683.5505972,
-    "ast_hash": "d40ccc829cca96d57559472b830e3a9c",
+    "mtime": 1786604231.7070086,
+    "ast_hash": "37d3c907a5c156c1cafe1c50f0c5ac48",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\RichMarkdownEditor.tsx": {
@@ -807,6 +807,36 @@
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\MobileNavigation.tsx": {
     "mtime": 1786603203.6015477,
     "ast_hash": "54cc134b9fb74a4be3b81b7b4c9c526f",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\activity-consumer.service.ts": {
+    "mtime": 1786603966.3545547,
+    "ast_hash": "8fad7e3eb7a71035f8108665dd6c152f",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\reputation.config.ts": {
+    "mtime": 1786603972.1926765,
+    "ast_hash": "5b54929c959e60f05efb7fce2ffa3950",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\reputation.controller.ts": {
+    "mtime": 1786603992.8722491,
+    "ast_hash": "6d0fe6f82041a4b0ee2e0f26d7b00c3a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\reputation.module.ts": {
+    "mtime": 1786603996.8688529,
+    "ast_hash": "151f970ea4d6811efebd734215f60c1b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\reputation.repository.ts": {
+    "mtime": 1786603980.9576347,
+    "ast_hash": "b77378fbb1265d57b12ff89f309eba7a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\reputation\\reputation.service.ts": {
+    "mtime": 1786603987.7298536,
+    "ast_hash": "c137f78d007ef4c0edaae1d19aa2957b",
     "semantic_hash": ""
   }
 }

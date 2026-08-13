@@ -66,10 +66,11 @@ export const VoteControl: React.FC<VoteControlProps> = ({
       });
       setScore(result.newScore);
       setUserVote(result.userVote);
-    } catch (err) {
-      // Revert on failure
+    } catch (err: any) {
+      // Revert on failure and inform user
       setScore(previousScore);
       setUserVote(previousVote);
+      alert(err.message || 'Failed to cast vote.');
     } finally {
       setIsVoting(false);
     }
