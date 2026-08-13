@@ -1,0 +1,347 @@
+{
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\eslint.config.mjs": {
+    "mtime": 1786596375.7118585,
+    "ast_hash": "069d66f3fd2af0b03d917cf51a1f4c42",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\nest-cli.json": {
+    "mtime": 1786596375.713363,
+    "ast_hash": "fa439650fa28a1a7aa8c2b6d81c8cc20",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\package.json": {
+    "mtime": 1786596475.249178,
+    "ast_hash": "f92cbb0534fddf614f65594a9f75444d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\tsconfig.build.json": {
+    "mtime": 1786596375.7168956,
+    "ast_hash": "d23fc4aff02c91ce9c424c15aea9b49b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\tsconfig.json": {
+    "mtime": 1786596375.7179055,
+    "ast_hash": "e99b998156dc99eda85378413a794718",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\migrations\\001_initial_schema.sql": {
+    "mtime": 1786596555.8555043,
+    "ast_hash": "a0aa11282e561a822c94e6c86248666c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.controller.spec.ts": {
+    "mtime": 1786596666.1964424,
+    "ast_hash": "57dec3a32bba9b599869a9a8be9aa95b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.controller.ts": {
+    "mtime": 1786596621.5496092,
+    "ast_hash": "ff637a9577f6e8be23d9fc1fb846be4a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.module.ts": {
+    "mtime": 1786596624.390586,
+    "ast_hash": "855b5cb9d19b02694a9a4e251319c053",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.service.ts": {
+    "mtime": 1786596617.672093,
+    "ast_hash": "c250c45aca0718ebf948007870b9dcb3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\main.ts": {
+    "mtime": 1786596610.9944892,
+    "ast_hash": "d2f46d0dbd938ffb5376ca1e79a74414",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\decorators\\current-user.decorator.ts": {
+    "mtime": 1786596601.3083065,
+    "ast_hash": "a6e871048a209562e32125961cd30f11",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\decorators\\roles.decorator.ts": {
+    "mtime": 1786596599.031203,
+    "ast_hash": "7b8169752188562c135cafc2657a7f27",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\enums\\index.ts": {
+    "mtime": 1786596595.7124412,
+    "ast_hash": "dcec0af066684bf9a4d2cd4f62a2e45d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\filters\\all-exceptions.filter.ts": {
+    "mtime": 1786596604.1268246,
+    "ast_hash": "50e2f17918d930b329da7b626f3ce818",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\interceptors\\transform.interceptor.ts": {
+    "mtime": 1786596606.6025631,
+    "ast_hash": "f3965a6152da3d4bd8d7dcfc9920c542",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\config\\config.validation.ts": {
+    "mtime": 1786596565.3548086,
+    "ast_hash": "10e807a6355ef5a52382dc6bcfb6acf2",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\database.module.ts": {
+    "mtime": 1786596577.4512289,
+    "ast_hash": "1ddb8c1d874c86d1caa8c434f7521e16",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\database.service.ts": {
+    "mtime": 1786596569.7213726,
+    "ast_hash": "9c1a58df6f0945594a36907d5c48a60a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\migrator.service.ts": {
+    "mtime": 1786596573.9671867,
+    "ast_hash": "540bb9dc42020de711785eaadc2f2b25",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\redis\\event-bus.interface.ts": {
+    "mtime": 1786596580.858883,
+    "ast_hash": "bc096829298355d90b1f57692885cf3f",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\redis\\event-bus.service.ts": {
+    "mtime": 1786596588.908595,
+    "ast_hash": "70a895e31016a1df55bf8108bd0927e4",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\redis\\redis.module.ts": {
+    "mtime": 1786596592.081608,
+    "ast_hash": "27fc8e1ec33b1add1a9781c5680bddf8",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\redis\\redis.service.ts": {
+    "mtime": 1786596584.3608425,
+    "ast_hash": "c6ed6171b9287c7ba38eacbf4f23baeb",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\test\\app.e2e-spec.ts": {
+    "mtime": 1786596375.721459,
+    "ast_hash": "668094bf268e0395763312620e5638e8",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\test\\jest-e2e.json": {
+    "mtime": 1786596375.721459,
+    "ast_hash": "707a50895cb1c565825637916e9cf290",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\.oxlintrc.json": {
+    "mtime": 1786090812.8305678,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\package.json": {
+    "mtime": 1786596515.803677,
+    "ast_hash": "ddf4e93b8d6f9a36bc51856a4f07e472",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\tsconfig.app.json": {
+    "mtime": 1786090812.873513,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\tsconfig.json": {
+    "mtime": 1786090812.8836744,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\tsconfig.node.json": {
+    "mtime": 1786090812.8937573,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\vite.config.ts": {
+    "mtime": 1786596714.664363,
+    "ast_hash": "7d1aa8d12cc0d3143169349e25977dcd",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\App.tsx": {
+    "mtime": 1786090813.1592498,
+    "ast_hash": "c5e44a49ac2a44373fba5d1a7fe35be4",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\main.tsx": {
+    "mtime": 1786090813.166995,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\.oxlintrc.json": {
+    "mtime": 1786090812.8305678,
+    "ast_hash": "029f4905006c1fffd96bc863e2d98d3e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\package.json": {
+    "mtime": 1786596496.9426088,
+    "ast_hash": "a389985bbf1b2c2ec471825ad307fcdf",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\tsconfig.app.json": {
+    "mtime": 1786090812.873513,
+    "ast_hash": "5f2dafd737dea8a4ddcbb10f5113ac5a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\tsconfig.json": {
+    "mtime": 1786090812.8836744,
+    "ast_hash": "a3d39fa780ebff65444de257f291ce6c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\tsconfig.node.json": {
+    "mtime": 1786090812.8937573,
+    "ast_hash": "f9cb81ddcea69ffdab672fc8c48dca66",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\vite.config.ts": {
+    "mtime": 1786596711.6026754,
+    "ast_hash": "1fde01004a1b3d7e77dba184256525a0",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\App.tsx": {
+    "mtime": 1786090813.1592498,
+    "ast_hash": "c5e44a49ac2a44373fba5d1a7fe35be4",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\main.tsx": {
+    "mtime": 1786090813.166995,
+    "ast_hash": "787e5a07efeb2bf6209d5937195f2f68",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\docker-compose.yml": {
+    "mtime": 1786596527.4078426,
+    "ast_hash": "17555fa047765a5aa329f375d809a37a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\README.md": {
+    "mtime": 1786596775.5079286,
+    "ast_hash": "ff3b0e61acef8d8913634adf3909f5b2",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\SKILL.md": {
+    "mtime": 1786596103.9208708,
+    "ast_hash": "b9684239406c372f284f0343558c4f1e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\01-tech-architecture.md": {
+    "mtime": 1786596103.956069,
+    "ast_hash": "ea68a4620e00326c0659c8a5f4faad8b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\02-data-model-and-rbac.md": {
+    "mtime": 1786596103.9520695,
+    "ast_hash": "6769d68e55b4415ef5477712017dff97",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\03-ai-systems.md": {
+    "mtime": 1786596103.94507,
+    "ast_hash": "bd812d3f7837b237256d1c88c23a14c6",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\04-event-driven-activity.md": {
+    "mtime": 1786596103.9420683,
+    "ast_hash": "5cfb882759ecb9e9969eeb7b0797161b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\05-reputation-badges.md": {
+    "mtime": 1786596103.9330764,
+    "ast_hash": "f6f4d04bd27b363bd3e87e8c36941e19",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\06-design-system.md": {
+    "mtime": 1786596103.938081,
+    "ast_hash": "84b543c0f97d9d2f2a1772861b898942",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\07-phase-roadmap.md": {
+    "mtime": 1786596103.9480734,
+    "ast_hash": "820cba4597d32c3f4751b6d92ad4a536",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\.github\\workflows\\ci.yml": {
+    "mtime": 1786596770.4751549,
+    "ast_hash": "c5bfcb0f7554c13cfb7e00ac8007bbd0",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\README.md": {
+    "mtime": 1786596375.7163682,
+    "ast_hash": "ad12c0560e2e514d356da443998e8208",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\migrations\\001_initial_schema.md": {
+    "mtime": 1786596559.8189611,
+    "ast_hash": "566ccf295d593c1ee3fdb71d67b8fe55",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\index.html": {
+    "mtime": 1786596456.8408084,
+    "ast_hash": "e55a171b95e40c405f453a2017a16afe",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\README.md": {
+    "mtime": 1786090812.9256043,
+    "ast_hash": "10495bfcc6c568eca4dab6dd5df795d3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\index.html": {
+    "mtime": 1786596448.5164666,
+    "ast_hash": "baf21e21fca5b61275289951469977fd",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\README.md": {
+    "mtime": 1786090812.9256043,
+    "ast_hash": "10495bfcc6c568eca4dab6dd5df795d3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\public\\favicon.svg": {
+    "mtime": 1786090813.0148754,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\public\\icons.svg": {
+    "mtime": 1786090813.050319,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\assets\\hero.png": {
+    "mtime": 1786090812.9615493,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\assets\\react.svg": {
+    "mtime": 1786090813.083906,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\assets\\vite.svg": {
+    "mtime": 1786090813.1128058,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\public\\favicon.svg": {
+    "mtime": 1786090813.0148754,
+    "ast_hash": "7e840862161341271697daa99a40d76b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\public\\icons.svg": {
+    "mtime": 1786090813.050319,
+    "ast_hash": "3b4fcfcf393eca4d264dca4a4663bc37",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\assets\\hero.png": {
+    "mtime": 1786090812.9615493,
+    "ast_hash": "aead493361b27e7510691c5d7072dfc1",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\assets\\react.svg": {
+    "mtime": 1786090813.083906,
+    "ast_hash": "f0402b67b6ce880f65666bb49e841696",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\assets\\vite.svg": {
+    "mtime": 1786090813.1128058,
+    "ast_hash": "9960a24288958394ac50e57ff638b036",
+    "semantic_hash": ""
+  }
+}
