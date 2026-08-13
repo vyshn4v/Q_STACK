@@ -6,6 +6,7 @@ import Redis from 'ioredis';
 export class RedisService implements OnModuleInit, OnModuleDestroy {
   private readonly logger = new Logger(RedisService.name);
   private client: Redis | null = null;
+  private keyPrefix: string = 'qstack:';
 
   constructor(private readonly configService: ConfigService) {}
 
@@ -13,13 +14,14 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
     const host = this.configService.get<string>('REDIS_HOST', 'localhost');
     const port = Number(this.configService.get<number>('REDIS_PORT', 6379));
     const password = this.configService.get<string>('REDIS_PASSWORD');
+    this.keyPrefix = this.configService.get<string>('REDIS_KEY_PREFIX', 'qstack:');
 
     try {
       this.client = new Redis({
         host,
         port,
         password: password || undefined,
-        keyPrefix: `Q_STACK`,
+        keyPrefix: this.keyPrefix,
         maxRetriesPerRequest: 3,
         retryStrategy: (times) => {
           if (times > 5) {
@@ -31,7 +33,7 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
       });
 
       this.client.on('connect', () => {
-        this.logger.log('Connected to Redis');
+        this.logger.log(`Connected to Redis (Key Prefix: "${this.keyPrefix}")`);
       });
 
       this.client.on('error', (err) => {
@@ -51,6 +53,10 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
 
   getClient(): Redis | null {
     return this.client;
+  }
+
+  getKeyPrefix(): string {
+    return this.keyPrefix;
   }
 
   async isHealthy(): Promise<boolean> {
@@ -101,7 +107,13 @@ export class RedisService implements OnModuleInit, OnModuleDestroy {
     try {
       const keys = await this.client.keys(pattern);
       if (keys.length > 0) {
-        await this.client.del(...keys);
+        // ioredis client.keys() returns prefixed key names.
+        // When calling client.del(), ioredis automatically prepends keyPrefix.
+        // Strip the prefix to avoid double-prefixing.
+        const strippedKeys = this.keyPrefix
+          ? keys.map((k) => (k.startsWith(this.keyPrefix) ? k.slice(this.keyPrefix.length) : k))
+          : keys;
+        await this.client.del(...strippedKeys);
       }
     } catch (err: any) {
       this.logger.warn(`Redis delPattern error for pattern [${pattern}]: ${err.message}`);

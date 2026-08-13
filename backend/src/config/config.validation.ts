@@ -66,6 +66,10 @@ class EnvironmentVariables {
   @IsOptional()
   REDIS_PASSWORD?: string;
 
+  @IsString()
+  @IsOptional()
+  REDIS_KEY_PREFIX: string = 'qstack:';
+
   @IsNumber()
   @IsOptional()
   FEED_CACHE_TTL_SECONDS: number = 60;
