@@ -147,3 +147,226 @@ code, pre {
   font-weight: 600;
   border-radius: var(--radius-full);
 }
+
+/* Custom Quill Snow Modern Editor Styles */
+.ql-toolbar.ql-snow {
+  background-color: #f8fafc !important;
+  border: none !important;
+  border-bottom: 1px solid #e2e8f0 !important;
+  padding: 0.5rem 0.75rem !important;
+  font-family: var(--font-sans) !important;
+}
+
+.ql-container.ql-snow {
+  border: none !important;
+  font-family: var(--font-sans) !important;
+  font-size: 0.9375rem !important;
+}
+
+.ql-editor {
+  min-height: 200px !important;
+  font-size: 0.9375rem !important;
+  line-height: 1.65 !important;
+  color: #0f172a !important;
+}
+
+.ql-editor.ql-blank::before {
+  color: #94a3b8 !important;
+  font-style: normal !important;
+}
+
+.ql-snow .ql-editor pre.ql-syntax {
+  background-color: #0f172a !important;
+  color: #e2e8f0 !important;
+  border-radius: 8px !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.8125rem !important;
+  padding: 1rem !important;
+}
+
+.ql-snow .ql-editor code {
+  background-color: #f1f5f9 !important;
+  color: #2563eb !important;
+  padding: 0.125rem 0.375rem !important;
+  border-radius: 4px !important;
+  font-family: var(--font-mono) !important;
+  font-size: 0.8125rem !important;
+}
+
+.ql-snow .ql-editor blockquote {
+  border-left: 4px solid #2563eb !important;
+  padding-left: 1rem !important;
+  color: #475569 !important;
+  font-style: italic !important;
+  margin: 0.5rem 0 !important;
+}
+
+/* Rendered Quill output styles */
+.ql-editor-render p {
+  margin-bottom: 1rem;
+}
+
+.ql-editor-render pre {
+  background-color: #0f172a;
+  color: #e2e8f0;
+  border-radius: 8px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+  padding: 1rem;
+  overflow-x: auto;
+  margin-bottom: 1.25rem;
+}
+
+.ql-editor-render code {
+  background-color: #f1f5f9;
+  color: #2563eb;
+  padding: 0.125rem 0.375rem;
+  border-radius: 4px;
+  font-family: var(--font-mono);
+  font-size: 0.8125rem;
+}
+
+.ql-editor-render blockquote {
+  border-left: 4px solid #2563eb;
+  padding-left: 1rem;
+  color: #475569;
+  font-style: italic;
+  margin: 0.75rem 0;
+}
+
+.ql-editor-render ul, .ql-editor-render ol {
+  padding-left: 1.5rem;
+  margin-bottom: 1rem;
+}
+
+/* ========================================================================= */
+/* Mobile-First Responsive Breakpoints & Shell Utilities                     */
+/* ========================================================================= */
+
+.mobile-bottom-nav {
+  display: none !important;
+}
+
+.mobile-search-toggle {
+  display: none !important;
+}
+
+@media (max-width: 1067px) {
+  :root {
+    --header-height: 56px;
+  }
+
+  .desktop-only {
+    display: none !important;
+  }
+
+  .desktop-search-form {
+    display: none !important;
+  }
+
+  .mobile-search-toggle {
+    display: flex !important;
+  }
+
+  .mobile-bottom-nav {
+    display: flex !important;
+  }
+
+  .app-shell-page {
+    padding-bottom: 64px !important; /* give room for bottom nav */
+  }
+
+  .app-shell-main {
+    padding: 0.875rem !important;
+    gap: 1rem !important;
+    flex-direction: column !important;
+  }
+
+  .app-shell-sidebar {
+    display: none !important;
+  }
+
+  .app-shell-right-rail {
+    display: none !important;
+  }
+
+  /* Question Cards Mobile */
+  .question-card-inner {
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+  }
+
+  .question-card-stats {
+    flex-direction: row !important;
+    justify-content: flex-start !important;
+    gap: 1rem !important;
+    width: 100% !important;
+    border-bottom: 1px solid var(--border-subtle) !important;
+    padding-bottom: 0.5rem !important;
+  }
+
+  /* Profile Page Mobile */
+  .profile-header-wrap {
+    flex-direction: column !important;
+    align-items: flex-start !important;
+  }
+
+  /* Modals Mobile Bottom Sheet */
+  .mobile-bottom-sheet {
+    align-items: flex-end !important;
+    padding: 0 !important;
+  }
+
+  .mobile-bottom-sheet > div {
+    border-radius: 20px 20px 0 0 !important;
+    max-width: 100% !important;
+  }
+
+  /* Ask Question Mobile Layout */
+  .ask-composer-layout {
+    flex-direction: column !important;
+    gap: 1.25rem !important;
+  }
+
+  .ask-field-card {
+    padding: 1rem !important;
+    border-radius: 10px !important;
+  }
+
+  .ask-instructions-rail {
+    width: 100% !important;
+  }
+
+  .ask-submit-btn {
+    width: 100% !important;
+    justify-content: center !important;
+  }
+
+  /* Quill Toolbar Mobile */
+  .ql-toolbar.ql-snow {
+    padding: 0.375rem 0.5rem !important;
+    display: flex !important;
+    flex-wrap: wrap !important;
+    gap: 2px !important;
+  }
+
+  .ql-snow.ql-toolbar button, 
+  .ql-snow .ql-toolbar button {
+    width: 28px !important;
+    height: 28px !important;
+    padding: 3px !important;
+  }
+
+  .ql-snow .ql-picker.ql-header {
+    width: 100px !important;
+  }
+
+  .ql-editor {
+    min-height: 180px !important;
+    padding: 0.75rem !important;
+  }
+}
+
+
+
+

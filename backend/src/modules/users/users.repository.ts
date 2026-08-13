@@ -16,6 +16,34 @@ export interface UserProfile {
   created_at: Date;
 }
 
+export interface UserQuestionRow {
+  id: string;
+  title: string;
+  views_count: number;
+  score: number;
+  answers_count: number;
+  created_at: Date;
+  tags: { id: string; name: string }[];
+  has_accepted_answer: boolean;
+}
+
+export interface UserAnswerRow {
+  id: string;
+  question_id: string;
+  question_title: string;
+  body: string;
+  score: number;
+  is_accepted: boolean;
+  created_at: Date;
+}
+
+export interface UserActivityRow {
+  id: string;
+  event_type: string;
+  payload: Record<string, any>;
+  created_at: Date;
+}
+
 @Injectable()
 export class UsersRepository {
   constructor(private readonly db: DatabaseService) {}
@@ -75,6 +103,68 @@ export class UsersRepository {
       LIMIT $1
     `;
     const result = await this.db.query<UserProfile>(query, [limit]);
+    return result.rows;
+  }
+
+  async getUserQuestions(userId: string, limit = 20): Promise<UserQuestionRow[]> {
+    const query = `
+      SELECT
+        q.id,
+        q.title,
+        q.views_count,
+        q.score,
+        q.answers_count,
+        q.created_at,
+        COALESCE(
+          json_agg(
+            json_build_object('id', t.id, 'name', t.name)
+          ) FILTER (WHERE t.id IS NOT NULL),
+          '[]'::json
+        ) AS tags,
+        EXISTS (
+          SELECT 1 FROM answers a WHERE a.question_id = q.id AND a.is_accepted = true
+        ) AS has_accepted_answer
+      FROM questions q
+      LEFT JOIN question_tags qt ON qt.question_id = q.id
+      LEFT JOIN tags t ON t.id = qt.tag_id
+      WHERE q.author_id = $1 AND q.status != 'soft_deleted'
+      GROUP BY q.id
+      ORDER BY q.created_at DESC
+      LIMIT $2;
+    `;
+    const result = await this.db.query<UserQuestionRow>(query, [userId, limit]);
+    return result.rows;
+  }
+
+  async getUserAnswers(userId: string, limit = 20): Promise<UserAnswerRow[]> {
+    const query = `
+      SELECT
+        a.id,
+        a.question_id,
+        q.title AS question_title,
+        a.body,
+        a.score,
+        a.is_accepted,
+        a.created_at
+      FROM answers a
+      JOIN questions q ON q.id = a.question_id
+      WHERE a.author_id = $1 AND a.status != 'soft_deleted'
+      ORDER BY a.created_at DESC
+      LIMIT $2;
+    `;
+    const result = await this.db.query<UserAnswerRow>(query, [userId, limit]);
+    return result.rows;
+  }
+
+  async getUserActivity(userId: string, limit = 30): Promise<UserActivityRow[]> {
+    const query = `
+      SELECT id, event_type, payload, created_at
+      FROM activity_events
+      WHERE user_id = $1
+      ORDER BY created_at DESC
+      LIMIT $2;
+    `;
+    const result = await this.db.query<UserActivityRow>(query, [userId, limit]);
     return result.rows;
   }
 

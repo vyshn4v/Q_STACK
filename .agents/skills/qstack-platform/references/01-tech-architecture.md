@@ -10,7 +10,7 @@ See also: [SKILL.md](../SKILL.md) · [04 — Event-driven activity](./04-event-d
 | Database | PostgreSQL, raw SQL (no ORM) | Stated preference — hand-written queries, one query module per domain module |
 | Cache + events | Redis | Doubles as cache, pub/sub event bus (Streams), and a lightweight job queue (BullMQ) — one process instead of three |
 | Vector store | Pinecone (managed) | External/hosted — doesn't compete for RAM on the 1GB box, unlike a self-hosted option (pgvector, Milvus, Weaviate) |
-| LLM | Gemini API | External/hosted, same RAM-budget reasoning as Pinecone |
+| LLM + embeddings | NVIDIA NIM (build.nvidia.com) — free tier, no card, OpenAI-compatible | External/hosted, same RAM-budget reasoning as Pinecone; one free API key covers both chat completions and embeddings. OpenRouter (openrouter.ai) is a drop-in swap for the completions half (flexible model routing) — see [03](./03-ai-systems.md) |
 | Auth | Passport.js (local, google, github strategies) + JWT access/refresh | Stateless auth scales horizontally without sticky sessions, which matters once this moves to Kubernetes |
 | Realtime | Socket.io | Notifications, AI chat streaming |
 | Frontend | React + Vite + Redux/RTK Query (or React Query) | Matches existing stack familiarity |
@@ -19,7 +19,8 @@ See also: [SKILL.md](../SKILL.md) · [04 — Event-driven activity](./04-event-d
 ## Why this fits a 1 vCPU / 1GB box today
 
 The two heaviest workloads in a system like this — the LLM and the vector
-search — are both offloaded to external managed APIs (Gemini, Pinecone).
+search — are both offloaded to external managed APIs (NVIDIA NIM/OpenRouter for
+the LLM, Pinecone for vector search).
 Nothing compute-heavy runs on the box itself. What's left to run locally is:
 
 - Node process (NestJS API)

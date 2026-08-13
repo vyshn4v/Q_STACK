@@ -1,9 +1,10 @@
 import React, { useState } from 'react';
-import { useNavigate } from 'react-router-dom';
+import { useNavigate, Link } from 'react-router-dom';
 import { useAuth } from '../context/AuthContext';
 import { api } from '../api/client';
 import { AppShell } from '../components/layout/AppShell';
-import { HelpCircle, Send, X, AlertCircle, Eye, Edit3 } from 'lucide-react';
+import { RichMarkdownEditor } from '../components/common/RichMarkdownEditor';
+import { HelpCircle, Send, X, AlertCircle, Lock, LogIn } from 'lucide-react';
 
 export const AskQuestionPage: React.FC = () => {
   const { isAuthenticated, openAuthModal } = useAuth();
@@ -13,9 +14,39 @@ export const AskQuestionPage: React.FC = () => {
   const [body, setBody] = useState('');
   const [tagInput, setTagInput] = useState('');
   const [tags, setTags] = useState<string[]>([]);
-  const [activeTab, setActiveTab] = useState<'write' | 'preview'>('write');
   const [error, setError] = useState<string | null>(null);
   const [isSubmitting, setIsSubmitting] = useState(false);
+
+  if (!isAuthenticated) {
+    return (
+      <AppShell showRightRail={false}>
+        <div style={styles.authLockContainer}>
+          <div style={styles.authLockCard}>
+            <div style={styles.lockIconWrapper}>
+              <Lock size={32} color="#2563eb" />
+            </div>
+            <h2 style={styles.authLockTitle}>Sign in to Ask a Question</h2>
+            <p style={styles.authLockDesc}>
+              Joining QStack enables you to ask technical questions, receive peer-reviewed solutions from verified developers, and earn community reputation.
+            </p>
+            <div style={styles.authLockActions}>
+              <button
+                type="button"
+                onClick={() => openAuthModal('login')}
+                style={styles.signInBtn}
+              >
+                <LogIn size={16} />
+                <span>Sign In / Create Account</span>
+              </button>
+              <Link to="/questions" style={styles.browseLink}>
+                Browse Public Questions Instead
+              </Link>
+            </div>
+          </div>
+        </div>
+      </AppShell>
+    );
+  }
 
   const handleAddTag = (e: React.KeyboardEvent | React.FocusEvent) => {
     if ('key' in e && e.key !== 'Enter' && e.key !== ',') return;
@@ -36,17 +67,14 @@ export const AskQuestionPage: React.FC = () => {
     e.preventDefault();
     setError(null);
 
-    if (!isAuthenticated) {
-      openAuthModal('login');
-      return;
-    }
-
     if (title.trim().length < 10) {
       setError('Title must be at least 10 characters long.');
       return;
     }
 
-    if (body.trim().length < 20) {
+    // Strip HTML tags to verify actual text length
+    const plainText = body.replace(/<[^>]*>/g, '').trim();
+    if (plainText.length < 20) {
       setError('Question body must be at least 20 characters long.');
       return;
     }
@@ -88,11 +116,11 @@ export const AskQuestionPage: React.FC = () => {
           </div>
         )}
 
-        <div style={styles.composerLayout}>
+        <div className="ask-composer-layout" style={styles.composerLayout}>
           {/* Main Form */}
           <form onSubmit={handleSubmit} style={styles.form}>
             {/* Title Section */}
-            <div style={styles.fieldCard}>
+            <div className="ask-field-card" style={styles.fieldCard}>
               <label style={styles.fieldLabel}>Title</label>
               <p style={styles.fieldDesc}>
                 Be specific and clear. Imagine you're summarizing the issue in a single headline.
@@ -109,69 +137,23 @@ export const AskQuestionPage: React.FC = () => {
               />
             </div>
 
-            {/* Body Section */}
-            <div style={styles.fieldCard}>
-              <div style={styles.bodyHeaderRow}>
-                <div>
-                  <label style={styles.fieldLabel}>Problem Details & Context</label>
-                  <p style={styles.fieldDesc}>
-                    Introduce the problem and expand on what you put in the title.
-                  </p>
-                </div>
+            {/* Rich Editor Section */}
+            <div className="ask-field-card" style={styles.fieldCard}>
+              <label style={styles.fieldLabel}>Problem Details & Code Context</label>
+              <p style={styles.fieldDesc}>
+                Introduce the problem, describe what you tried, and format code snippets using the rich toolbar.
+              </p>
 
-                <div style={styles.tabToggle}>
-                  <button
-                    type="button"
-                    onClick={() => setActiveTab('write')}
-                    style={{
-                      ...styles.tabBtn,
-                      ...(activeTab === 'write' ? styles.activeTabBtn : {}),
-                    }}
-                  >
-                    <Edit3 size={14} />
-                    <span>Write</span>
-                  </button>
-                  <button
-                    type="button"
-                    onClick={() => setActiveTab('preview')}
-                    style={{
-                      ...styles.tabBtn,
-                      ...(activeTab === 'preview' ? styles.activeTabBtn : {}),
-                    }}
-                  >
-                    <Eye size={14} />
-                    <span>Preview</span>
-                  </button>
-                </div>
-              </div>
-
-              {activeTab === 'write' ? (
-                <textarea
-                  rows={12}
-                  placeholder="Describe what you tried, what you expected, and paste your minimal code example..."
-                  value={body}
-                  onChange={(e) => setBody(e.target.value)}
-                  minLength={20}
-                  required
-                  style={styles.textarea}
-                />
-              ) : (
-                <div style={styles.previewBox}>
-                  {body.trim() ? (
-                    body.split('\n\n').map((p, i) => (
-                      <p key={i} style={{ marginBottom: '1rem' }}>
-                        {p}
-                      </p>
-                    ))
-                  ) : (
-                    <em style={{ color: '#94a3b8' }}>Nothing to preview yet</em>
-                  )}
-                </div>
-              )}
+              <RichMarkdownEditor
+                value={body}
+                onChange={setBody}
+                placeholder="Describe what you tried, expected outcomes, and paste your minimal reproducible code snippet..."
+                minHeight="220px"
+              />
             </div>
 
             {/* Tags Section */}
-            <div style={styles.fieldCard}>
+            <div className="ask-field-card" style={styles.fieldCard}>
               <label style={styles.fieldLabel}>Tags</label>
               <p style={styles.fieldDesc}>
                 Add up to 5 tags to describe what your question is about. Press Enter or comma to add.
@@ -186,6 +168,7 @@ export const AskQuestionPage: React.FC = () => {
                         type="button"
                         onClick={() => removeTag(t)}
                         style={styles.tagRemoveBtn}
+                        aria-label={`Remove ${t}`}
                       >
                         <X size={12} />
                       </button>
@@ -211,6 +194,7 @@ export const AskQuestionPage: React.FC = () => {
               <button
                 type="submit"
                 disabled={isSubmitting}
+                className="ask-submit-btn"
                 style={{
                   ...styles.submitBtn,
                   opacity: isSubmitting ? 0.7 : 1,
@@ -223,7 +207,7 @@ export const AskQuestionPage: React.FC = () => {
           </form>
 
           {/* Right Instructions Rail */}
-          <aside style={styles.instructionsRail}>
+          <aside className="ask-instructions-rail" style={styles.instructionsRail}>
             <div style={styles.instructionCard}>
               <div style={styles.instructionHeader}>
                 <HelpCircle size={18} color="#2563eb" />
@@ -232,7 +216,7 @@ export const AskQuestionPage: React.FC = () => {
               <ul style={styles.instructionList}>
                 <li><strong>Summarize the problem:</strong> Include specific libraries and error codes.</li>
                 <li><strong>Describe what you tried:</strong> Show debugging steps and outcomes.</li>
-                <li><strong>Show code:</strong> Include minimal reproducible snippets.</li>
+                <li><strong>Show code:</strong> Use the <code>&lt;/&gt;</code> code block button in the editor.</li>
                 <li><strong>Tag appropriately:</strong> Use relevant technology tags.</li>
               </ul>
             </div>
@@ -246,21 +230,23 @@ export const AskQuestionPage: React.FC = () => {
 const styles: Record<string, React.CSSProperties> = {
   pageContainer: {
     maxWidth: '1080px',
+    width: '100%',
     margin: '0 auto',
     display: 'flex',
     flexDirection: 'column',
-    gap: '1.5rem',
+    gap: '1.25rem',
+    boxSizing: 'border-box',
   },
   header: {
-    marginBottom: '0.5rem',
+    marginBottom: '0.25rem',
   },
   heading: {
-    fontSize: '1.75rem',
+    fontSize: '1.5rem',
     fontWeight: 800,
     color: '#0f172a',
   },
   subheading: {
-    fontSize: '0.9375rem',
+    fontSize: '0.875rem',
     color: '#64748b',
     marginTop: '0.25rem',
   },
@@ -271,100 +257,54 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: '#fef2f2',
     color: '#b91c1c',
     border: '1px solid #fecaca',
-    padding: '0.875rem 1rem',
+    padding: '0.75rem 1rem',
     borderRadius: '10px',
     fontSize: '0.875rem',
   },
   composerLayout: {
     display: 'flex',
-    gap: '2rem',
+    gap: '1.5rem',
     alignItems: 'flex-start',
+    width: '100%',
   },
   form: {
     flexGrow: 1,
     display: 'flex',
     flexDirection: 'column',
-    gap: '1.5rem',
+    gap: '1.25rem',
     minWidth: 0,
+    width: '100%',
   },
   fieldCard: {
     backgroundColor: '#ffffff',
     border: '1px solid #e2e8f0',
     borderRadius: '12px',
-    padding: '1.5rem',
+    padding: '1.25rem',
+    width: '100%',
+    boxSizing: 'border-box',
   },
   fieldLabel: {
     fontSize: '0.9375rem',
     fontWeight: 700,
     color: '#0f172a',
+    display: 'block',
   },
   fieldDesc: {
     fontSize: '0.8125rem',
     color: '#64748b',
     marginTop: '0.25rem',
-    marginBottom: '0.875rem',
+    marginBottom: '0.75rem',
+    lineHeight: 1.4,
   },
   textInput: {
     width: '100%',
-    padding: '0.75rem 1rem',
+    padding: '0.625rem 0.875rem',
     border: '1px solid #cbd5e1',
     borderRadius: '8px',
     fontSize: '0.9375rem',
     outline: 'none',
     boxSizing: 'border-box',
     color: '#0f172a',
-  },
-  bodyHeaderRow: {
-    display: 'flex',
-    justifyContent: 'space-between',
-    alignItems: 'flex-start',
-    flexWrap: 'wrap',
-    gap: '1rem',
-  },
-  tabToggle: {
-    display: 'flex',
-    backgroundColor: '#f1f5f9',
-    padding: '2px',
-    borderRadius: '6px',
-  },
-  tabBtn: {
-    display: 'flex',
-    alignItems: 'center',
-    gap: '0.25rem',
-    padding: '0.25rem 0.625rem',
-    fontSize: '0.75rem',
-    fontWeight: 600,
-    color: '#64748b',
-    border: 'none',
-    background: 'none',
-    borderRadius: '4px',
-    cursor: 'pointer',
-  },
-  activeTabBtn: {
-    backgroundColor: '#ffffff',
-    color: '#2563eb',
-    boxShadow: '0 1px 2px rgba(0,0,0,0.05)',
-  },
-  textarea: {
-    width: '100%',
-    padding: '1rem',
-    border: '1px solid #cbd5e1',
-    borderRadius: '8px',
-    fontSize: '0.9375rem',
-    lineHeight: 1.6,
-    outline: 'none',
-    boxSizing: 'border-box',
-    fontFamily: 'inherit',
-    resize: 'vertical',
-  },
-  previewBox: {
-    padding: '1rem',
-    backgroundColor: '#f8fafc',
-    borderRadius: '8px',
-    border: '1px solid #e2e8f0',
-    minHeight: '200px',
-    fontSize: '0.9375rem',
-    lineHeight: 1.6,
   },
   tagInputWrapper: {
     border: '1px solid #cbd5e1',
@@ -404,7 +344,7 @@ const styles: Record<string, React.CSSProperties> = {
     outline: 'none',
     fontSize: '0.875rem',
     flexGrow: 1,
-    minWidth: '120px',
+    minWidth: '100px',
     padding: '0.25rem',
   },
   submitBtn: {
@@ -421,8 +361,9 @@ const styles: Record<string, React.CSSProperties> = {
     cursor: 'pointer',
   },
   instructionsRail: {
-    width: '320px',
+    width: '300px',
     flexShrink: 0,
+    boxSizing: 'border-box',
   },
   instructionCard: {
     backgroundColor: '#ffffff',
@@ -446,5 +387,68 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     flexDirection: 'column',
     gap: '0.5rem',
+  },
+  authLockContainer: {
+    display: 'flex',
+    justifyContent: 'center',
+    padding: '3rem 1rem',
+  },
+  authLockCard: {
+    maxWidth: '520px',
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    border: '1px solid #e2e8f0',
+    padding: '2rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    gap: '1rem',
+    boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+  },
+  lockIconWrapper: {
+    width: '56px',
+    height: '56px',
+    borderRadius: '14px',
+    backgroundColor: '#eff6ff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+  },
+  authLockTitle: {
+    fontSize: '1.25rem',
+    fontWeight: 700,
+    color: '#0f172a',
+  },
+  authLockDesc: {
+    fontSize: '0.875rem',
+    color: '#64748b',
+    lineHeight: 1.5,
+  },
+  authLockActions: {
+    display: 'flex',
+    flexDirection: 'column',
+    gap: '0.75rem',
+    width: '100%',
+    marginTop: '0.5rem',
+  },
+  signInBtn: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    gap: '0.5rem',
+    padding: '0.75rem 1.5rem',
+    backgroundColor: '#2563eb',
+    color: '#ffffff',
+    borderRadius: '8px',
+    fontSize: '0.875rem',
+    fontWeight: 600,
+    border: 'none',
+    cursor: 'pointer',
+  },
+  browseLink: {
+    fontSize: '0.8125rem',
+    color: '#64748b',
+    textDecoration: 'none',
   },
 };

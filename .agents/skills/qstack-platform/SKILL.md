@@ -67,6 +67,16 @@ one.
   code, not after. Don't jump ahead to a later phase's code because it seems
   related — flag it and stop instead, so each step can be checked against
   what it's supposed to do before the next one starts.
+- **Under Construction / Coming Soon Placeholders.** If any page, section, tab,
+  or feature is not yet built or belongs to a later phase, never leave broken links
+  or empty dead ends. Always render a polite "Under Construction — Coming Soon in
+  Phase X" state with a clear description of the upcoming feature.
+- **Mobile-First Design from the Ground Up.** Start every layout, component, and screen
+  from a mobile viewport base (360px–430px) first. Keep the mobile layout active for all
+  viewports up to 1067px (`max-width: 1067px`), expanding to desktop shell only at 1068px+.
+  Ensure touch-friendly tap targets (min 44x44px), collapsible navigation drawers/bottom bars on mobile,
+  fluid typography, zero horizontal overflow (`overflow-x: hidden`), and responsive flex/grid wrappers
+  across all client and admin views.
 
 ## One-paragraph project summary
 

@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { AppShell } from '../components/layout/AppShell';
-import { Bot, Sparkles, Send, User } from 'lucide-react';
+import { Bot, Sparkles, Send, User, Lock, LogIn } from 'lucide-react';
 import { useAuth } from '../context/AuthContext';
 
 interface ChatMessage {
@@ -56,6 +56,32 @@ export const AIChatPage: React.FC = () => {
     }, 1200);
   };
 
+  if (!isAuthenticated) {
+    return (
+      <AppShell showRightRail={false}>
+        <div style={styles.lockedContainer}>
+          <div style={styles.lockedCard}>
+            <div style={styles.lockedIconWrapper}>
+              <Lock size={32} color="#2563eb" />
+            </div>
+            <h2 style={styles.lockedTitle}>AI Chat is Exclusive to Members</h2>
+            <p style={styles.lockedDesc}>
+              Sign in with Google, GitHub, or your email to access QStack's vector RAG assistant, query verified community solutions, and stream real-time code explanations.
+            </p>
+            <button
+              type="button"
+              onClick={() => openAuthModal('login')}
+              style={styles.lockedSignInBtn}
+            >
+              <LogIn size={16} />
+              <span>Sign In to Access AI Chat</span>
+            </button>
+          </div>
+        </div>
+      </AppShell>
+    );
+  }
+
   return (
     <AppShell showRightRail={false}>
       <div style={styles.chatContainer}>
@@ -69,7 +95,7 @@ export const AIChatPage: React.FC = () => {
               <h1 style={styles.title}>QStack AI Assistant</h1>
               <div style={styles.subtitleRow}>
                 <Sparkles size={13} color="#2563eb" />
-                <span style={styles.subtitle}>Pinecone Vector RAG + Gemini Knowledge Search</span>
+                <span style={styles.subtitle}>Pinecone Vector RAG + NVIDIA NIM Knowledge Search</span>
               </div>
             </div>
           </div>
@@ -137,7 +163,7 @@ export const AIChatPage: React.FC = () => {
         <form onSubmit={handleSend} style={styles.inputForm}>
           <input
             type="text"
-            placeholder={isAuthenticated ? "Ask any programming question or concept..." : "Sign in to chat with QStack AI..."}
+            placeholder="Ask any programming question or concept..."
             value={input}
             onChange={(e) => setInput(e.target.value)}
             disabled={isTyping}
@@ -281,6 +307,59 @@ const styles: Record<string, React.CSSProperties> = {
     alignItems: 'center',
     gap: '0.375rem',
     padding: '0.75rem 1.25rem',
+    backgroundColor: '#2563eb',
+    color: '#ffffff',
+    borderRadius: '8px',
+    fontSize: '0.875rem',
+    fontWeight: 600,
+    border: 'none',
+    cursor: 'pointer',
+  },
+  lockedContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    padding: '4rem 1rem',
+  },
+  lockedCard: {
+    maxWidth: '480px',
+    backgroundColor: '#ffffff',
+    borderRadius: '16px',
+    border: '1px solid #e2e8f0',
+    padding: '2.5rem',
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    textAlign: 'center',
+    gap: '1rem',
+    boxShadow: '0 4px 6px -1px rgba(0,0,0,0.05)',
+  },
+  lockedIconWrapper: {
+    width: '60px',
+    height: '60px',
+    borderRadius: '16px',
+    backgroundColor: '#eff6ff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    marginBottom: '0.5rem',
+  },
+  lockedTitle: {
+    fontSize: '1.25rem',
+    fontWeight: 700,
+    color: '#0f172a',
+  },
+  lockedDesc: {
+    fontSize: '0.875rem',
+    color: '#64748b',
+    lineHeight: 1.5,
+  },
+  lockedSignInBtn: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    marginTop: '0.5rem',
+    padding: '0.75rem 1.5rem',
     backgroundColor: '#2563eb',
     color: '#ffffff',
     borderRadius: '8px',

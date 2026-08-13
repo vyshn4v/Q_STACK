@@ -7,7 +7,7 @@ import { RedisModule } from './redis/redis.module';
 import { AppController } from './app.controller';
 import { AppService } from './app.service';
 
-// Phase 1 Domain Modules
+// Domain Modules
 import { AuthModule } from './modules/auth/auth.module';
 import { UsersModule } from './modules/users/users.module';
 import { TagsModule } from './modules/tags/tags.module';
@@ -15,6 +15,10 @@ import { QuestionsModule } from './modules/questions/questions.module';
 import { AnswersModule } from './modules/answers/answers.module';
 import { CommentsModule } from './modules/comments/comments.module';
 import { VotesModule } from './modules/votes/votes.module';
+import { MedalsModule } from './modules/medals/medals.module';
+import { FollowsModule } from './modules/follows/follows.module';
+import { BookmarksModule } from './modules/bookmarks/bookmarks.module';
+import { NotificationsModule } from './modules/notifications/notifications.module';
 
 @Module({
   imports: [
@@ -33,6 +37,10 @@ import { VotesModule } from './modules/votes/votes.module';
     AnswersModule,
     CommentsModule,
     VotesModule,
+    MedalsModule,
+    FollowsModule,
+    BookmarksModule,
+    NotificationsModule,
   ],
   controllers: [AppController],
   providers: [AppService],

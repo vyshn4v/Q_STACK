@@ -3,6 +3,7 @@ import { Check } from 'lucide-react';
 import type { Answer } from '../../types';
 import { VoteControl } from './VoteControl';
 import { CommentThread } from './CommentThread';
+import { RichTextRenderer } from '../common/RichTextRenderer';
 
 interface AnswerCardProps {
   answer: Answer;
@@ -60,11 +61,7 @@ export const AnswerCard: React.FC<AnswerCardProps> = ({
         {/* Right Content */}
         <div style={styles.rightColumn}>
           <div style={styles.bodyContent}>
-            {answer.body.split('\n\n').map((para, i) => (
-              <p key={i} style={{ marginBottom: '1rem' }}>
-                {para}
-              </p>
-            ))}
+            <RichTextRenderer content={answer.body} />
           </div>
 
           {/* Author Footnote */}

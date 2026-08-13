@@ -3,6 +3,7 @@ import type { ReactNode } from 'react';
 import { AppHeader } from './AppHeader';
 import { SidebarNavigation } from './SidebarNavigation';
 import { RightRail } from './RightRail';
+import { MobileNavigation } from './MobileNavigation';
 import { AuthModal } from '../auth/AuthModal';
 
 interface AppShellProps {
@@ -12,13 +13,20 @@ interface AppShellProps {
 
 export const AppShell: React.FC<AppShellProps> = ({ children, showRightRail = true }) => {
   return (
-    <div style={styles.page}>
+    <div className="app-shell-page" style={styles.page}>
       <AppHeader />
-      <div style={styles.mainContainer}>
-        <SidebarNavigation />
+      <div className="app-shell-main" style={styles.mainContainer}>
+        <div className="app-shell-sidebar">
+          <SidebarNavigation />
+        </div>
         <main style={styles.contentArea}>{children}</main>
-        {showRightRail && <RightRail />}
+        {showRightRail && (
+          <div className="app-shell-right-rail">
+            <RightRail />
+          </div>
+        )}
       </div>
+      <MobileNavigation />
       <AuthModal />
     </div>
   );
@@ -30,6 +38,7 @@ const styles: Record<string, React.CSSProperties> = {
     backgroundColor: '#f8fafc',
     display: 'flex',
     flexDirection: 'column',
+    position: 'relative',
   },
   mainContainer: {
     maxWidth: '1360px',
@@ -39,9 +48,11 @@ const styles: Record<string, React.CSSProperties> = {
     display: 'flex',
     gap: '2rem',
     flexGrow: 1,
+    boxSizing: 'border-box',
   },
   contentArea: {
     flexGrow: 1,
     minWidth: 0,
+    width: '100%',
   },
 };

@@ -14,9 +14,9 @@ export const QuestionCard: React.FC<QuestionCardProps> = ({ question }) => {
   });
 
   return (
-    <div style={styles.card}>
+    <div className="question-card-inner" style={styles.card}>
       {/* Left Metrics Column */}
-      <div style={styles.metricsColumn}>
+      <div className="question-card-stats" style={styles.metricsColumn}>
         <div style={styles.metricItem}>
           <span style={styles.metricValue}>{question.score}</span>
           <span style={styles.metricLabel}>votes</span>

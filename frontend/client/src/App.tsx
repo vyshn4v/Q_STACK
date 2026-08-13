@@ -7,6 +7,10 @@ import { AskQuestionPage } from './pages/AskQuestionPage';
 import { TagsPage } from './pages/TagsPage';
 import { AIChatPage } from './pages/AIChatPage';
 import { AuthCallbackPage } from './pages/AuthCallbackPage';
+import { BookmarksPage } from './pages/BookmarksPage';
+import { NotificationsPage } from './pages/NotificationsPage';
+import { UserProfilePage } from './pages/UserProfilePage';
+import { LeaderboardPage } from './pages/LeaderboardPage';
 
 export function App() {
   return (
@@ -19,8 +23,11 @@ export function App() {
           <Route path="/ask" element={<AskQuestionPage />} />
           <Route path="/tags" element={<TagsPage />} />
           <Route path="/ai-chat" element={<AIChatPage />} />
+          <Route path="/bookmarks" element={<BookmarksPage />} />
+          <Route path="/notifications" element={<NotificationsPage />} />
+          <Route path="/users/:id" element={<UserProfilePage />} />
+          <Route path="/leaderboard" element={<LeaderboardPage />} />
           <Route path="/auth/callback" element={<AuthCallbackPage />} />
-          <Route path="/leaderboard" element={<HomePage />} />
           <Route path="*" element={<HomePage />} />
         </Routes>
       </AuthProvider>

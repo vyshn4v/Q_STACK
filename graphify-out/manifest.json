@@ -10,8 +10,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\package.json": {
-    "mtime": 1786598302.5059962,
-    "ast_hash": "cc05dc98acab98336fe359f25e6cca5c",
+    "mtime": 1786600653.588314,
+    "ast_hash": "b9c00c2bc6d1ce6cb14a3cfd4f73975b",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\tsconfig.build.json": {
@@ -40,8 +40,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.module.ts": {
-    "mtime": 1786597057.904275,
-    "ast_hash": "1fb6c24d6d03aeb69849f0d5b0c8564c",
+    "mtime": 1786602535.4641743,
+    "ast_hash": "a7f0fc2f01ccc7406b29ec3c7073438c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\app.service.ts": {
@@ -50,8 +50,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\main.ts": {
-    "mtime": 1786596610.9944892,
-    "ast_hash": "d2f46d0dbd938ffb5376ca1e79a74414",
+    "mtime": 1786603445.306033,
+    "ast_hash": "afd9078afc7a7dc1a9d136077b9b14bf",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\common\\decorators\\current-user.decorator.ts": {
@@ -80,8 +80,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\config\\config.validation.ts": {
-    "mtime": 1786597930.9081278,
-    "ast_hash": "64a50ec2465026db00daa2142e1e8638",
+    "mtime": 1786601805.4093041,
+    "ast_hash": "7591078da9c2c411c8dd1044a0252eba",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\database.module.ts": {
@@ -135,8 +135,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\package.json": {
-    "mtime": 1786596515.803677,
-    "ast_hash": "ddf4e93b8d6f9a36bc51856a4f07e472",
+    "mtime": 1786603481.8409338,
+    "ast_hash": "14ad1114a1b678622a6a16dbbae354cc",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\tsconfig.app.json": {
@@ -155,8 +155,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\vite.config.ts": {
-    "mtime": 1786596714.664363,
-    "ast_hash": "7d1aa8d12cc0d3143169349e25977dcd",
+    "mtime": 1786603486.8930085,
+    "ast_hash": "3be7f258d64ade3417e580b3cc5e96ef",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\admin\\src\\App.tsx": {
@@ -175,8 +175,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\package.json": {
-    "mtime": 1786596496.9426088,
-    "ast_hash": "a389985bbf1b2c2ec471825ad307fcdf",
+    "mtime": 1786603472.8650277,
+    "ast_hash": "7a5b75e73dc8bb90be6d2cb724bab14f",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\tsconfig.app.json": {
@@ -195,13 +195,13 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\vite.config.ts": {
-    "mtime": 1786596711.6026754,
-    "ast_hash": "1fde01004a1b3d7e77dba184256525a0",
+    "mtime": 1786603477.6498058,
+    "ast_hash": "f678b5be83e1e640aa49d5471fab929c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\App.tsx": {
-    "mtime": 1786597987.8156383,
-    "ast_hash": "6634d7a2787586ec248218192859d340",
+    "mtime": 1786602694.4098513,
+    "ast_hash": "ae0c0f65099d29ff646c1a2ec518e487",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\main.tsx": {
@@ -220,42 +220,42 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\SKILL.md": {
-    "mtime": 1786596103.9208708,
-    "ast_hash": "b9684239406c372f284f0343558c4f1e",
+    "mtime": 1786603835.2957313,
+    "ast_hash": "11f23ab2b76a31615396c15af8c3bc20",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\01-tech-architecture.md": {
-    "mtime": 1786596103.956069,
-    "ast_hash": "ea68a4620e00326c0659c8a5f4faad8b",
+    "mtime": 1786601787.9118738,
+    "ast_hash": "1427c8cffcadbb0e483b35e157255d3c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\02-data-model-and-rbac.md": {
-    "mtime": 1786596103.9520695,
+    "mtime": 1786600695.8625104,
     "ast_hash": "6769d68e55b4415ef5477712017dff97",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\03-ai-systems.md": {
-    "mtime": 1786596103.94507,
-    "ast_hash": "bd812d3f7837b237256d1c88c23a14c6",
+    "mtime": 1786601801.7131138,
+    "ast_hash": "a665a15dfa991e5eaac0a025e099119a",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\04-event-driven-activity.md": {
-    "mtime": 1786596103.9420683,
+    "mtime": 1786600695.8374598,
     "ast_hash": "5cfb882759ecb9e9969eeb7b0797161b",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\05-reputation-badges.md": {
-    "mtime": 1786596103.9330764,
+    "mtime": 1786600695.8289495,
     "ast_hash": "f6f4d04bd27b363bd3e87e8c36941e19",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\06-design-system.md": {
-    "mtime": 1786596103.938081,
-    "ast_hash": "84b543c0f97d9d2f2a1772861b898942",
+    "mtime": 1786603840.3990605,
+    "ast_hash": "67f3f59c7a579deeb20c3e459533aaec",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\.agents\\skills\\qstack-platform\\references\\07-phase-roadmap.md": {
-    "mtime": 1786596103.9480734,
+    "mtime": 1786600695.8461492,
     "ast_hash": "820cba4597d32c3f4751b6d92ad4a536",
     "semantic_hash": ""
   },
@@ -485,8 +485,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.controller.ts": {
-    "mtime": 1786597049.061357,
-    "ast_hash": "fbb1c1071ec51328fea98a7a87adcede",
+    "mtime": 1786602528.6109872,
+    "ast_hash": "aed0e5cfba3e3ca8221b94a8ac8aac78",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.module.ts": {
@@ -495,13 +495,13 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.repository.ts": {
-    "mtime": 1786597040.8391933,
-    "ast_hash": "e3a706ca25fa2c2639a5c30d64cf209b",
+    "mtime": 1786602520.5443265,
+    "ast_hash": "02484b88267f5c7e39f4ded12595e67c",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\users.service.ts": {
-    "mtime": 1786597044.6308382,
-    "ast_hash": "14df8aa02ab787eb03b5abeb17ade402",
+    "mtime": 1786602524.2632816,
+    "ast_hash": "0f650fca04c7f80140dcc5e094ee02b6",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\dto\\user.dto.ts": {
@@ -535,8 +535,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\api\\client.ts": {
-    "mtime": 1786597451.6898243,
-    "ast_hash": "0ffafc21a3cefb2e1daa570bb9363960",
+    "mtime": 1786602604.0476189,
+    "ast_hash": "fc250957517cd376909a3ae14ab2926d",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\auth\\AuthModal.tsx": {
@@ -545,13 +545,13 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\AppHeader.tsx": {
-    "mtime": 1786597351.3171954,
-    "ast_hash": "046bfe788922d844a45f504eefab5946",
+    "mtime": 1786603276.844732,
+    "ast_hash": "5b418eb0349321bad8d199b950feff47",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\AppShell.tsx": {
-    "mtime": 1786597461.3992834,
-    "ast_hash": "d9cf2e3a261094bffe94df7bf071c830",
+    "mtime": 1786603215.9783037,
+    "ast_hash": "4bcbbd5f3905169d42ebc8b8b19f8836",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\RightRail.tsx": {
@@ -560,8 +560,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\SidebarNavigation.tsx": {
-    "mtime": 1786597471.7516794,
-    "ast_hash": "ee9e55cfc52dad775cbcf27514e6cf79",
+    "mtime": 1786602769.9810126,
+    "ast_hash": "d36b2c8ace330018f92bb59896900b27",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\AIAnswerBlock.tsx": {
@@ -570,8 +570,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\AnswerCard.tsx": {
-    "mtime": 1786597477.2041752,
-    "ast_hash": "eadc4693f33d2929f787abede332e639",
+    "mtime": 1786603118.2889674,
+    "ast_hash": "b15a1e494d04f20ac8294d84beb6aab3",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\CommentThread.tsx": {
@@ -580,8 +580,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\QuestionCard.tsx": {
-    "mtime": 1786597490.4088638,
-    "ast_hash": "7bedd460c3fe7205da8970049bf1933d",
+    "mtime": 1786603817.244267,
+    "ast_hash": "fa0d7ef10c4c1e1b3861a204ef6151b5",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\VoteControl.tsx": {
@@ -595,23 +595,23 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AIChatPage.tsx": {
-    "mtime": 1786597502.4216707,
-    "ast_hash": "f699b45c5d454e623c41480a7169d566",
+    "mtime": 1786602334.507043,
+    "ast_hash": "6829156b9858f53afbd515a3522a9d7b",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\AskQuestionPage.tsx": {
-    "mtime": 1786597400.1566763,
-    "ast_hash": "cec70cb056cf49b0fbc4834a0ce78d08",
+    "mtime": 1786603363.798664,
+    "ast_hash": "4a12b9b949eab3bcf359ec7f3e238d26",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\HomePage.tsx": {
-    "mtime": 1786597509.1190326,
-    "ast_hash": "a703e1bd6083d71c847c838d6f8a4056",
+    "mtime": 1786602808.2122033,
+    "ast_hash": "44c868e142c3ef806036957b521ebe30",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\QuestionDetailPage.tsx": {
-    "mtime": 1786597517.5585597,
-    "ast_hash": "b1e188c254e0de88cd1b4b1b76c364a7",
+    "mtime": 1786603109.8334432,
+    "ast_hash": "69289a1753c892041888c93f5e6f7642",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\QuestionsPage.tsx": {
@@ -625,18 +625,8 @@
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\types\\index.ts": {
-    "mtime": 1786597294.1591797,
-    "ast_hash": "5db34e5f4833538b49866487662062b7",
-    "semantic_hash": ""
-  },
-  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\rules\\graphify.md": {
-    "mtime": 1786597716.6327124,
-    "ast_hash": "a0e4d192b9e2e17256124dbfc8e24e6a",
-    "semantic_hash": ""
-  },
-  "D:\\PEOJECT_2026\\Q_STACK\\.agents\\workflows\\graphify.md": {
-    "mtime": 1786597716.6338012,
-    "ast_hash": "84de69efd46ab0b8430393bd4188f8f2",
+    "mtime": 1786602717.5906756,
+    "ast_hash": "aa2ecf6550c63f2f2d362bf8a6578ea3",
     "semantic_hash": ""
   },
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\auth\\strategies\\github.strategy.ts": {
@@ -657,6 +647,166 @@
   "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\database\\run-migrations.ts": {
     "mtime": 1786598297.114479,
     "ast_hash": "f0bb4951537949ae97186a1f3dc13c5d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\bookmarks\\bookmarks.controller.ts": {
+    "mtime": 1786602485.3967056,
+    "ast_hash": "7b792d3e3571c0ee02cdca954cb5d51c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\bookmarks\\bookmarks.module.ts": {
+    "mtime": 1786602489.1722753,
+    "ast_hash": "22f57b28c5e2e6d05920cd3f58ac691d",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\bookmarks\\bookmarks.repository.ts": {
+    "mtime": 1786602477.524149,
+    "ast_hash": "766d4b369b6b96f90d0c8a6860b38b33",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\bookmarks\\bookmarks.service.ts": {
+    "mtime": 1786602571.283008,
+    "ast_hash": "17df9952730606faea517e7f4891a576",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\follows\\follows.controller.ts": {
+    "mtime": 1786602469.8791625,
+    "ast_hash": "2fade65f4e91e771c68ac158f5737214",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\follows\\follows.module.ts": {
+    "mtime": 1786602473.2216275,
+    "ast_hash": "da6987f5b0ca768131ebec2c91a6c7b8",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\follows\\follows.repository.ts": {
+    "mtime": 1786602462.0498235,
+    "ast_hash": "040301c5fbb6698e79f9de5a7e45d057",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\follows\\follows.service.ts": {
+    "mtime": 1786602567.8725383,
+    "ast_hash": "deaa2ec86d17386edb55909bf9817979",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\follows\\dto\\follows.dto.ts": {
+    "mtime": 1786602458.0989854,
+    "ast_hash": "351c40ea6102ca333925c68e61c22e71",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\medals\\medals.controller.ts": {
+    "mtime": 1786602450.3961198,
+    "ast_hash": "31b50d33dfb9e0749ad063848f03f5c2",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\medals\\medals.module.ts": {
+    "mtime": 1786602454.407073,
+    "ast_hash": "324c95a9a5e2088dbcbe7ca7f965c8dd",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\medals\\medals.repository.ts": {
+    "mtime": 1786602442.3789682,
+    "ast_hash": "5274b1f6fda9888d05124ab1a4e834b3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\medals\\medals.service.ts": {
+    "mtime": 1786602563.8575623,
+    "ast_hash": "a6ae867c41a2c804e3df8d92aa70f18e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\medals\\dto\\medals.dto.ts": {
+    "mtime": 1786602437.7694457,
+    "ast_hash": "5d57035c7334757bb1b6ad77b4a14c7c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\notifications\\notifications.controller.ts": {
+    "mtime": 1786602506.7611034,
+    "ast_hash": "21502c64e8ef0bbb3945b8d19c2f2fca",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\notifications\\notifications.gateway.ts": {
+    "mtime": 1786602498.298419,
+    "ast_hash": "1411c52afc04a3531709d39a314d14b3",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\notifications\\notifications.module.ts": {
+    "mtime": 1786602510.5195713,
+    "ast_hash": "c50373a6bf4f071b0b5075f41144d96e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\notifications\\notifications.repository.ts": {
+    "mtime": 1786602493.922587,
+    "ast_hash": "780e22568b551365def3b7e03263eddb",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\notifications\\notifications.service.ts": {
+    "mtime": 1786602502.6350188,
+    "ast_hash": "25c97438013f881a287c96e2249cd514",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\backend\\src\\modules\\users\\dto\\users.dto.ts": {
+    "mtime": 1786602559.8796194,
+    "ast_hash": "ffc74f33328a0ff31b67014b08a23e7b",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\ComingSoonPlaceholder.tsx": {
+    "mtime": 1786602373.8170533,
+    "ast_hash": "1e3440b481b651371a50e4c7e24b9dcb",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\FollowButton.tsx": {
+    "mtime": 1786602622.3417752,
+    "ast_hash": "bd840427160103e9f1efc9a4ba0cd132",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\NotificationBell.tsx": {
+    "mtime": 1786602628.2648375,
+    "ast_hash": "f7296ed87b76ddd038a283e258af9acb",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\BookmarkButton.tsx": {
+    "mtime": 1786602617.5379052,
+    "ast_hash": "1cea02c5d972a9d0af329e60a821260a",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\qa\\MedalControl.tsx": {
+    "mtime": 1786602612.7257376,
+    "ast_hash": "1871a29f88f689f32542e978fcd57905",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\BookmarksPage.tsx": {
+    "mtime": 1786602660.9977973,
+    "ast_hash": "d3088879cdb671197dfac7e9b5333047",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\LeaderboardPage.tsx": {
+    "mtime": 1786602796.0169735,
+    "ast_hash": "2bf7fb7d6d9efa322d436663a3cbe40c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\NotificationsPage.tsx": {
+    "mtime": 1786602669.4380982,
+    "ast_hash": "22d6b77e48ff10f244d79968fc0ff77e",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\pages\\UserProfilePage.tsx": {
+    "mtime": 1786602683.5505972,
+    "ast_hash": "d40ccc829cca96d57559472b830e3a9c",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\RichMarkdownEditor.tsx": {
+    "mtime": 1786603062.7355807,
+    "ast_hash": "ff1a1e6bfce52c0194fe056300ad8366",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\common\\RichTextRenderer.tsx": {
+    "mtime": 1786603089.7569416,
+    "ast_hash": "55799e845de8b871e54a375f37eacc87",
+    "semantic_hash": ""
+  },
+  "D:\\PEOJECT_2026\\Q_STACK\\frontend\\client\\src\\components\\layout\\MobileNavigation.tsx": {
+    "mtime": 1786603203.6015477,
+    "ast_hash": "54cc134b9fb74a4be3b81b7b4c9c526f",
     "semantic_hash": ""
   }
 }

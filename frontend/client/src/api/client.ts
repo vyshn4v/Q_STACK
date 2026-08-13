@@ -1,4 +1,13 @@
-import type { User, Question, Answer, Comment, Tag } from '../types';
+import type {
+  User,
+  Question,
+  Answer,
+  Comment,
+  Tag,
+  MedalSummary,
+  AppNotification,
+  UserActivity,
+} from '../types';
 
 const API_BASE = '/api/v1';
 
@@ -154,6 +163,110 @@ class ApiClient {
     });
   }
 
+  // Medals (Phase 2)
+  async giveMedal(questionId: string, tier: 'gold' | 'silver' | 'bronze') {
+    return this.request<{ medal: any; summary: MedalSummary }>('/medals', {
+      method: 'POST',
+      body: JSON.stringify({ questionId, tier }),
+    });
+  }
+
+  async removeMedal(questionId: string) {
+    return this.request<MedalSummary>(`/medals/${questionId}`, {
+      method: 'DELETE',
+    });
+  }
+
+  async getQuestionMedals(questionId: string) {
+    return this.request<MedalSummary>(`/medals/question/${questionId}`);
+  }
+
+  // Bookmarks (Phase 2)
+  async toggleBookmark(questionId: string) {
+    return this.request<{ questionId: string; isBookmarked: boolean }>(`/bookmarks/${questionId}`, {
+      method: 'POST',
+    });
+  }
+
+  async getBookmarkStatus(questionId: string) {
+    return this.request<{ questionId: string; isBookmarked: boolean }>(`/bookmarks/status/${questionId}`);
+  }
+
+  async getUserBookmarks(page = 1, limit = 20) {
+    return this.request<{ questions: Question[]; total: number }>(`/bookmarks?page=${page}&limit=${limit}`);
+  }
+
+  // Follows (Phase 2)
+  async toggleFollow(targetType: 'user' | 'tag' | 'question', targetId: string) {
+    return this.request<{ targetType: string; targetId: string; isFollowing: boolean }>('/follows', {
+      method: 'POST',
+      body: JSON.stringify({ targetType, targetId }),
+    });
+  }
+
+  async getFollowStatus(targetType: 'user' | 'tag' | 'question', targetId: string) {
+    return this.request<{ targetType: string; targetId: string; isFollowing: boolean }>(
+      `/follows/status?targetType=${targetType}&targetId=${targetId}`,
+    );
+  }
+
+  async getFollowingUsers() {
+    return this.request<any[]>('/follows/users');
+  }
+
+  async getFollowingTags() {
+    return this.request<any[]>('/follows/tags');
+  }
+
+  // Notifications (Phase 2)
+  async getNotifications(limit = 30) {
+    return this.request<{ notifications: AppNotification[]; unreadCount: number }>(`/notifications?limit=${limit}`);
+  }
+
+  async getUnreadNotificationsCount() {
+    return this.request<{ unreadCount: number }>('/notifications/unread-count');
+  }
+
+  async markNotificationAsRead(id: string) {
+    return this.request<{ success: boolean; unreadCount: number }>(`/notifications/${id}/read`, {
+      method: 'PATCH',
+    });
+  }
+
+  async markAllNotificationsAsRead() {
+    return this.request<{ updatedCount: number; unreadCount: number }>('/notifications/read-all', {
+      method: 'PATCH',
+    });
+  }
+
+  // Users & Profiles (Phase 2)
+  async getUserProfile(id: string) {
+    return this.request<User>(`/users/${id}`);
+  }
+
+  async getUserQuestions(id: string, limit = 20) {
+    return this.request<Question[]>(`/users/${id}/questions?limit=${limit}`);
+  }
+
+  async getUserAnswers(id: string, limit = 20) {
+    return this.request<Answer[]>(`/users/${id}/answers?limit=${limit}`);
+  }
+
+  async getUserActivity(id: string, limit = 30) {
+    return this.request<UserActivity[]>(`/users/${id}/activity?limit=${limit}`);
+  }
+
+  async updateUserProfile(data: { displayName?: string; bio?: string; avatarUrl?: string }) {
+    return this.request<User>('/users/profile', {
+      method: 'PATCH',
+      body: JSON.stringify(data),
+    });
+  }
+
+  async getLeaderboard(limit = 20) {
+    return this.request<User[]>(`/users/leaderboard?limit=${limit}`);
+  }
+
   // Tags
   async getTags(search?: string) {
     return this.request<Tag[]>(`/tags${search ? `?search=${encodeURIComponent(search)}` : ''}`);
@@ -161,11 +274,6 @@ class ApiClient {
 
   async getPopularTags() {
     return this.request<Tag[]>('/tags/popular');
-  }
-
-  // Health
-  async getHealth() {
-    return this.request<{ status: string; services: Record<string, string> }>('/health');
   }
 }
 

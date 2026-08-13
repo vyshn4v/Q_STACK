@@ -137,9 +137,18 @@ source doc's inventory, for the new features above.)
 | P1 | Search, Tags, User Profile, Notifications, Bookmarks |
 | P2 | Badges, reputation history, advanced filters, moderation views |
 
-## Admin UI — same tokens, different density
+## Mobile-First Responsive Design Principles
 
-Reuse the app's color/type tokens for brand consistency, but design it as a
-denser, utility-first layout — data tables, filters, bulk actions — rather
-than the consumer app's card-based, spacious layout. Admin users are
-optimizing for speed, not browsing.
+All components and screens MUST be authored starting from the smallest mobile viewport base (360px–430px) and scaled upwards with progressive enhancement:
+
+### Breakpoints
+- **Mobile (`<= 1067px`)**: Single column layout, mobile top header with collapsible search, sticky bottom bar navigation (`MobileNavigation`), 100% width cards, full-width inputs, touch targets $\ge 44\times 44\text{px}$, hidden desktop sidebar and right rail, horizontally scrollable tabs.
+- **Desktop (`1068px+`)**: Full 3-column app shell (left nav + main content + right contextual rail), persistent search bar, desktop metadata on cards.
+
+### Mobile Rules
+1. **Zero Horizontal Scroll**: Never allow screen-width overflows (`max-width: 100%`, `box-sizing: border-box`, wrapped flex rows).
+2. **Touch-First Controls**: All tap targets, vote buttons, chips, and dropdown triggers must have comfortable spacing and minimum 44px hit areas.
+3. **Responsive Code Blocks**: `<pre>` and `<code>` blocks must support horizontal scrolling within their own boundaries without blowing out the page width.
+4. **Fluid Typography**: Headings and titles scale down gracefully on mobile screens (e.g. 24px-28px on mobile vs 32px-36px on desktop).
+5. **Modal/Drawer Responsiveness**: Modals become bottom-sheets or full-screen dialogs on mobile for optimal thumb reachability.
+

@@ -96,10 +96,34 @@ class EnvironmentVariables {
   @IsOptional()
   SUPER_ADMIN_NAME: string = 'Super Admin';
 
-  // AI & Vector
+  // AI & Vector Services
   @IsString()
   @IsOptional()
-  GEMINI_API_KEY?: string;
+  NVIDIA_NIM_API_KEY?: string;
+
+  @IsString()
+  @IsOptional()
+  NVIDIA_NIM_BASE_URL?: string = 'https://integrate.api.nvidia.com/v1';
+
+  @IsString()
+  @IsOptional()
+  NVIDIA_NIM_EMBEDDING_MODEL?: string = 'nvidia/nv-embed-v1';
+
+  @IsString()
+  @IsOptional()
+  NVIDIA_NIM_CHAT_MODEL?: string = 'meta/llama-3.1-8b-instruct';
+
+  @IsString()
+  @IsOptional()
+  OPENROUTER_API_KEY?: string;
+
+  @IsString()
+  @IsOptional()
+  OPENROUTER_BASE_URL?: string = 'https://openrouter.ai/api/v1';
+
+  @IsString()
+  @IsOptional()
+  OPENROUTER_CHAT_MODEL?: string = 'meta-llama/llama-3.1-8b-instruct:free';
 
   @IsString()
   @IsOptional()

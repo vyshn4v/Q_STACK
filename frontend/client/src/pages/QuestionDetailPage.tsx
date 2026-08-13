@@ -8,6 +8,10 @@ import { VoteControl } from '../components/qa/VoteControl';
 import { AIAnswerBlock } from '../components/qa/AIAnswerBlock';
 import { CommentThread } from '../components/qa/CommentThread';
 import { AnswerCard } from '../components/qa/AnswerCard';
+import { BookmarkButton } from '../components/qa/BookmarkButton';
+import { MedalControl } from '../components/qa/MedalControl';
+import { RichMarkdownEditor } from '../components/common/RichMarkdownEditor';
+import { RichTextRenderer } from '../components/common/RichTextRenderer';
 import {
   Calendar,
   Eye,
@@ -17,6 +21,8 @@ import {
   Trash2,
   Share2,
   CheckCircle,
+  LogIn,
+  Lock,
 } from 'lucide-react';
 
 export const QuestionDetailPage: React.FC = () => {
@@ -177,11 +183,7 @@ export const QuestionDetailPage: React.FC = () => {
           {/* Post Content */}
           <div style={styles.postBodyContainer}>
             <div style={styles.bodyContent}>
-              {question.body.split('\n\n').map((paragraph, index) => (
-                <p key={index} style={{ marginBottom: '1.25rem' }}>
-                  {paragraph}
-                </p>
-              ))}
+              <RichTextRenderer content={question.body} />
             </div>
 
             {/* Tags */}
@@ -197,20 +199,22 @@ export const QuestionDetailPage: React.FC = () => {
               ))}
             </div>
 
-            {/* Actions & Author Row */}
-            <div style={styles.postFooter}>
-              <div style={styles.actionButtons}>
-                <button onClick={handleShare} style={styles.actionBtn}>
-                  {copiedLink ? <CheckCircle size={14} color="#059669" /> : <Share2 size={14} />}
-                  <span>{copiedLink ? 'Link Copied!' : 'Share'}</span>
-                </button>
-                {(isQuestionAuthor || isPrivileged) && (
-                  <button onClick={handleDeleteQuestion} style={styles.deleteBtn}>
-                    <Trash2 size={14} />
-                    <span>Delete</span>
+              {/* Actions & Author Row */}
+              <div style={styles.postFooter}>
+                <div style={styles.actionButtons}>
+                  <BookmarkButton questionId={question.id} />
+                  <MedalControl questionId={question.id} isAuthor={isQuestionAuthor} />
+                  <button onClick={handleShare} style={styles.actionBtn}>
+                    {copiedLink ? <CheckCircle size={14} color="#059669" /> : <Share2 size={14} />}
+                    <span>{copiedLink ? 'Link Copied!' : 'Share'}</span>
                   </button>
-                )}
-              </div>
+                  {isAuthenticated && (isQuestionAuthor || isPrivileged) && (
+                    <button onClick={handleDeleteQuestion} style={styles.deleteBtn}>
+                      <Trash2 size={14} />
+                      <span>Delete</span>
+                    </button>
+                  )}
+                </div>
 
               {/* Author Card */}
               <div style={styles.authorCard}>
@@ -230,7 +234,7 @@ export const QuestionDetailPage: React.FC = () => {
               </div>
             </div>
 
-            {/* Cached AI Overview Block */}
+            {/* Cached AI Overview Block (Read-only for all, no extra LLM calls on view) */}
             <AIAnswerBlock
               status={question.ai_response?.status}
               responseText={question.ai_response?.response_text}
@@ -252,7 +256,7 @@ export const QuestionDetailPage: React.FC = () => {
 
           {answers.length === 0 ? (
             <div style={styles.noAnswersCard}>
-              <p>Know the answer to this question? Share your expertise below!</p>
+              <p>No answers have been posted yet.</p>
             </div>
           ) : (
             answers.map((answer) => (
@@ -266,36 +270,54 @@ export const QuestionDetailPage: React.FC = () => {
           )}
         </div>
 
-        {/* Answer Composer Form */}
-        <div style={styles.composerCard}>
-          <h3 style={styles.composerTitle}>Your Answer</h3>
-          <p style={styles.composerSubtitle}>
-            Provide code examples, detailed explanations, and verifiable reasoning.
-          </p>
+        {/* Answer Composer Form - Authenticated vs Guest */}
+        {isAuthenticated ? (
+          <div style={styles.composerCard}>
+            <h3 style={styles.composerTitle}>Your Answer</h3>
+            <p style={styles.composerSubtitle}>
+              Provide code examples, detailed explanations, and verifiable reasoning.
+            </p>
 
-          <form onSubmit={handlePostAnswer} style={styles.composerForm}>
-            <textarea
-              rows={8}
-              placeholder="Write your detailed answer here (minimum 20 characters)..."
-              value={answerBody}
-              onChange={(e) => setAnswerBody(e.target.value)}
-              minLength={20}
-              required
-              style={styles.composerTextarea}
-            />
+            <form onSubmit={handlePostAnswer} style={styles.composerForm}>
+              <RichMarkdownEditor
+                value={answerBody}
+                onChange={setAnswerBody}
+                placeholder="Write your detailed answer here with code snippets, reasoning, and verifiable examples (min 20 chars)..."
+                minHeight="220px"
+              />
 
-            <div style={styles.composerActions}>
-              <button
-                type="submit"
-                disabled={isSubmittingAnswer}
-                style={styles.submitAnswerBtn}
-              >
-                <Send size={15} />
-                <span>{isSubmittingAnswer ? 'Submitting...' : 'Post Your Answer'}</span>
-              </button>
+              <div style={styles.composerActions}>
+                <button
+                  type="submit"
+                  disabled={isSubmittingAnswer}
+                  style={styles.submitAnswerBtn}
+                >
+                  <Send size={15} />
+                  <span>{isSubmittingAnswer ? 'Submitting...' : 'Post Your Answer'}</span>
+                </button>
+              </div>
+            </form>
+          </div>
+        ) : (
+          <div style={styles.guestCtaCard}>
+            <div style={styles.guestCtaIcon}>
+              <Lock size={22} color="#2563eb" />
             </div>
-          </form>
-        </div>
+            <div style={styles.guestCtaContent}>
+              <h4 style={styles.guestCtaTitle}>Join the discussion to answer this question</h4>
+              <p style={styles.guestCtaSubtitle}>
+                Signing in allows you to contribute solutions, vote on helpful answers, and earn reputation badges.
+              </p>
+            </div>
+            <button
+              onClick={() => openAuthModal('login')}
+              style={styles.guestCtaBtn}
+            >
+              <LogIn size={15} />
+              <span>Sign In to Answer</span>
+            </button>
+          </div>
+        )}
       </div>
     </AppShell>
   );
@@ -515,6 +537,54 @@ const styles: Record<string, React.CSSProperties> = {
     fontWeight: 600,
     cursor: 'pointer',
     border: 'none',
+  },
+  guestCtaCard: {
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'space-between',
+    padding: '1.5rem',
+    backgroundColor: '#ffffff',
+    borderRadius: '12px',
+    border: '1px solid #e2e8f0',
+    gap: '1rem',
+    flexWrap: 'wrap',
+  },
+  guestCtaIcon: {
+    width: '44px',
+    height: '44px',
+    borderRadius: '10px',
+    backgroundColor: '#eff6ff',
+    display: 'flex',
+    alignItems: 'center',
+    justifyContent: 'center',
+    flexShrink: 0,
+  },
+  guestCtaContent: {
+    flexGrow: 1,
+    minWidth: '240px',
+  },
+  guestCtaTitle: {
+    fontSize: '1rem',
+    fontWeight: 700,
+    color: '#0f172a',
+    marginBottom: '0.25rem',
+  },
+  guestCtaSubtitle: {
+    fontSize: '0.8125rem',
+    color: '#64748b',
+  },
+  guestCtaBtn: {
+    display: 'inline-flex',
+    alignItems: 'center',
+    gap: '0.5rem',
+    padding: '0.625rem 1.25rem',
+    backgroundColor: '#2563eb',
+    color: '#ffffff',
+    borderRadius: '8px',
+    fontSize: '0.875rem',
+    fontWeight: 600,
+    border: 'none',
+    cursor: 'pointer',
   },
   loadingContainer: {
     display: 'flex',
